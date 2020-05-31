@@ -1,0 +1,19 @@
+# Theme metadata
+name = "krm_theme"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#18a558"
+
+# Menu
+menu_primary = " #eaeae0" # 500
+menu_text = "#18a558"
+menu_text_active = "#81b622" # A100
+menu_title = "#18a558"
+
+# Home sections
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(247, 247, 247)"
+
