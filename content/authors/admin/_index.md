@@ -21,6 +21,7 @@ organizations:
 bio: I am a physical oceangrapher interested in the interactions between flow and topography.
 interests:
 - Stratified flow over topography and associated mixing processes.
+- Flow dynamics and transport induced by submarine canyons.
 - Analytical, numerical and physical modelling of geophysical fluids.
 
 education:
@@ -65,6 +66,6 @@ user_groups:
 - Visitors
 ---
 
-I am a physical oceanographer interested in the interactions between ocean and atmospheric flows and topography. In particular, I use numerical models and laboratory scale models to investigate the role that submarine canyons play in facilitating cross-shelf exchanges of water, nutrients, carbon and dissolved gases.
+I am a physical oceanographer interested in the interactions between ocean and atmospheric flows and topography. In particular, I use numerical models and laboratory scale models to investigate the role that topography plays in facilitating cross-shelf exchanges of water, nutrients, carbon and dissolved gases.
 
  I did my Ph.D. at the Mesoscale Ocean and Atmospheric Dynamics Group under the supervision of [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/). Previously, I did my undergraduate thesis at [Centro de Ciencias de la Atmosfera](https://www.atmosfera.unam.mx/), UNAM.
