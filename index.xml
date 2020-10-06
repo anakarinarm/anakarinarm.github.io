@@ -45,5 +45,19 @@
 </description>
     </item>
     
+    <item>
+      <title>Técnicas Experimentales</title>
+      <link>https://anakarinarm.github.io/teaching/tecnicas_exp/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
+      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
+&lt;h3 id=&#34;recursos&#34;&gt;Recursos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción a python
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
