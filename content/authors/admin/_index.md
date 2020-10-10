@@ -14,8 +14,8 @@ role:
 
 # Organizations/Affiliations
 organizations:
-- name: University of British Columbia
-  url: "https://www.eoas.ubc.ca/"
+#- name: Centro de Ciencias de la Atmoósfera, UNAM
+#  url: "https://www.cca.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I am a physical oceangrapher interested in the interactions between flow and topography.
@@ -40,7 +40,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:kramosmu@eoas.ubc.ca".
+  link: "mailto:kramosmu@ciencias.unam.mx"  # For a direct email link, use "mailto:kramosmu@eoas.ubc.ca".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/anakarinarm
@@ -51,10 +51,10 @@ social:
   icon_pack: fab
   link: https://github.com/anakarinarm
 # Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+ To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+ - icon: cv
+   icon_pack: ai
+   link: files/cv_eng.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
