@@ -10,10 +10,10 @@ authors:
 superuser: true
 
 # Role/position
-role: 
+#role: 
 
 # Organizations/Affiliations
-organizations:
+#organizations:
 #- name: Centro de Ciencias de la Atmoósfera, UNAM
 #  url: "https://www.cca.unam.mx"
 
@@ -51,10 +51,10 @@ social:
   icon_pack: fab
   link: https://github.com/anakarinarm
 # Link to a PDF of your resume/CV from the About widget.
- To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
- - icon: cv
-   icon_pack: ai
-   link: files/cv_eng.pdf
+# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: files/cv_eng.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
