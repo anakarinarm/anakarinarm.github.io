@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings | Karina Ramos-Musalem</title>
+    <link>https://anakarinarm.github.io/es/teaching/</link>
+      <atom:link href="https://anakarinarm.github.io/es/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teachings</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2020</copyright><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
+      <title>Teachings</title>
+      <link>https://anakarinarm.github.io/es/teaching/</link>
+    </image>
+    
+    <item>
+      <title>Técnicas Experimentales</title>
+      <link>https://anakarinarm.github.io/es/teaching/tecnicas_exp/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/es/teaching/tecnicas_exp/</guid>
+      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
+&lt;h3 id=&#34;recursos&#34;&gt;Recursos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción a python
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
