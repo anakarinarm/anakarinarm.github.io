@@ -36,7 +36,7 @@ trazadores de relevancia biológica (como nitrato, fosfato, etc.). En este proye
 que tiene la dinámica generada por un cañón submarino en el intercambio de trazadores entre la plataforma y el océano profundo, así como la distribución
  espacial y temporal de trazadores que genera en la plataforma. Para ello utilizamos una configuración idealizada del modelo 
 [MITgcm](https://www.mitgcm.org) para desarrollar un esquema de escalamiento que nos permita estimar el transporte de trazadores hacia la plataforma
- como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical det trazador y la difusividad dentro del cañón.
+ como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical del trazador y la difusividad dentro del cañón.
 
 
 ### Publicaciones relevantes

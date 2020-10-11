@@ -26,28 +26,29 @@ date_format = "Jan 2006"
   date_start = "2013-09-01"
   date_end = "2020-02-27"
   description = """
- Modelaci髇 num閞ica del flujo en un ca耋n submarino usando el modelo MITgcm y experimentos de laboratorio de la interacci髇 din醡ica entre dos ca駉nes submarinos.
-[Tesis de doctorado](https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506) 
+ Modelaci贸n num茅rica del flujo en un ca帽贸n submarino usando el modelo MITgcm y experimentos de laboratorio 
+de la interacci贸n din谩mica entre dos ca帽ones submarinos.
+[Enlace a Tesis de doctorado](https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506) 
  """
 
 [[experience]]
-  title = "Investigaci髇 tesis de licenciatura"
-  company = " Grupo Interacci髇 Oc閍no-Atm髎fera - CCA, UNAM"
+  title = "Investigaci贸n - Tesis de licenciatura"
+  company = " Grupo Interacci贸n Oc茅ano-Atm贸sfera - CCA, UNAM"
   company_url = "http://grupo-ioa.atmosfera.unam.mx/"
-  location = "Ciudad de M閤ico, Mexico"
+  location = "Ciudad de M茅xico, M茅xico"
   date_start = "2012-05-01"
   date_end = "2013-08-31"
 supervisor = "Dr. Jorge Zavala Hidalgo"
-  description = """Modelaci髇 num閞ica de la surgencia de Yucat醤 usando el modelo MITgcm. [Tesis](http://grupo-ioa.atmosfera.unam.mx/images/archivos_portal/tesis/TesisL_Karina_Ramos.pdf)"""
+  description = """Modelaci贸n num茅rica de la surgencia de Yucat谩n usando el modelo MITgcm. [Tesis](http://grupo-ioa.atmosfera.unam.mx/images/archivos_portal/tesis/TesisL_Karina_Ramos.pdf)"""
 
 [[experience]]
- title = "Investigaci髇 licenciatura"
- company = "Grupo de Reolog韆, IIM, UNAM"
+ title = "Investigaci贸n - Licenciatura"
+ company = "Grupo de Reolog铆a, IIM, UNAM"
  company_url= "https://www.iim.unam.mx/inicio.html" 
  location  = "Mexico City, Mexico"
 date_start = "2012-04-01"
 date_end ="2012-09-01"
- description = """Experimentos para estudiar la mec醤ica del nado de Artemia Salina (PIV y c醡ara de alta velocidad)"""
+ description = """Experimentos para estudiar la mec谩nica del nado de Artemia Salina (PIV y c谩mara de alta velocidad)"""
 
 [[experience]]
  title = "Summer Student Fellowship"

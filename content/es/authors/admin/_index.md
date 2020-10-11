@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-#role: 
+#role:Investigadora Asociada "C" 
 
 # Organizations/Affiliations
 #organizations:
@@ -20,9 +20,9 @@ superuser: true
 # Short bio (displayed in user profile at end of posts)
 bio: 
 interests:
-- Inteacción de flujos estratificados con la topografía y procesos de mezcla asociados.
+- Interacción de flujos estratificados con la topografía y procesos de mezcla asociados.
 - Dinámica y transporte inducidos por cañones submarinos.
-- Modelos analíticos, numericos y de laboratorio de fluídos geofísicos.
+- Modelos analíticos, numéricos y de laboratorio de fluidos geofísicos.
 
 education:
   courses:
@@ -67,7 +67,7 @@ user_groups:
 ---
 
 Soy oceanógrafa física y me interesa la interacción entre los flujos geofísicos --como el océano y la atmósfera--
- y la topografía. En paricular, utilizo modelos numéricos y de laboratorio para investogar el papel que juega la 
+ y la topografía. En particular, utilizo modelos numéricos y de laboratorio para investigar el papel que juega la 
 topografía en el intercambio de agua, nutrientes y gases disueltos entre el océano profundo 
 y la plataforma continental.
 
