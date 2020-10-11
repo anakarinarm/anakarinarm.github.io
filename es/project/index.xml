@@ -42,7 +42,7 @@ que tiene la dinámica generada por un cañón submarino en el intercambio de tr
 espacial y temporal de trazadores que genera en la plataforma. Para ello utilizamos una configuración idealizada del modelo
 
 &lt;a href=&#34;https://www.mitgcm.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MITgcm&lt;/a&gt; para desarrollar un esquema de escalamiento que nos permita estimar el transporte de trazadores hacia la plataforma
-como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical det trazador y la difusividad dentro del cañón.&lt;/p&gt;
+como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical del trazador y la difusividad dentro del cañón.&lt;/p&gt;
 &lt;h3 id=&#34;publicaciones-relevantes&#34;&gt;Publicaciones relevantes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
