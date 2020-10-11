@@ -1,8 +1,8 @@
 ---
 title: Técnicas Experimentales
-summary:
+summary: Semestre 2021 - Facultad de Ciencias, UNAM
 tags:
-- Teaching
+- Cursos
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?

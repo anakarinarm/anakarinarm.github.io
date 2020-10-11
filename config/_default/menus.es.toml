@@ -4,12 +4,12 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Home"
+  name = "Acerca de mí"
   url = "#about"
   weight = 10
 
 [[main]]
-  name = "Proyectos"
+  name = "Investigación"
   url = "#projects"
   weight = 30
 
@@ -27,7 +27,7 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
    name = "CV"
-   url = "static/files/cv_eng.pdf"
+   url = "files/cv_eng.pdf"
    weight = 70
 
 

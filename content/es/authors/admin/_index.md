@@ -18,19 +18,19 @@ superuser: true
 #  url: "https://www.cca.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a physical oceangrapher interested in the interactions between flow and topography.
+bio: 
 interests:
-- Stratified flow over topography and associated mixing processes.
-- Flow dynamics and transport induced by submarine canyons.
-- Analytical, numerical and physical modelling of geophysical fluids.
+- Inteacción de flujos estratificados con la topografía y procesos de mezcla asociados.
+- Dinámica y transporte inducidos por cañones submarinos.
+- Modelos analíticos, numericos y de laboratorio de fluídos geofísicos.
 
 education:
   courses:
-  - course: PhD in Oceanography
+  - course: Doctorado en Oceanografía
     institution: University of British Columbia
     year: 2020
-  - course: BSc in Physics 
-    institution: Universidad Nacional Autonoma de Mexico
+  - course: Licenciatura en Física  
+    institution: Universidad Nacional Autónoma de México
     year: 2013
 
 # Social/Academic Networking
@@ -54,7 +54,7 @@ social:
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: files/cv_eng.pdf
+  link: "files/cv_eng.pdf"
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -66,6 +66,12 @@ user_groups:
 - Visitors
 ---
 
-I am a physical oceanographer interested in the interactions between ocean and atmospheric flows and topography. In particular, I use numerical models and laboratory scale models to investigate the role that topography plays in facilitating cross-shelf exchanges of water, nutrients, carbon and dissolved gases.
+Soy oceanógrafa física y me interesa la interacción entre los flujos geofísicos --como el océano y la atmósfera--
+ y la topografía. En paricular, utilizo modelos numéricos y de laboratorio para investogar el papel que juega la 
+topografía en el intercambio de agua, nutrientes y gases disueltos entre el océano profundo 
+y la plataforma continental.
 
- I did my Ph.D. at the Mesoscale Ocean and Atmospheric Dynamics Group under the supervision of [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/). Previously, I did my undergraduate thesis at [Centro de Ciencias de la Atmosfera](https://www.atmosfera.unam.mx/), UNAM.
+Estudié el doctorado con la [Dra. Susan Allen](https://www.eoas.ubc.ca/~sallen/) en la [Universidad de British Columbia](https://www.eoas.ubc.ca),
+y antes de eso realicé mi tesis de licenciatura en el [Centro de Ciencias de la Atmósfera](https://www.cca.unam.mx) de la UNAM con 
+el [Dr. Jorge Zavala Hidalgo](http://grupo-ioa.atmosfera.unam.mx/index.php/inicio-jorge). 
+

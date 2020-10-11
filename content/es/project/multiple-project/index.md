@@ -1,6 +1,6 @@
 ---
 title: Interacción dinámica entre cañones submarinos 
-summary: What is the impact of multiple canyons in the dynamics of canyon-induced upwelling?
+summary: ¿Qué impacto tienen múltiples cañones submarinos en la surgencia inducida por la topografía? 
 tags:
 - Canyons
 date: "2020-05-28T00:00:00Z"
@@ -11,7 +11,7 @@ profile: false  # Show author profile?
 external_link: ""
 
 image:
-  caption: Dye (red=lightest, blue=densest) over double canyon bathymetry during upwelling conditions - Geophysical Fluid Dynamics Lab at UBC.
+  caption: Tinta (roja=agua menos densa, azul=agua más densa) sobre dos cañones submarinos durante un evento de surgencia en el tanque giratorio. - Geophysical Fluid Dynamics Lab de UBC.
   focal_point: Smart
 
 #links:
@@ -31,8 +31,13 @@ image:
 #   Otherwise, set `slides = ""`.
 slides: example
 ---
+Los cañones submarinos no son accidentes topográficos aislados. Uno tras otro cortan la plataforma continental. Hasta ahora no sabemos cuál 
+es la influencia dinámica de un cañón sobre otro bajo condiciones de surgencia. A primera vista pensariamos que el cañón corriente arriba dominará la dinámica, pues el 
+agua pasará sobre/a través de él antes que por el cañón corriente abajo, pero el papel del segundo cañón no es trivial. Las ondas atrapadas 
+a la costa se mueven en dirección opuesta a la corriente, por lo que interactuan primero con el segundo cañón. Esto significa que la "información" 
+se transmite en dirección contraria a la corriente. Este tipo de interacción se ha observado en el Cañón Barkley, en la isla de Vancouver, en donde las ondas que se 
+propagan hacia el norte pueden tener un efecto más importante que el viento local. En este proyecto estamos investigando como dos cañones submarinos interactúan dinámicamente usando un modelo de laboratorio y uno numérico.
 
-Submarine canyons are not isolated features; they occur one after the other along the continental shelves around the world. The influence that one canyon may have on the flow dynamics of an adjacent one is not clear. It might be tempting to assume that the first canyon or upstream canyon leads the dynamics, since water will go through it before passing to the downstream canyon. However, the role of the downstream canyon is not trivial as coastal-trapped waves are moving in the opposite direction to the shelf current in the case of upwelling canyons. This means that information is also being transmitted from the downstream canyon to the upstream one. This type of interaction has been observed in Barkley Canyon where shelf waves propagating northward can have a stronger effect on alongshore currents than the local wind. We are studying how submarine canyons interact dynamically using a physical model.
 
 ### Publicaciones relevantes
 

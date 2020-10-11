@@ -1,6 +1,6 @@
 ---
-title: Transport through a submarine canyon
-summary: How do upwelling events impact the cross-shelf exchange of tracers through a submarine canyon?
+title: Transporte a través de cañones submarinos
+summary: ¿Cuál es el impacto de los cañones submarinos en el intercambio de agua y nutrientes entre la plataforma y el océano profundo?
 tags:
 - Canyons
 date: "2020-05-28T00:00:00Z"
@@ -31,10 +31,15 @@ image:
 #   Otherwise, set `slides = ""`.
 slides: example
 ---
+Los cañones submarinos son zonas de alta productividad y diversidad biológica debido, principalmente, a que favorecen el transporte de 
+trazadores de relevancia biológica (como nitrato, fosfato, etc.). En este proyecto estudiamos el impacto
+que tiene la dinámica generada por un cañón submarino en el intercambio de trazadores entre la plataforma y el océano profundo, así como la distribución
+ espacial y temporal de trazadores que genera en la plataforma. Para ello utilizamos una configuración idealizada del modelo 
+[MITgcm](https://www.mitgcm.org) para desarrollar un esquema de escalamiento que nos permita estimar el transporte de trazadores hacia la plataforma
+ como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical det trazador y la difusividad dentro del cañón.
 
-Submarine canyons incise continental shelves all over the world. They are hot spots of biodiversity mainly because they act as conduits for biologically relevant tracers (such as nitrate, phosphate, etc.) by enhancing upwelling. I am studying the impact that submarine canyons have on the amount of tracers that is exchanged between the shelf and the deep ocean, and the spatial and temporal distribution of the upwelled tracer on the shelf. I use an idealized canyon bathymetry and the MIT general circulation model (MITgcm) to develop a scaling scheme for tracer transport onto the shelf given the incomming flow, geometric and geographic parameters of the canyon, tracer profile, and vertical diffusivity and viscosity within the canyon.
 
-### Relevant publications
+### Publicaciones relevantes
 
 
 * Ramos‐Musalem, K., & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785.

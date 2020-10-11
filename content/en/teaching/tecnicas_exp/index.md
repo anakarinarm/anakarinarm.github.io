@@ -1,6 +1,6 @@
 ---
-title: Técnicas Experimentales
-summary:
+title: Experimental Techniques, Facultad de Ciencias, UNAM.
+summary: In Spanish only
 tags:
 - Teaching
 date: "2020-05-28T00:00:00Z"
