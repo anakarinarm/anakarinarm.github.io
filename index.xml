@@ -13,6 +13,20 @@
     </image>
     
     <item>
+      <title>Experimental Techniques, Facultad de Ciencias, UNAM.</title>
+      <link>https://anakarinarm.github.io/teaching/tecnicas_exp/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
+      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
+&lt;h3 id=&#34;recursos&#34;&gt;Recursos&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción a python
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Interaction among multiple canyons</title>
       <link>https://anakarinarm.github.io/project/multiple-project/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
@@ -41,20 +55,6 @@
 &lt;p&gt;Ramos-Musalem, K., &amp;amp; Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. Journal of Physical Oceanography, 49(2), 561-584.
 &lt;a href=&#34;https://doi.org/10.1175/JPO-D-18-0174.1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1175/JPO-D-18-0174.1&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Técnicas Experimentales</title>
-      <link>https://anakarinarm.github.io/teaching/tecnicas_exp/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
-      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
-&lt;h3 id=&#34;recursos&#34;&gt;Recursos&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Introducción a python
-&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
