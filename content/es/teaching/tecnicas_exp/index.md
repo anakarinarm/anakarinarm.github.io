@@ -35,4 +35,5 @@ Semestre 2021-1 Facultad de Ciencias, UNAM
 
 ### Recursos
 
-* Introducción a python[notebook 01](intro01_python.html)
+* Introducción a Python [notebook 01](intro01_python.html)
+* Introducción a Python [notebook 02](intro02_python.html)

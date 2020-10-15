@@ -33,6 +33,7 @@ slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
 
-### Recursos
+### Resources (In Spanish only)
 
-* Introducción a python[notebook 01](intro01_python.html)
+* Introduction to Python [notebook 01](intro01_python.html)
+* Introduction to Python [notebook 02](intro02_python.html)
