@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role:Investigadora Asociada "C" 
+role: Investigadora Asociada C 
 
 # Organizations/Affiliations
-organizations:
-  -name: Centro de Ciencias de la Atmósfera, UNAM
-   url: "https://www.cca.unam.mx"
+organizations: 
+- name: Centro de Ciencias de la Atmósfera, UNAM
+  url: "https://www.cca.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
