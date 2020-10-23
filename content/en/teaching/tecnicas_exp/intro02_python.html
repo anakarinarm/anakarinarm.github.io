@@ -9129,15 +9129,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12519,7 +12519,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13033,14 +13033,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13353,7 +13353,7 @@ n
 
 </code></pre>
 <p>Usando el ejemplo anterior (solo cambia <em>word</em> por <em>palabra</em>):</p>
-<p><img src='images/loops_image.png'></p>
+<p><img src='loops_image.png'></p>
 
 </div>
 </div>
@@ -14128,7 +14128,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cadena_para_rebanar</span> <span class="o">=</span> <span class="s1">&#39;Observaciones del 27-abr-2013&#39;</span>
-<span class="n">lista_para_rebanar</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fluor&#39;</span><span class="p">,</span> <span class="s1">&#39;cloro&#39;</span><span class="p">,</span> <span class="s1">&#39;bromo&#39;</span><span class="p">,</span> 
+<span class="n">lista_para_rebanar</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fluor&#39;</span><span class="p">,</span> <span class="s1">&#39;cloro&#39;</span><span class="p">,</span> <span class="s1">&#39;bromo&#39;</span><span class="p">,</span>
                       <span class="s1">&#39;neodimio&#39;</span><span class="p">,</span> <span class="s1">&#39;disprosio&#39;</span><span class="p">,</span> <span class="s1">&#39;einstenio&#39;</span><span class="p">]</span>
 </pre></div>
 
@@ -14536,7 +14536,7 @@ fin
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>La segunda línea usa la palabra <code>if</code> para decirle a Python que vamos a hacer una elección. Si la condición que sigue después de <code>if</code> es verdadera, los comandos después del <code>if</code> (indentados dentro del <code>if</code>) se ejecutan y se imprime "mayor que". Si la prueba es falsa, se ejeculan los comandos después de <code>else</code> y entonces se imprime "menor que". Sólo se ejecuta una u otra opción antes de continuar con el programa y que se imprima "fin":</p>
-<p><img src="images/diagrama_flujo_if.png"></p>
+<p><img src="diagrama_flujo_if.png"></p>
 
 </div>
 </div>
@@ -14821,7 +14821,7 @@ No hay ceros en el año  7
     <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vocales</span><span class="p">:</span>
         <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14860,7 +14860,7 @@ No hay ceros en el año  7
     <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vocales</span><span class="p">:</span>
         <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14940,7 +14940,7 @@ No hay ceros en el año  7
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/python-function.png"></p>
+<p><img src="python-function.png"></p>
 
 </div>
 </div>
@@ -15179,13 +15179,13 @@ El punto de ebullición del agua es: 100.0 C
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">detecta_problemas</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-    
+
     <span class="n">data</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="n">filename</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
     <span class="n">dimensiones</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span>
     <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">dimensiones</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
         <span class="k">if</span> <span class="n">numpy</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">fila</span><span class="p">,:])</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hay ceros en el año &#39;</span><span class="p">,</span> <span class="n">fila</span><span class="p">,</span> <span class="s1">&#39;archivo&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-        
+
 </pre></div>
 
     </div>
@@ -15475,9 +15475,9 @@ Traceback <span class="ansi-cyan-fg">(most recent call last)</span>:
 
 loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimiter=None, converters=None, skiprows=0, usecols=None, unpack=False, ndmin=0, encoding=&#39;bytes&#39;, max_rows=None)
     Load data from a text file.
-    
+
     Each row in the text file must have the same number of values.
-    
+
     Parameters
     ----------
     fname : file, str, or pathlib.Path
@@ -15510,7 +15510,7 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
         Which columns to read, with 0 being the first. For example,
         ``usecols = (1,4,5)`` will extract the 2nd, 5th and 6th columns.
         The default, None, results in all columns being read.
-    
+
         .. versionchanged:: 1.11.0
             When a single column has to be read it is possible to use
             an integer instead of a tuple. E.g ``usecols = 3`` reads the
@@ -15523,7 +15523,7 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
         The returned array will have at least `ndmin` dimensions.
         Otherwise mono-dimensional axes will be squeezed.
         Legal values: 0 (default), 1 or 2.
-    
+
         .. versionadded:: 1.6.0
     encoding : str, optional
         Encoding used to decode the inputfile. Does not apply to input streams.
@@ -15532,36 +15532,36 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
         &#39;latin1&#39; encoded strings to converters. Override this value to receive
         unicode arrays and pass strings as input to converters.  If set to None
         the system default is used. The default value is &#39;bytes&#39;.
-    
+
         .. versionadded:: 1.14.0
     max_rows : int, optional
         Read `max_rows` lines of content after `skiprows` lines. The default
         is to read all the lines.
-    
+
         .. versionadded:: 1.16.0
-    
+
     Returns
     -------
     out : ndarray
         Data read from the text file.
-    
+
     See Also
     --------
     load, fromstring, fromregex
     genfromtxt : Load data with missing values handled as specified.
     scipy.io.loadmat : reads MATLAB data files
-    
+
     Notes
     -----
     This function aims to be a fast reader for simply formatted files.  The
     `genfromtxt` function provides more sophisticated handling of, e.g.,
     lines with missing values.
-    
+
     .. versionadded:: 1.10.0
-    
+
     The strings produced by the Python float.hex method can be used as
     input for floats.
-    
+
     Examples
     --------
     &gt;&gt;&gt; from io import StringIO   # StringIO behaves like a file object
@@ -15569,13 +15569,13 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
     &gt;&gt;&gt; np.loadtxt(c)
     array([[0., 1.],
            [2., 3.]])
-    
+
     &gt;&gt;&gt; d = StringIO(u&#34;M 21 72\nF 35 58&#34;)
     &gt;&gt;&gt; np.loadtxt(d, dtype={&#39;names&#39;: (&#39;gender&#39;, &#39;age&#39;, &#39;weight&#39;),
     ...                      &#39;formats&#39;: (&#39;S1&#39;, &#39;i4&#39;, &#39;f4&#39;)})
     array([(b&#39;M&#39;, 21, 72.), (b&#39;F&#39;, 35, 58.)],
           dtype=[(&#39;gender&#39;, &#39;S1&#39;), (&#39;age&#39;, &#39;&lt;i4&#39;), (&#39;weight&#39;, &#39;&lt;f4&#39;)])
-    
+
     &gt;&gt;&gt; c = StringIO(u&#34;1,0,2\n3,0,4&#34;)
     &gt;&gt;&gt; x, y = np.loadtxt(c, delimiter=&#39;,&#39;, usecols=(0, 2), unpack=True)
     &gt;&gt;&gt; x
@@ -15823,7 +15823,7 @@ fahr_a_kelvin(temp_f)
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15835,7 +15835,7 @@ fahr_a_kelvin(temp_f)
   </div>
 </body>
 
- 
+
 
 
 </html>
