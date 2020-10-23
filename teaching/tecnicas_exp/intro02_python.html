@@ -13512,6 +13512,47 @@ Después del ciclo, letra es c
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13521,6 +13562,40 @@ Después del ciclo, letra es c
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">resultado</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="n">resultado</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resultado</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13546,14 +13621,14 @@ Después del ciclo, letra es c
 <li>Cambiar el valor de elementos individuales.</li>
 <li>Reordenar y rebanar elementos de una lista.</li>
 </ul>
-<p>De manera similar a un cadena que contiene muchos caracteres, una <strong>lista</strong> en un contenedor que puede guardar muchos valores. A diferencia de los arreglos de NumPy, las listas son intrínsecas de Python, por lo cual no necesitamos importar ninguna bibliotca para usarlas. Podemos crear listas poniendo valores entre <code>[]</code> y separandolos con <code>,</code>:</p>
+<p>De manera similar a una cadena que contiene muchos caracteres, una <strong>lista</strong> es un contenedor que puede guardar muchos valores. A diferencia de los arreglos de NumPy, las listas son intrínsecas de Python, por lo cual no necesitamos importar ninguna bibliotca para usarlas. Podemos crear listas poniendo valores entre <code>[]</code> y separandolos con <code>,</code>:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">impares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
@@ -13586,14 +13661,14 @@ Después del ciclo, letra es c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Podemos acceder a los elementos de un alista usando índices:</p>
+<p>Podemos acceder a los elementos de una lista usando índices:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El primer elemento es &#39;</span><span class="p">,</span> <span class="n">impares</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
@@ -13637,7 +13712,7 @@ El elemento -1 es  7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">impares</span><span class="p">:</span>
@@ -13680,7 +13755,7 @@ El elemento -1 es  7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nombres</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Curie&#39;</span><span class="p">,</span> <span class="s1">&#39;Darwing&#39;</span><span class="p">,</span> <span class="s1">&#39;Turing&#39;</span><span class="p">]</span> <span class="c1"># Darwin mal escrito</span>
@@ -13723,7 +13798,7 @@ nombres es ahora: [&#39;Curie&#39;, &#39;Darwin&#39;, &#39;Turing&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s1">&#39;Darwin&#39;</span>
@@ -13747,7 +13822,7 @@ nombres es ahora: [&#39;Curie&#39;, &#39;Darwin&#39;, &#39;Turing&#39;]
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-13-ec2f9f3fd03f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-15-ec2f9f3fd03f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">      1</span> nombre <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;Darwin&#39;</span>
 <span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>nombre<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#39;d&#39;</span>
 
@@ -13778,7 +13853,7 @@ nombres es ahora: [&#39;Curie&#39;, &#39;Darwin&#39;, &#39;Turing&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">edades</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mf">20.4</span><span class="p">,</span> <span class="s1">&#39;desconocido&#39;</span><span class="p">]</span> <span class="c1"># enteros, decimales y cadenas</span>
@@ -13799,7 +13874,7 @@ nombres es ahora: [&#39;Curie&#39;, &#39;Darwin&#39;, &#39;Turing&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">impares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span>
@@ -13831,7 +13906,7 @@ nombres es ahora: [&#39;Curie&#39;, &#39;Darwin&#39;, &#39;Turing&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">elemento_eliminado</span> <span class="o">=</span> <span class="n">impares</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -13865,7 +13940,7 @@ elemento eliminado: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">impares</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
@@ -13905,7 +13980,7 @@ elemento eliminado: 1
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">impares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
@@ -13949,11 +14024,11 @@ lista impares [1, 3, 5, 7, 2]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">impares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
-<span class="n">primos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">impares</span><span class="p">)</span> <span class="c1"># Este es el paso mortal</span>
+<span class="n">primos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">impares</span><span class="p">)</span> <span class="c1"># Este es el paso importante</span>
 <span class="n">primos</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lista primos&#39;</span><span class="p">,</span> <span class="n">primos</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lista impares&#39;</span><span class="p">,</span> <span class="n">impares</span><span class="p">)</span>
@@ -13993,7 +14068,7 @@ lista impares [1, 3, 5, 7]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">binomial_nombre</span> <span class="o">=</span> <span class="s1">&#39;Drosophila melanogaster&#39;</span>
@@ -14049,7 +14124,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cadena_para_rebanar</span> <span class="o">=</span> <span class="s1">&#39;Observaciones del 27-abr-2013&#39;</span>
@@ -14062,10 +14137,44 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">cadena_para_rebanar</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lista_para_rebanar</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2013
+[&#39;bromo&#39;, &#39;neodimio&#39;, &#39;disprosio&#39;, &#39;einstenio&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>¿Tu solución funciona sin importar si conoces de antemano o no la longitud de la cadena y la lista? Si la respuesta es no, intenta cambiar to estrategia para que sea más robusta.</p>
+<p>¿Tu solución funciona sin importar si conoces de antemano o no la longitud de la cadena y la lista? Sí</p>
+<p>Si la respuesta es no, intenta cambiar tu estrategia para que sea más robusta.</p>
 <p>HINT: Recuerda que los índices pueden ser negativos también.</p>
 
 </div>
@@ -14109,7 +14218,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -14130,7 +14239,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mensual_estacion01.csv&#39;</span><span class="p">))</span>
@@ -14169,7 +14278,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -14388,7 +14497,7 @@ autosoma: [&#39;2&#39;, &#39;3&#39;, &#39;4&#39;]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">37</span>
@@ -14426,7 +14535,7 @@ fin
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La segunda línea usa la palabra <code>if</code> para decirle a Python que vamos a hacer una elección. Si la condición que sigue despuésd de <code>if</code> es verdadera, los comandos después del <code>if</code> (indentados dentro del <code>if</code>) se ejecutan y se imprime "mayor que". Si la prueba es falsa, se ejeculan los comandos después de <code>else</code>y entonces se imprime "menor que". Sólo se ejecuta una u otra opción antes de continuar con el programa y que se imprima "fin":</p>
+<p>La segunda línea usa la palabra <code>if</code> para decirle a Python que vamos a hacer una elección. Si la condición que sigue después de <code>if</code> es verdadera, los comandos después del <code>if</code> (indentados dentro del <code>if</code>) se ejecutan y se imprime "mayor que". Si la prueba es falsa, se ejeculan los comandos después de <code>else</code> y entonces se imprime "menor que". Sólo se ejecuta una u otra opción antes de continuar con el programa y que se imprima "fin":</p>
 <p><img src="images/diagrama_flujo_if.png"></p>
 
 </div>
@@ -14442,7 +14551,7 @@ fin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="mi">53</span>
@@ -14486,7 +14595,7 @@ fin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
@@ -14533,7 +14642,7 @@ fin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
@@ -14575,7 +14684,7 @@ fin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
@@ -14616,7 +14725,7 @@ fin
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Revisemos-nuestros-datos">Revisemos nuestros datos<a class="anchor-link" href="#Revisemos-nuestros-datos">&#182;</a></h3><p>Anteriormente vimos que el mínimo mensual de los datos para todos los años era cero. Esto es sospechoso porque niunguna variable de las que estamos anlizando debería ser cero, salvo la precipitación (temperatura, presión, radiación, índice UV y humedad). ¿Puedes pensar en porqué no son cero? ¿Qué crees que esté pasando aquí?</p>
+<h3 id="Revisemos-nuestros-datos">Revisemos nuestros datos<a class="anchor-link" href="#Revisemos-nuestros-datos">&#182;</a></h3><p>Anteriormente vimos que el mínimo mensual de los datos para todos los años era cero. Esto es sospechoso porque ninguna variable de las que estamos anlizando debería ser cero, salvo la precipitación (temperatura, presión, radiación, índice UV y humedad). ¿Puedes pensar en porqué no son cero? ¿Qué crees que esté pasando aquí?</p>
 <p>Probablemente hay meses en donde no hubo mediciones y se reportaron como ceros. Cuando no hay mediciones o no son confiables, regularmente se elige una bandera o etiqueta especial para indicar estos valores faltantes o <em>missing values</em>. Se pueden poner valores fuera del rango esperado de mediciones como 999999, o NaN (Not a Number). NaN es una manera de decirle a la computadora que no hay número asignado.</p>
 <p>Revisemos en qué años hay valores cero en la radiación:</p>
 
@@ -14625,7 +14734,7 @@ fin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Abrimos el archivo de mediciones de radiación solar</span>
@@ -14694,6 +14803,92 @@ No hay ceros en el año  7
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Solución 1</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cadena</span> <span class="o">=</span> <span class="s2">&quot;Ciencias De La Tierra&quot;</span>
+<span class="n">vocales</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">,</span> <span class="s2">&quot;i&quot;</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;u&quot;</span><span class="p">,</span> <span class="s2">&quot;á&quot;</span><span class="p">,</span> <span class="s2">&quot;é&quot;</span><span class="p">,</span> <span class="s2">&quot;í&quot;</span><span class="p">,</span> <span class="s2">&quot;ó&quot;</span><span class="p">,</span> <span class="s2">&quot;ú&quot;</span><span class="p">]</span>
+<span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">cadena</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vocales</span><span class="p">:</span>
+        <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cadena</span> <span class="o">=</span> <span class="s2">&quot;Si los simios hicieran música, si los reptiles cantaran bajo tu ventana ...&quot;</span>
+<span class="n">vocales</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">,</span> <span class="s2">&quot;i&quot;</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;u&quot;</span><span class="p">,</span> <span class="s2">&quot;á&quot;</span><span class="p">,</span> <span class="s2">&quot;é&quot;</span><span class="p">,</span> <span class="s2">&quot;í&quot;</span><span class="p">,</span> <span class="s2">&quot;ó&quot;</span><span class="p">,</span> <span class="s2">&quot;ú&quot;</span><span class="p">]</span>
+<span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">cadena</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">vocales</span><span class="p">:</span>
+        <span class="n">contador</span> <span class="o">=</span> <span class="n">contador</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">contador</span><span class="p">)</span>  
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>26
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="7.1-En-resumen">7.1 En resumen<a class="anchor-link" href="#7.1-En-resumen">&#182;</a></h3><ul>
 <li>Usa <code>if condición:</code> para empezar un condicional, <code>elif condición:</code> para agregar pruebas adicionales y <code>else:</code> para agregar una acción default.</li>
 <li>Las acciones a realizar dentro de un condicional deben estar indentados.</li>
@@ -14712,7 +14907,7 @@ No hay ceros en el año  7
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="8.-Funciones">8. Funciones<a class="anchor-link" href="#8.-Funciones">&#182;</a></h2><h4 id="Preguntas-a-resolver:">Preguntas a resolver:<a class="anchor-link" href="#Preguntas-a-resolver:">&#182;</a></h4><ul>
 <li>¿Cómo puedo definir funciones nuevas?</li>
-<li>¿Cuál es la diferencia entre definir una función y llamar a un a función?</li>
+<li>¿Cuál es la diferencia entre definir una función y llamar a una función?</li>
 <li>¿Qué pasa cuando llamo a una función?</li>
 </ul>
 <h4 id="Objetivos:">Objetivos:<a class="anchor-link" href="#Objetivos:">&#182;</a></h4><ul>
@@ -14722,7 +14917,7 @@ No hay ceros en el año  7
 <li>Definir valores por omisión para una función.</li>
 <li>Explicar por qué debemos dividir los programas en unidades pequeñas con propósitos únicos (funciones).</li>
 </ul>
-<p>Hasta ahora, hemos escrito código para graficar algunas estadísticas de nuestros datos, hemos aprendido a abrir y analizar todos nuenstros archivos en un solo ciclo, a hacer que Python haga cosas son los datos dependiendo de alguna condición, pero el código se está volviendo largo y complicado. Imagina que tuvieramos cientos de archivos y que no quisieramos generar una gráfica de cada uno. Comentar las líneas de código que grafican los datos es tedioso y poco robusto. COrtar y pegar tampoco es una buena solución... Lo que necesitamos es una forma de empaquetar nuestro código para que sea fácil de reutilizar y esa solución es hacer "funciones". Esta es un amanera rápida de ejecutar una y otra vez pedazos más largos de código.</p>
+<p>Hasta ahora, hemos escrito código para graficar algunas estadísticas de nuestros datos, hemos aprendido a abrir y analizar todos nuenstros archivos en un solo ciclo, a hacer que Python haga cosas son los datos dependiendo de alguna condición, pero el código se está volviendo largo y complicado. Imagina que tuvieramos cientos de archivos y que no quisieramos generar una gráfica de cada uno. Comentar las líneas de código que grafican los datos es tedioso y poco robusto. Cortar y pegar tampoco es una buena solución... Lo que necesitamos es una forma de empaquetar nuestro código para que sea fácil de reutilizar y esa solución es hacer "funciones". Esta es una manera rápida de ejecutar una y otra vez pedazos más largos de código.</p>
 <p>Empecemos definiendo una función <code>fahr_a_celsius</code> que convierte temperaturas en escala Fahrenheit a Celsius:</p>
 
 </div>
@@ -14730,7 +14925,7 @@ No hay ceros en el año  7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fahr_a_celsius</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
@@ -14754,7 +14949,7 @@ No hay ceros en el año  7
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>La definición comienza con <code>def</code> seguido del nombre que queremos darle a la función (<code>fahr_a_celsius</code>) y entre paréntesis una lista de nombres de parámetros (<code>temp</code>). El cuerpo de la función - los comandos que se ejecutan cuando corre la función - deben estar indentados. El cuerpo concluye con <code>return</code> seguido del valor que regresará la función.</p>
-<p>Cuando llamamos a la función, los valores que le pasamos de le asignan a las variables que se usarán dentro de la función. Dentro de la función, usamos la expresión <code>return</code> regresar el resultado a quien lo pidió.</p>
+<p>Cuando llamamos a la función, los valores que le pasamos se le asignan a las variables que se usarán dentro de la función. Dentro de la función, usamos la expresión <code>return</code> regresar el resultado a quien lo pidió.</p>
 <p>Corramos nuestra función:</p>
 
 </div>
@@ -14762,7 +14957,7 @@ No hay ceros en el año  7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fahr_a_celsius</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
@@ -14778,7 +14973,7 @@ No hay ceros en el año  7
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[37]:</div>
 
 
 
@@ -14804,11 +14999,11 @@ No hay ceros en el año  7
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El papel se quema a:&#39;</span><span class="p">,</span> <span class="n">fahr_a_celsius</span><span class="p">(</span><span class="mi">451</span><span class="p">),</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El punto de ebullición del agua es:&#39;</span><span class="p">,</span> <span class="n">fahr_a_celsius</span><span class="p">(</span><span class="mi">212</span><span class="p">),</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El papel se quema a:&#39;</span><span class="p">,</span> <span class="n">fahr_a_celsius</span><span class="p">(</span><span class="mf">451.0</span><span class="p">),</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;El punto de ebullición del agua es:&#39;</span><span class="p">,</span> <span class="n">fahr_a_celsius</span><span class="p">(</span><span class="mf">212.0</span><span class="p">),</span> <span class="s1">&#39;C&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14838,14 +15033,14 @@ El punto de ebullición del agua es: 100.0 C
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="8.1-Composici&#243;n-de-funciones">8.1 Composici&#243;n de funciones<a class="anchor-link" href="#8.1-Composici&#243;n-de-funciones">&#182;</a></h3><p>Ahora escibamos una función que transforme de Celsius a Kelvin:</p>
+<h3 id="8.1-Composici&#243;n-de-funciones">8.1 Composici&#243;n de funciones<a class="anchor-link" href="#8.1-Composici&#243;n-de-funciones">&#182;</a></h3><p>Ahora escribamos una función que transforme de Celsius a Kelvin:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">celsius_a_kelvin</span><span class="p">(</span><span class="n">temp_c</span><span class="p">):</span>
@@ -14887,7 +15082,7 @@ El punto de ebullición del agua es: 100.0 C
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fahr_a_kelvin</span><span class="p">(</span><span class="n">temp_f</span><span class="p">):</span>
@@ -14899,6 +15094,24 @@ El punto de ebullición del agua es: 100.0 C
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>El punto de ebullición  del agua en Kelvin: 373.15
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -14921,7 +15134,7 @@ El punto de ebullición del agua es: 100.0 C
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">visualiza</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -14962,7 +15175,7 @@ El punto de ebullición del agua es: 100.0 C
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">detecta_problemas</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
@@ -14991,7 +15204,7 @@ El punto de ebullición del agua es: 100.0 C
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">archivos</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*_mensual_estacion01.csv&#39;</span><span class="p">))</span>
@@ -15125,7 +15338,7 @@ Hay ceros en el año  7 archivo precip_mensual_estacion01.csv
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;precip_mensual_estacion01.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -15141,7 +15354,7 @@ Hay ceros en el año  7 archivo precip_mensual_estacion01.csv
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[44]:</div>
 
 
 
@@ -15181,7 +15394,7 @@ Hay ceros en el año  7 archivo precip_mensual_estacion01.csv
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;precip_mensual_estacion01.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
@@ -15207,7 +15420,7 @@ Traceback <span class="ansi-cyan-fg">(most recent call last)</span>:
   File <span class="ansi-green-intense-fg ansi-bold">&#34;/Users/Karina/anaconda3/lib/python3.7/site-packages/IPython/core/interactiveshell.py&#34;</span>, line <span class="ansi-green-intense-fg ansi-bold">3331</span>, in <span class="ansi-magenta-intense-fg ansi-bold">run_code</span>
     exec(code_obj, self.user_global_ns, self.user_ns)
 
-  File <span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-40-c12d5d880ab3&gt;&#34;</span>, line <span class="ansi-green-intense-fg ansi-bold">1</span>, in <span class="ansi-magenta-intense-fg ansi-bold">&lt;module&gt;</span>
+  File <span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-45-c12d5d880ab3&gt;&#34;</span>, line <span class="ansi-green-intense-fg ansi-bold">1</span>, in <span class="ansi-magenta-intense-fg ansi-bold">&lt;module&gt;</span>
     numpy.loadtxt(&#39;precip_mensual_estacion01.csv&#39;, &#39;,&#39;)
 
   File <span class="ansi-green-intense-fg ansi-bold">&#34;/Users/Karina/anaconda3/lib/python3.7/site-packages/numpy/lib/npyio.py&#34;</span>, line <span class="ansi-green-intense-fg ansi-bold">1100</span>, in <span class="ansi-magenta-intense-fg ansi-bold">loadtxt</span>
@@ -15238,7 +15451,7 @@ Traceback <span class="ansi-cyan-fg">(most recent call last)</span>:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">)</span>
@@ -15398,7 +15611,7 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fahr_a_kelvin</span><span class="p">(</span><span class="n">temp_f</span><span class="p">):</span>
@@ -15435,7 +15648,7 @@ loadtxt(fname, dtype=&lt;class &#39;float&#39;&gt;, comments=&#39;#&#39;, delimi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">fahr_a_kelvin</span><span class="p">)</span>
@@ -15480,7 +15693,7 @@ fahr_a_kelvin(temp_f)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">6</span><span class="p">):</span>
@@ -15501,6 +15714,45 @@ fahr_a_kelvin(temp_f)
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">func</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a:  -1 b:  2 c: 6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>func(-1,2)</code> llama a la función <code>func</code>con los argumentos a=-1, b=2. Por default, c será 6. Equivalentemente podíamos llamar a func como <code>func(-1,b=2)</code>.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15509,10 +15761,44 @@ fahr_a_kelvin(temp_f)
 </ol>
 <p><code>print(extremos('helio'))</code></p>
 <p>Output:
- <code>hm</code></p>
+ <code>ho</code></p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">extremos</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">extremos</span><span class="p">(</span><span class="s1">&#39;helio&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ho
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
