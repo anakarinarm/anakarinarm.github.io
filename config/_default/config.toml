@@ -80,6 +80,10 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   publication_type = "publication_types"
   author = "authors"
 
+# Front matter
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
 # Related content.
 [related]
   threshold = 80.0
