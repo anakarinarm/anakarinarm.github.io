@@ -82,7 +82,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
 
 # Front matter
 [frontmatter]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+  lastmod = [":fileModTime", ":default"]
 
 # Related content.
 [related]
