@@ -40,7 +40,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: "mailto:kramosmu@ciencias.unam.mx"  # For a direct email link, use "mailto:kramosmu@eoas.ubc.ca".
+  link: "mailto:kramosmu@atmosfera.unam.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.mx".
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/anakarinarm
