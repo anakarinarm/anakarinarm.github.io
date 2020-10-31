@@ -15,7 +15,7 @@ role: Investigadora Asociada C
 # Organizations/Affiliations
 organizations: 
 - name: Centro de Ciencias de la Atmósfera, UNAM
-  url: "https://www.cca.unam.mx"
+  url: "https://www.atmosfera.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
 bio: I am a physical oceangrapher interested in the interactions between flow and topography.
