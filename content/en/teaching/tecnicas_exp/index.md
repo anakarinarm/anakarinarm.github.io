@@ -33,7 +33,21 @@ slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
 
-### Resources (In Spanish only)
+### Resources (In Spanish)
 
 * Introduction to Python [notebook 01](intro01_python.html)
 * Introduction to Python [notebook 02](intro02_python.html)
+
+#### Selected Notebooks from the activity "Mysterious Dataset" (In Spanish)
+
+* [Dataset 1 - SSH in Huatulco, Oaxaca](Equipo3_Archivo1_reporteDatosMisteriosos.html)
+by Samantha Alanis, Luis Fernando López y Berenice Pizano.
+
+* [Dataset 2 - Ozone measurements at two stations in Mexico City](Equipo9_Archivo2_reporteDatosMisteriosos.html)
+by Aura Campos, Lucía Martínez y Paola Sánchez.
+
+* [Dataset 3 - Solar Radiation in Cambridge Bay, Nunavut, Canada](Equipo4_Archivo3_reporteDatosMisteriosos.html)
+by Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.
+
+* [Dataset 4 - Surface air temperature in Cambridge Bay, Nunavut, Canada](Equipo6_Archivo4_reporteDatosMisteriosos.html)
+by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.

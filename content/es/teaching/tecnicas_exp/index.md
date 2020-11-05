@@ -33,8 +33,21 @@ slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
 
-### Recursos
-
+#### Recursos y tutoriales
 
 * Introducción a Python [notebook 01](intro01_python.html)
 * Introducción a Python [notebook 02](intro02_python.html)
+
+#### Reportes de la Actividad "Datos Misteriosos"
+
+* [Archivo 1 - Altura del nivel del mar en Huatulco, Oax.](Equipo3_Archivo1_reporteDatosMisteriosos.html)
+por Samantha Alanis, Luis Fernando López y Berenice Pizano.
+
+* [Archivo 2 - Ozono en dos estaciones de CDMX](Equipo9_Archivo2_reporteDatosMisteriosos.html)
+por Aura Campos, Lucía Martínez y Paola Sánchez.
+
+* [Archivo 3 - Radiación solar en Cambridge Bay, Nunavut, Canadá](Equipo4_Archivo3_reporteDatosMisteriosos.html)
+por Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.
+
+* [Archivo 4 - Temperatura en superficie en Cambridge Bay, Nunavut, Canadá](Equipo6_Archivo4_reporteDatosMisteriosos.html)
+por Alondra Blas, Kenya Díaz y Lucía Kirene Larson.
