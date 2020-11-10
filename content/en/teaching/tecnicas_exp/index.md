@@ -33,10 +33,9 @@ slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
 
-### Resources (In Spanish)
+#### Least squares - linear functions (In Spanish)
 
-* Introduction to Python [notebook 01](intro01_python.html)
-* Introduction to Python [notebook 02](intro02_python.html)
+* [Notebook](relaciones_lineales_solucion.html)
 
 #### Selected Notebooks from the activity "Mysterious Dataset" (In Spanish)
 
@@ -51,3 +50,8 @@ by Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.
 
 * [Dataset 4 - Surface air temperature in Cambridge Bay, Nunavut, Canada](Equipo6_Archivo4_reporteDatosMisteriosos.html)
 by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.
+
+### Resources (In Spanish)
+
+* Introduction to Python [notebook 01](intro01_python.html)
+* Introduction to Python [notebook 02](intro02_python.html)

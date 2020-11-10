@@ -32,11 +32,9 @@ external_link: ""
 slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
+#### Relaciones lineales y mínimos cuadrados
 
-#### Recursos y tutoriales
-
-* Introducción a Python [notebook 01](intro01_python.html)
-* Introducción a Python [notebook 02](intro02_python.html)
+* [Notebook con soluciones](relaciones_lineales_solucion.html)
 
 #### Reportes de la Actividad "Datos Misteriosos"
 
@@ -51,3 +49,8 @@ por Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.
 
 * [Archivo 4 - Temperatura en superficie en Cambridge Bay, Nunavut, Canadá](Equipo6_Archivo4_reporteDatosMisteriosos.html)
 por Alondra Blas, Kenya Díaz y Lucía Kirene Larson.
+
+#### Recursos y tutoriales
+
+* Introducción a Python [notebook 01](intro01_python.html)
+* Introducción a Python [notebook 02](intro02_python.html)
