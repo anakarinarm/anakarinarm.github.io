@@ -18,12 +18,10 @@
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
       <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
-&lt;h3 id=&#34;resources-in-spanish&#34;&gt;Resources (In Spanish)&lt;/h3&gt;
+&lt;h4 id=&#34;least-squares---linear-functions-in-spanish&#34;&gt;Least squares - linear functions (In Spanish)&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Introduction to Python 
-&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Introduction to Python 
-&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;relaciones_lineales_solucion.html&#34;&gt;Notebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;selected-notebooks-from-the-activity-mysterious-dataset-in-spanish&#34;&gt;Selected Notebooks from the activity &amp;ldquo;Mysterious Dataset&amp;rdquo; (In Spanish)&lt;/h4&gt;
 &lt;ul&gt;
@@ -47,6 +45,13 @@ by Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.&lt;/p&gt;
 &lt;a href=&#34;Equipo6_Archivo4_reporteDatosMisteriosos.html&#34;&gt;Dataset 4 - Surface air temperature in Cambridge Bay, Nunavut, Canada&lt;/a&gt;
 by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;resources-in-spanish&#34;&gt;Resources (In Spanish)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to Python 
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Introduction to Python 
+&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
