@@ -32,6 +32,9 @@ external_link: ""
 slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
+#### Relaciones potenciales
+* [notebook con soluciones](relaciones_potenciales_solucion.html)
+
 #### Relaciones lineales y mínimos cuadrados
 
 * [Notebook con soluciones](relaciones_lineales_solucion.html)

@@ -32,6 +32,9 @@ external_link: ""
 slides: example
 ---
 Semestre 2021-1 Facultad de Ciencias, UNAM
+#### Log-log plots (In Spanish)
+
+* [Notebook](relaciones_potenciales_solucion.html)
 
 #### Least squares - linear functions (In Spanish)
 
