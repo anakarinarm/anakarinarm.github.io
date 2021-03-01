@@ -3,6 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://anakarinarm.github.io/es/tag/cursos/</loc>
+    <lastmod>2021-03-01T10:16:39-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/</loc>
+    <lastmod>2021-03-01T10:16:39-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/tags/</loc>
+    <lastmod>2021-03-01T10:16:39-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/teaching/modnum/</loc>
+    <lastmod>2021-03-01T10:16:39-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/teaching/modnum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/teaching/modnum/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/teaching/</loc>
+    <lastmod>2021-03-01T10:16:39-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/teaching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/teaching/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/es/tag/canyons/</loc>
     <lastmod>2020-10-10T21:02:32-05:00</lastmod>
     <xhtml:link
@@ -15,11 +80,6 @@
                 hreflang="es"
                 href="https://anakarinarm.github.io/es/tag/canyons/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/es/tag/cursos/</loc>
-    <lastmod>2020-12-03T15:23:16-06:00</lastmod>
   </url>
   
   <url>
@@ -38,21 +98,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/es/</loc>
-    <lastmod>2020-12-03T15:23:16-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/es/"
-                />
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/es/project/</loc>
     <lastmod>2020-10-10T21:02:32-05:00</lastmod>
     <xhtml:link
@@ -64,36 +109,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://anakarinarm.github.io/es/project/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/es/tags/</loc>
-    <lastmod>2020-12-03T15:23:16-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/es/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/es/teaching/</loc>
-    <lastmod>2020-12-03T15:23:16-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/teaching/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/es/teaching/"
                 />
   </url>
   
