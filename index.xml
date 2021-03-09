@@ -102,10 +102,18 @@ by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
       <description>&lt;p&gt;Semestre 2021-2 Facultad de Ciencias, UNAM&lt;/p&gt;
 &lt;h3 id=&#34;resources-in-spanish&#34;&gt;Resources (In Spanish)&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Introduction to Python 
-&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Introduction to Python 
-&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction to Python 
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction to Python 
+&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example: Linearized momentum equation (shallow water eq.) 
+&lt;a href=&#34;03_ODEs.html&#34;&gt;notebook 03&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
