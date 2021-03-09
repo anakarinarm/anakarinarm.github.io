@@ -38,3 +38,6 @@ Semestre 2021-2 Facultad de Ciencias, UNAM
 
 * Introduction to Python [notebook 01](intro01_python.html)
 * Introduction to Python [notebook 02](intro02_python.html)
+
+* Example: Linearized momentum equation (shallow water eq.) [notebook 03](03_ODEs.html)
+

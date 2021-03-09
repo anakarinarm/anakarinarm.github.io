@@ -37,3 +37,6 @@ Semestre 2021-2 Facultad de Ciencias, UNAM
 
 * Introducción a Python [notebook 01](intro01_python.html)
 * Introducción a Python [notebook 02](intro02_python.html)
+
+#### Ejemplo solución numérica
+ * Solución a las ecuaciones linealizadas de aguas someras [notebook 03](03_ODEs.html)
