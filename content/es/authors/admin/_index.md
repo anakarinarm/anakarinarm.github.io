@@ -71,7 +71,8 @@ Soy oceanógrafa física y me interesa la interacción entre los flujos geofísi
 topografía en el intercambio de agua, nutrientes y gases disueltos entre el océano profundo 
 y la plataforma continental.
 
-Estudié el doctorado con la [Dra. Susan Allen](https://www.eoas.ubc.ca/~sallen/) en la [Universidad de British Columbia](https://www.eoas.ubc.ca),
-y antes de eso realicé mi tesis de licenciatura en el [Centro de Ciencias de la Atmósfera](https://www.cca.unam.mx) de la UNAM con 
-el [Dr. Jorge Zavala Hidalgo](http://grupo-ioa.atmosfera.unam.mx/index.php/inicio-jorge). 
+Soy parte del grupo [Interacción Océano-Atmósfera](http://grupo-ioa.atmosfera.unam.mx/index.php/) del [Centro de Ciencias de la Atmósfera](https://www.cca.unam.mx) de la UNAM.
+Anteriormente, estudié el doctorado con la [Dra. Susan Allen](https://www.eoas.ubc.ca/~sallen/) en la [Universidad de British Columbia](https://www.eoas.ubc.ca).
 
+**Estudiantes**: Si estás interesad@ en realizar tu tesis de licenciatura o servicio social pónte en contacto conmigo. Algunos proyectos disponibles: [Ondas de montaña](/static/files/ondas_de_montana_licenciatura.pdf), [diseño mesa giratoria](/static/files/poster_servicio_social.png) y [dinámica de cañones submarinos](https://anakarinarm.github.io/es/project/multiple-project/). 
+ 
