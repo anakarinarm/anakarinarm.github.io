@@ -5,7 +5,7 @@
     <link>https://anakarinarm.github.io/project/</link>
       <atom:link href="https://anakarinarm.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
@@ -13,10 +13,33 @@
     </image>
     
     <item>
+      <title>Mountain waves in the Valley of Mexico</title>
+      <link>https://anakarinarm.github.io/project/mountain-project/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/project/mountain-project/</guid>
+      <description>&lt;h4 id=&#34;accepting-students---send-me-an-email-if-you-are-interested&#34;&gt;Accepting students - send me an email if you are interested.&lt;/h4&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Interaction among multiple canyons</title>
       <link>https://anakarinarm.github.io/project/multiple-project/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://anakarinarm.github.io/project/multiple-project/</guid>
+      <description>&lt;p&gt;Submarine canyons are not isolated features; they occur one after the other along the continental shelves around the world. The influence that one canyon may have on the flow dynamics of an adjacent one is not clear. It might be tempting to assume that the first canyon or upstream canyon leads the dynamics, since water will go through it before passing to the downstream canyon. However, the role of the downstream canyon is not trivial as coastal-trapped waves are moving in the opposite direction to the shelf current in the case of upwelling canyons. This means that information is also being transmitted from the downstream canyon to the upstream one. This type of interaction has been observed in Barkley Canyon where shelf waves propagating northward can have a stronger effect on alongshore currents than the local wind. We are studying how submarine canyons interact dynamically using a physical model.&lt;/p&gt;
+&lt;h3 id=&#34;relevant-publications&#34;&gt;Relevant publications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD Thesis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interaction among multiple canyons</title>
+      <link>https://anakarinarm.github.io/project/svb-project/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/project/svb-project/</guid>
       <description>&lt;p&gt;Submarine canyons are not isolated features; they occur one after the other along the continental shelves around the world. The influence that one canyon may have on the flow dynamics of an adjacent one is not clear. It might be tempting to assume that the first canyon or upstream canyon leads the dynamics, since water will go through it before passing to the downstream canyon. However, the role of the downstream canyon is not trivial as coastal-trapped waves are moving in the opposite direction to the shelf current in the case of upwelling canyons. This means that information is also being transmitted from the downstream canyon to the upstream one. This type of interaction has been observed in Barkley Canyon where shelf waves propagating northward can have a stronger effect on alongshore currents than the local wind. We are studying how submarine canyons interact dynamically using a physical model.&lt;/p&gt;
 &lt;h3 id=&#34;relevant-publications&#34;&gt;Relevant publications&lt;/h3&gt;
 &lt;ul&gt;
