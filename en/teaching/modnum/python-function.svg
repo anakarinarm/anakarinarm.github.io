@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="130"
+   width="340"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="python-function.svg">
+  <metadata
+     id="metadata55">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1151"
+     inkscape:window-height="713"
+     id="namedview53"
+     showgrid="false"
+     inkscape:zoom="0.91176471"
+     inkscape:cx="143.67742"
+     inkscape:cy="65"
+     inkscape:window-x="59"
+     inkscape:window-y="10"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <marker
+       id="arrowhead"
+       orient="auto"
+       overflow="visible"
+       refX="0"
+       refY="0">
+      <path
+         d="m8.7 4-10.9-4 10.9-4c-1.7 2.4-1.7 5.6 0 8z"
+         fill-rule="evenodd"
+         stroke="#000"
+         stroke-linejoin="round"
+         stroke-width=".6"
+         transform="scale(-.6)"
+         id="path7" />
+    </marker>
+  </defs>
+  <text
+     font-size="16"
+     x="36.644676"
+     xml:space="preserve"
+     y="55.915749"
+     id="text9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.19624901px;line-height:125%;font-family:monospace;-inkscape-font-specification:'monospace, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+     transform="scale(0.98786518,1.0122839)"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4212"
+       x="36.644676"
+       y="55.915749"><tspan
+         style="fill:#079d08;fill-opacity:1"
+         id="tspan4240">def</tspan><tspan
+         style="fill:#070df4;fill-opacity:0.99071206"
+         id="tspan4218"> fahr_a_celsius</tspan><tspan
+         style="fill:#7e05c2;fill-opacity:1"
+         id="tspan4246">(temp):    </tspan></tspan><tspan
+       sodipodi:role="line"
+       id="tspan4214"
+       x="36.644676"
+       y="76.161057"
+       style="fill:#7e05c2;fill-opacity:1"><tspan
+   style="fill:#02a601;fill-opacity:1"
+   id="tspan4248">   return</tspan>((temp - 32) * (5/9))</tspan></text>
+  <g
+     fill="none"
+     marker-end="url(#arrowhead)"
+     pointer-events="none"
+     stroke="#000"
+     stroke-miterlimit="10"
+     id="g25">
+    <path
+       d="m66.1 14.7-14.7 21.7"
+       id="path27" />
+    <path
+       d="m153.8 14.7-14.7 21.7"
+       id="path29" />
+    <path
+       d="m 271.9,28.7 c -2.72081,9.412523 -9.27219,14.994479 -14.7,21.7"
+       id="path31"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       d="M 98.2,108.5 112.9,86.8"
+       id="path33"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     font-size="12"
+     id="g37"
+     transform="translate(3.2903226,-2.1935484)"
+     style="font-size:12px;font-family:sans-serif;text-anchor:middle">
+    <text
+       x="58.299999"
+       y="10.6"
+       id="text39">def statement</text>
+    <text
+       x="153.89999"
+       y="10.6"
+       id="text41">name</text>
+    <text
+       x="256.10001"
+       y="32.599998"
+       id="text43">nombre de los parámetros</text>
+    <text
+       x="14.9"
+       y="82.5"
+       id="text45">body</text>
+    <text
+       x="71.464516"
+       y="128"
+       id="text47" />
+    <text
+       x="227.60001"
+       y="128.39999"
+       id="text49" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4257"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'.Helvetica Neue DeskInterface';font-style:normal;font-weight:normal;font-size:16.25px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+         id="flowRegion4259"><rect
+           id="rect4261"
+           width="219.35484"
+           height="50.451614"
+           x="2.1935484"
+           y="146.45161" /></flowRegion><flowPara
+         id="flowPara4263" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="6.580647"
+       y="121.22581"
+       id="text4265"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4267"
+         x="6.580647"
+         y="121.22581"
+         style="-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';font-family:'.Helvetica Neue DeskInterface';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:15px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">Lo que regresa la función va dentro del return</tspan></text>
+  </g>
+  <path
+     d="m 42.9,61.9 -13.7,0 0,34.5 13.7,0"
+     id="path51"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4189"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:0.98461537;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(6.9032256,-14.903225)"><flowRegion
+       id="flowRegion4191"><rect
+         id="rect4193"
+         width="19.741936"
+         height="19.741936"
+         x="110.77419"
+         y="53.225807"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:0.98461537" /></flowRegion><flowPara
+       id="flowPara4195" /></flowRoot>  <rect
+     style="fill:#fbfbfc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="rect4205"
+     width="32.903225"
+     height="16.451612"
+     x="0.90322578"
+     y="70.774193" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4207"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="matrix(0,-1,1,0,-61.785801,98.346778)"><flowRegion
+       id="flowRegion4209"><rect
+         id="rect4211"
+         width="52.645161"
+         height="30.709682"
+         x="0"
+         y="71.870964" /></flowRegion><flowPara
+       id="flowPara4213"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">cuerpo</flowPara></flowRoot>  <rect
+     style="fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     id="rect4215"
+     width="95.419357"
+     height="16.451612"
+     x="13.16129"
+     y="0.58064514" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="38.387096"
+     y="14.838709"
+     id="text4227"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4229"
+       x="38.387096"
+       y="14.838709">definición</tspan></text>
+  <rect
+     style="fill:#ffffff;fill-rule:evenodd;stroke:#fefbfb;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     id="rect4231"
+     width="50.451614"
+     height="14.258064"
+     x="129.41936"
+     y="1.6774193" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4241"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(17.16129,2.9032258)"><flowRegion
+       id="flowRegion4243"><rect
+         id="rect4245"
+         width="159.03226"
+         height="23.032259"
+         x="115.16129"
+         y="-0.51612902" /></flowRegion><flowPara
+       id="flowPara4247">nombre de la función</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4249"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'.Helvetica Neue DeskInterface';font-style:normal;font-weight:normal;font-size:16.25px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+       id="flowRegion4251"><rect
+         id="rect4253"
+         width="19.741936"
+         height="26.32258"
+         x="300.51614"
+         y="1.6774193" /></flowRegion><flowPara
+       id="flowPara4255" /></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot4190"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:'.Helvetica Neue DeskInterface';font-style:normal;font-weight:normal;font-size:16.25px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr"><flowRegion
+       id="flowRegion4192"><rect
+         id="rect4194"
+         width="59.225807"
+         height="49.354839"
+         x="34"
+         y="57.612904" /></flowRegion><flowPara
+       id="flowPara4196"></flowPara></flowRoot>  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="286.25806"
+     y="64.19355"
+     id="text4204"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4206"
+       x="286.25806"
+       y="64.19355">        </tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="57.032257"
+     y="87.225807"
+     id="text4208"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4210"
+       x="57.032257"
+       y="87.225807">  </tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.25px;line-height:125%;font-family:'.Helvetica Neue DeskInterface';-inkscape-font-specification:'.Helvetica Neue DeskInterface, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="400.32257"
+     y="279.16129"
+     id="text4270"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4272"
+       x="400.32257"
+       y="279.16129">s</tspan></text>
+</svg>

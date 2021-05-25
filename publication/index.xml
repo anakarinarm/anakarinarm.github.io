@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Karina Ramos-Musalem</title>
+    <title>Publicaciones | Karina Ramos-Musalem</title>
     <link>https://anakarinarm.github.io/publication/</link>
       <atom:link href="https://anakarinarm.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright>
+    <description>Publicaciones</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2021</copyright>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
-      <title>Publications</title>
+      <title>Publicaciones</title>
       <link>https://anakarinarm.github.io/publication/</link>
     </image>
     

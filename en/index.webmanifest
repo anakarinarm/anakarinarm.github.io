@@ -1,0 +1,18 @@
+{
+  "name": "Karina Ramos-Musalem",
+  "short_name": "Karina Ramos-Musalem",
+  "lang": "en-us",
+  "theme_color": "#18a558",
+  "background_color": "#18a558",
+  "icons": [{
+    "src": "/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_192x192_fill_lanczos_center_2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/en/?utm_source=web_app_manifest"
+}

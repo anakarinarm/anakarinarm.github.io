@@ -5,7 +5,7 @@
     <link>https://anakarinarm.github.io/</link>
       <atom:link href="https://anakarinarm.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Karina Ramos-Musalem</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2021</copyright><lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Karina Ramos-Musalem</title>
@@ -13,83 +13,67 @@
     </image>
     
     <item>
-      <title>Mountain waves in the Valley of Mexico</title>
+      <title>Ondas de Montaña en el Valle de México</title>
       <link>https://anakarinarm.github.io/project/mountain-project/</link>
       <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
       <guid>https://anakarinarm.github.io/project/mountain-project/</guid>
-      <description></description>
+      <description>&lt;p&gt;La ondas de gravedad generadas por el flujo de aire sobre una montaña se conocen como ondas de montaña. La estructura de estas ondas está determinada por la geometría de la montaña y la estructura vertical de la atmósfera incluyendo los perfiles verticales de velocidad del viento, temperatura y humedad. El proyecto Ondas deMontaña en el Valle de México y su Efecto en la Dilución de Contaminantes propone caracterizarlas ondas de montaña generadas en el Valle de México y su contribución a la mezcla usando modelos numéricos y de laboratorio.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Experimental Techniques, Facultad de Ciencias, UNAM.</title>
-      <link>https://anakarinarm.github.io/teaching/tecnicas_exp/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
-      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
-&lt;h4 id=&#34;log-log-plots-in-spanish&#34;&gt;Log-log plots (In Spanish)&lt;/h4&gt;
+      <title>Taller de Modelación Numérica</title>
+      <link>https://anakarinarm.github.io/teaching/modnum/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/teaching/modnum/</guid>
+      <description>&lt;p&gt;Semestre 2021-2 Facultad de Ciencias, UNAM&lt;/p&gt;
+&lt;h4 id=&#34;recursos-y-tutoriales&#34;&gt;Recursos y tutoriales&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;relaciones_potenciales_solucion.html&#34;&gt;Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;least-squares---linear-functions-in-spanish&#34;&gt;Least squares - linear functions (In Spanish)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;relaciones_lineales_solucion.html&#34;&gt;Notebook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;selected-notebooks-from-the-activity-mysterious-dataset-in-spanish&#34;&gt;Selected Notebooks from the activity &amp;ldquo;Mysterious Dataset&amp;rdquo; (In Spanish)&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;Equipo3_Archivo1_reporteDatosMisteriosos.html&#34;&gt;Dataset 1 - SSH in Huatulco, Oaxaca&lt;/a&gt;
-by Samantha Alanis, Luis Fernando López y Berenice Pizano.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;Equipo9_Archivo2_reporteDatosMisteriosos.html&#34;&gt;Dataset 2 - Ozone measurements at two stations in Mexico City&lt;/a&gt;
-by Aura Campos, Lucía Martínez y Paola Sánchez.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;Equipo4_Archivo3_reporteDatosMisteriosos.html&#34;&gt;Dataset 3 - Solar Radiation in Cambridge Bay, Nunavut, Canada&lt;/a&gt;
-by Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;
-&lt;a href=&#34;Equipo6_Archivo4_reporteDatosMisteriosos.html&#34;&gt;Dataset 4 - Surface air temperature in Cambridge Bay, Nunavut, Canada&lt;/a&gt;
-by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;resources-in-spanish&#34;&gt;Resources (In Spanish)&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Introduction to Python 
+&lt;li&gt;Introducción a Python 
 &lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Introduction to Python 
+&lt;li&gt;Introducción a Python 
 &lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ejemplo-solución-numérica&#34;&gt;Ejemplo solución numérica&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Solución a las ecuaciones linealizadas de aguas someras 
+&lt;a href=&#34;03_ODEs.html&#34;&gt;notebook 03&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>Interaction among multiple canyons</title>
+      <title>Interacción dinámica entre cañones submarinos</title>
       <link>https://anakarinarm.github.io/project/multiple-project/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://anakarinarm.github.io/project/multiple-project/</guid>
-      <description>&lt;p&gt;Submarine canyons are not isolated features; they occur one after the other along the continental shelves around the world. The influence that one canyon may have on the flow dynamics of an adjacent one is not clear. It might be tempting to assume that the first canyon or upstream canyon leads the dynamics, since water will go through it before passing to the downstream canyon. However, the role of the downstream canyon is not trivial as coastal-trapped waves are moving in the opposite direction to the shelf current in the case of upwelling canyons. This means that information is also being transmitted from the downstream canyon to the upstream one. This type of interaction has been observed in Barkley Canyon where shelf waves propagating northward can have a stronger effect on alongshore currents than the local wind. We are studying how submarine canyons interact dynamically using a physical model.&lt;/p&gt;
-&lt;h3 id=&#34;relevant-publications&#34;&gt;Relevant publications&lt;/h3&gt;
+      <description>&lt;p&gt;Los cañones submarinos no son accidentes topográficos aislados. Uno tras otro cortan la plataforma continental. Hasta ahora no sabemos cuál
+es la influencia dinámica de un cañón sobre otro bajo condiciones de surgencia. A primera vista pensariamos que el cañón corriente arriba dominará la dinámica, pues el
+agua pasará sobre/a través de él antes que por el cañón corriente abajo, pero el papel del segundo cañón no es trivial. Las ondas atrapadas
+a la costa se mueven en dirección opuesta a la corriente, por lo que interactuan primero con el segundo cañón. Esto significa que la &amp;ldquo;información&amp;rdquo;
+se transmite en dirección contraria a la corriente. Este tipo de interacción se ha observado en el Cañón Barkley, en la isla de Vancouver, en donde las ondas que se
+propagan hacia el norte pueden tener un efecto más importante que el viento local. En este proyecto estamos investigando como dos cañones submarinos interactúan dinámicamente usando un modelo de laboratorio y uno numérico.&lt;/p&gt;
+&lt;h3 id=&#34;publicaciones-relevantes&#34;&gt;Publicaciones relevantes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PhD Thesis&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tesis doctoral&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
-      <title>Transport through a submarine canyon</title>
+      <title>Transporte a través de cañones submarinos</title>
       <link>https://anakarinarm.github.io/project/tracer-project/</link>
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       <guid>https://anakarinarm.github.io/project/tracer-project/</guid>
-      <description>&lt;p&gt;Submarine canyons incise continental shelves all over the world. They are hot spots of biodiversity mainly because they act as conduits for biologically relevant tracers (such as nitrate, phosphate, etc.) by enhancing upwelling. I am studying the impact that submarine canyons have on the amount of tracers that is exchanged between the shelf and the deep ocean, and the spatial and temporal distribution of the upwelled tracer on the shelf. I use an idealized canyon bathymetry and the MIT general circulation model (MITgcm) to develop a scaling scheme for tracer transport onto the shelf given the incomming flow, geometric and geographic parameters of the canyon, tracer profile, and vertical diffusivity and viscosity within the canyon.&lt;/p&gt;
-&lt;h3 id=&#34;relevant-publications&#34;&gt;Relevant publications&lt;/h3&gt;
+      <description>&lt;p&gt;Los cañones submarinos son zonas de alta productividad y diversidad biológica debido, principalmente, a que favorecen el transporte de
+trazadores de relevancia biológica (como nitrato, fosfato, etc.). En este proyecto estudiamos el impacto
+que tiene la dinámica generada por un cañón submarino en el intercambio de trazadores entre la plataforma y el océano profundo, así como la distribución
+espacial y temporal de trazadores que genera en la plataforma. Para ello utilizamos una configuración idealizada del modelo
+
+&lt;a href=&#34;https://www.mitgcm.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MITgcm&lt;/a&gt; para desarrollar un esquema de escalamiento que nos permita estimar el transporte de trazadores hacia la plataforma
+como función del flujo, los parámetros geométricos y geográficos del cañón, el perfil vertical del trazador y la difusividad dentro del cañón.&lt;/p&gt;
+&lt;h3 id=&#34;publicaciones-relevantes&#34;&gt;Publicaciones relevantes&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Ramos‐Musalem, K., &amp;amp; Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785.&lt;/p&gt;
@@ -103,25 +87,50 @@ by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Numerical Modelling, Facultad de Ciencias, UNAM.</title>
-      <link>https://anakarinarm.github.io/teaching/modnum/</link>
-      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://anakarinarm.github.io/teaching/modnum/</guid>
-      <description>&lt;p&gt;Semestre 2021-2 Facultad de Ciencias, UNAM&lt;/p&gt;
-&lt;h3 id=&#34;resources-in-spanish&#34;&gt;Resources (In Spanish)&lt;/h3&gt;
+      <title>Técnicas Experimentales</title>
+      <link>https://anakarinarm.github.io/teaching/tecnicas_exp/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/teaching/tecnicas_exp/</guid>
+      <description>&lt;p&gt;Semestre 2021-1 Facultad de Ciencias, UNAM&lt;/p&gt;
+&lt;h4 id=&#34;relaciones-potenciales&#34;&gt;Relaciones potenciales&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Introduction to Python 
-&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;relaciones_potenciales_solucion.html&#34;&gt;notebook con soluciones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;relaciones-lineales-y-mínimos-cuadrados&#34;&gt;Relaciones lineales y mínimos cuadrados&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;relaciones_lineales_solucion.html&#34;&gt;Notebook con soluciones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;reportes-de-la-actividad-datos-misteriosos&#34;&gt;Reportes de la Actividad &amp;ldquo;Datos Misteriosos&amp;rdquo;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;Equipo3_Archivo1_reporteDatosMisteriosos.html&#34;&gt;Archivo 1 - Altura del nivel del mar en Huatulco, Oax.&lt;/a&gt;
+por Samantha Alanis, Luis Fernando López y Berenice Pizano.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Introduction to Python 
-&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;Equipo9_Archivo2_reporteDatosMisteriosos.html&#34;&gt;Archivo 2 - Ozono en dos estaciones de CDMX&lt;/a&gt;
+por Aura Campos, Lucía Martínez y Paola Sánchez.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Example: Linearized momentum equation (shallow water eq.) 
-&lt;a href=&#34;03_ODEs.html&#34;&gt;notebook 03&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;Equipo4_Archivo3_reporteDatosMisteriosos.html&#34;&gt;Archivo 3 - Radiación solar en Cambridge Bay, Nunavut, Canadá&lt;/a&gt;
+por Alicia Hernández, Ana Paula Martínez y Montserrat Ruiz.&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;Equipo6_Archivo4_reporteDatosMisteriosos.html&#34;&gt;Archivo 4 - Temperatura en superficie en Cambridge Bay, Nunavut, Canadá&lt;/a&gt;
+por Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;recursos-y-tutoriales&#34;&gt;Recursos y tutoriales&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Introducción a Python 
+&lt;a href=&#34;intro01_python.html&#34;&gt;notebook 01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Introducción a Python 
+&lt;a href=&#34;intro02_python.html&#34;&gt;notebook 02&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
