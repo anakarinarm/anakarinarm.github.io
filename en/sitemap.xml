@@ -5,11 +5,21 @@
   <url>
     <loc>https://anakarinarm.github.io/tag/atmosphere/</loc>
     <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/tag/atmosphere/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/tag/atmosphere/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/</loc>
-    <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <lastmod>2021-05-24T18:53:04-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -25,6 +35,16 @@
   <url>
     <loc>https://anakarinarm.github.io/project/mountain-project/</loc>
     <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/project/mountain-project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/project/mountain-project/"
+                />
   </url>
   
   <url>
@@ -103,11 +123,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/project/svb-project/</loc>
-    <lastmod>2020-05-30T22:11:50-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/tag/teaching/</loc>
     <lastmod>2021-03-09T17:19:37-06:00</lastmod>
   </url>
@@ -159,7 +174,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/authors/</loc>
-    <lastmod>2020-10-30T22:25:48-06:00</lastmod>
+    <lastmod>2021-05-24T18:53:04-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -188,7 +203,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/author/karina-ramos-musalem/</loc>
-    <lastmod>2020-10-30T22:25:48-06:00</lastmod>
+    <lastmod>2021-05-24T18:53:04-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"

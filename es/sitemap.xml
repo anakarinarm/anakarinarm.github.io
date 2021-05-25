@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://anakarinarm.github.io/es/tag/cursos/</loc>
-    <lastmod>2021-03-09T17:17:21-06:00</lastmod>
+    <loc>https://anakarinarm.github.io/es/tag/atmosphere/</loc>
+    <lastmod>2021-05-24T19:00:29-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/tag/atmosphere/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/tag/atmosphere/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/es/</loc>
-    <lastmod>2021-05-24T18:42:00-05:00</lastmod>
+    <lastmod>2021-05-24T19:06:49-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -23,8 +33,38 @@
   </url>
   
   <url>
+    <loc>https://anakarinarm.github.io/es/project/mountain-project/</loc>
+    <lastmod>2021-05-24T19:00:29-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/project/mountain-project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/project/mountain-project/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/project/</loc>
+    <lastmod>2021-05-24T19:00:29-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/project/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/project/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/es/tags/</loc>
-    <lastmod>2021-03-09T17:17:21-06:00</lastmod>
+    <lastmod>2021-05-24T19:00:29-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -35,6 +75,11 @@
                 hreflang="es"
                 href="https://anakarinarm.github.io/es/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/es/tag/cursos/</loc>
+    <lastmod>2021-03-09T17:17:21-06:00</lastmod>
   </url>
   
   <url>
@@ -98,21 +143,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/es/project/</loc>
-    <lastmod>2020-10-10T21:02:32-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/project/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/es/project/"
-                />
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/es/project/tracer-project/</loc>
     <lastmod>2020-10-10T21:02:32-05:00</lastmod>
     <xhtml:link
@@ -144,7 +174,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/es/authors/</loc>
-    <lastmod>2021-05-24T18:42:00-05:00</lastmod>
+    <lastmod>2021-05-24T19:06:49-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -173,7 +203,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/es/author/karina-ramos-musalem/</loc>
-    <lastmod>2021-05-24T18:42:00-05:00</lastmod>
+    <lastmod>2021-05-24T19:06:49-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

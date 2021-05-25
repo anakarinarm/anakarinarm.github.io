@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atmosphere | Karina Ramos-Musalem</title>
+    <link>https://anakarinarm.github.io/es/tag/atmosphere/</link>
+      <atom:link href="https://anakarinarm.github.io/es/tag/atmosphere/index.xml" rel="self" type="application/rss+xml" />
+    <description>Atmosphere</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2021</copyright><lastBuildDate>Mon, 24 May 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
+      <title>Atmosphere</title>
+      <link>https://anakarinarm.github.io/es/tag/atmosphere/</link>
+    </image>
+    
+    <item>
+      <title>Mountain waves in the Valley of Mexico</title>
+      <link>https://anakarinarm.github.io/es/project/mountain-project/</link>
+      <pubDate>Mon, 24 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/es/project/mountain-project/</guid>
+      <description>&lt;p&gt;La ondas de gravedad generadas por el flujo de aire sobre una montaña se conocen como ondas de montaña. La estructura de estas ondas está determinada por la geometría de la montaña y la estructura vertical de la atmósfera incluyendo los perfiles verticales de velocidad del viento, temperatura y humedad. El proyecto Ondas deMontaña en el Valle de México y su Efecto en la Dilución de Contaminantes propone caracterizarlas ondas de montaña generadas en el Valle de México y su contribución a la mezcla usando modelos numéricos y de laboratorio.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
