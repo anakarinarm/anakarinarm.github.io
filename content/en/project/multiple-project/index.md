@@ -2,7 +2,7 @@
 title: Interaction among multiple canyons
 summary: What is the impact of multiple canyons in the dynamics of canyon-induced upwelling?
 tags:
-- Canyons
+- Ocean
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?

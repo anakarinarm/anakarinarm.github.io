@@ -74,5 +74,5 @@ y la plataforma continental.
 Soy parte del grupo [Interacción Océano-Atmósfera](http://grupo-ioa.atmosfera.unam.mx/index.php/) del [Centro de Ciencias de la Atmósfera](https://www.cca.unam.mx) de la UNAM.
 Anteriormente, estudié el doctorado con la [Dra. Susan Allen](https://www.eoas.ubc.ca/~sallen/) en la [Universidad de British Columbia](https://www.eoas.ubc.ca).
 
-**Estudiantes**: Si estás interesad@ en realizar tu tesis de licenciatura o servicio social pónte en contacto conmigo. Algunos proyectos disponibles: [Ondas de montaña](ondas_de_montana_licenciatura.pdf), [diseño mesa giratoria](poster_servicio_social.png) y [dinámica de cañones submarinos](https://anakarinarm.github.io/es/project/multiple-project/). 
+**Estudiantes**: Si estás interesad@ en realizar tu tesis de licenciatura o servicio social pónte en contacto conmigo. Algunos proyectos disponibles: [Ondas de montaña](https://drive.google.com/file/d/1P9RLra_OfqQkPgmnk4r_EfFyKAtgwc5j/view?usp=sharing), [diseño mesa giratoria](https://drive.google.com/file/d/1hPIq9PgR9JSdD3q1ezGXOA3DkMc3rv8F/view?usp=sharing) y [dinámica de cañones submarinos](https://anakarinarm.github.io/es/project/multiple-project/). 
  

@@ -2,7 +2,7 @@
 title: Transporte a través de cañones submarinos
 summary: ¿Cuál es el impacto de los cañones submarinos en el intercambio de agua y nutrientes entre la plataforma y el océano profundo?
 tags:
-- Canyons
+- Ocean
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?
@@ -40,7 +40,6 @@ que tiene la dinámica generada por un cañón submarino en el intercambio de tr
 
 
 ### Publicaciones relevantes
-
 
 * Ramos‐Musalem, K., & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785.
 

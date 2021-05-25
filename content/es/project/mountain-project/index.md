@@ -1,5 +1,5 @@
 ---
-title: Mountain waves in the Valley of Mexico
+title: Ondas de Montaña en el Valle de México
 summary: ¿En qué puntos topográficos alrededor del Valle de México se pueden generar ondas de montaña? ¿Cómo influye el rompimiento de estas ondas en la calidad del aire en el Valle de México? 
 tags:
 - Atmosphere

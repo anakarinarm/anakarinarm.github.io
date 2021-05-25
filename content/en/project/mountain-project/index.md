@@ -31,7 +31,3 @@ image:
 #   Otherwise, set `slides = ""`.
 slides: example
 ---
-
-
-#### Accepting students - send me an email if you are interested.
-

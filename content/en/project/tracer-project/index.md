@@ -2,7 +2,7 @@
 title: Transport through a submarine canyon
 summary: How do upwelling events impact the cross-shelf exchange of tracers through a submarine canyon?
 tags:
-- Canyons
+- Ocean
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?

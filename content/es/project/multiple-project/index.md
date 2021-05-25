@@ -2,7 +2,7 @@
 title: Interacción dinámica entre cañones submarinos 
 summary: ¿Qué impacto tienen múltiples cañones submarinos en la surgencia inducida por la topografía? 
 tags:
-- Canyons
+- Ocean
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?
