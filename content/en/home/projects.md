@@ -26,8 +26,8 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Canyons"
-     tag = "Canyons"
+     name = "Ocean"
+     tag = "Ocean"
   
    [[content.filter_button]]
      name = "Atmosphere"

@@ -26,12 +26,12 @@ subtitle = ""
      tag = "*"
   
    [[content.filter_button]]
-     name = "Canyons"
-     tag = "Canyons"
+     name = "Océano"
+     tag = "Océano"
   
    [[content.filter_button]]
-     name = "Atmosphere"
-     tag = "Atmosphere"
+     name = "Atmósfera"
+     tag = "Atmósfera"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

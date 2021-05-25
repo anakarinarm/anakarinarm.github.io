@@ -2,7 +2,7 @@
 title: Transporte a través de cañones submarinos
 summary: ¿Cuál es el impacto de los cañones submarinos en el intercambio de agua y nutrientes entre la plataforma y el océano profundo?
 tags:
-- Ocean
+- Océano
 date: "2020-05-28T00:00:00Z"
 
 profile: false  # Show author profile?
