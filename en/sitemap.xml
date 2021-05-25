@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/tag/atmosphere/</loc>
-    <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <lastmod>2021-05-24T19:15:10-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/</loc>
-    <lastmod>2021-05-24T18:53:04-05:00</lastmod>
+    <lastmod>2021-05-24T19:18:42-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/project/mountain-project/</loc>
-    <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <lastmod>2021-05-24T19:15:10-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -49,7 +49,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/project/</loc>
-    <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <lastmod>2021-05-24T19:18:42-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -64,7 +64,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/tags/</loc>
-    <lastmod>2021-05-24T18:05:59-05:00</lastmod>
+    <lastmod>2021-05-24T19:18:42-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -74,21 +74,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anakarinarm.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/tag/canyons/</loc>
-    <lastmod>2020-05-30T22:12:26-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/es/tag/canyons/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/tag/canyons/"
                 />
   </url>
   
@@ -109,7 +94,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/project/multiple-project/</loc>
-    <lastmod>2020-05-30T22:11:50-05:00</lastmod>
+    <lastmod>2021-05-24T19:18:28-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -119,6 +104,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anakarinarm.github.io/project/multiple-project/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/tag/ocean/</loc>
+    <lastmod>2021-05-24T19:18:42-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/es/tag/ocean/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/tag/ocean/"
                 />
   </url>
   
@@ -144,7 +144,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/project/tracer-project/</loc>
-    <lastmod>2020-05-30T22:12:26-05:00</lastmod>
+    <lastmod>2021-05-24T19:18:42-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
