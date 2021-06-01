@@ -67,7 +67,6 @@ subtitle = ""
  css_class = ""
 +++
 
-* **Ramos‐Musalem, K.**, & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. *J. Geophys. Res.: Oceans*, 125(3), e2019JC015785.
-* **Ramos-Musalem, K.**, & Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. *J. Phys. Oceanogr.*, 49(2), 561-584.
-* Arane, T., **Musalem, A. K. R.**, & Fridman, M. (2009). Coupling between two singing wineglasses. *Am. J. Phys.*, 77(11), 1066-1067.
-
+* **Ramos‐Musalem, K.**, & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. *J. Geophys. Res.: Oceans*, 125(3), e2019JC015785. https://doi.org/10.1029/2019JC015785
+* **Ramos-Musalem, K.**, & Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. *J. Phys. Oceanogr.*, 49(2), 561-584. https://doi.org/10.1175/JPO-D-18-0174.1
+* Arane, T., **Musalem, A. K. R.**, & Fridman, M. (2009). Coupling between two singing wineglasses. *Am. J. Phys.*, 77(11), 1066-1067. https://doi.org/10.1119/1.3119175
