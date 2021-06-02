@@ -41,6 +41,8 @@ que tiene la dinámica generada por un cañón submarino en el intercambio de tr
 
 ### Publicaciones relevantes
 
-* Ramos‐Musalem, K., & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785.
+* Saldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48, e2021GL093548. https://doi.org/10.1029/2021GL093548
 
-* Ramos-Musalem, K., & Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. Journal of Physical Oceanography, 49(2), 561-584.[10.1175/JPO-D-18-0174.1](https://doi.org/10.1175/JPO-D-18-0174.1)
+* Ramos‐Musalem, K., & Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. https://doi.org/10.1029/2019JC015785
+
+* Ramos-Musalem, K., & Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. Journal of Physical Oceanography, 49(2), 561-584. https://doi.org/10.1175/JPO-D-18-0174.1
