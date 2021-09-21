@@ -5,12 +5,20 @@
     <link>https://anakarinarm.github.io/en/tag/teaching/</link>
       <atom:link href="https://anakarinarm.github.io/en/tag/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teaching</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Teaching</title>
       <link>https://anakarinarm.github.io/en/tag/teaching/</link>
     </image>
+    
+    <item>
+      <title>Introduction to Geophysical Fluid Dynamics</title>
+      <link>https://anakarinarm.github.io/en/teaching/dfg/</link>
+      <pubDate>Mon, 20 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/en/teaching/dfg/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Experimental Techniques, Facultad de Ciencias, UNAM.</title>
