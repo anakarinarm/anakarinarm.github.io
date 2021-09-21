@@ -1,8 +1,8 @@
 ---
-title: Dinámica de Fluidos Geofísicos
-summary: Semestre 2022-1, Facultad de Ciencias, UNAM
+title: Introduction to Geophysical Fluid Dynamics
+summary: 2022-1 (In Spanish)
 tags:
-- Cursos
+- Teaching
 date: "2021-09-20T00:00:00Z"
 
 profile: false  # Show author profile?
@@ -29,12 +29,4 @@ external_link: ""
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
 ---
-Semestre 2022-1 Facultad de Ciencias, UNAM
-
-Los videos, tareas y notas de clase se ecuentran en la página del curso en Classroom.
-
-#### Diapositivas de clase
-
-20 de septiembre: [Introducción al curso](Slides/01_20sep21.html) 
