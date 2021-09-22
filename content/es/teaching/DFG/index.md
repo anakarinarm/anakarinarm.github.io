@@ -38,3 +38,4 @@ Los videos, tareas y notas de clase se ecuentran en la página del curso en Clas
 #### Diapositivas de clase
 
 20 de septiembre: [Introducción al curso](Slides/01_20sep21.html) 
+22 de septimebre: [Importancia de la rotación y estratificación](Slides/02_22sep21.html)
