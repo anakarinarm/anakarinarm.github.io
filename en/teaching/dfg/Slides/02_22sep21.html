@@ -140,18 +140,156 @@ class: left
 layout: true  .toc[[&#10023;](#toc)]
        
 ---
+class: left
+De la clase pasada:
+
+# Características de los fluidos geofísicos (FG)
+</br></br>
+* Se encuentran en un sistema de referencia en **rotación**;
+</br></br>
+* por lo regular están **estratificados**;
+</br></br>
+* En la naturaleza ocurren a "gran escala".
+
+---
 name: rotacion  
 class: left
+
+## Ejemplo: Efectos de la rotación
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KiBrKzykwO8?start=116" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.caption[Taylor Columns: DIYnamics Kits Experiments]
+
+---
+class: left
+
+## Columnas de Taylor
+
+Si el flujo no estuviera en un sistema de referencia que rota, esperaríamos que la tinta pasara tanto sobre el obstáculo como alrededor del obstáculo. La rotación genera estructuras verticales en el flujo o "columnas" que siguen líneas de misma profundidad (isóbatas), por lo que la columna de fluido con tinta es forzada a rodear el obstáculo para no cambiar de profundidad (Veremos más al respecto en la Unidad 4).
+
+---
+class: left
+## La importancia de la rotación
+
+Vamos a las notas...
+
+---
+class: left
+## Ejemplo
+
+Tomemos 3 minutos para resolver el siguiente ejemplo individualmente:
+
+**Un viento que sopla a 10 ms$^{-1}$ en un sistema de baja presión de 1000 km de ancho.**
+
+--
+
+
+$$
+\epsilon=\frac{2\pi U}{\Omega L}=\frac{2\pi \; 10^1 \; \textrm{ms}^{-1}}{10^{-4}\; \textrm{s}^{-1} \; 10^6 \; \textrm{m}}
+\approx 1,
+$$
+
+por lo tanto, la rotación debe ser considerada en la dinámica del problema.
 
 ---
 name: estratificación
 class: left
 
+##Ejemplo: Efectos de la estratificación
+
+Demo: Frecuencia de Brunt-Väisälä
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_DqOyvWwqWI?start=116" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+.caption[Video de Fabrizio Croccolo]
+
+---
+## La frecuencia de estratificación o de Brunt-Väisäla
+
+Vamos a las notas...
+
+---
+## Importancia de la estratificación
+
+Formación de capas bajo gravedad --> Configuración que minimiza energía potencial del sistema
+
+Efecto dinámico de la estratificación: Transformación de energía potencial a cinética y viceversa.
+
+Cambio en energía potencial por unidad de volumen de parcela de fluido que elevo una altura H: $\Delta \rho g H$.
+
+Energía cinética disponible por unidad de volumen: $\frac{1}{2}\rho_0U^2$
+
+Definimos el cociente de las energías:
+
+$$\sigma=\frac{1}{2}\frac{\rho_0U^2}{\Delta\rho g H}.$$
+
+---
+## Importancia de la estratificación
+
+Definimos el cociente de las energías:
+
+$$\sigma=\frac{1}{2}\frac{\rho_0U^2}{\Delta\rho g H}.$$
+
+Si $\sigma\approx1$: Un incremento típico en energía potencial que modifique el flujo consume un pedazo considerable de la energía cinetica disponible --> La estratificación es importante.
+
+--
+
+Si $\sigma<<1$: no hay suficiente energía cinética disponible para perturbar la estratificación y ésta limita el flujo --> la estratificación no se puede ignorar.
+
+--
+
+Si $\sigma>>1$: modificaciones de energía potencial ocurren a muy bajo costo de energía cinética (es muy fácil mover una parcela de lugar) y la estratificación casi no afecta al flujo --> se puede ignorar. 
 
 ---
 name: escalas
 class: left
 
+## ¿Qué pasa cuando la rotación y la estratificación son importantes?
+
+Esto ocurre cuando $\epsilon \sim 1$ y $\sigma \sim 1$ simultáneamente y obtenemos las siguientes relaciones entre escalas:
+
+$$L \sim  \frac{U}{\Omega} \; \; \mathrm{ y } \; \; U\sim\sqrt{\frac{\Delta\rho}{\rho_0}gH}.$$
+
+Combinándolas obtenemos una escala de longitud fundamental:
+
+$$L\sim\frac{1}{\Omega}\sqrt{\frac{\Delta\rho}{\rho_0}gH}.$$
+
+Para un fluido dado de densidad promedio $\rho_0$ y variaciones de densidad $\Delta\rho$, que ocupa una altura $H$ en un planeta que rota a velocidad $\Omega$ y tiene gravedad $g$, $L$ es la escala de longitud preferencial a la que ocurrirá el movimiento.
+
+---
+class:left 
+
+$$L\sim\frac{1}{\Omega}\sqrt{\frac{\Delta\rho}{\rho_0}gH}.$$
+
+En la Tierra ($\Omega=7.29\times10^{-5}$ s$^{-1}$, $g=9.81$ ms$^{-2}$), con condiciones típicas para la
+atmósfera ($\rho_0=1.2$ kg/m$^3$, $\Delta\rho=0.03$ kg/m$^{3}$, $H=5000$ m) y el océano ($\rho_0=1028$ kg/m$^3$, $\Delta\rho=2$ kg/m$^{3}$, $H=1000$ m) nos dan las siguientes escalas naturales de longutud y velocidad:
+
+$$L\_{atmósfera}\sim 500~\mathrm{km, } \; U\_{atmósfera}\sim 30~\mathrm{ms}^{-1}$$
+$$L\_{océano}\sim 60~\mathrm{km, } \; U\_{océano}\sim 4~\mathrm{ms}^{-1}.$$
+
+Aunque sean estimaciones *grosso modo*, podemos reconocer la longitud y velocidad típicas de patrones meteorológicos en la atmósfera baja y el ancho y rapidez típicas de las corrientes superficiles más prominentes.
+
+---
+class: left
+
+## Algunas diferencias entre atmósfera y océano
+
+* Océano evoluciona más lentamente, a menor escala y menores velocidades que la atmósfera.
+
+* Continentes e islas (fronteras laterales) generan fenómenos oceánicos que no tienen contraparte  atmosférica, mientras que la atmósfera puede depender fuertemente de la humedad, lo cuál no tiene contraparte oceánica.
+
+* Mecanismos dinámicos muy distintos: Atmósfera fuertemente dominada por termodinámica (radiación solar, principalmente); océano forzado por mareas, vientos, gradientes de calor, evaporación y precipitación.
+
+* Meteorología: los vientos vienen de x dirección; Oceanografía: las corrientes van hacia x dirección.
+
+---
+## Actividades:
+
+No olviden leer los primeros 3 capítulos de "La increíble historia de la malentendida fuerza de Coriolis" de P. Ripa, FCE.
+
+## Referencias:
+
+Cushman-Roisin y Beckers - Capítulos 1 y 11. 
 ---
 
     </textarea>
