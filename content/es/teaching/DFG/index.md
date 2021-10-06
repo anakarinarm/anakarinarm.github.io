@@ -40,4 +40,6 @@ Los videos, tareas y notas de clase se ecuentran en la página del curso en Clas
 * 20 de septiembre: [Introducción al curso](Slides/01_20sep21.html) 
 * 22 de septimebre: [Importancia de la rotación y estratificación](Slides/02_22sep21.html)
 * 29 de septimebre: [Repaso dinámica de fluidos](Slides/04_29sep21.html)
+* 04 de octubre: [Aceleración de Coriolis parte 1](Slides/05_04oct21.html)
+* 06 de octubre: [Aceleración de Coriolis parte 2](Slides/06_06oct21.html)
 
