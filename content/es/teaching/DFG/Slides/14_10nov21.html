@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinámica de Fluidos Geofísicos </title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[Dinámica de Fluidos Geofísicos]     
+.subtitle[Clases 14,... - Fricción y capas de Ekman]
+<br/><br/>          
+.author[Semestre 2022-I]  
+.institution[Facultad de Ciencias]      
+<br/>
+.date[10 de noviembre de 2021] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:40%"  src="./figures/ink.jpg">
+
+#Contenido        
+
+1. [Repaso](#repaso)
+1. [Turbulencia por cizalla y viscosidad efectiva](#eddyviscosity)
+1. [Fricción y rotación](#ekmannum)
+1. [Capa de Ekman de fondo](#fondo)
+1. [Generalización a terreno irregular y velocidades no uniformes](#generalizacion)
+1. [Capa de Ekman de superficie](#superficie)
+1. [Capa de Ekman en FG reales](#FGreales) 
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+       
+---
+name: repaso
+class: left
+
+## La clase pasada
+
+analizamos el experimento de las hojas de té y lo conectamos con sistemas atmosféricos de alta y baja presión:
+
+<img style="width:40%"  src="./figures/vista_lateral_hojas_de_te_anot.jpg">
+<img style="width:50%"  src="./figures/vista_arriba_hojas_de_te_anot.jpg">
+
+
+---
+name: eddyviscosity
+class: left
+
+## Turbulencia por cizalla o esfuerzos cortantes
+
+La fricción reduce la velocidad a cero en la vecindad de una frontera sólida --> genera cizalla vertical $\partial u / \partial z$ (cambio vertical en la velocidad horizontal).
+
+<img style="width:100%"  src="./figures/cizalla.png">
+
+---
+class: left
+
+Determinar el perfil $u(z)$ no es fácil (flujos geofísicos son turbulentos). Lo que sabemos viene principalmente de experimentos de laboratorio:
+
+$$u(z)=\mathcal{F}\left(\frac{\tau\_{f}}{\rho}, \nu, z\right)=\mathcal{F}(U,\nu,z)$$
+
+donde $\tau_f$ es el esfuerzo sobre el fondo, $\rho$ es la densidad de fluido, $\nu$ es la viscosidad del fluido, y $z$ la altura sobre el fondo, y definimos la *velocidad turbulenta* como 
+
+$$U=\sqrt{\frac{\tau\_{f}}{\rho}},$$
+
+que físicamente está relacionada con la velocidad orbital de los remolinos que generan intercambio de momento y partículas (los de la imagen anterior).   
+
+---
+class: left
+
+En forma adimensional
+
+$$\frac{u(z)}{U}=$$
+
+$$\mathcal{F}'\left(\frac{U z}{\nu}\right).$$
+
+Si tenemos rotación ambiente, el parámeto de Coriolis entra en escena y la ecuación anterior depende de 2 parámetros ${U z}/{\nu}$  y 
+
+ ${fz}/{U}$.
+
+---
+class: left
+### Perfil $u(z)$ logarítmico 
+.left-column[<img style="width:90%"  src="./figures/pope2000_logLayer.png">
+.caption[Imagen de Pope (2000). la recta corresponde al perfil log de la ec adimensional para $u(z)$ sin rotación.]]
+
+.right-column[* Determinación experimental de $\mathcal{F}'$. Gráfica de $u/U$ vs. log${U z}/{\nu}$ es una recta entre $10^1$ y $10^3$:
+
+$$u(z)=\frac{U}{\Kappa}ln\frac{Uz}{\nu}+5.2 U,$$
+donde $\Kappa=0.41$ es la constante de von Kármán.
+
+* Cerca de la frontera domina la viscosidad (capa viscosa)
+]
+
+---
+class: left
+
+</br></br>
+Debemos "pegar" ambas soluciones para tener un perfil continuo. El valor de $Uz/\nu$ que satisface ambas ecuaciones es 
+$$\frac{Uz}{\nu}= 11 = 2.5\ln{(11)}+5.$$ 
+
+Esto nos permite definir la altura de la capa límite viscosa $\delta$ como el valor de $z$ para el cual $Uz/\nu= 11$:
+
+$$\delta=11\frac{\nu}{U}$$
+(Hay distintas definiciones para esta altura).
+
+---
+class: left
+Cuánto miden las capas límite viscosas en la atmósfera y el oceáno si:
+
+.right-column[**Océano**
+
+Viscosidad molecular del agua: 
+
+$\nu=10^{-6}$ m$^2$/s 
+
+Velocidad turbulenta: 
+
+$U\ge 1$ mm/s
+]
+
+.left-column[**Atmósfera**
+
+Viscosidad del aire en cntp:
+
+$\nu=1.5\times10^{-5}$ m$^2$/s 
+
+Velocidad turbulenta:
+
+$U\ge1$ cm/s
+]
+
+--
+
+.right-column[
+$\delta \lt 1$ cm
+]
+
+.left-column[$\delta \lt 5 $ cm
+]
+---
+class: left
+
+### Rugosidad del terreno
+Las $\delta$ que calulamos son más pequeñas que las irregularidades del fondo marino o del terreno. El perfil $u(z)$ sobre las irregularidades ya no depende de la viscosidad molecular sino de la altura de las irregularidades o la *rugosidad*  $z_0$ .caption[(fracción de la altura promedio de los topes)]:
+
+$$u(z)=\frac{U}{\Kappa}\ln{\frac{z}{z_0}}.$$
+
+
+.center[<img style="width:85%"  src="./figures/rough_log_layer.png">]
+
+---
+name: eddyviscosity
+class: left
+
+### Viscosidad efectiva o turbulenta (eddy viscosity)
+
+* Flujo turbulento --> viscosidad efectiva será mayor que la molecular
+* Análogo a ley de Newton para flujos viscosos (esfuerzo tangente $\tau$ $\propto$ a cizalla con constante de proporcionalidad $\nu$)
+
+$$\tau=\rho_0\nu_E\frac{du}{dz},$$
+
+donde la *viscosidad efectiva, turbulenta*  o *eddy* es mucho mayor a la molecular $\nu$. Para un perfil log sobre terreno rugoso, la cizalla es $du/dz=U/\Kappa z$ y el esfuerzo es uniforme cerca de la frontera: $\tau=\tau_f=\rho U^2$, dando
+
+$$\rho_0 U^2=\rho_0\nu_E\frac{U}{\Kappa z}$$
+
+y por ende $\nu_E=\Kappa z U$.
+
+---
+class: left
+
+* La viscosidad turbulenta $\nu_E$ no es constante en el espacio (ni en tiempo, necesariamente).
+
+* Es una propiedad del flujo, no del fluido.
+
+* Dadas sus unidades ($[L^2][T^{-1}]$), podemos expresarla como el producto de una longitud por la velocidad turbulenta:
+$$\nu_E=l_m U,$$
+donde $l_m=\Kappa z$ es una *longitud de mezcla*.
+
+---
+name: ekmannum
+class: left
+## Importancia de la rotación
+
+En el análisis dimensional de las ecuaciones de momento (clase 9 / 18 oct) comparamos cada término con el término de Coriolis. Para el término de fricción vertical el parámetro adimensional es el **número de Ekman**:
+
+$$Ek = \frac{\nu_E}{\Omega H^2},$$
+
+donde $\nu_E$ es la viscosidad turbulenta, $\Omega$ la rotación ambiente y $H$ la escala de altura (profundidad) del movimiento.
+
+--
+
+En flujos geofísicos (y lab), típicamente Ek<<1 --> fricción no es importante y despreciamos el término disipativo.
+
+¿Qué perdemos? ¡Derivadas de segundo orden! No podemos aplicar todas las condiciones de frontera a la vez (Ej: el flujo desliza en el fondo).
+
+---
+class: left
+
+### Solución interior y capa límite
+
+(L. Prandtl, teoría de capa límite) En la capa límite de altura $d$, 
+
+$Ek=\nu_E/\Omega d^2$~1 ----->  $d$~$\sqrt{\nu_E/\Omega}$.
+
+.center[<img style="width:85%"  src="./figures/ekman_layer.png">]
+
+---
+class: left
+
+**Capa límite con rotación: capa de Ekman**
+
+* La rotación impone una altura finita $d$ de la capa.
+
+* $d << H$, en el océano $d$~$10$ m
+
+* La rotación cambia la dirección del flujo, pero eso lo veremos en la sigueinte clase.
+
+---
+## Referencias:
+
+Cushman-Roisin y Beckers - Capítulo 8
+
+Kundu y Cohen - Capítulo 13
+
+</br></br></br></br></br></br></br></br>
+.note[Notas creadas con [{Liminal}](https://github.com/jonathanlilly/liminal) usando [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
