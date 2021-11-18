@@ -113,12 +113,12 @@
 class: center, middle
 <br/><br/>                     
 .title[Dinámica de Fluidos Geofísicos]     
-.subtitle[Clases 14,... - Fricción y capas de Ekman]
+.subtitle[Clases 14, 15, - Fricción y capas de Ekman]
 <br/><br/>          
 .author[Semestre 2022-I]  
 .institution[Facultad de Ciencias]      
 <br/>
-.date[10 de noviembre de 2021] 
+.date[(10) 17 de noviembre de 2021] 
 <br/><br/>
  <img style="width:100%"  src="./figures/green_waves.png"> 
 
@@ -135,7 +135,7 @@ class: left
 1. [Turbulencia por cizalla y viscosidad efectiva](#eddyviscosity)
 1. [Fricción y rotación](#ekmannum)
 1. [Capa de Ekman de fondo](#fondo)
-1. [Generalización a terreno irregular y velocidades no uniformes](#generalizacion)
+1. [Generalización a velocidades no uniformes](#generalizacion)
 1. [Capa de Ekman de superficie](#superficie)
 1. [Capa de Ekman en FG reales](#FGreales) 
 
@@ -317,6 +317,7 @@ class: left
 $Ek=\nu_E/\Omega d^2$~1 ----->  $d$~$\sqrt{\nu_E/\Omega}$.
 
 .center[<img style="width:85%"  src="./figures/ekman_layer.png">]
+.caption[Imagen de Cushman-Roisin y Beckers (2011).]
 
 ---
 class: left
@@ -327,7 +328,145 @@ class: left
 
 * $d << H$, en el océano $d$~$10$ m
 
-* La rotación cambia la dirección del flujo, pero eso lo veremos en la sigueinte clase.
+* La rotación cambia la dirección del flujo, pero eso lo veremos en la siguiente clase.
+
+---
+class: left
+## Preguntas de repaso de la clase pasada:
+
+**1) Para un flujo sin rotación, el perfil de velocidad $u(z)$ en la capa logaritmica de un flujo sobre fondo liso depende de:**
+
+a) el esfuerzo ($\tau_b$), la viscosidad ($\nu$), la densidad ($\rho$) y la distancia al fondo ($z$).
+
+b) el esfuerzo ($\tau_b$) y la distancia al fondo ($z$).
+
+c) el esfuerzo ($\tau_b$), la viscosidad efectiva ($\nu_E$), la densidad ($\rho$) y la distancia al fondo ($z$).
+
+--
+
+**Respuesta: a**
+
+---
+class: left
+
+**2) La viscosidad turbulenta**
+
+a) es una propiedad del fluido, no del flujo.
+
+b) es mayor que la molecular.
+
+c) siempre es constante.
+
+--
+
+**Respuesta: b**
+
+---
+class: left
+
+** 3) En una capa límite con rotación la profundidad o grosor de la capa $d$ escala como  $(\nu_E/\Omega^2)^{1/3}$.**
+
+a) Cierto
+
+b) Falso
+
+--
+
+**Respuesta: Falso**. En clase vimos que en una capa de Ekman, el número de Ekman $Ek=\nu_E/\Omega d^2 \approx 1$, por lo cual $d$ ~ $(\nu_E/\Omega)^{1/2}$.
+
+
+---
+class: left
+name: fondo
+
+## Capa de Ekman de fondo
+
+La estructura de este flujo consiste en un flujo interior horizontal constante $\bar{u}$ y una capa delgada en donde el efecto de la fricción lleva a cero la velocidad horizontal en la frontera:
+
+.center[<img style="width:75%"  src="./figures/ekman_layer.png">]
+.caption[Imágen de Cushman-Roisin y Beckers (2011).]
+
+Vamos a las notas para desarrollar los detalles...
+
+---
+class: left
+
+### En resumen:
+* La velocidad en la capa de Ekman de fondo se acerca a la velocidad interior en una profundidad $d=\sqrt{2\nu_E/f}$ (altura o grosor de la capa de Ekman).
+* El flujo en la capa de Ekman tiene una componente perpendicular  a la dirección del flujo interior $\bar{u}$ distinta de cero.
+* Cuando $z \rightarrow 0$ la velocidad cerquita del fondo (no exactamente en el fondo) es a $45^{\circ}$ de la velocidad interior desviado a la izquierda del flujo interior.
+
+.center[<img style="width:75%"  src="./figures/ekman_spiral_bottom.png">]
+.caption[Imágen de Cushman-Roisin y Beckers (2011).]
+
+---
+class: left
+
+El **transporte perpendicular al flujo interior** está dado por:
+
+$$V=\int_0 ^{\infty} v dz=\frac{\bar{u}d}{2},$$
+
+y es porporcional al flujo interior y a la profundidad de la capa de Ekman.
+
+Las **dimensiones de V** son $[V]=[L/T][L]=[L^2/T]$
+
+Ej. unidades: m$^2$s$^{-1}$.
+---
+class: left
+name: generalizacion
+
+###¿Qué pasa si el flujo interior no es uniforme?
+
+Flujo interior en equilibiro geostrófico pero que varía en el espacio. 
+
+**(ver detalles en las notas)**
+
+El transporte para cada componente de la velocidad del flujo en la capa de Ekman está dado por:
+
+$$U=\int_0 ^{\infty} (u-\bar{u}) dz=-\frac{d}{2}(\bar{u}+\bar{v}),$$
+$$V=\int_0 ^{\infty} (v-\bar{v}) dz=-\frac{d}{2}(\bar{u}-\bar{v}).$$
+
+Además, el flujo en la capa de Ekman diverge o converge si el flujo interior tiene vorticidad relativa (rotacional$\ne 0$):
+
+$$\frac{\partial U}{\partial x}+\frac{\partial V}{\partial y}=-\frac{d}{2}\left(\frac{\partial \bar{v}}{\partial x}+\frac{\partial \bar{u}}{\partial y}\right)=-\frac{d}{2}\bar{\zeta}.$$
+
+---
+class: left
+
+### Bombeo de Ekman ($\bar{w}$)
+
+El agua de la divergencia o convergencia proviene del interior. Esto no viola (mucho) la condición de geostrofía porque la velocidad vertical $\bar{w}$ que se generará en el interior es muy pequeña.
+
+.center[<img style="width:50%"  src="./figures/ekman_pumping.png">]
+.caption[Imágen de Cushman-Roisin y Beckers (2011).]
+
+Obtuvimos una expresión para $\bar{w}$ integrando verticalmente la ecuación de continuidad:
+
+$$\bar{w}=\frac{d}{2}\left(\frac{\partial \bar{v}}{\partial x}+\frac{\partial \bar{u}}{\partial y}\right)=\frac{d}{2}\bar{\zeta}$$
+
+---
+class: left
+
+La surgencia $\uparrow$ ($\bar{w}>0$) o subsidencia $\downarrow$ ($\bar{w}<0$) serán mayores si:
+
+* aumenta la vorticidad (valor absoluto) del flujo interior,
+* aumenta la profundidad de la capa de Ekman ($=\sqrt{2 \nu_E}/f$),
+ 
+
+Esto último pasa si:
+
+* disminuye el valor de $f$ (Ej, nos movemos hacia el Ecuador),
+* aumenta la viscosidad $\nu_E$.
+
+**En el hemisferio norte**:
+
+* flujo ciclónico (**antihorario**) --> surgencia
+* flujo anticiclónico (**horario**) --> subsidencia
+
+**En el hemisferio sur** ($f<0$, definimos $d=\sqrt{2\nu_E/|f|}$):
+
+* flujo ciclónico (**horario**) --> surgencia
+* flujo anticiclónico (**antihorario**) --> subsidencia
 
 ---
 ## Referencias:

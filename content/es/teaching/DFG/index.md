@@ -44,4 +44,4 @@ Los videos, tareas y notas de clase se ecuentran en la página del curso en Clas
 * 06 de octubre: [Aceleración de Coriolis parte 2](Slides/06_06oct21.html)
 * 11 de octubre: [Ecuaciones de movimiento de un fluido en rotación parte 1](Slides/07_11oct21.html)
 * 18 de octubre: [Ecuaciones de movimiento de un fluido en rotación parte 3](Slides/09_18oct21.html)
-* 10 de noviembre: [Fricción y capas de Ekman](Slides/14_10nov21.html)
+* 10, 17 de noviembre: [Fricción y capas de Ekman](Slides/14_10nov21.html)
