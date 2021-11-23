@@ -113,12 +113,12 @@
 class: center, middle
 <br/><br/>                     
 .title[Dinámica de Fluidos Geofísicos]     
-.subtitle[Clases 14, 15, - Fricción y capas de Ekman]
+.subtitle[Clases 14, 15 y 16 - Fricción y capas de Ekman]
 <br/><br/>          
 .author[Semestre 2022-I]  
 .institution[Facultad de Ciencias]      
 <br/>
-.date[(10) 17 de noviembre de 2021] 
+.date[(10, 17 y) 22 de noviembre de 2021] 
 <br/><br/>
  <img style="width:100%"  src="./figures/green_waves.png"> 
 
@@ -450,7 +450,7 @@ class: left
 La surgencia $\uparrow$ ($\bar{w}>0$) o subsidencia $\downarrow$ ($\bar{w}<0$) serán mayores si:
 
 * aumenta la vorticidad (valor absoluto) del flujo interior,
-* aumenta la profundidad de la capa de Ekman ($=\sqrt{2 \nu_E}/f$),
+* aumenta la profundidad de la capa de Ekman ($=\sqrt{2 \nu_E/f}$),
  
 
 Esto último pasa si:
@@ -467,6 +467,140 @@ Esto último pasa si:
 
 * flujo ciclónico (**horario**) --> surgencia
 * flujo anticiclónico (**antihorario**) --> subsidencia
+
+---
+class: left
+## Preguntas de repaso de la clase pasada
+
+**La *magnitud* del bombeo de Ekman será mayor si**
+
+a) aumenta la magnitud de la vorticidad relativa del flujo interior
+
+b) aumenta el parámetro de Coriolis
+
+c) aumenta la viscosidad
+
+d) a y b
+
+e) a y c
+
+--
+
+**respuesta: e**
+---
+class: left
+
+**Habrá surgencia (bombeo de Ekman positivo) si la vorticidad relativa del interior es ciclónica (antihoraria en HN).**
+
+a) verdadero
+
+b) falso
+
+--
+
+**respuesta: verdadero**
+
+---
+class: left
+
+**En la capa de Ekman de fondo en el HN cuando el flujo interior es uniforme, la velocidad cerca del fondo**
+
+a) en la misma dirección que el flujo interior.
+
+b) es a 45$^{\circ}$ a la izquierda del flujo interior.
+
+c) es a 45$^{\circ}$ a la derecha del flujo interior.
+
+d) en dirección opuesta al flujo interior.
+
+--
+
+**respuesta: b **
+
+---
+class: left
+name: superficie
+## Capa de Ekman de superficie
+
+.center[<img style="width:75%"  src="./figures/meme_ekman_jacoparti.jpg">]
+.caption[Meme modificado de @jacoparti en twitter.]
+
+---
+class: left
+## Nansen y Ekman 
+
+Durante sus expediciones al Ártico, Fridtjof Nansen observó que los icebregs se deplazaban hacia la derecha del viento, formando un ángulo de entre unos 20 y 40${^\circ}$ respecto a la dirección del viento.
+
+.left-column[
+.center[<img style="width:100%"  src="./figures/Nansen_sciencenorway_NorwNationalLibrary.jpg">]
+.caption[F. Nansen midiendo la temperatura de las aguas del Ártico el 12 de julio de 1894. (Imágen tomada de https://sciencenorway.no/arctic-forskningno-fridtjof-nansen/frozen-in-the-ice---polar-research-then-and-now/1387372. (Norwegian National Library)]]
+
+.right-column[
+.center[<img style="width:100%"  src="./figures/iceberg_drift.jpg">]
+.caption[Imagen modificada de "Wind Driven Circulation" https://slideplayer.com/slide/5234539/]]
+
+---
+class: left
+
+<br\> <br\><br\>
+Vagn Walfrid Ekman era estudiante de Nansen y Vilhelm Bjerknes y resolvió este problema para obtener su doctorado (Uppsala, 1902). 
+
+<br\><br\><br\>
+En 1905 publicó, de manera más completa, la teoría de la espiral de Ekman que veremos hoy. 
+
+
+<br\><br\><br\><br\><br\>
+Vamos a las notas...
+
+---
+class: left
+name: FGreales
+
+## Capa de Ekman en fluidos geofísicos reales
+
+La teoría de las capas de Ekman es una idealización, por lo cual no esperamos que las capas de frontera en la atmósfera y el océano sean **exactamente** iguales a lo que predice la teoría. 
+
+.center[<img style="width:75%"  src="./figures/cushman_fig8-10.png">]
+.caption[Fig. 8.10 Cushman-Roisin y Beckers. Vectores de viento menos viento geostrófico como función de la altura (m) cerca de Sicilia. Arriba: frontera entre viento cálido sobre viento frío. Abajo: Aire frío sobre superficie cálida del mar (original en Roll, 1965).]
+
+
+---
+class: left
+Algunos factores que no toma en cuenta la teoría son: **turbulencia, estratificación y gradientes horizontales**.
+
+### Turbulencia
+
+FG están en estado turbulento ($Re$ grandes). Una primera aproximación o *parametrización* fue cambiar la viscosidad molecular por una viscosidad eddy o viscosidad turbulenta.
+
+Hay parametrizaciones más refinadas: la turbulencia es mayor donde la cizalla es mayor y menor cerca de la frontera -> Ej. $\nu_E$ varía verticalmente. 
+
+---
+class: left
+
+En general (de modelos numéricos y observaciones), el ángulo entre la velocidad cerca de la frontera y el interior (Ekman fondo) o el esfuerzo del viento (Ekman superficie) es **bastante menor que el teórico de 45$^{\circ}$** (entre 5 y 20$^{\circ}$).
+
+Una escala vertical para el grosor de la capa de Ekman está dada por:
+
+$$d \approx 0.4 \frac{U}{f},$$
+
+donde $U$ es la velocidad turbulenta (primeras diapositivas) y el factor de 0.4 se obtuvo de observaciones (puede variar un poco).
+
+---
+class: left
+### Estratificación
+
+* Limita el movimiento vertical y, en consecuencia, la mezcla vertical.
+* Capas de distintas densidades actúan menos coherentemente y se pueden generar ondas internas.
+* Reduce el grosor de la capa de Ekman y aumenta la desviación de la velocidad con la altura.
+
+### Gradientes horizontales (de $T$)
+
+Durante el día sobre tierra o sobre agua calientita, la atmósfera está en estado constante de convección (calentamiento desde abajo).
+
+Bajo estas condiciones, otro factor importante de la dinámica, además del viento, es la intensidad del flujo de calor. 
+
+Aquí, la dinámica de Ekman juega un paper secundario y la capa se llama simplemente *capa límite atmosférica*.
+
 
 ---
 ## Referencias:
