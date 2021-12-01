@@ -113,12 +113,12 @@
 class: center, middle
 <br/><br/>                     
 .title[Dinámica de Fluidos Geofísicos]     
-.subtitle[Clase 18 - Ondas Barotrópicas I (Kelvin y Poincaré)]
+.subtitle[Clase 18, 19 - Ondas Barotrópicas I (Kelvin y Poincaré)]
 <br/><br/>          
 .author[Semestre 2022-I]  
 .institution[Facultad de Ciencias]      
 <br/>
-.date[29 de noviembre de 2021] 
+.date[29 de noviembre - 1 diciembre de 2021] 
 <br/><br/>
  <img style="width:100%"  src="./figures/green_waves.png"> 
 
@@ -133,8 +133,9 @@ class: left
 
 1. [Prguntas de repaso](#repaso)
 1. [Restricciones del flujo a estudiar](#Restricciones)
-1. [Ondas de Kelvin](#Kelvin)
 1. [Ondas de Poincaré](#Poincare)
+1. [Ondas de Kelvin](#Kelvin)
+
 <!-- Comment out the next slide if you don't want the Table of Contents link -->         
 ---
 layout: true  .toc[[&#10023;](#toc)]
@@ -245,15 +246,48 @@ class: left
 
 Consideremos $f$ constante (y ondas con frecuencia $ \omega < f$). 
 
-Vamos a las notas...
+**Vamos a las notas...**
+
+En las notas obtuvimos una relación de dispersión a partir de  considerar soluciones de onda para las EASL de la forma:
+
+$$(u, v, \eta)=(\hat{u},\hat{v},\hat{\eta})e^{i(kx+ly-\omega t)}$$ 
+
+donde $\hat{u}$, $\hat{v}$, $\hat{\eta}$ son amplitudes complejas y solo tomamos la parte real del lado derecho de la solución.
+
+---
+class: left
+### Relación de dispersión para ondas de Poincaré
+
+* Ondas de gravedad modificadas por la rotación
+
+$$\omega^2=f^2+gHK^2$$
+
+donde $K=\sqrt{k^2+l^2}$ es la magnitud del vector número de onda horizontal.
+
+.center[<img style="width:70%"  src="./figures/dispersion_poincare.png">]
+
+---
+class: left
+
+**¿Qué nos dice la relación de dispersión acerca de estas ondas?**
+* Las ondas se pueden propagar en cualquier dirección.
+* Tienen frecuencia $\omega > f$
+* En general son ondas dispersivas pues su velocidad de fase depende del numero de onda:
+
+$$c=\frac{\omega}{K}=\frac{\sqrt{f^2+gHK^2}}{K}$$
+
+* Pero, cuando $\omega >> f$ (frecuencias altas = periodos cortos), las ondas son no dispersivas:
+
+$$c=\frac{\omega}{K}\approx\\sqrt{gH}.$$
+
+Esta es la velocidad de las ondas de gravedad sin rotación. Es decir, **la rotación no afecta a las ondas de gravedad de alta frecuencia**.
 
 ---
 name: Kelvin
 class: left
 
-## Ondas de gravedad con rotación celca de una frontera sólida
+## Ondas de gravedad con rotación cerca de una frontera sólida
 
-Condición de frontera
 
 Vamos a las notas...
 
@@ -264,6 +298,17 @@ class: left
 
 .center[<img style="width:80%"  src="./figures/dispersion_kelvin_poincare.png">]
 ---
+class: left
+ ### Algunas animaciones de ondas de Kelvin
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSWmhkcPsHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Roberto Fontes - Kelvin wave hemisferio Sur
+
+Perturbación gaussiana de la superficie libre: [animación](http://oxbow.sr.unh.edu/WaveMovies/3RossbyBump_KelvinSetup.mov) del [Profesor Jamie Pringle](http://oxbow.sr.unh.edu), University of New Hampshire 
+
+---
+class: left
 ## Referencias:
 
 Cushman-Roisin y Beckers - Capítulo 9
