@@ -47,3 +47,4 @@ Los videos, tareas y notas de clase se ecuentran en la página del curso en Clas
 * 10, 17, 22 de noviembre: [Fricción y capas de Ekman](Slides/14_10nov21.html)
 * 24 de noviembre: [Jupyter notebook](Slides/ondas_conceptos_html.html) Repaso de conceptos de ondas
 * 29 de nov, 1 de dic: [Ondas barotópicas I: ondas de gravedad modificadas por la rotación](Slides/18_29nov21.html) 
+* 6 de dic: [Ondas barotópicas II: ondas de Rossby y topográficas](Slides/20_06dic21.html) 
