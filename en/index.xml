@@ -5,7 +5,7 @@
     <link>https://anakarinarm.github.io/en/</link>
       <atom:link href="https://anakarinarm.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <description>Karina Ramos-Musalem</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2021</copyright><lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2022</copyright><lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Karina Ramos-Musalem</title>
@@ -133,6 +133,16 @@ by Alondra Blas, Kenya Díaz y Lucía Kirene Larson.&lt;/p&gt;
 &lt;a href=&#34;03_ODEs.html&#34;&gt;notebook 03&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An example journal article</title>
+      <link>https://anakarinarm.github.io/en/publication/journal-article/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/en/publication/journal-article/</guid>
+      <description>&lt;p&gt;Supplementary notes can be added here, including 
+&lt;a href=&#34;https://wowchemy.com/docs/content/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
