@@ -1,6 +1,6 @@
 ---
 title: 'The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon'
-authors: 'Karina Ramos-Musalem and Susan E. Allen'
+#authors: 'Karina Ramos-Musalem and Susan E. Allen'
 date: '2019-02-01T00:00:00Z'
 doi: '10.1175/JPO-D-18-0174.1'
 
@@ -14,7 +14,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon*'
+publication: 'The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon'
 publication_short: ''
 
 abstract: The exchanges of water, nutrients, and oxygen between the coastal and open ocean are key components of on-shelf nutrient budgets and biogeochemical cycles. On a regional scale, submarine canyons enhance physical processes such as shelf–slope mass exchange and mixing. There is good understanding of the flow around upwelling submarine canyons; however, the flux of biologically relevant tracers is less understood. This work investigates the impact of submarine canyons on the cross-shelf exchange of tracers and water, taking into account the impact of locally enhanced mixing within the canyon, and develops a scaling estimate for canyon-induced upwelling of tracers, proportional to local concentration, vertical diffusivity, and previously scaled upwelling flux. For that purpose, we performed numerical experiments simulating an upwelling event near an idealized canyon, adding a passive tracer with an initially linear profile. We varied the geographic distribution of vertical eddy diffusivity and its magnitude, the initial stratification, the Coriolis parameter, and the strength of the incoming flow. We find that a canyon of width 5% of the along-shelf length of the shelf upwells between 25% and 89% more tracer mass onto the shelf than shelfbreak upwelling. Locally enhanced vertical diffusivity has a positive effect on the tracer that is advected by the upwelling flow and can increase canyon-upwelled tracer flux by up to 27%.
@@ -60,3 +60,4 @@ projects: [tracer-proyect]
 slides:
 ---
 
+**Authors:** Karina Ramos-Musalem and Susan E. Allen

@@ -1,6 +1,6 @@
 ---
 title: 'The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon'
-authors: 'Karina Ramos-Musalem and Susan E. Allen'
+#authors: 'Karina Ramos-Musalem and Susan E. Allen'
 date: '2020-03-01T00:00:00Z'
 doi: '10.1029/2019JC015785'
 
@@ -59,4 +59,6 @@ projects: [tracer-proyect]
 #   Otherwise, set `slides: ""`.
 slides:
 ---
+
+**Authors:** Karina Ramos-Musalem and Susan E. Allen
 
