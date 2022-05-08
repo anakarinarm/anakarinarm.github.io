@@ -14,7 +14,7 @@ role: Investigadora Asociada C
 
 # Organizations/Affiliations
 organizations: 
-- name: Centro de Ciencias de la Atmósfera, UNAM
+- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
   url: "https://www.atmosfera.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
@@ -63,10 +63,10 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Researchers
-- Visitors
+- Principal Investigators
 ---
 
 I am a physical oceanographer interested in the interactions between ocean and atmospheric flows and topography. In particular, I use numerical models and laboratory scale models to investigate the role that topography plays in facilitating cross-shelf exchanges of water, nutrients, carbon and dissolved gases.
 
-I am part of the [Ocean-Atmosphere Interaction group](http://grupo-ioa.atmosfera.unam.mx/index.php/) at [Centro de Ciencias de la Atmósfera](https://www.atmosfera.unam.mx/). 
+I am part of the [Ocean-Atmosphere Interaction group](http://grupo-ioa.atmosfera.unam.mx/index.php/) at [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/). 
 Before, I did my Ph.D. at the Mesoscale Ocean and Atmospheric Dynamics Group under the supervision of [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/). 
