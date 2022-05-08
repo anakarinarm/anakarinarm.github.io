@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/en/</loc>
-    <lastmod>2022-05-07T21:38:49-05:00</lastmod>
+    <lastmod>2022-05-07T21:53:14-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -285,16 +285,36 @@
   <url>
     <loc>https://anakarinarm.github.io/en/people/</loc>
     <lastmod>2022-05-07T21:13:28-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/people/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/people/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/author/amelia-thelandersson/</loc>
-    <lastmod>2022-05-07T21:37:51-05:00</lastmod>
+    <lastmod>2022-05-07T21:53:14-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/amelia-thelandersson/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/amelia-thelandersson/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/authors/</loc>
-    <lastmod>2022-05-07T21:38:49-05:00</lastmod>
+    <lastmod>2022-05-07T21:53:14-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -324,21 +344,51 @@
   <url>
     <loc>https://anakarinarm.github.io/en/author/esteban-cruz-isidro/</loc>
     <lastmod>2022-05-07T21:38:49-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/esteban-cruz-isidro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/esteban-cruz-isidro/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/author/jesica-villalobos/</loc>
     <lastmod>2022-05-07T21:38:03-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/jesica-villalobos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/jesica-villalobos/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/author/jimena-ortiz/</loc>
     <lastmod>2022-05-07T21:37:58-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/jimena-ortiz/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/jimena-ortiz/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/author/karina-ramos-musalem/</loc>
-    <lastmod>2022-05-07T21:32:07-05:00</lastmod>
+    <lastmod>2022-05-07T21:51:06-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
