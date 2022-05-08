@@ -1,7 +1,7 @@
 ---
 title: 'Coupling between two singing wineglasses'
 date: '2009-03-01T00:00:00Z'
-doi: '10.1175/JPO-D-18-0174.1'
+doi: '10.1119/1.3119175'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -13,7 +13,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: 'Coupling between two singing wineglasses'
+publication: 'Tal Arane, Karina Ramos-Musalem and Moti Fridman'
 publication_short: ''
 
 abstract: Rubbing the rim of one wineglass produces a tone, and induces oscillations on other wineglasses due to their coupling. This simple experiment demonstrates phase locking between coupled oscillators and the relation between the required coupling and the frequency detuning.
@@ -23,12 +23,14 @@ abstract: Rubbing the rim of one wineglass produces a tone, and induces oscillat
 
 tags:
 featured: false
+profile: false
+
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://journals.ametsoc.org/view/journals/phoc/49/2/jpo-d-18-0174.1.xml?tab_body=pdf'
-url_code: 'https://github.com/UBC-MOAD/tracer_upwelling_paper'
+url_pdf: ' https://doi.org/10.1119/1.3119175'
+#url_code: ''
 #url_dataset: ''
 #url_poster: ''
 #url_project: ''
@@ -48,7 +50,7 @@ url_code: 'https://github.com/UBC-MOAD/tracer_upwelling_paper'
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [tracer-proyect]
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
