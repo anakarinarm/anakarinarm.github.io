@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Circulation and Upwelling Induced by Coastal Trapped Waves Over a Submarine Canyon in an Idealized Eastern Boundary Margin'
 #authors: 'Karina Ramos-Musalem and Susan E. Allen'
 date: '2021-06-01T00:00:00Z'
 doi: ' 10.1029/2021GL093548'
@@ -14,8 +14,8 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: 'Circulation and Upwelling Induced by Coastal Trapped Waves Over a Submarine Canyon in an Idealized Eastern Boundary Margin'
-publication_short: ''
+publication: 'G. S. Saldias, K. Ramos-Musalem and S. E. Allen'
+#publication_short: ''
 
 abstract: Wind-driven upwelling promotes the onshore transport of dense slope waters onto the continental shelf. New observational evidence suggests that the propagation of coastal trapped waves (CTWs) over a submarine canyon can also cause upwelling within the canyon, independent of the wind forcing. Here, we use idealized numerical experiments to assess the role of CTWs in promoting the onshore transport of deeper waters onto the continental shelf. The experiments are forced with a 7-days period CTW. Overall, there is accumulated upwelled water in time with increased onshore transport during the low sea level phase of the CTWs. Most of the onshore flow is spread over the upwave side of the canyon during the low sea level phase, but it is advected further downwave during the subsequent high sea level phase. As a result, a dense pool of upwelled water is spread over the shelf extending primarily in the downwave direction.
 
@@ -24,6 +24,7 @@ abstract: Wind-driven upwelling promotes the onshore transport of dense slope wa
 
 tags:
 featured: false
+profile: false
 
 # links:
 # - name: ""
