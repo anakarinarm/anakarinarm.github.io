@@ -15,7 +15,7 @@ role: MSc
 # Organizations/Affiliations
 organizations: 
 - name: Göteborgs Universitet 
-- url: "https://www.gu.se/marina-vetenskaper"
+  url: "https://www.gu.se/marina-vetenskaper"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.
@@ -63,3 +63,4 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Students
+---
