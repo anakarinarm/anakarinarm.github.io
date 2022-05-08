@@ -23,7 +23,6 @@ abstract: The exchanges of water, nutrients, and oxygen between the coastal and 
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Source Themes
 featured: false
 
 # links:
@@ -57,7 +56,7 @@ projects: [tracer-proyect]
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides:
+# slides:
 ---
 
 **Authors:** Karina Ramos-Musalem and Susan E. Allen
