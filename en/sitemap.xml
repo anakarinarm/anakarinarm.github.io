@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/en/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
+    <lastmod>2022-05-07T20:17:18-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/en/tags/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
+    <lastmod>2021-09-30T10:01:27-05:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -64,6 +64,31 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anakarinarm.github.io/en/teaching/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication/ctw_canyon/</loc>
+    <lastmod>2022-05-07T20:13:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication-type/2/</loc>
+    <lastmod>2022-05-07T20:17:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication_types/</loc>
+    <lastmod>2022-05-07T20:17:18-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication_types/"
                 />
   </url>
   
@@ -153,11 +178,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/en/publication-type/2/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/en/teaching/modnum/</loc>
     <lastmod>2021-07-07T10:46:23-05:00</lastmod>
     <xhtml:link
@@ -173,33 +193,18 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/en/publication_types/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/publication_types/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/en/tag/source-themes/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/en/publication/tracer_profiles_canyon/</loc>
-    <lastmod>2022-05-07T19:53:00-05:00</lastmod>
+    <lastmod>2022-05-07T20:02:15-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/en/publication/journal-article/</loc>
-    <lastmod>2022-05-07T19:52:58-05:00</lastmod>
+    <loc>https://anakarinarm.github.io/en/publication/diffusivity_canyon/</loc>
+    <lastmod>2022-05-07T20:02:38-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication/wineglass_coupling/</loc>
+    <lastmod>2022-05-07T20:17:18-05:00</lastmod>
   </url>
   
   <url>
