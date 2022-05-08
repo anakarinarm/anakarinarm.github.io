@@ -70,11 +70,31 @@
   <url>
     <loc>https://anakarinarm.github.io/en/publication-type/2/</loc>
     <lastmod>2022-05-07T20:58:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication-type/2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication-type/2/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/publication/ctw_canyon/</loc>
     <lastmod>2022-05-07T20:39:30-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/ctw_canyon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/ctw_canyon/"
+                />
   </url>
   
   <url>
@@ -200,16 +220,46 @@
   <url>
     <loc>https://anakarinarm.github.io/en/publication/tracer_profiles_canyon/</loc>
     <lastmod>2022-05-07T20:57:17-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/tracer_profiles_canyon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/tracer_profiles_canyon/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/publication/diffusivity_canyon/</loc>
     <lastmod>2022-05-07T20:58:09-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/diffusivity_canyon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/diffusivity_canyon/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/en/publication/wineglass_coupling/</loc>
     <lastmod>2022-05-07T20:56:38-05:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/wineglass_coupling/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/wineglass_coupling/"
+                />
   </url>
   
   <url>
