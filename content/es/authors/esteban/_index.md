@@ -1,21 +1,21 @@
 ---
 # Display name
-title: Amelia Thelandersson
+title: Esteban Cruz Isidro
 
 # Username (this should match the folder name)
 authors:
-- amelia
+- esteban
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Master's in Marine Science 
+role: Tesista de licenciatura (Ciencias de la Tierra)
 
 # Organizations/Affiliations
 organizations: 
-- name: Göteborgs Universitet 
-  url: "https://www.gu.se/marina-vetenskaper"
+- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
+  url: "https://www.atmosfera.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.

@@ -14,7 +14,7 @@ role: Investigadora Asociada C
 
 # Organizations/Affiliations
 organizations: 
-- name: Centro de Ciencias de la Atmósfera, UNAM
+- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
   url: "https://www.atmosfera.unam.mx"
 
 # Short bio (displayed in user profile at end of posts)
@@ -63,7 +63,7 @@ email: ""
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
 - Researchers
-- Visitors
+- Principal Investigators
 ---
 
 Soy oceanógrafa física y me interesa la interacción entre los flujos geofísicos --como el océano y la atmósfera--

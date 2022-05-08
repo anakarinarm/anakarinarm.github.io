@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Master's in Marine Science 
+role: Maestría en Ciencias Marinas 
 
 # Organizations/Affiliations
 organizations: 

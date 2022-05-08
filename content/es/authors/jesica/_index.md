@@ -1,21 +1,21 @@
 ---
 # Display name
-title: Amelia Thelandersson
+title: Jesica Villalobos
 
 # Username (this should match the folder name)
 authors:
-- amelia
+- jesica
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Master's in Marine Science 
+role: Servicio social (Ciencias Atmosféricas) 
 
 # Organizations/Affiliations
 organizations: 
-- name: Göteborgs Universitet 
-  url: "https://www.gu.se/marina-vetenskaper"
+- name: Universidad Autónoma Metropolitana
+  url: "http://www.iztapalapa.uam.mx/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.
