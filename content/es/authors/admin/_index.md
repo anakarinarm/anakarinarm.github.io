@@ -62,8 +62,8 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Researchers
-- Principal Investigators
+- Investigadores
+- Investigadores principales
 ---
 
 Soy oceanógrafa física y me interesa la interacción entre los flujos geofísicos --como el océano y la atmósfera--
