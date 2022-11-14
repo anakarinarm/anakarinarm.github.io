@@ -3,7 +3,6 @@ title: 'Experimental downslope gravity currents over a synthetic topography'
 #authors: 'Karina Ramos-Musalem and Susan E. Allen'
 date: '2022-08-01T00:00:00Z'
 #doi: '10.1029/2021GL093548'
-url: 'https://www.revistascca.unam.mx/atm/index.php/atm/article/view/53156'
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
 
@@ -17,8 +16,7 @@ publication_types: ['2']
 publication: 'Burgos-Cuevas, A., Ruiz-Angulo, A., Palacios Morales, C. A., Ramos Musalem, K., & García Molina, C. D.'
 #publication_short: ''
 
-abstract: 
-Experimental lock-release gravity currents are investigated as they propagate downslope over a synthetic varying topography. We emulate and investigate the dynamics of thermally driven winds that propagate downslope while interacting with the roughness of a topographic surface. The mixing processes between the gravity currents and their surroundings are studied with Particle Image Velocimetry (PIV) and entrainment is quantified. The magnitude of the entrainment coefficient is shown to increase as the roughness of the slope increases. Shadowgraph visualizations qualitatively reproduce this behavior. Finally, pressure fields are estimated from velocity fields and the arrival of gravity currents is shown to be detected in pressure time series. This last result may be useful to detect atmospheric gravity currents using only surface pressure measurements.
+abstract: Experimental lock-release gravity currents are investigated as they propagate downslope over a synthetic varying topography. We emulate and investigate the dynamics of thermally driven winds that propagate downslope while interacting with the roughness of a topographic surface. The mixing processes between the gravity currents and their surroundings are studied with Particle Image Velocimetry (PIV) and entrainment is quantified. The magnitude of the entrainment coefficient is shown to increase as the roughness of the slope increases. Shadowgraph visualizations qualitatively reproduce this behavior. Finally, pressure fields are estimated from velocity fields and the arrival of gravity currents is shown to be detected in pressure time series. This last result may be useful to detect atmospheric gravity currents using only surface pressure measurements.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
