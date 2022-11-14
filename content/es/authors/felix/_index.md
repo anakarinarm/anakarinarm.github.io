@@ -1,21 +1,21 @@
 ---
 # Display name
-title: Jimena Ortiz
+title: Félix López
 
 # Username (this should match the folder name)
 authors:
-- jimena
+- felix
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Licenciatura (Ciencias Atmosféricas)
+role: Tesista de licenciatura (Ing. Geofísica) 
 
 # Organizations/Affiliations
 organizations: 
-- name: Universidad Autónoma Metropolitana
-  url: "http://www.iztapalapa.uam.mx/"
+- name: ESIA Ticomán, Instituto Politécnico Nacional
+  url: "https://www.esiaticipnct.com/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.

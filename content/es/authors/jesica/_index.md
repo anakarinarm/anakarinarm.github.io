@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Servicio social (Ciencias Atmosféricas) 
+role: Licenciatura (Ciencias Atmosféricas) 
 
 # Organizations/Affiliations
 organizations: 

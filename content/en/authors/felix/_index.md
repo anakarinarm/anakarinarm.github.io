@@ -1,21 +1,21 @@
 ---
 # Display name
-title: Jimena Ortiz
+title: Félix López
 
 # Username (this should match the folder name)
 authors:
-- jimena
+- felix
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Licenciatura (Ciencias Atmosféricas)
+role: Undergraduate (Geophysical Eng.) 
 
 # Organizations/Affiliations
 organizations: 
-- name: Universidad Autónoma Metropolitana
-  url: "http://www.iztapalapa.uam.mx/"
+- name: ESIA-Ticaomán, IPN
+  url: "https://www.esiaticipnct.com/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.
@@ -62,5 +62,5 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Estudiantes
+- Students
 ---
