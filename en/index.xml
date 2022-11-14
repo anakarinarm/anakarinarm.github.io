@@ -5,12 +5,21 @@
     <link>https://anakarinarm.github.io/en/</link>
       <atom:link href="https://anakarinarm.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <description>Karina Ramos-Musalem</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2022</copyright><lastBuildDate>Mon, 20 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>©2022</copyright><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Karina Ramos-Musalem</title>
       <link>https://anakarinarm.github.io/en/</link>
     </image>
+    
+    <item>
+      <title>Experimental downslope gravity currents over a synthetic topography</title>
+      <link>https://anakarinarm.github.io/en/publication/gc_lab/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/en/publication/gc_lab/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Burgos-Cuevas, A., Ruiz-Angulo, A., Palacios Morales, C. A., Ramos Musalem, K., &amp;amp; García Molina, C. D.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Introduction to Geophysical Fluid Dynamics</title>

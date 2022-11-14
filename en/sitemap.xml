@@ -3,6 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://anakarinarm.github.io/en/publication-type/2/</loc>
+    <lastmod>2022-11-13T21:57:41-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication-type/2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication-type/2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication/gc_lab/</loc>
+    <lastmod>2022-11-13T21:57:41-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/gc_lab/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/gc_lab/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/</loc>
+    <lastmod>2022-11-13T21:57:41-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/publication_types/</loc>
+    <lastmod>2022-11-13T21:57:41-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication_types/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/en/teaching/dfg/</loc>
     <lastmod>2021-09-30T10:01:27-05:00</lastmod>
     <xhtml:link
@@ -14,21 +74,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anakarinarm.github.io/en/teaching/dfg/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/en/</loc>
-    <lastmod>2022-05-07T21:53:14-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/"
                 />
   </url>
   
@@ -68,21 +113,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/en/publication-type/2/</loc>
-    <lastmod>2022-05-07T20:58:09-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/publication-type/2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/publication-type/2/"
-                />
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/en/publication/ctw_canyon/</loc>
     <lastmod>2022-05-07T20:39:30-05:00</lastmod>
     <xhtml:link
@@ -94,21 +124,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://anakarinarm.github.io/en/publication/ctw_canyon/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/en/publication_types/</loc>
-    <lastmod>2022-05-07T20:58:09-05:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/publication_types/"
                 />
   </url>
   
@@ -314,7 +329,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/en/authors/</loc>
-    <lastmod>2022-05-07T21:53:14-05:00</lastmod>
+    <lastmod>2022-11-13T21:41:30-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -357,8 +372,38 @@
   </url>
   
   <url>
+    <loc>https://anakarinarm.github.io/en/author/eva-teresa-rojas/</loc>
+    <lastmod>2022-11-13T21:40:47-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/eva-tereza-rojas/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/eva-teresa-rojas/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/en/author/felix-lopez/</loc>
+    <lastmod>2022-11-13T21:41:30-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/felix-lopez/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/felix-lopez/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/en/author/jesica-villalobos/</loc>
-    <lastmod>2022-05-07T21:38:03-05:00</lastmod>
+    <lastmod>2022-11-13T21:39:11-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -388,7 +433,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/en/author/karina-ramos-musalem/</loc>
-    <lastmod>2022-05-07T21:51:06-05:00</lastmod>
+    <lastmod>2022-11-13T21:38:57-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
