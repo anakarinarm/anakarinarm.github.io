@@ -1,5 +1,5 @@
 ---
-title: Módulo 3: Dinámica de la atmósfera
+title: Módulo 3 - Dinámica de la atmósfera
 summary: Febrero 2023, ICAyCC, UNAM
 tags:
 - Cursos
@@ -33,10 +33,10 @@ slides: example
 ---
 ## Diplomado en meteorología y climatología
 
-Las notas de clase se ecuentran en la página del curso en Classroom.
+Las notas de clase se encuentran en la página del curso en Classroom.
 
 #### Diapositivas de clase
 
-* 22 de febrero: [Introducción al curso](Slides/01_intro.html) 
+* 22 de febrero: [Introducción al curso](Slides/01_intro.html)
 * 22 de febrero: [Escalas atmosféricas](Slides/02_escalas.html)
 * 22 de febrero: [Cinemática y conservación de masa](Slides/03_repasoFluidos.html)
