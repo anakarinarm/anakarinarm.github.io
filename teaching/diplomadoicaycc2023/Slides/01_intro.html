@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiplomadoMeteoro-Mod3-01 </title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[1 Introducción]     
+.subtitle[Módulo 3: Dinámica de la Atmósfera]
+<br/><br/>          
+.author[Diplomado en Meteorología y Climatología]  
+.institution[ICAyCC]      
+<br/>
+.coauthor[Dra. Karina Ramos Musalem y Dr. Arturo Quintanar </br>
+]        
+.date[22 de febrero de 2023] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:50%"  src="./figures/ink.jpg">
+
+#Contenido        
+
+1. [Evaluación y mecánica del módulo](#eval)
+1. [Introducción a los flujos atmosféricos](#flujos)
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+       
+---
+name: eval   
+class: left
+#  De los profesores
+
+Profesor: [Arturo Quintanar]()
+- 
+- 
+-
+**Contacto**: arturo.quintanar@atmosfera.unam.mx
+
+Profesora: [Karina Ramos Musalem](https://anakarinarm.github.io/)
+- Física (Fac. de Ciencias, UNAM, 2013)
+- Doctora en Oceanografía ([Universidad de British Columbia](https://www.eoas.ubc.ca/), Vancouver, Canadá, 2020)
+- Investigadora Asociada C en el [ICAyCC](https://www.atmosfera.unam.mx/).
+
+**Contacto**: kramosmu@ciencias.unam.mx 
+
+---
+class:left
+# Temario del módulo
+
+1. Cinemática del flujo horizontal de gran escala.
+1. Dinámica del flujo horizontal.
+1. Introducción a las leyes que gobiernan el movimiento de la atmósfera.
+    - <span style="color:grey;font-weight:400;font-size:20px">Segunda Ley de Newton aplicada a los fluidos en rotación.</span>
+    - <span style="color:grey;font-weight:400;font-size:20px">Leyes de conservación de masa y energía.</span>
+1. Ecuaciones primitivas. 
+1. Ondas en la atmósfera. 
+1. Aplicaciones elementales de las ecuaciones gobernantes. 
+    - <span style="color:grey;font-weight:400;font-size:20px">Quasi-geostrofía y viento térmico, movimientos verticales y tendencias de presión en
+superficie. </span>
+    - <span style="color:grey;font-weight:400;font-size:20px">Circulación y vorticidad. </span>
+
+---
+class:left
+# Bibliografía sugerida
+
+---
+class: left
+# Evaluación
+
+|Rubro|Porcentaje|
+|::|:-:|
+|Quizzes|50%|
+|Final|50%|
+|Tarea|sugerida|
+
+</br>
+
+---
+name: flujos  
+class: center, middle
+# La atmósfera como fluído geofísico 
+
+---
+class: center
+## ¿De qué hablamos cuando hablamos de fluidos geofísicos?
+
+<img style="width:100%"  src="./figures/Nora_Ida_NOAAsatellites.jpg">
+Huracanes Nora (izq.) e Ida (der.)
+Fuente: NOAA Satellites
+
+---
+class: center
+count: false
+## ¿De qué hablamos cuando hablamos de fluidos geofísicos?
+
+<video preload="auto" width="100%" height="auto"  data-setup="{}" autoplay loop controls>
+<source src="./videos/jetstreamanimation_NASA.mp4" type="video/mp4" /></video>
+
+.caption[[Science on a sphere: Modelo GEOS-5 de NASA](https://sos.noaa.gov/catalog/datasets/winds-geos-5-model/). Esta simulación muestra intensidad del viento en la tropopausa de septiembre 1, 2006 a marzo 17, 2007, tiene 10 km de resolución, Goddard Earth Observing System Model, Version 5 (GEOS-5), utiliza 3750 procesadores de la supercomputadora Discover del NASA Center for Climate Simulation]
+
+---
+name: fg
+class: left
+# Características de los fluidos geofísicos (FG)
+</br></br>
+* Se encuentran en un sistema de referencia en **rotación**;
+</br></br>
+* por lo regular están **estratificados**;
+</br></br>
+* En la naturaleza ocurren a "gran escala" (en un momento definiremos "gran").
+
+Este módulo tratará de las peculiaridades que aparecen en la dinámica de la atmósfera debidas a la influencia de una, otra o ambas características.
+---
+class: left
+## Efecto de la estratificación
+
+.left-column[</br></br></br></br></br>La **estratificación** es la variación vertical de la densidad.]
+
+.right-column[<img style="width:100%"  src="./figures/latte.jpg">]
+
+---
+class: left
+count: false
+## Efecto de la estratificación
+
+.left-column[Muevo elemento de fluido en equilibrio de $Z$ hasta $Z+h$ $\rightarrow$ **fuerza boyante**
+
+
+La frecuencia de oscilación$^1$.footnote[$1.$ Conocida como frecuencia de Brunt-Väisälä] del elemento de fluido está dada por:
+$$N^2=\frac{g}{\rho_0}\frac{\partial{\rho}}{\partial z}$$
+
+$\uparrow N^2$ inhibe movimientos verticales y da estructura vertical al flujo.]
+
+.right-column[<img style="width:100%"  src="./figures/latte_annotated.jpg">]
+
+---
+class: left
+## Efecto de la rotación
+
+.left-column[<img style="width:100%"  src="./figures/coriolis_parameter.png"> $\Omega=7.2921\times10^{-5}$ rad s$^{-1}$
+
+Agrega el término $2\vec{\Omega} \times \vec{u}$ a las ecuaciones de momento.
+]
+
+.right-column[Flujos tienden a desviarse a la **derecha** en el **hemisferio norte** y a la izquierda en el hemisferio sur.
+
+**Parámetro de Coriolis** </br> $$f=2\Omega\sin{\varphi},$$ donde $\varphi$ es la latitud.
+
+Por ejemplo: 
+
+En Huatulco ($\varphi=17.09^{\circ}$ N), $f=4.28\times10^{-5}$ s$^{-1}$
+
+En Ensenada ($\varphi=30.90^{\circ}$ N), $f=7.47\times10^{-5}$ s$^{-1}$]
+
+---
+class: left
+## Efecto de la rotación
+
+</br>
+Para que el flujo sienta el efecto de la rotación, las escalas temporales deben ser del orden de un periodo de rotación.
+
+$$
+\epsilon = \frac{\textrm{tiempo de una revolución}}{\textrm{tiempo en avanzar } L \textrm{ a velocidad } U}
+$$
+$$= \frac{\frac{2\pi}{\Omega}}{\frac{L}{U}} = \frac{2\pi U}{\Omega L}.$$ 
+
+Si **$\epsilon \le 1$, la rotación es importante**. Esto limita el tamaño y velocidad del flujo y nos da una definición de "gran escala".
+
+Nombre especial de $\epsilon$: *Número de Rossby* en forma $Ro=U/fL$.
+
+---
+class: left
+## Similaridad dinámica
+
+¿Por qué podemos estudiar la atmósfera, el océano y un tanque con las mismas ecuaciones?
+
+$$\frac{\partial\vec{u}}{\partial t}+ \vec{u}\cdot\nabla\vec{u} + \vec{f}\times\vec{u} = \frac{1}{\rho} \nabla P - \vec{g} + \mu \nabla^2\vec{u}$$
+
+Ej. Para que la rotación importe, $Ro=U/fL<1$:
+
+**Tierra** $f$ ~ $10^{-4}$ s$^{-1}$
+
+*Océano*: $L\sim10^3$ km, $U\sim10$ cm s$^{-1}$, $Ro\sim10^{-2}$
+
+*Atmósfera*: $L\sim10^4$ km, $U\sim10$ ms$^{-1}$, $Ro\sim10^{-3}$
+
+**Plataforma giratoria** $f$ ~ $10^{-1}$ s$^{-1}$
+
+*Laboratorio*: $L\sim1$ m, $U\sim10^{-2}$ cm s$^{-1}$, $Ro\sim10^{-1}$
+
+---
+class: left
+count: false
+## Similaridad dinámica
+
+Para que dos flujos sean **físicamente equivalentes** o análogos deben tener **similaridad dinámica** (cinemática y geométrica).
+
+**Similaridad dinámica**: La importancia relativa entre distintos tipos de fuerza (e.g., inerciales, viscosas, etc.) debe ser la misma para ambos flujos.
+
+.center[<img style="width:45%"  src="./figures/interaction_eddies_real.jpg">
+<img style="width:45%"  src="./figures/interaction_eddies_lab.jpg">
+.caption[Interacción de remolinos cerca de Japón y remolinos en el laboratorio - LEGI Plataforma Coriolis (J.B. Flor, 2005). Imágenes tomadas de http://www.legi.grenoble-inp.fr/web/spip.php?article757].]
+
+---
+class: left
+</br></br>
+Habrá **similaridad dinámica** si los **grupos adimensionales** de ambos flujos son **iguales**.
+
+</br>
+Algunos ejemplos de números adimensionales relevantes:
+
+||||||
+|::||:-:||:-:|
+|**Rossby**||rotación vs. advección|| $Ro=\frac{U}{fL}$|
+|**Burger**||rotación vs. estratificación|| $Bu=\frac{NH}{fL}$|
+|**Reynolds**||inerciales  vs.  fricción|| $Re=\frac{UL}{\nu\_E}$|
+
+
+.center[<img style="width:45%"  src="./figures/vonKarman_real.jpg">
+<img style="width:45%"  src="./figures/vonKarman_lab.jpg">
+
+.caption[Vórtices de von Kárman sobre la isla de Selkirk y experimento análogo de A. Stegner (2005). Imágenes tomadas de http://www.legi.grenoble-inp.fr].]
+
+---
+class: left
+## La DFG se puede estudiar en un laboratorio
+.left-column[**Rotación**: Plataforma o mesa giratoria
+</br></br>
+**Estratificación**: Distintas concentraciones de sal o gradientes de temperatura
+</br></br>
+**Medio**: Usamos agua en vez de aire para modelar tanto océano como atmósfera (nunca he visto un túnel de viento giratorio, pero ¿tal vez sí hay?).
+</br></br>
+.caption[Mesa giratoria del Laboratorio de Fluidos Geofísicos, UBC]
+]
+
+.right-column[<img style="width:92%"  src="./figures/TanknTable.JPG">
+]
+
+---
+class: left
+## Plataformas giratorias
+.center[
+<img style="width:45%"  src="./figures/coriolis_platform.jpg">
+<img style="width:45%"  src="./figures/diynamics_tank.gif"></br>
+.caption[(Izq.) Plataforma giratoria [Coriolis LEGI](http://www.legi.grenoble-inp.fr/web/spip.php?article757), Grenoble, Francia$^2$.footnote[$2.$ Puedes pasear virtualmente por la Plataforma Coriolis en https://my.matterport.com/show/?m=CXxXSbTXREB] y (der.) pequeña mesa giratoria [DIYnamics](https://diynamics.github.io/). ]]
+
+* **Investigación**: 13 m de diámetro (1) hasta 1 m de diámetro (muchas).
+</br></br>
+* **Docencia**: Tocadiscos, mesas más pequeñas, ...
+</br></br>
+* **México**: Laboratorio de Fluidos, CICESE, Ensenada 1 m (?)  , Instituto de Astronomía y Meteorología de la U. de G. 1.5 m.  
+
+---
+class: left
+## La DFG se puede estudiar con simulaciones numéricas
+
+En general discretizamos el dominio de interés y las ecuaciones de movimiento y termodinámica usando diferencias finitas, volumen finito, etc. Ej: [pronósticos y modelos del grupo IOA](https://pronosticos.unam.mx/CCAMain/index.php/en/) del CCA (ahora ICACC). 
+
+<img style="width:45%"  src="./figures/temp_mex_ioa.png">
+<img style="width:45%"  src="./figures/ww3_IOA.png">
+
+---
+class: left
+# Referencias
+
+Cushman-Roisin y Beckers - Capítulos 1 y 11.     
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
