@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiplomadoMeteoro-Mod3-03</title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+         /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[3 Descripción de un fluido]     
+.subtitle[]
+<br/><br/>          
+.author[Diplomado en Meteorología y Climatología]  
+.institution[ICAyCC]    
+<br/>
+.date[22 de febrero de 2023] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:40%"  src="./figures/ink.jpg">
+
+#Contenido        
+
+1. [Consideraciones básicas](#notas)
+1. [Cinemática](#cinematica)
+1. [Conservación de masa](#masa)
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+       
+---
+name: notas   
+class: left
+#  Consideraciones básicas
+
+## ¿Qué es un fluido?
+
+Definición útil: *Un material que no puede permanecer inmóvil bajo la acción de fuerzas que actúan para deformarlo pero mantienen su volumen constante.*
+
+---
+class:left
+## Hipótesis del continuo
+
+Escala macroscópica >> espacio interatómico
+
+<img style="width:30%"  src="./figures/faucet.jpg">
+<img style="width:30%"  src="./figures/popo.jpg">
+<img style="width:30%"  src="./figures/bloom.jpg">
+
+---
+class:left
+## Hipótesis del continuo
+
+Promediamos en escalas mucho mayores que el espacio entre átomos pero menores que la escala de interés. 
+
+Esto nos permite definir un *continuo* de propiedades que varían continuamente en las escalas de interés.
+
+Por ejemplo: Podemos definir la temperatura como función de la posición y del tiempo, $T=T(\vec{x},t)$.
+
+---
+class: left
+##  Elemento de fluido
+
+Es un pedazo o porción arbitrariamente pequeña del continuo que nos facilita entender cómo se comporta un fluido. Es una construcción conceptual, no física, en la que asumimos que:
+
+3. su volumen es tan pequeño que sus propiedades son uniformes;
+2. tiene masa constante (usualmente);
+1. se mueve bajo la influencia del fluido que lo rodea.
+
+<img style="width:90%"  src="./figures/fluid_element.png">
+
+---
+name: cinematica
+class: left
+##  Cinemática: ¿Cómo vamos a describir al fluido?
+
+Describir el movimiento de un objeto pequeño, como una piedra, es relativamente sencillo. Podemos seguir la trayectoria del centro de masas como una función $\vec{x}=\vec{x}(t)$ y relacionar las fuerzas que actúan sobre la piedra con la velocidad y aceleración a partir de nuestro conocimiento de $\vec{x}(t)$. 
+
+La descripción de un fluido no es tan simple. El fluido está en todos lados. No nos interesa la trayectoria del centro de masas sino el movimiento del continuo, constituido por una inifindad de elementos de fluido.
+
+En general hay dos métodos útiles:
+
+**Descripción euleriana**
+
+**Descripción lagrangiana** 
+
+---
+class: center
+## Analogía entre descripciones
+
+<img style="width:90%"  src="./figures/euler_vs_lagrange_dibujo.png">
+
+
+---
+class: left
+##  Descripción euleriana
+.left-column[Fluido en espacio 3D y tiempo. Podemos describir una propiedad $P$ como función del vector de posición $\vec{x} = (x, y, z)$ y el tiempo, $P=P(\vec{x},t)$.
+
+Descripción de P en cada punto y para cada tiempo sin especificar qué elemento de fluido ocupa qué posición a un tiempo dado$^1$.footnote[$1.$ E.g. Ve a [nvs.nanoos.org](http://nvs.nanoos.org/) para ver ejemplos de series de tiempo de "plataformas fijas".].
+
+* Anemómetro fijo
+* Corrientímetro]
+
+.right-column[
+<img style="width:70%"  src="./figures/anemometer_gettyimages.webp"></br>
+<img style="width:70%"  src="./figures/mooring_schematic.jpg">
+]
+---
+class: left
+##  Descripción lagrangiana
+.left-column[
+"Monitorea" elementos de fluido individuales y especifica las propiedades con respecto a cada elemento.
+
+Descripción del flujo siguiendo a cada partícula de fluido.
+
+Ejemplos de mediciones lagrangianas:
+* Drifters o flotadores en el océano$^2$.footnote[$2.$ Por ejemplo: Flotadores del Lagrangian Drifter Lab del Global Drifter Program de NOAA [en vivo](https://gdp.ucsd.edu/apps/projects/noaa/global-drifter-program.html)] 
+* Radiosondas atmosféricas (más o menos)]
+
+.right-column[
+<img style="width:70%"  src="./figures/drifter_scripps.jpg"></br>
+<img style="width:70%"  src="./figures/radiosonda_vaisala.jpg">
+]
+
+---
+class: left
+##  Tasas de cambio
+ Imagina que viajas de Cuernavaca al Puerto de Veracruz en bicicleta. En el camino notarás un cambio de temperatura. Esto puede ser debido a que la temperatura cambió en el tiempo (hora del día, fenómeno meteorológico, etc) o a que atravesamos un gradiente espacial de temperatura (altitud, vegetación, etc.).
+
+.center[<img style="width:60%" src="./figures/ciclista_material.png">]
+
+ Veremos 3 nociones de tasa de cambio:
+
+ 1. Cambio temporal local (tasa de cambio en un punto fijo),
+ 2. tasa de cambio de un observador en movimiento y
+ 3. tasa de cambio de un elemento de fluido dentro del flujo. 
+
+---
+class: left
+
+## Tasa de cambio local
+Definimos la tasa de cambio de una propiedad $P$ con respecto al tiempo en un punto fijo $\vec{x}$ como:
+
+$$\textrm{Derivada temporal local} = {\frac{\partial P}{\partial t}}\Big|_{\vec{x}}$$
+
+
+Regularmente omitimos el subíndice $\vec{x}$. Podemos ver esto como el cambio de $P$ conforme una serie de elementos de fluido pasan por el punto $\vec{x}$.
+
+---
+class: left
+
+## Tasa de cambio de un observador en movimiento
+
+Volvamos a la ciclista viajando a Veracruz. Digamos que se mueve a velocidad $\vec{v}=(v_1,v_2,v_3)$ distinta al fluido (aire), de manera que para ella $\vec{v}=d\vec{x}/dt$.
+
+El cambio **total** en la propiedad $P$ medido por la ciclista es:
+
+
+$$\frac{dP}{dt}=\frac{\partial P}{\partial t} + \frac{\partial P}{\partial x}\frac{dx}{dt} + \frac{\partial P}{\partial y}\frac{dy}{dt} + \frac{\partial P}{\partial z}\frac{dz}{dt}$$
+
+$$\frac{dP}{dt}=\frac{\partial P}{\partial t}+\vec{v}\cdot\nabla P$$
+
+---
+class: left
+## Ejemplo: 
+Tasa de cambio de la altura sobre el piso de una niña que baja por una resbaladilla.
+
+---
+class: left
+
+## Tasa de cambio de un elemento de fluido dentro del flujo
+
+El "observador" ahora es el mismo flujo, que se mueve con la misma velocidad que el fluido, $\vec{u}$. La tasa de cambio es simplemente la tasa de cambio de la propiedad $P$ del propio elemento de fluido:
+
+$$\frac{DP}{Dt}=\frac{\partial P}{\partial t}+\vec{u}\cdot\nabla P.$$
+
+A esta tasa de cambio se le conoce como *derivada material* o *derivada total*.
+
+---
+class: left
+## Ejemplo:
+
+Propiedad cuya distribución está dada por $P=P_0\cos{\omega t}\sin{kx}$, donde $\omega=2\pi/T$ es la frecuencia de la onda y $k=2\pi/\lambda_x$ es el número de onda en dirección $x$. Supongamos que el flujo es únicamente en dirección $x$ con magnitud $U$.
+
+(pizarrón) 
+
+---
+name: masa     
+class: left
+#  Conservación de masa
+
+Intuitivamente:
+
+Cambio en la masa dentro de la cubeta es igual a la masa de agua que sale de la cubeta.
+
+<img style="width:90%"  src="./figures/cons_masa.jpg">
+
+---
+class: left
+
+Vamos a las notas (derivación consevación de masa)
+
+---
+class: left
+#  Ecuación de conservación de masa
+
+$$\frac{D\rho}{Dt}+\rho\nabla\cdot\vec{u}=0$$
+
+El cambio local en la masa dentro de un volumen de control se compensa con la divergencia local del flujo de masa en el volumen.
+
+
+En un *fluido incompresible* $\rho$ es constante, por lo que $D\rho/ Dt=0$ y la ecuación de continuidad queda como:  $$\nabla\cdot\vec{u}=0.$$
+
+¿Esto es válido en la atmósfera?
+---
+class: left
+# Referencias
+
+.caption[Parte de esta presentación está basada en las notas de clase de Prof. Stephanie Waterman (UBC) y Prof. Suzanne Fielding (Durham).]
+</br> 
+.caption[
+Bibliografía adicional:
+   P. K. Kundu y I. M.Cohen (2004) Fluid Mechanics, 3ra ed. Elsevier.]
+
+</br></br>
+.caption[Imágenes tomadas de Graham Richardson en flickr] .caption[(tinta azul), latintimes.com (Popocatépetl), learncax.com (elemento de fluido), wikicommons (afloramiento en Isla de Vancouver)]
+.caption[Lagrangian Drifter Lab SRIPPS (drifter), https://kinoshita.eti.br/2016/07/12/ (globo meteorológico), mayo05 getty images (anemómetro), Figura 1 en Bailey et al. (2019) Coastal Mooring Observing Networks and Their Data Products: Recommendations for the Next Decade (https://doi.org/10.3389/fmars.2019.00180) (esquemas anclajes costeros)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
