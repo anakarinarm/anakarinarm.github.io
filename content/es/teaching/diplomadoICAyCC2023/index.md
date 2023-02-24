@@ -40,3 +40,6 @@ Las notas de clase se encuentran en la página del curso en Classroom.
 * 22 de febrero: [Introducción al curso](Slides/01_intro.html)
 * 22 de febrero: [Escalas atmosféricas](Slides/02_escalas.html)
 * 22 de febrero: [Cinemática y conservación de masa](Slides/03_repasoFluidos.html)
+* 24 de febrero: [Conservación de momento](Slides/04_momento.html)
+* 24 de febrero: [Aceleración de Coriolis 1](Slides/05_coriolis1.html)
+* 24 de febrero: [Aceleración de Coriolis 2](Slides/05_coriolis2.html)
