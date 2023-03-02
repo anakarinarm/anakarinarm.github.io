@@ -311,20 +311,20 @@ class: left
 
 En forma $\bf{vectorial}$:
 
-$$\frac{D\bf{U}}{Dt}=-2\bf{\Omega} \times \bf{U} - \frac{1}{\rho}\nabla p + \bf{g} + \bf{F_r}$$
+$$\frac{D\bf{U}}{Dt}=-2\bf{\Omega} \times \bf{U} - \frac{1}{\rho}\nabla P + \bf{g} + \bf{F_r}$$
 
 donde el término $\bf{F_r}$ contiene a las fuerzas de fricción/disipación. 
 
-Estas ecuaciones funcionan para coordenadas cartesianas o esféricas ($\phi, \lambda, z$).
+Estas ecuaciones funcionan para coordenadas cartesianas o esféricas ($\varphi, \lambda, z$).
 
 En esféricas: 
 
 Definimos $x$ y $y$ como las distancias hacia el **este** y hacia el **norte**, respectivamente, de manera que 
 
 .center[
-$Dx = a \cos{\phi} D\lambda$ y $Dx = a D\phi$,]
+$Dx = A \cos{\varphi} D\lambda$ y $Dy = A D\varphi$,]
 
-donde $a$ es el radio de la Tierra, $\phi$ la latitud y $\lambda$ la longitud.
+donde $A$ es el radio de la Tierra, $\varphi$ la latitud y $\lambda$ la longitud.
 
 ---
 Entonces, las velocidades al **este**, al **norte**, y **vertical** son:
@@ -335,13 +335,13 @@ $u \equiv \frac{Dx}{Dt}$ y $v \equiv \frac{Dx}{Dt}$.]
 usando las definiciones de $x$ y $y$:
 
 .center[
-$u \equiv r\cos{\phi} \frac{D \lambda}{Dt}$,   
+$u \equiv r\cos{\varphi} \frac{D \lambda}{Dt}$,   
 
-$v \equiv r\frac{D \phi}{Dt}$,   
+$v \equiv r\frac{D \varphi}{Dt}$,   
 
 $w \equiv \frac{Dz}{Dt}$]
 
-donde $r$ es la distancia al centro de la Tierra ($r \sim a$), $u$ es la velocidad zonal (positiva al este), $v$ la meridional (positiva al norte), y $w$ la vertical (positiva hacia arriba).
+donde $r$ es la distancia al centro de la Tierra ($r \sim A$), $u$ es la velocidad zonal (positiva al este), $v$ la meridional (positiva al norte), y $w$ la vertical (positiva hacia arriba).
 
 El sistema (x,y,z) definido así NO es cartesiano, pues las direcciones (vectores unitarios) son función de la posición en la esfera. Esto genera términos extra cuando expandimos los términos en la ec. de momento.
 
@@ -349,13 +349,13 @@ El sistema (x,y,z) definido así NO es cartesiano, pues las direcciones (vectore
 
 Después de un poco de talacha, las ecuaciones de momento para las componentes de movimiento hacia el este, hacia el norte y vertical sobre la esfera quedan como:
 
-$$\frac{Du}{Dt} - \frac{uv \tan{\phi}}{a} + \frac{uw}{a} = -\frac{1}{\rho}\frac{\partial p}{\partial x}+ fv - f^*w+F_{rx}$$
+$$\frac{Du}{Dt} - \frac{uv \tan{\varphi}}{A} + \frac{uw}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial x}+ fv - f^*w+F_{rx}$$
 
-$$\frac{Dv}{Dt} + \frac{u^2 \tan{\phi}}{a} + \frac{vw}{a} = -\frac{1}{\rho}\frac{\partial p}{\partial y}- fv +F_{ry}$$
+$$\frac{Dv}{Dt} + \frac{u^2 \tan{\varphi}}{A} + \frac{vw}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial y}- fv +F_{ry}$$
 
-$$\frac{Dw}{Dt} + \frac{u^2+v^2}{a} = -\frac{1}{\rho}\frac{\partial p}{\partial z}- g + f^*u +F_{rz}.$$
+$$\frac{Dw}{Dt} + \frac{u^2+v^2}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial z}- g + f^*u +F_{rz}.$$
 
-Los términos proporcionales a $1/a$ se conoecn como *términos de curvatura*. Son no lineales y complican el análisis, pero podemos ignorarlos porque son pequeños en escalas sinópticas.
+Los términos proporcionales a $1/A$ se conoecn como *términos de curvatura*. Son no lineales y complican el análisis, pero podemos ignorarlos porque son pequeños en escalas sinópticas.
 
 ---
 
@@ -381,18 +381,18 @@ Para latitudes medias y escalas sinópticas, $f = 2\Omega\sin(45)\sim 2\Omega\co
 .center[
 <img style="width:90%"  src="./figures/escalas_terminos_mmtm_hor_holton.png"> </br>
 <img style="width:90%"  src="./figures/escalas_terminos_mmtm_ver_holton.png"> ]
-.caption(tamaño aproximado de los términso de las ecuaciones de momento. Tablas de Holton (2004), capítulo 2)
+.caption[tamaño aproximado de los términos de las ecuaciones de momento. Tablas de Holton (2004), capítulo 2)]
 
 ---
 Entonces, las ecuaciones de momento para escalas sinópticas quedan como (clases 5 y 6):
 
-$$\rho\frac{Du}{Dt}-fv=-\frac{\partial p}{\partial x}$$
-$$\rho\frac{Dv}{Dt}+fu=-\frac{\partial p}{\partial y}$$
-$$\rho g=-\frac{\partial p}{\partial z}$$
+$$\rho\frac{Du}{Dt}-fv=-\frac{\partial P}{\partial x}$$
+$$\rho\frac{Dv}{Dt}+fu=-\frac{\partial P}{\partial y}$$
+$$\rho g=-\frac{\partial P}{\partial z}$$
 
-donde x, y, z apuntan en dirección este, norte y arriba, respectivamente, $f=2\Omega \sin{\phi}$, $\rho$ es la densidad, $p$ es la presión, $g$ es la aceleración debida a la gravedad (gravedad aparente o neta) y usamos la aproximación hidrostática en la ecuación de momento vertical. 
+donde x, y, z apuntan en dirección este, norte y arriba, respectivamente, $f=2\Omega \sin{\varphi}$, $\rho$ es la densidad, $P$ es la presión, $g$ es la aceleración debida a la gravedad (gravedad aparente o neta) y usamos la aproximación hidrostática en la ecuación de momento vertical. 
 
-Hasta ahora tenemos **4 ecuaciones** (3 momento, 1 de continuidad) y **5 incógnitas** ($u$, $v$, $w$, $p$, $\rho$). ¡Necesitamos una para $p$!
+Hasta ahora tenemos **4 ecuaciones** (3 momento, 1 de continuidad) y **5 incógnitas** ($u$, $v$, $w$, $P$, $\rho$). ¡Necesitamos una para $P$!
 
 ---
 name: estado
@@ -408,7 +408,7 @@ Aire seco en la atmósfera se comporta como gas ideal (aprox.)
 
 $$\rho=\frac{P}{RT}$$
 
-donde $P$ es la presión, T es la temperatura absoluta en K y $R$ = 287 m$^2$s$^{-2}$K$^{-1}$ (condiciones normales de T y P.
+donde $P$ es la presión, T es la temperatura absoluta en K y $R$ = 287 m$^2$s$^{-2}$K$^{-1}$ (condiciones normales de T y P).
 
 
 
@@ -434,7 +434,6 @@ Llevamos **5 ecuaciones** (3 de momento, 1 de continuidad,  1 ecuación de estad
 * Conservación de energía
 * Conservación de vapor de agua
 
-Vamos a las notas...
 
 ---
 name: energia
@@ -458,7 +457,7 @@ donde $C_v$ es la **capacidad calorífica** a volumen constante (Ej. aire a nive
 
 ### Término de calor $Q$
 
-En la atmósfera la condensación y evaporación liberan o absorben **calor latente**. Pero dejando de la termodinámica atmosférica, que es mucho más complicada que esto, el término $Q$ en (1) solo incluye el calor ganado por la parcela debido al contacto con sus vecinas por medio de la difusión.
+En la atmósfera la condensación y evaporación liberan o absorben **calor latente**. Pero dejando de lado termodinámica atmosférica, que es mucho más complicada que esto (ya lo vieron en el módulo 2), el término $Q$ en (1) solo incluye el calor ganado por la parcela debido al contacto con sus vecinas por medio de la difusión.
 
 Usando la Ley de Fourier de conducción:
 
@@ -469,7 +468,7 @@ donde $K_T$ es **conductividad térmica** del fluido y $\nabla^2$ es el operador
 ---
 ### Término de energía mecánica $W$
 
-El trabajo realizado por el fluido es la fuerza debida a la presión ($P/A$) por el desplazameinto en dirección de la fuerza. Contando área por desplazameinto=volumen, el trabajo es presión x cambio de volumen, por unidad de masa y tiempo esto es:
+El trabajo realizado por el fluido es la fuerza debida a la presión $(P/Área)$ por el desplazameinto en dirección de la fuerza. Contando área por desplazamiento=volumen, el trabajo es presión x cambio de volumen, por unidad de masa y tiempo esto es:
 
 $$W=P\frac{D\mathcal{V}}{Dt}, \textrm{    (4)}$$
 
@@ -486,11 +485,11 @@ $$C\_v \frac{DT}{Dt}=\frac{K\_T}{\rho}\nabla^2T-P\frac{D\mathcal{V}}{Dt} = \frac
 
 Usando la ecuación de continuidad completa:
 
-$$\frac{\partial \rho}{\partial t}+ \frac{\partial (\rho u)}{\partial x} + \frac{\partial (\rho v)}{\partial y}+ \frac{\partial (\rho w)}{\partial z}$$
+$$\frac{\partial \rho}{\partial t}+ \frac{\partial (\rho u)}{\partial x} + \frac{\partial (\rho v)}{\partial y}+ \frac{\partial (\rho w)}{\partial z}=0$$
 
-para reescribir la término $D\rho/Dt$:
+reescribimos al término $D\rho/Dt$:
 
-$$\rho C\_v \frac{DT}{Dt}+ p\left(\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}\right) =K\_T \nabla^2T. \textrm{      (6)}$$
+$$\rho C\_v \frac{DT}{Dt}+ P\left(\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}\right) =K\_T \nabla^2T. \textrm{      (6)}$$
 
 ---
 class: left
@@ -498,12 +497,11 @@ class: left
 
 **Humedad específica** :
 
-$$\frac{Dq}{Dt}=\kappa_q\nabla^2q$$
+$$\frac{Dq}{Dt}=K_q\nabla^2q$$
 
-$q$ se redistrubuye por contacto ocn parcelas vecinas con distinta $q$ y $\kappa_q$ es un coeficiente de difusión similar al térmico.
+$q$ se redistrubuye por contacto ocn parcelas vecinas con distinta $q$ y $K_q$ es un coeficiente de difusión similar al térmico.
 
 Estamos **ingnorando la evaporación y la condensación**. La ecuación de conservación es más complicada de lo que escribimos aquí, pero para fines de la clase consideremos esta versión.
-
 
 
 ---
@@ -514,7 +512,7 @@ class: left
 
 * En la atmósfera la densidad varía muy poco.
 
-* Cambio de $\rho$ del suelo a la exósfera: 100% Pero estos cambios son principalmente hidrostáticos, el resto de la variación es muy pequeña.
+* Cambio de $\rho$ del suelo a la exósfera: 100%, pero estos cambios son principalmente hidrostáticos, el resto de la variación es muy pequeña.
 
 * Además, en la tropósfera $\Delta\rho<$5%.
 
@@ -544,14 +542,14 @@ La conservación de masa se simplifica a ser conservación de volumen.
 
 $\rho$ aparece multiplicando del lado izquierdo, y los términos con $\rho_0$ dominarán sobre los términos con $\rho'$:
 
-$$\rho\_0\frac{Du}{Dt}-fv=-\frac{\partial p}{\partial x} + F\_{rx}$$
+$$\rho\_0\frac{Du}{Dt}-fv=-\frac{\partial P}{\partial x} + F\_{rx}$$
 
-$$\rho\_0\frac{Dv}{Dt}+fu=-\frac{\partial p}{\partial y} + F\_{ry}$$
+$$\rho\_0\frac{Dv}{Dt}+fu=-\frac{\partial P}{\partial y} + F\_{ry}$$
 
 ---
 ### Ecuación de momento vertical
 
-La densidad aparece también en la presión hidrostática $P_0$ ($\partial P\_0/\partial z=-\rho\_0g$).
+La densidad aparece en la presión hidrostática $P_0$ $(\partial P\_0/\partial z=-\rho\_0g)$.
 
 Escribimos a la presión como:
 $$P=P\_0(z) + P'(x,y,z,t)$$
@@ -600,14 +598,14 @@ Aproximación de Boussinesq + argumentos de escalas + viscosidad efectiva consta
 $$\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}=0$$
 
 2-4. Momento:
-$$\frac{Du}{Dt}-fv=-\frac{1}{\rho_0}\frac{\partial p}{\partial x}+A\left(\frac{\partial u}{\partial x}+\frac{\partial u}{\partial y}\right) + \nu_E\frac{\partial u}{\partial z}$$
-$$\frac{Dv}{Dt}+fu=-\frac{1}{\rho_0}\frac{\partial p}{\partial y}+A\left(\frac{\partial v}{\partial x}+\frac{\partial v}{\partial y}\right) + \nu_E\frac{\partial v}{\partial z}$$
-$$0=-\rho g - \frac{\partial p}{\partial z}$$.
+$$\frac{Du}{Dt}-fv=-\frac{1}{\rho\_0}\frac{\partial P}{\partial x}+\mathcal{A}\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}\right) + \nu\_E\frac{\partial^2 u}{\partial z^2}$$
+$$\frac{Dv}{Dt}+fu=-\frac{1}{\rho\_0}\frac{\partial P}{\partial y}+\mathcal{A}\left(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}\right) + \nu\_E\frac{\partial^2 v}{\partial z^2}$$
+$$0=-\rho g - \frac{\partial P}{\partial z}$$.
 
 ---
 class: left
 5.Energía:
-$$\frac{D \rho}{Dt} = A\left(\frac{\partial \rho}{\partial x}+\frac{\partial \rho}{\partial y}\right) + \kappa_E\frac{\partial \rho}{\partial z}$$
+$$\frac{D \rho}{Dt} = \mathcal{\kappa_H}\left(\frac{\partial^2 \rho}{\partial x^2}+\frac{\partial^2 \rho}{\partial y^2}\right) + \kappa_E\frac{\partial^2 \rho}{\partial z^2}$$
 
 **Incógnitas**: $u$, $v$, $w$, $p$, $\rho$ ($T$ y $Q$ quedan dentro de $\rho$)
 
@@ -615,9 +613,9 @@ $$\frac{D \rho}{Dt} = A\left(\frac{\partial \rho}{\partial x}+\frac{\partial \rh
 
 **Cuasi-constantes**: 
 
-$f = 2\Omega \sin{\phi}$ (depende de la latitud o puede tomarse como constante si aproximamos un plano alrededor de una latitud).
+$f = 2\Omega \sin{\varphi}$ (depende de la latitud o puede tomarse como constante si aproximamos un plano alrededor de una latitud).
 
-Viscosidades efectivas (eddy) $A$ y $\nu_E$, difusividad efectiva (eddy diffusivity) $\kappa_E$. Para esta clase tomamos a $A$, $\nu_E$ y $\kappa_E$ como constantes pero estríctamente pueden ser función del espacio, tiempo o variables de estado.
+Viscosidades efectivas (eddy) $\mathcal{A}$ y $\nu_E$, difusividades efectivas (eddy) $\kappa_H$ y $\kappa_E$. Para esta clase tomamos a $\mathcal{A}$, $\nu_E$, $\kappa_E$, $\kappa_H$ como constantes pero estríctamente pueden ser función del espacio, tiempo o variables de estado.
 
 1-5 se conocen como **ecuaciones primitivas**.
 ---
