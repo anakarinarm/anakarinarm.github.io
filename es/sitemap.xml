@@ -3,13 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://anakarinarm.github.io/tag/cursos/</loc>
-    <lastmod>2023-03-01T15:15:01-06:00</lastmod>
+    <loc>https://anakarinarm.github.io/publication-type/2/</loc>
+    <lastmod>2023-07-13T18:10:37-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication-type/2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication-type/2/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/publication/svb_gravitywaves/</loc>
+    <lastmod>2023-07-13T18:10:37-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication/svb_gravitywaves/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication/svb_gravitywaves/"
+                />
   </url>
   
   <url>
     <loc>https://anakarinarm.github.io/</loc>
-    <lastmod>2023-03-01T15:15:01-06:00</lastmod>
+    <lastmod>2023-07-13T18:22:34-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -20,6 +45,26 @@
                 hreflang="es"
                 href="https://anakarinarm.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/publication_types/</loc>
+    <lastmod>2023-07-13T18:10:37-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/publication_types/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/publication_types/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/tag/cursos/</loc>
+    <lastmod>2023-03-01T15:15:01-06:00</lastmod>
   </url>
   
   <url>
@@ -58,21 +103,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/publication-type/2/</loc>
-    <lastmod>2022-11-13T21:56:55-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/publication-type/2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/publication-type/2/"
-                />
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/publication/gc_lab/</loc>
     <lastmod>2022-11-13T21:56:55-06:00</lastmod>
     <xhtml:link
@@ -84,21 +114,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://anakarinarm.github.io/publication/gc_lab/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/publication_types/</loc>
-    <lastmod>2022-11-13T21:56:55-06:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/publication_types/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/publication_types/"
                 />
   </url>
   
@@ -324,7 +339,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/author/amelia-thelandersson/</loc>
-    <lastmod>2022-05-07T22:34:39-05:00</lastmod>
+    <lastmod>2023-07-13T18:14:32-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -339,7 +354,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/authors/</loc>
-    <lastmod>2022-11-13T21:38:04-06:00</lastmod>
+    <lastmod>2023-07-13T18:22:34-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -349,6 +364,21 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://anakarinarm.github.io/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/author/brenda-ricci/</loc>
+    <lastmod>2023-07-13T18:22:34-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/brenda-ricci/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/brenda-ricci/"
                 />
   </url>
   
