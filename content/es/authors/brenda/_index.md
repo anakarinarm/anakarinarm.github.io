@@ -15,7 +15,7 @@ role: Servicio Social (Ciencias Atmosféricas)
 # Organizations/Affiliations
 organizations: 
 - name: Universidad Autónoma Metropolitana
-  url: ""http://www.iztapalapa.uam.mx/""
+  url: "http://www.iztapalapa.uam.mx/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.
