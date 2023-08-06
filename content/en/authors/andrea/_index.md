@@ -1,21 +1,21 @@
 ---
 # Display name
-title: Esteban Cruz Isidro
+title: Andrea Mitre
 
 # Username (this should match the folder name)
 authors:
-- esteban
+- andrea
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Tesista de licenciatura (Ciencias de la Tierra)
+role: PhD (Physical Oceanography)
 
 # Organizations/Affiliations
 organizations: 
-- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
-  url: "https://www.atmosfera.unam.mx"
+- name: CICESE
+  url: "https://oceanografia.cicese.mx/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: I am a physical oceangrapher interested in the interactions between flow and topography.
@@ -62,5 +62,5 @@ email: ""
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-- Alumni
+- Students
 ---
