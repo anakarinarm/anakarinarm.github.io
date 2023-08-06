@@ -34,7 +34,7 @@
   
   <url>
     <loc>https://anakarinarm.github.io/</loc>
-    <lastmod>2023-07-13T18:22:34-06:00</lastmod>
+    <lastmod>2023-08-06T10:55:54-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -353,8 +353,23 @@
   </url>
   
   <url>
+    <loc>https://anakarinarm.github.io/author/andrea-mitre/</loc>
+    <lastmod>2023-08-06T10:55:54-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/andrea-mitre/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/andrea-mitre/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/authors/</loc>
-    <lastmod>2023-07-13T18:22:34-06:00</lastmod>
+    <lastmod>2023-08-06T10:55:54-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -398,7 +413,22 @@
   
   <url>
     <loc>https://anakarinarm.github.io/author/esteban-cruz-isidro/</loc>
-    <lastmod>2022-05-07T22:35:03-05:00</lastmod>
+    <lastmod>2023-08-06T10:51:02-06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/author/esteban-cruz-isidro/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/author/esteban-cruz-isidro/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/author/esteban-cruz-isidro/</loc>
+    <lastmod>2023-08-06T10:52:17-06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
