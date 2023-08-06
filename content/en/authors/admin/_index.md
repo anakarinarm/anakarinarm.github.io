@@ -41,9 +41,12 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:kramosmu@atmosfera.unam.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.ca".
-- icon: twitter
+- icon: instagram
   icon_pack: fab
-  link: https://twitter.com/anakarinarm
+  link: https://www.instagram.com/flugeo_icaycc/
+#- icon: twitter
+#  icon_pack: fab
+#  link: https://twitter.com/anakarinarm
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ

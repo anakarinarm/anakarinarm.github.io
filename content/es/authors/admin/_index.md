@@ -41,9 +41,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: "mailto:kramosmu@atmosfera.unam.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.mx".
-- icon: twitter
+- icon: instagram
   icon_pack: fab
-  link: https://twitter.com/anakarinarm
+  link: https://www.instagram.com/flugeo_icaycc/
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -55,7 +55,6 @@ social:
 - icon: cv
   icon_pack: ai
   link: https://drive.google.com/file/d/1mu_BCGQH9Ua7xUyk-bcoHGfy1TjW12Gf/view?usp=sharing
-
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 

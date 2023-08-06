@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Servicio Social (Ing. Geofísica) 
+role: Tesista de licenciatura (Ing. Geofísica) 
 
 # Organizations/Affiliations
 organizations: 
