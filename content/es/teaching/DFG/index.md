@@ -1,6 +1,6 @@
 ---
 title: Dinámica de Fluidos Geofísicos
-summary: Semestre 2022-1, Facultad de Ciencias, UNAM
+summary: Semestres 2022-1, 2024-1, Facultad de Ciencias, UNAM
 tags:
 - Cursos
 date: "2021-09-20T00:00:00Z"
@@ -31,20 +31,11 @@ external_link: ""
 #   Otherwise, set `slides = ""`.
 slides: example
 ---
-Semestre 2022-1 Facultad de Ciencias, UNAM
+Semestre 2024-1 Facultad de Ciencias, UNAM
 
 Los videos, tareas y notas de clase se ecuentran en la página del curso en Classroom.
 
 #### Diapositivas de clase
 
-* 20 de septiembre: [Introducción al curso](Slides/01_20sep21.html) 
-* 22 de septimebre: [Importancia de la rotación y estratificación](Slides/02_22sep21.html)
-* 29 de septimebre: [Repaso dinámica de fluidos](Slides/04_29sep21.html)
-* 04 de octubre: [Aceleración de Coriolis parte 1](Slides/05_04oct21.html)
-* 06 de octubre: [Aceleración de Coriolis parte 2](Slides/06_06oct21.html)
-* 11 de octubre: [Ecuaciones de movimiento de un fluido en rotación parte 1](Slides/07_11oct21.html)
-* 18 de octubre: [Ecuaciones de movimiento de un fluido en rotación parte 3](Slides/09_18oct21.html)
-* 10, 17, 22 de noviembre: [Fricción y capas de Ekman](Slides/14_10nov21.html)
-* 24 de noviembre: [Jupyter notebook](Slides/ondas_conceptos_html.html) Repaso de conceptos de ondas
-* 29 de nov, 1 de dic: [Ondas barotópicas I: ondas de gravedad modificadas por la rotación](Slides/18_29nov21.html) 
-* 6 de dic: [Ondas barotópicas II: ondas de Rossby y topográficas](Slides/20_06dic21.html) 
+* 15 de agosto: [Introducción al curso](Slides/01_15ago23.html) 
+* 17 de agosto: [Importancia de la rotación y estratificación](Slides/02_17ago23.html)

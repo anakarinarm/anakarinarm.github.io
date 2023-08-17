@@ -1,6 +1,6 @@
 ---
 title: Introduction to Geophysical Fluid Dynamics
-summary: 2022-1 (In Spanish)
+summary: 2022-1, 2024-1 (In Spanish)
 tags:
 - Teaching
 date: "2021-09-20T00:00:00Z"
