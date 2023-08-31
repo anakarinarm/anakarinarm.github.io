@@ -40,3 +40,4 @@ Los videos, tareas y notas de clase se ecuentran en la página del curso en Clas
 * 15 de agosto: [Introducción al curso](Slides/01_15ago23.html) 
 * 17 de agosto: [Importancia de la rotación y estratificación](Slides/02_17ago23.html)
 * 22 de agosto: [Repaso de conceptos de fluidos](Slides/03_22ago23.html)
+* 29 y 31 de agosto: [Fuerza de Coriolis](Slides/05_29ago23.html)
