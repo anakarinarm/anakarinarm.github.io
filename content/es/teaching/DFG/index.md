@@ -41,6 +41,7 @@ Las tareas, notas y recursos adicionales de clase se ecuentran en la página del
 * 17 de agosto: [Importancia de la rotación y estratificación](Slides/02_17ago23.html)
 * 22 de agosto: [Repaso de conceptos de fluidos](Slides/03_22ago23.html)
 * 29 y 31 de agosto: [Fuerza de Coriolis](Slides/05_29ago23.html)
-* 5 y 7 de septiembre: [Ecuaciones de movimiento](Slides/06_05sep23.html)
+* 5 y 7 de septiembre: [Ecuaciones de movimiento 
+I](Slides/06_05sep23.html)
 * 11 de septiembre: [Ecuaciones de movimiento II](Slides/07_11sep23.html)
 * 11 y 13 de septiembre: [Geostrofía I](Slides/08_13sep23.html)
