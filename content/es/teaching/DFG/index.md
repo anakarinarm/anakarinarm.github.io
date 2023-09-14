@@ -43,5 +43,5 @@ Las tareas, notas y recursos adicionales de clase se ecuentran en la página del
 * 29 y 31 de agosto: [Fuerza de Coriolis](Slides/05_29ago23.html)
 * 5 y 7 de septiembre: [Ecuaciones de movimiento 
 I](Slides/06_05sep23.html)
-* 11 de septiembre: [Ecuaciones de movimiento II](Slides/07_11sep23.html)
-* 11 y 13 de septiembre: [Geostrofía I](Slides/08_13sep23.html)
+* 12 de septiembre: [Ecuaciones de movimiento II](Slides/07_12sep23.html)
+* 14 de septiembre: [Geostrofía I](Slides/08_14sep23.html)
