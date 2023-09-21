@@ -45,3 +45,4 @@ Las tareas, notas y recursos adicionales de clase se ecuentran en la página del
 I](Slides/06_05sep23.html)
 * 12 de septiembre: [Ecuaciones de movimiento II](Slides/07_12sep23.html)
 * 14 de septiembre: [Geostrofía I](Slides/08_14sep23.html)
+* 21 de septiembre: [Geostrofía II](Slides/09_21sep23.html)
