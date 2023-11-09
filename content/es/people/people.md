@@ -27,7 +27,7 @@ content:
     - Colaboradores
     - Staff
     - Visitantes
-    - Alumni
+    - Exalumnxs
 design:
   show_interests: false
   show_role: true
