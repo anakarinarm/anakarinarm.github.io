@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinámica de Fluidos Geofísicos </title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[Dinámica de Fluidos Geofísicos]     
+.subtitle[Viento termal y surgencia costera]
+<br/><br/>          
+.author[Semestre 2024-I]  
+.institution[Facultad de Ciencias]      
+<br/>
+.date[23 de noviembre de 2023] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+           
+---
+class: left
+## Viento termal
+.center[<img style="width:70%" src="./figures/thermal_wind.png">]
+.center[.caption[Figura 15-1 de Cushman-Roisin y Beckers (2011).]]
+
+Vamos a las notas...
+
+---
+class: left
+## Demostración en el laboratorio
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KfJvymo_BYE?si=da-Y_J3A1_cefvNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+.caption[Thermal wind demonstration, Met Office UK]
+
+---
+class: left
+## Surgencia costera
+
+.center[<img style="width:70%" src="./figures/upwelling-and-downwelling_clip_image002.jpg">]
+.center[.caption[Imagen: American Meteorological Soc. tomada de [Ocean Motion and surface currents, NASA](http://oceanmotion.org/html/background/upwelling-and-downwelling.htm)]]
+
+---
+class: left
+## Desarrollo de la surgencia costera
+
+</br></br></br>
+
+.center[<img style="width:70%" src="./figures/fig_15-5_cushman.png">]
+.center[.caption[Imagen: Fig 15.5 Cushman-Roisin y Beckers (2011)]]
+
+---
+class: left
+## Algunos tipos de surgencia
+
+Costera, ecuatorial y al borde del hielo
+
+</br></br></br>
+.center[<img style="width:80%" src="./figures/Types-of-oceanic-upwelling-Kaempf.jpg">]
+.center[.caption[Imagen: Kämpf y Chapman (2016) Upwelling Systems of the World]]
+
+---
+class: left
+## Regiones importantes de surgencia costera en el mundo
+
+</br></br></br>
+.center[<img style="width:90%" src="./figures/locations_regions_upwelling_Kaempf.jpg">]
+.center[.caption[Imagen: Kämpf y Chapman (2016) Upwelling Systems of the World]]
+
+---
+class: left
+## Un ejemplo: Corriente de California
+
+.left-column[
+Los patrones espaciales son mucho más complicados debido a variaciones espaciales y temporales del viento, la línea de costa, la forma del fondo, procesos dinámicos de segundo orden, etc.]
+
+.right-column[
+.center[<img style="width:100%" src="./figures/fig_15-9_cushman_upwelling_cali.jpg">]
+.center[.caption[Imagen: Fig 15.9 de Cushman-Roisin y Beckers (2011)]]]
+
+---
+class: left
+## Un modelo simple de surgencia costera 
+
+(Ver notas)
+
+* Gravedad reducida en plano $f$
+* Capa superior móvil (incluye toda la capa de Ekman)
+* Capa inferior no se mueve y es infinita
+
+En las notas encontramos que la surgencia está atrapada a la costa en una distancia característica dada por:
+
+$$R_\omega = \sqrt{\frac{g'H}{f^2-\omega^2}}$$
+
+
+---
+class: left
+## Referencias
+
+Cushman-Roisin y Beckers, capítulo 15.
+
+Kämpf, J., & Chapman, P. (2016). Upwelling systems of the world. Springer International Publishing Suiza. Disponible via [BiDiUNAM](https://bidi.unam.mx/)
+
+
+</br></br></br></br></br></br></br></br>
+.note[Notas creadas con [{Liminal}](https://github.com/jonathanlilly/liminal) usando [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
