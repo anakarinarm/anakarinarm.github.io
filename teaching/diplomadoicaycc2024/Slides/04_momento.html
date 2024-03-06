@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DiplomadoMeteoro-Mod3-04</title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+         /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[4 Conservación de momento SIN rotación]     
+<br/><br/>          
+.author[Diplomado en Meteorología y Climatología]  
+.institution[ICAyCC]      
+<br/>
+.date[6 de marzo de 2024] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:40%"  src="./figures/ink.jpg">
+
+#Contenido        
+
+1. [Conservación de momento sin rotación](#momento)
+    - [Fuerzas que actúan sobre un fluido](#navier)
+    - [Gradiente de presión y esfuerzos turbulentos](#presion)
+    - [Aproximación hidrostática](#hidrostatica)
+1. [Resumen de ecuaciones](#resumen)
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+
+---
+class: left
+
+El aire se mueve debido a las fuerzas que actúan sobre él. Las leyes de Newton describen como es que las fuerzas generan vientos (dinámica). 
+
+¿Recuerdan las leyes de Newton?
+
+1 , 2, y 3
+
+---
+class: center
+<img style="width:60%"  src="./figures/newtons_laws_daenna.jpg">
+
+.caption[Imagen de [Daenna Gonzalez](https://issuu.com/daennagonzalez/docs/newton___s_laws_of_motion)]
+
+---
+
+Expresión de la segunda ley de Newton para un fluido $$F=d\vec{p}/dt\approx m\vec{a},$$
+
+donde $\vec{p}=\vec{v}m$ es el momento, ímpetu o cantidad de movimiento.
+
+
+6 fuerzas contribuyen a la aceleración neta horizontal del aire: gradiente de presión, adveccion, fuerza centrífuga, Coriolis, peso, disipación y fricción.
+
+$$\frac{F\_{neta}}{m} = \frac{F\_{Adv}}{m}$$ $$+\frac{F\_{GP}}{m}+ \frac{F\_{centrifuga}}{m}+ \frac{F\_{Coriolis}}{m}+\frac{F\_{turb}}{m}+\frac{F\_{g}}{m}$$
+
+En esta hora derivaremos las ecuaciones de momento para un fluido que no está en rotación y discutiremos en detalle el gradiente de presión. 
+
+---
+name: momento     
+class: left
+#  Ecuación de conservación de momento
+
+Expresión de la segunda ley de newton para un fluido $$F=d\vec{p}/dt\approx m\vec{a}.$$
+
+
+**Fuerzas en un fluido:**
+
+* de cuerpo: Actúan directamente sobre la masa del elemento y se distribuyen sobre todo el volúmen. Ej. gravitacional, electromagnética (si el fluido es conductor). $$\vec{F}_{cuerpo} = m\vec{g} = \int_V dV\rho\vec g$$
+
+
+---
+class: left
+**Fuerzas en un fluido:**
+
+* de superficie: Actúan sobre la superfice, son direccionales. Ej. presión, esfuerzos cortantes.
+
+<img style="width:75%"  src="./figures/stress_tensor.png">
+
+Tensor de esfuerzos: elementos en la diagonal, **presión**; fuera de la diagonal, **esfuerzos cortantes**
+
+$$\vec{F}_{superficie}=\int_S[\sigma]\cdot\hat{n}dS$$.
+
+---
+class: left
+## Derivación consevación de momento
+
+<img style="width: 100%" src="./figures/cons_momento.png">
+
+---
+class: left
+## Ecuación de conservación de momento
+
+$$\rho\frac{D\vec{u}}{Dt}=\rho \vec{g} + \nabla\cdot[\sigma]$$
+
+Esta expresión es cierta para cualquier fluido. ¡La física está guardada en el tensor de esfuerzos! 
+
+**Relaciones constitutivas**
+
+Los esfuerzos $[\sigma_{ij}]$ son una combinación de presión $p$ y fricción viscosa:
+
+$$\sigma_{ii} = -p + \lambda \nabla \cdot \vec{v} + 2\mu\frac{\partial{u_i}}{\partial{x_i}}$$
+
+$$\sigma_{ij} = \mu\Big(\frac{\partial u_i}{\partial{x_j}}+\frac{\partial u_j}{\partial{x_i}}\Big)$$
+
+---
+class: left
+
+**Relaciones constitutivas**
+
+Los esfuerzos $[\sigma_{ij}]$ son una combinación de presión $p$ y fricción viscosa:
+
+$$\sigma_{ii} = -p + \lambda \nabla \cdot \vec{v} + 2\mu\frac{\partial{u_i}}{\partial{x_i}}$$
+
+$$\sigma_{ij} = \mu\Big(\frac{\partial u_i}{\partial{x_j}}+\frac{\partial u_j}{\partial{x_i}}\Big)$$
+
+$\lambda$ y $\mu$ son los coeficientes de viscosidad dinámica y estática, respectivamente.
+
+ASUMIENDO que la **relación entre esfuerzo y gradientes de velocidad es lineal** (fluido Newtoniano) e **isotrópica** (las propiedades intrínsecas del fluido no tienen dirección preferencial).
+
+---
+name: navier     
+class: left
+#  Ecuación de Navier-Stokes
+Si el flujo es incompresible, $\nabla\cdot\vec{v}=0$. Las ecuaciones constitutivas se simplifican:
+$$\sigma\_{ij} = -p \delta\_{ij} + \mu\Big(\frac{\partial u\_i}{\partial x\_j}+\frac{\partial u\_j}{\partial x\_i}\Big)$$
+
+($\delta\_{ij}=1$ si $i=j$, $\delta\_{ij}=0$ si $i\ne j$ ).
+
+Ahora podemos sustituir estas expresiones para las fuerzas superficiales en la ecuación de momento para obtener las ecuaciones incompresibles de Navier-Stokes.
+
+---
+class: left
+## Ecuaciones de Navier-Stokes
+Para los vectores $\vec{u} = (u,v,w)$, $\vec{x}=(x,y,z)$, $\vec{g}=(g_x, g_y, g_z)$,
+
+Continuidad:
+$$0 = \frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}$$
+
+Momento:
+$$\rho\frac{Du}{Dt}=\rho g_x-\frac{\partial p}{\partial x}+\mu\Big(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\Big)$$
+$$\rho\frac{Dv}{Dt}=\rho g_y-\frac{\partial p}{\partial y}+\mu\Big(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}+\frac{\partial^2 v}{\partial z^2}\Big)$$
+$$\rho\frac{Dw}{Dt}=\rho g_z-\frac{\partial p}{\partial z}+\mu\Big(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\Big)$$
+
+---
+name: hidrostatica     
+class: left
+#  Aproximación hidrostática
+Primero, las componentes horizontales del vector gravedad son despreciables $\vec{g}\approx(0, 0, -g)$,
+
+Momento:
+$$\rho\frac{Du}{Dt}=-\frac{\partial p}{\partial x}+\mu\Big(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\Big)$$
+$$\rho\frac{Dv}{Dt}=-\frac{\partial p}{\partial y}+\mu\Big(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}+\frac{\partial^2 v}{\partial z^2}\Big)$$
+$$\boxed{\rho\frac{Dw}{Dt}=-\rho g-\frac{\partial p}{\partial z}+\mu\Big(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\Big)}$$
+
+---
+class: left
+Cuando las escalas horizontales son mucho mayores que la vertical, la aceleración vertical $Dw/Dt$ es mucho menor que la aceleración gravitacional $g$, además las fuerzas viscosas son relativamente pequeñas:
+
+$$\cancel{\rho\frac{Dw}{Dt}}=-\rho g-\frac{\partial p}{\partial z}+\cancel{\mu\Big(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\Big)}$$
+
+El gradiente de presión compensa el peso (balance hidrostático):
+
+$$\rho g \approx \frac{\partial p}{\partial z}.$$
+
+---
+class: left
+
+Para un flujo de densidad constante y superficie libre:
+<img style="width:60%"  src="./figures/hidrostatica.png">
+
+Integrando la ecuación anterior en la columna de fluido obtenemos que la presión en cualquier punto depende únicamente de la altura de la superficie libre $h(x,y)$:
+
+$$p(x,y) = p\_{atm}+ \rho g (z-h(x,y))$$
+
+¡Esto nos ahorra muchos cálculos en los modelos!
+
+---
+name: resumen   
+class: left
+##  Resumen de ecuaciones (incompresibles)
+ 
+Continuidad:
+$$0 = \frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}$$
+
+Momento:
+$$\rho\frac{Du}{Dt}=-\frac{\partial p}{\partial x}+\mu\Big(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\Big)$$
+$$\rho\frac{Dv}{Dt}=-\frac{\partial p}{\partial y}+\mu\Big(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}+\frac{\partial^2 v}{\partial z^2}\Big)$$
+$$\rho\frac{Dw}{Dt}=-\rho g-\frac{\partial p}{\partial z}+\mu\Big(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\Big)$$
+
+Aproximación hidrostática:
+$$\rho g \approx \frac{\partial p}{\partial z}$$.
+
+---
+class: left
+## Gradientes de presión en la atmósfera
+
+.left-column[
+Horizontales:
+
+$$\frac{F\_{GPx}}{m}=-\frac{1}{\rho}\frac{\partial P}{\partial x}\approx \frac{1}{\rho}\frac{\Delta P}{\Delta x}$$
+$$\frac{F\_{GPy}}{m}=-\frac{1}{\rho}\frac{\partial P}{\partial y}\approx \frac{1}{\rho}\frac{\Delta P}{\Delta y}$$]
+
+.right-column[<img style="width:100%"  src="./figures/press_grad.png">
+
+.caption[La fuerza debida al gradiente de presión apunta de alta presión a baja presión (al revés que el gradiente mismo). Figura 10.5 de [Stull (2017)](https://www.eoas.ubc.ca/books/Practical_Meteorology/prmet102/Ch10-forces_winds-v102b.pdf).]]
+
+---
+class: center
+<img style="width:100%"  src="./figures/pacific-ocean-surface-pressure-july-2020.png-nggid0518241-ngg0dyn-700x700x100-00f0w010c010r110f110r010t010.png">
+.caption[Presión atmosférica promedio en superficie para julio 2020, Océano Pacífico.Imagen de pivotal weather, retomada de [severe-weather.eu](https://www.severe-weather.eu/global-weather/pacific-ocean-heatwave-disruption-fa/)]
+
+---
+class: center
+Flechas negras: $\vec{F\_{GP}}$ horizontal (ejemplos en algunos puntos)
+<img style="width:100%"  src="./figures/pacific-ocean-surface-pressure-july-2020_annot.png">
+.caption[Presión atmosférica promedio en superficie para julio 2020, Océano Pacífico.Imagen de pivotal weather, retomada de [severe-weather.eu](https://www.severe-weather.eu/global-weather/pacific-ocean-heatwave-disruption-fa/)]
+
+---
+class: center
+
+.left-column[<img style="width:100%"  src="./figures/guatemala_candelaria.png">]
+
+.right-column[Candelaria, Campeche está, más o menos, a 400 km al norte de la ciudad de Guatemala. Si la presión en Candelaria es 101 kPa y en Guatemala es 100 kPa, ¿Cuál es la fuerza (por unidad de masa) debida al gradiente de presión y en qué dirección apunta? Toma $\rho=1.1$ kg$~$m$^{-1}$] 
+
+--
+<span style="color:grey;font-weight:400;font-size:25px">
+Solución:
+$$\frac{F\_{PGy}}{m} \approx -\frac{1}{\rho}\frac{\Delta P}{\Delta y}$$
+$$ = -\frac{1}{1.1 \textrm{ kg m}^{-1}}\frac{101000-100000 \textrm{ Pa}}{400000-0 \textrm{ m}}$$
+$$=–2.27\times10^{–3} \textrm{m s}^{–2}.$$
+La fuerza apunta de presión alta a baja, entonces de norte a sur (Corroboramos con el signo).
+</span>
+
+---
+class: left
+# Referencias
+
+.caption[
+Esta presentación está basada en las notas de clase de Prof. Stephanie Waterman (UBC) y Prof. Suzanne Fielding (Durham).]
+
+.caption[y en el capítulo 10 de [Stull (2017)](https://www.eoas.ubc.ca/books/Practical_Meteorology/prmet102/Ch10-forces_winds-v102b.pdf).]
+</br> </br>
+.caption[
+Bibliografía adicional:
+   P. K. Kundu y I. M.Cohen (2004) Fluid Mechanics, 3ra ed. Elsevier.]
+
+</br></br>
+.caption[Imágenes tomadas de Graham Richardson en flickr] .caption[(tinta azul), latintimes.com (Popocatépetl), learncax.com (elemento de fluido), wikicommons (afloramiento en Isla de Vancouver)]
+.caption[Lagrangian Drifter Lab SRIPPS (drifter), https://kinoshita.eti.br/2016/07/12/ (globo meteorológico), mayo05 getty images (anemómetro), Figura 1 en Bailey et al. (2019) Coastal Mooring Observing Networks and Their Data Products: Recommendations for the Next Decade (https://doi.org/10.3389/fmars.2019.00180) (esquemas anclajes costeros)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>

@@ -5,7 +5,7 @@
     <link>https://anakarinarm.github.io/tag/cursos/</link>
       <atom:link href="https://anakarinarm.github.io/tag/cursos/index.xml" rel="self" type="application/rss+xml" />
     <description>Cursos</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2023</copyright><lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>es-mex</language><copyright>©2024</copyright><lastBuildDate>Tue, 21 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://anakarinarm.github.io/images/icon_huc41dee5293dde66ff6df247b25160a6b_163860_512x512_fill_lanczos_center_2.png</url>
       <title>Cursos</title>
@@ -35,6 +35,27 @@
 &lt;a href=&#34;Slides/06_coriolis2.html&#34;&gt;Aceleración de Coriolis 2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;01 de marzo: 
 &lt;a href=&#34;Slides/07_energia.html&#34;&gt;Conservación de energía y ecuaciones primitivas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Módulo 3 - Dinámica de la atmósfera</title>
+      <link>https://anakarinarm.github.io/teaching/diplomadoicaycc2024/</link>
+      <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://anakarinarm.github.io/teaching/diplomadoicaycc2024/</guid>
+      <description>&lt;h2 id=&#34;diplomado-en-meteorología-y-climatología&#34;&gt;Diplomado en meteorología y climatología&lt;/h2&gt;
+&lt;p&gt;Las notas de clase se encuentran en la página del curso en Classroom.&lt;/p&gt;
+&lt;h4 id=&#34;diapositivas-de-clase&#34;&gt;Diapositivas de clase&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;6 de marzo: 
+&lt;a href=&#34;Slides/01_intro.html&#34;&gt;Introducción al curso&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6 de marzo: 
+&lt;a href=&#34;Slides/02_escalas.html&#34;&gt;Escalas atmosféricas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6 de marzo: 
+&lt;a href=&#34;Slides/03_repasoFluidos.html&#34;&gt;Cinemática y conservación de masa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6 de marzo: 
+&lt;a href=&#34;Slides/04_momento.html&#34;&gt;Conservación de momento&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
