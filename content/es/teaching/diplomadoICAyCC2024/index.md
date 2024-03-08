@@ -41,3 +41,6 @@ Las notas de clase se encuentran en la página del curso en Classroom.
 * 6 de marzo: [Escalas atmosféricas](Slides/02_escalas.html)
 * 6 de marzo: [Cinemática y conservación de masa](Slides/03_repasoFluidos.html)
 * 6 de marzo: [Conservación de momento](Slides/04_momento.html)
+* 8 de marzo: [Coriolis 1](Slides/05_coriolis1.html)
+* 8 de marzo: [Coriolis 2](Slides/06_coriolis2.html)
+* 8 de marzo: [Ecuaciones primitivas](Slides/07_primitivas.html)
