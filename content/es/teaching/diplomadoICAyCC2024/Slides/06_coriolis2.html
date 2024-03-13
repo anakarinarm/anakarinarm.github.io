@@ -112,14 +112,16 @@
     <textarea id="source">
 class: center, middle
 <br/><br/>                     
-.title[6 Aceleración de Coriolis: parte 2]
+.title[6 Aceleración de Coriolis II]     
+.subtitle[Módulo 3: Dinámica de la Atmósfera]
 <br/><br/>          
 .author[Diplomado en Meteorología y Climatología]  
-.institution[ICAyCC]      
+.institution[ICAyCC]    
 <br/>
-.date[8 de marzo de 2024] 
+.date[13 de marzo de 2024] 
 <br/><br/>
  <img style="width:100%"  src="./figures/green_waves.png"> 
+
  <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
     
 ---
@@ -138,7 +140,7 @@ layout: true  .toc[[&#10023;](#toc)]
 ---
 name: repaso   
 class: left
-#  La hora pasada aprendimos:
+#  La clase pasada aprendimos:
 
 * La diferencia entre sistemas de referencia inerciales y no inerciales;
 * a escribir vectores absolutos en el sistema de referencia en rotación (posición, velocidad y aceleración);
@@ -157,24 +159,52 @@ b) centrífuga = $\Omega^2 R_T$, Coriolis = $0$.
 
 c) centrífuga = $\Omega^2 R_T \cos{\theta}$, Coriolis > $0$.
 
-d) centrífuga = $\Omega^2 R_T \cos{\theta}$, Coriolis = $0$.
-
-e) b y d
+d) centrífuga = $\Omega^2 R_T \sin{\theta}$, Coriolis = $0$.
 
 --
 
-**Respuesta: e**
+**Respuesta: b**
 
 ---
 name: plano
 class: left
 
-# Partícula libre en un plano en rotación
+## Partícula libre en un plano en rotación
 
-* Sin fuerzas externas salvo su peso (Por simplicidad llamaré gravedad a la gravedad aparente)
+Sin fuerzas externas salvo su peso (Por simplicidad llamaré gravedad a la gravedad aparente).
+</br>
+Caso de un plano (2D) rotando a velocidad angular $\Omega$.
+</br>
+Las ecuaciones que describen el movimiento de esta partícula son:
 
-* Caso de un plano (2D)
+$$\frac{du}{dt}-2\Omega v=0,$$
+$$\frac{dv}{dt}+2\Omega u=0.$$
 
+Cuya solución general es:
+
+$$u(t)=V_0 \sin{ft+\varphi},$$
+$$v(t)=V_0 \cos{ft+\varphi},$$
+
+donde $f=2\Omega$ se concoce como parámetro de Coriolis, y $V_0$ y $\varphi$ son constantes de integración.
+---
+Si volvemos a integrar, obtenemos las posiciones de la partícula como función del tiempo:
+
+$$x(t)=x_0 - \frac{V_0}{f}\cos{ft+\varphi},$$
+$$v(t)=y_0V + \cos{ft+\varphi}.$$
+
+Que podemos reescribir como
+
+$$(x-x_0)^2 + (y-y_0)^2=(\frac{V_0}{f})^2$$
+
+.left-column[
+que es la ecuación de un círculo de radio $V_0/|f|$ centrado en el punto ($x_0$, $y_0$).
+
+Si f>0 la partícula gira en sentido horario, y en sentido antihorario si f<0.] 
+
+.right_column[
+.center[
+<img style="width:30%"  src="./figures/osc_inercial.png"> ]]
+ 
 ---
 class: left
 
@@ -185,11 +215,74 @@ class: left
 [UCLA spinlab](https://youtu.be/9QL88dVb-78)
 
 ---
-class: left
 
-## Vamos al pizarrón...
+El tiempo que le toma a la particula completar la vuelta completa se conoce como **periodo inercial**, $T_p$ y está dado por
 
-y volvamos al video de UCLA spinlab.
+$$T_p=2\pi/f.$$
+
+Este movimiento circular de una partícula (o parcela de fluido) con velocidad inicial $V_0$ se conoce como **oscilación inercial** y su radio ($V_0/|f|$) depende de la velocidad inicial, mientras que su periodo ($T_p$) solo depende de la rotación ambiente.
+
+.center[
+<img style="width:60%"  src="./figures/oscil_mediterraneo.png"> ]
+
+---
+name:3D
+##Parámetro de Coriolis en 3D
+
+¿Cómo se modifica el valor de $f$ por estar en una esfera y no en un plano? 
+
+.center[
+<img style="width:45%"  src="./figures/framework_rotation_cushman.jpg"> ]
+.caption[Figura 2.9 de Cushman-Roisin y Beckers, 2011.]
+---
+
+El vector de rotación $\vec{\Omega}$ apunta hacia el eje de rotación en cualquier punto de la tierra. 
+
+.left-column[Sus componentes son:
+
+$$\Omega_y=|\vec{\Omega}|\cos{\phi}$$ y 
+$$\Omega_z=|\vec{\Omega}|\sin{\phi},$$
+
+donde $\phi$ es la latitud en radianes.]
+
+.right-column[
+.center[
+<img style="width:100%"  src="./figures/coriolis_3d.png"> ]
+.caption[[Imagen de Herrera y Morett (2016)](http://dx.doi.org/10.1590/1806-9126-RBEF-2016-0027)]]
+
+---
+
+La componente que es relevante para el plano de rotación en el que ocurren los movimientos atmosféricos dominantes es la que apunta hacia "afuera" de la superficie de la tierra (plano local), **$\Omega_z$**. 
+
+.left-column[$\Omega_z=0$ en el Ecuador,
+
+ $\Omega_z>0$ en el hemisferio norte y 
+
+ $\Omega_z<0$ en el hemisferio sur.
+
+Definimos al **parámetro de Coriolis** como 
+
+$f=2\Omega_z=2\Omega\sin{\phi}$.]
+
+.right-column[.center[
+<img style="width:100%"  src="./figures/coriolis_3d.png"> ]
+.caption[[Imagen de Herrera y Morett (2016)](http://dx.doi.org/10.1590/1806-9126-RBEF-2016-0027)]]
+
+---
+Así que, aunque la Tierra rota como un cuerpo rígido, el efecto de esa rotación depende de dónde nos encontremos. Para efectos prácticos el plano local rota en sentido antihorario en el hemisferio norte y horario en el hemisferio sur.
+
+
+.left-column[$f=0$ en el Ecuador,
+
+ $f>0$ en el hemisferio norte y 
+
+ $f<0$ en el hemisferio sur.]
+
+
+.right-column[.center[
+<img style="width:100%"  src="./figures/coriolis_3d.png"> ]
+.caption[[Imagen de Herrera y Morett (2016)](http://dx.doi.org/10.1590/1806-9126-RBEF-2016-0027)]]
+
 
 ---
 class: left
@@ -199,7 +292,7 @@ class: left
  * El sentido del movimiento es opuesto al de rotación (horario para $f>0$ y antihorario para $f<0$).
  * El radio de la circunferencia está dado por $V_0/|f|$, donde $V_0$ es la velocidad inicial y $|f|$ es la magnitud del **parámetro de Coriolis** (f=$2\Omega$).
  * El periodo que la partícula tarda en competar una vuelta se conoce como **periodo inercial** y está dado por $T_p=2\pi/f= \pi/\Omega$.
- * En el caso 3D, el movimiento horizontal también es circular (oscilaciones inerciales) pero cambia la definición del parámetro de Coriolis, que ahora depende de la latitud $\varphi$: $f=2\Omega \sin{\varphi}$
+ * En el caso 3D, el movimiento horizontal también es circular (oscilaciones inerciales) pero cambia la definición del parámetro de Coriolis, que ahora depende de la latitud $\phi$: $f=2\Omega \sin{\phi}$
 
 ---
 class: left
