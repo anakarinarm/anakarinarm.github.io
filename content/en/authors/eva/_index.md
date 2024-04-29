@@ -14,7 +14,7 @@ role: Undergraduate (Geophysical Eng.)
 
 # Organizations/Affiliations
 organizations: 
-- name: ESIA-Ticaomán, IPN
+- name: ESIA-Ticomán, IPN
   url: "https://www.esiaticipnct.com/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -64,3 +64,6 @@ email: ""
 user_groups:
 - Students
 ---
+
+**Undergraduate thesis**: "Similaridad dinámica entre ondas de montaña en el Valle de México y modelo experimental de laboratorio" (Dynamical similarity between mountain waves in the Mexico Valley and a physical model)
+

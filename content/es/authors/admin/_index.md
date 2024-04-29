@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: Investigadora Asociada C 
+role: Investigadora Titular A
 
 # Organizations/Affiliations
 organizations: 
-- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
-  url: "https://www.atmosfera.unam.mx"
+- name: Departamento de Oceanografía Física, CICESE
+  url: "https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1"
 
 # Short bio (displayed in user profile at end of posts)
 bio: 
@@ -40,13 +40,13 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: "mailto:kramosmu@atmosfera.unam.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.mx".
-- icon: instagram
-  icon_pack: fab
-  link: https://www.instagram.com/flugeo_icaycc/
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: "mailto:kramosmu@cicese.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.mx".
+#- icon: instagram
+#  icon_pack: fab
+#  link: https://www.instagram.com/flugeo_icaycc/
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=vNg4iCgAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/anakarinarm
@@ -70,8 +70,9 @@ Soy oceanógrafa física y me interesa la interacción entre los flujos geofísi
 topografía en el intercambio de agua, nutrientes y gases disueltos entre el océano profundo 
 y la plataforma continental.
 
-Soy parte del grupo [Interacción Océano-Atmósfera](http://grupo-ioa.atmosfera.unam.mx/index.php/) del [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/) de la UNAM.
+Soy parte del [Departamento de Oceanografía Física](https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1) del Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California ([CICESE](https://www.cicese.edu.mx/)).
+Trabajé en el grupo [Interacción Océano-Atmósfera](http://grupo-ioa.atmosfera.unam.mx/index.php/) del [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/) de la UNAM de 2021 a 2024.
 Anteriormente, estudié el doctorado con la [Dra. Susan Allen](https://www.eoas.ubc.ca/~sallen/) en la [Universidad de British Columbia](https://www.eoas.ubc.ca).
 
-**Estudiantes**: Si estás interesad@ en realizar tu tesis de licenciatura o servicio social pónte en contacto conmigo. Algunos proyectos disponibles: [Ondas de montaña](https://drive.google.com/file/d/1P9RLra_OfqQkPgmnk4r_EfFyKAtgwc5j/view?usp=sharing), [diseño mesa giratoria](https://drive.google.com/file/d/1hPIq9PgR9JSdD3q1ezGXOA3DkMc3rv8F/view?usp=sharing) y [dinámica de cañones submarinos](https://anakarinarm.github.io/es/project/multiple-project/). 
+**Estudiantes**: Si estás interesadx en realizar tu tesis de licenciatura, [maestría o doctorado](https://posgrados.cicese.mx/) pónte en contacto conmigo.  
  

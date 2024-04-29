@@ -10,15 +10,15 @@ authors:
 superuser: true
 
 # Role/position
-role: Investigadora Asociada C 
+role: Researcher (Investigadora Titular A)
 
 # Organizations/Affiliations
 organizations: 
-- name: Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM
-  url: "https://www.atmosfera.unam.mx"
+- name: Physical Oceanography, CICESE
+  url: "https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a physical oceangrapher interested in the interactions between flow and topography.
+bio: 
 interests:
 - Stratified flow over topography and associated mixing processes.
 - Flow dynamics and transport induced by submarine canyons.
@@ -40,16 +40,16 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: "mailto:kramosmu@atmosfera.unam.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.ca".
-- icon: instagram
-  icon_pack: fab
-  link: https://www.instagram.com/flugeo_icaycc/
+  link: "mailto:kramosmu@cicese.mx"  # For a direct email link, use "mailto:kramosmu@atmosfera.unam.ca".
+#- icon: instagram
+#  icon_pack: fab
+#  link: https://www.instagram.com/flugeo_icaycc/
 #- icon: twitter
 #  icon_pack: fab
 #  link: https://twitter.com/anakarinarm
-#- icon: google-scholar
-#  icon_pack: ai
-#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=vNg4iCgAAAAJ&hl=en
 - icon: github
   icon_pack: fab
   link: https://github.com/anakarinarm
@@ -69,7 +69,10 @@ user_groups:
 - Principal Investigators
 ---
 
-I am a physical oceanographer interested in the interactions between ocean and atmospheric flows and topography. In particular, I use numerical models and laboratory scale models to investigate the role that topography plays in facilitating cross-shelf exchanges of water, nutrients, carbon and dissolved gases.
+I am a physical oceanographer and I'm interested in the interaction between geophysical flows -- such as the ocean and the atmosphere -- and topography. In particular, I use numerical and laboratory models to investigate the role that topography plays in the exchange of water, nutrients, and dissolved gases between the deep ocean and the continental shelf.
 
-I am part of the [Ocean-Atmosphere Interaction group](http://grupo-ioa.atmosfera.unam.mx/index.php/) at [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/). 
-Before, I did my Ph.D. at the Mesoscale Ocean and Atmospheric Dynamics Group under the supervision of [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/). 
+I'm part of the [Department of Physical Oceanography](https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1") at the [Center for Scientific Researcha nd Higher Education of Ensenada, Baja California (CICESE)](https://www.cicese.edu.mx/).
+
+I was a researcher in the [Ocean-Atmosphere Interaction group](http://grupo-ioa.atmosfera.unam.mx/index.php/) at [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/) from 2021 to 2024. 
+
+Before, I did my Ph.D. in the Mesoscale Ocean and Atmospheric Dynamics Group under the supervision of [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/). 

@@ -64,3 +64,5 @@ email: ""
 user_groups:
 - Estudiantes
 ---
+
+**Tesis**: "Similaridad dinámica entre ondas de montaña en el Valle de México y un modelo experimental de laboratorio"
