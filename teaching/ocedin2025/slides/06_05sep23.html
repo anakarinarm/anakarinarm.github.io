@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinámica de Fluidos Geofísicos</title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+         /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[Dinámica de Fluidos Geofísicos]     
+.subtitle[Ecuaciones de movimiento]
+<br/><br/>          
+.author[Semestre 2022-I]  
+.institution[Facultad de Ciencias]      
+<br/>
+.date[5 y 7 de septiembre de 2023] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:40%"  src="./figures/ink.jpg">
+
+#Contenido        
+1. [Repaso clase pasada](#repaso)
+1. [Conservación de masa](#masa)
+1. [Conservación de momento](#mmtm)
+1. [Ecuación de estado](#estado)
+1. [Conservación de energía](#energia)
+1. [Conservación de humedad y sal](#trazadores)
+1. [Aproximación de Boussinesq](#boussi)
+
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+       
+---
+name: repaso   
+class: left
+##  La clase pasada (y al principio de esta) aprendimos que:
+
+ * Una partícula libre en un plano en rotación seguirá un movimiento circular en el sistema en rotación (**oscilación inercial**).
+ </br></br>
+ * El sentido del movimiento es opuesto al de rotación (horario para $f>0$ y antihorario para $f<0$).
+ </br></br>
+ * El radio de la circunferencia está dado por $V_0/|f|$, donde $V_0$ es la velocidad inicial y $|f|$ es la magnitud del **parámetro de Coriolis** (f=$2\Omega$).
+ </br></br>
+ * El periodo que la partícula tarda en competar una vuelta se conoce como **periodo inercial** y está dado por $T_p=2\pi/f= \pi/\Omega$.
+ 
+---
+name: repaso   
+class: left
+
+
+ * En 3D, para cada punto sobre la esfera, el vector $\mathbf{f}=2\mathbf{\Omega}$, donde $\mathbf{\Omega}$ es el vector de rotación, se descompone en una componente vertical *parámetro de Coriolis* $f=2\Omega\sin{\varphi}$ (rotación en el plano horizontal) y una horizontal conocida como *parámetro de Coriolis recíproco* $f^*=2\Omega\cos{\varphi}$ 
+(rotación en el plano vertical, efecto despreciable).
+</br></br>
+ * En el caso 3D, el movimiento horizontal también es circular (oscilaciones inerciales) pero  $f=2\Omega \sin{\varphi}$
+---
+class: left
+
+**1. ¿Cuál es el periodo inercial a una latitud de 45N?**
+
+a) $T_p=2\pi/f=\pi/\Omega \sin{45} \approx 17$ hrs
+
+b) $T_p=2\pi/\Omega= \approx 77$ hrs
+
+c) $T_p=2\pi/f=\pi/\Omega \approx 38$ hrs
+
+d) $T_p=2\pi/f=\pi/2\Omega \sin{45} \approx 27$ hrs
+
+--
+
+**Respuesta: a**
+---
+class: left
+
+**2. ¿Cuál es el valor de $f$ y $f^*$ en el Ecuador?**
+
+a) $f=0$, $f^*=1$
+
+b) $f=0$, $f^*=2\Omega$
+
+c) $f=1$, $f^*=0$
+
+d) $f=0$, $f^*=0$
+
+e) $f=2\Omega$, $f^*=0$
+
+--
+
+**Respuesta: b**
+---
+class: left
+
+**3. ¿Hacia dónde gira una particula libre en el hemisferio sur ($f<0$)?**
+
+a) En sentido antihorario 
+
+b) En sentido horario 
+
+
+--
+
+**Respuesta: a**
+
+---
+---
+name: ecs
+class: left
+
+# Ecuaciones de movimiento
+
+
+1. Queremos establecer las ecuaciones que gobiernan el movimiento de un flujo estratificado en rotación.
+2. Una vez establecidas las ecuaciones, queremos simplificarlas (aún más) utilizando la aproximación de Boussinesq.
+3. Finalmente tendremos el conjunto completo de ecuaciones que describen a los fluidos geofísicos y podremos empezar a trabajar con ellas.
+
+---
+class: left
+##  Conservación de masa 
+
+El cambio local en la masa dentro de un volumen de control se compensa con la divergencia local del flujo de masa en el volumen:
+
+
+$$\frac{D\rho}{Dt}+\rho\nabla\cdot\mathbf{u}=0,$$
+
+donde $\rho$ es la densidad (en kg$~$m$^{-3}$), $D/Dt$ es la derivada material  $(\partial/\partial t + \mathbf{u}\cdot \nabla )$, y $\mathbf{u}=(u,v,w)$ es el vector velocidad. Esta ecuación también se conoce como *ecuación de continuidad*. 
+
+En un *fluido incompresible* $\rho$ es constante, por lo que $D\rho/ Dt=0$ y la ecuación de continuidad queda como:  $$\nabla\cdot\vec{u}=0.$$
+
+.caption[NOTA: La geometria esférica agrega algunos términos de curvatura que vamos a despreciar considerando escalas de movimiento menores a la escala global.]
+
+---
+name: mmtm
+class: left
+
+## Conservación de momento 
+
+Segunda Ley de Newton $(\sum{\mathbf{F}}=d\mathbf{p}/dt\approx m\mathbf{a})$, escrita por unidad de masa. 
+
+Sin rotación:
+
+$$\rho\frac{Du}{Dt}=-\frac{\partial p}{\partial x}+\mu\Big(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}+\frac{\partial^2 u}{\partial z^2}\Big)$$
+$$\rho\frac{Dv}{Dt}=-\frac{\partial p}{\partial y}+\mu\Big(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}+\frac{\partial^2 v}{\partial z^2}\Big)$$
+$$\rho\frac{Dw}{Dt}=-\rho g-\frac{\partial p}{\partial z}+\mu\Big(\frac{\partial^2 w}{\partial x^2}+\frac{\partial^2 w}{\partial y^2}+\frac{\partial^2 w}{\partial z^2}\Big)$$
+
+Recuerden que, de manera general, los términos debidos a las fuerzas de superficie se escriben en términos del tensor de esfuerzos. Aquí utilizamos las ecuaciones consitutivas y obtuvimos al término $\partial p_i/\partial x_i$ y la disipación $\mu\nabla^2 u_i$ ¡Esto es una aproximación! 
+
+---
+class: left
+
+## Conservación de momento con rotación 
+
+* El sistema cartesiano funciona si las escalas espaciales son mucho menores que la escala planetaria ($L<<R_{Tierra}$ Ej. $L < 1000$ km está bien).
+
+* Si consideramos escalas más grandes debemos transformar $x$, $y$  y $z$ a un sistema de coordenadas esféricas y los terminos de curvatura que ingnoramos anteriormente entrarán a las ecuaciones.
+
+.center[
+<img style="width:40%"  src="./figures/mercator.gif"> ]
+ 
+.caption[https://vividmaps.com/map-projections/]
+
+---
+class: left
+## Momento en esféricas y escalas de cada término
+
+En forma $\bf{vectorial}$:
+
+$$\frac{D\bf{U}}{Dt}=-2\bf{\Omega} \times \bf{U} - \frac{1}{\rho}\nabla P + \bf{g} + \bf{F_r}$$
+
+donde el término $\bf{F_r}$ contiene a las fuerzas de fricción/disipación. 
+
+Estas ecuaciones funcionan para coordenadas cartesianas o esféricas ($\varphi, \lambda, z$).
+
+En esféricas: 
+
+Definimos $x$ y $y$ como las distancias hacia el **este** y hacia el **norte**, respectivamente, de manera que 
+
+.center[
+$Dx = A \cos{\varphi} D\lambda$ y $Dy = A D\varphi$,]
+
+donde $A$ es el radio de la Tierra, $\varphi$ la latitud y $\lambda$ la longitud.
+
+---
+Entonces, las velocidades al **este**, al **norte**, y **vertical** son:
+
+.center[
+$u \equiv \frac{Dx}{Dt}$ y $v \equiv \frac{Dx}{Dt}$.]
+
+usando las definiciones de $x$ y $y$:
+
+.center[
+$u \equiv r\cos{\varphi} \frac{D \lambda}{Dt}$,   
+
+$v \equiv r\frac{D \varphi}{Dt}$,   
+
+$w \equiv \frac{Dz}{Dt}$]
+
+donde $r$ es la distancia al centro de la Tierra ($r \sim A$), $u$ es la velocidad zonal (positiva al este), $v$ la meridional (positiva al norte), y $w$ la vertical (positiva hacia arriba).
+
+El sistema (x,y,z) definido así NO es cartesiano, pues las direcciones (vectores unitarios) son función de la posición en la esfera. Esto genera términos extra cuando expandimos los términos en la ec. de momento.
+
+---
+
+Después de un poco de talacha, las ecuaciones de momento para las componentes de movimiento hacia el este, hacia el norte y vertical sobre la esfera quedan como:
+
+$$\frac{Du}{Dt} - \frac{uv \tan{\varphi}}{A} + \frac{uw}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial x}+ fv - f^*w+F_{rx}$$
+
+$$\frac{Dv}{Dt} + \frac{u^2 \tan{\varphi}}{A} + \frac{vw}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial y}- fv +F_{ry}$$
+
+$$\frac{Dw}{Dt} + \frac{u^2+v^2}{A} = -\frac{1}{\rho}\frac{\partial P}{\partial z}- g + f^*u +F_{rz}.$$
+
+Los términos proporcionales a $1/A$ se conoecn como *términos de curvatura*. Son no lineales y complican el análisis, pero podemos ignorarlos porque son pequeños en escalas sinópticas.
+
+---
+
+## Escalas de los términos de las ecuaciones de momento
+
+Esto es un tipo de filtrado de escalas más rápidas y pequeñas.
+
+Ej. Escalas características en la atmósfera: 
+
+|Símbolo|Valor ~|Escala|
+|:-:|:-:|:-:|
+|U|10 m s$^{-1}$| velocidad horizontal|
+|W|1 cm s$^{-1}$| velocidad vertical|
+|L|10$^6$ m| longitud horizontal|
+|H|10$^4$ m| altura|
+|$\delta P$/$\rho$|10$^3$ m$^2$s$^{-2}$|variaciones de presión horizontal|
+|L/U|10$^5$ s| tiempo|
+
+Para latitudes medias y escalas sinópticas, $f = 2\Omega\sin(45)\sim 2\Omega\cos(45) \approx 10^{-4}$ s$^{-1}$
+---
+## De qué tamaño es cada término:
+
+.center[
+<img style="width:90%"  src="./figures/escalas_terminos_mmtm_hor_holton.png"> </br>
+<img style="width:90%"  src="./figures/escalas_terminos_mmtm_ver_holton.png"> ]
+.caption[tamaño aproximado de los términos de las ecuaciones de momento. Tablas de Holton (2004), capítulo 2)]
+
+---
+Entonces, las ecuaciones de momento para escalas sinópticas quedan como (aplican al océano también):
+
+$$\rho\frac{Du}{Dt}-fv=-\frac{\partial P}{\partial x}$$
+$$\rho\frac{Dv}{Dt}+fu=-\frac{\partial P}{\partial y}$$
+$$\rho g=-\frac{\partial P}{\partial z}$$
+
+donde x, y, z apuntan en dirección este, norte y arriba, respectivamente, $f=2\Omega \sin{\varphi}$, $\rho$ es la densidad, $P$ es la presión, $g$ es la aceleración debida a la gravedad (gravedad aparente o neta) y usamos la aproximación hidrostática en la ecuación de momento vertical. 
+
+Hasta ahora tenemos **4 ecuaciones** (3 momento, 1 de continuidad) y **5 incógnitas** ($u$, $v$, $w$, $P$, $\rho$). ¡Necesitamos una para $P$!
+
+---
+name: estado
+class: left
+
+## Ecuación de estado
+
+* Relación entre presión y densidad.
+* Depende del fluido
+* Distinción entre aire (compresible) y agua (incompresible)
+
+.center[
+<img style="width:30%"  src="./figures/air_nomad.jpg">
+<img style="width:30%"  src="./figures/water_tribe.jpg"> ]
+
+Vamos a las notas...
+
+---
+class: left
+
+## Ecuación de estado LINEAL para agua de mar (incompresibilidad):
+
+$$\rho(T,S) = \rho_0(1-\alpha(T-T_0)+\beta(S-S_0))$$
+
+donde $\rho_0$, $T_0$ y $S_0$ son constantes de referencia de presión, temperatura y salinidad; T es la temperatura en $^{\circ}$C o K, S es la salinidad, $\alpha=1.7\times10^{-4}$ K$^{-1}$ es el coeficiente de expansión térmica y $\beta=7.6\times10^{-4}$ es el de contracción salina.
+
+.center[
+<img style="width:60%"  src="./figures/EOS_linear.png">]
+
+---
+class: left
+
+## Ecuación de estado para el aire (gas ideal)
+
+Aire seco:
+$$\rho=\frac{P}{RT}$$
+
+Aire con vapor de agua:
+
+$$\rho=\frac{P}{RT(1+0.6068q)}$$
+
+Donde $P$ es la presión, $T$ es la temperatura absoluta (K), $R$ es la constante 287 m$^2$s$^{-2}$K$^{-1}$ en c.n.t.p. y
+ 
+ $$q= \frac{\textrm{masa de vapor de agua}}{\textrm{masa aire }}$$
+
+ es la humedad específica.
+
+---
+class: left
+
+## ¿Cómo vamos?
+
+Llevamos **5 ecuaciones** (3 de momento, 1 de continuidad,  1 ecuación de estado) pero ahora tenemos **7 variables**  ($u$, $v$, $w$, $P$, $\rho$, $T$ y $q$).
+
+¿De dónde podemos obtener otras 2 ecuaciones?
+
+* Conservación de energía
+* Conservación de vapor de agua o sal
+
+---
+name: energia
+class: left
+## Conservación de energía
+ 
+$1^{a}$ Ley de la termodinámica
+
+La **energía interna** ganada por una parcela de fluido es igual al **calor** que recibe menos el **trabajo mecánico** que realiza. Por unidad de masa y de tiempo esto es:
+
+$$\frac{De}{Dt}=Q-W, \textrm{      (1)}$$
+
+donde $e$ es la energía interna, $Q$ es el calor y $W$ es el trabajo hecho por el gradiente de presión.
+
+La **energía interna** es una "medida" de la agitación térmica de las moléculas en el fluido y es proporcional a la temperatura:
+
+$$e=C_vT, \textrm{      (2)}$$
+
+donde $C_v$ es la **capacidad calorífica** a volumen constante (Ej. aire a nivel del mar y temperatura ambiente $C_v=718$ Jkg$^{-1}$K$^{-1}$. 
+---
+
+### Término de calor $Q$
+
+En la atmósfera la condensación y evaporación liberan o absorben **calor latente**. Pero dejando de lado termodinámica atmosférica, que es mucho más complicada que esto (ya lo vieron en el módulo 2), el término $Q$ en (1) solo incluye el calor ganado por la parcela debido al contacto con sus vecinas por medio de la difusión.
+
+Usando la Ley de Fourier de conducción:
+
+$$Q=\frac{K_T}{\rho}\nabla^2T, \textrm{         (3)}$$
+
+donde $K_T$ es **conductividad térmica** del fluido y $\nabla^2$ es el operador laplaciano que en cartesianas es $\partial^2/\partial x^2+\partial^2/\partial y^2+\partial^2/\partial z^2$.
+
+---
+### Término de energía mecánica $W$
+
+El trabajo realizado por el fluido es la fuerza debida a la presión $(P/Área)$ por el desplazameinto en dirección de la fuerza. Contando área por desplazamiento=volumen, el trabajo es presión x cambio de volumen, por unidad de masa y tiempo esto es:
+
+$$W=P\frac{D\mathcal{V}}{Dt}, \textrm{    (4)}$$
+
+donde $\mathcal{V}$ es volumen por unidad de masa ($1/\rho$).
+
+Nota: la fuerza de Coriolis NO realiza trabajo debido a que va en dirección perpendicular al desplazamiento.
+
+---
+### Ecuación de energía
+
+Sustituyendo los valores de los términos para $e$, $Q$ y $W$ en (1):
+
+$$C\_v \frac{DT}{Dt}=\frac{K\_T}{\rho}\nabla^2T-P\frac{D\mathcal{V}}{Dt} = \frac{K\_T}{\rho}\nabla^2T-\frac{P}{\rho^2}\frac{D\rho}{Dt}. \textrm{      (5)}$$
+
+Usando la ecuación de continuidad completa:
+
+$$\frac{\partial \rho}{\partial t}+ \frac{\partial (\rho u)}{\partial x} + \frac{\partial (\rho v)}{\partial y}+ \frac{\partial (\rho w)}{\partial z}=0$$
+
+reescribimos al término $D\rho/Dt$:
+
+$$\rho C\_v \frac{DT}{Dt}+ P\left(\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}\right) =K\_T \nabla^2T. \textrm{      (6)}$$
+
+---
+name:trazadores
+class: left
+
+## Conservación de humedad 
+
+**Humedad específica** :
+
+$$\frac{Dq}{Dt}=K_q\nabla^2q$$
+
+$q$ se redistrubuye por contacto ocn parcelas vecinas con distinta $q$ y $K_q$ es un coeficiente de difusión similar al térmico.
+
+Estamos **ingnorando la evaporación y la condensación**. La ecuación de conservación es más complicada de lo que escribimos aquí, pero para fines de la clase consideremos esta versión.
+
+---
+## Conservación de sal
+
+Una parcela de agua conserva su cantidad de sal $S$ salvo por redistribuciones debidas a la difusión.
+
+$$\frac{DS}{Dt}=\kappa_s \nabla^2S$$
+
+donde $\kappa_s$ es el coeficiente de difusividad salina.
+---
+name: boussi
+class: left
+
+## Aproximación de Boussinesq
+
+* En la atmósfera y el océano la densidad varía muy poco.
+
+* Cambio de $\rho$ del suelo a la exósfera: 100%, pero estos cambios son principalmente hidrostáticos, el resto de la variación es muy pequeña.
+
+* Además, en la tropósfera $\Delta\rho<$5%.
+
+* En el océano, T=4C, S=34.7 (promedio) --> $\rho=1028$ kg/m$^3$. Variaciones $\Delta \rho$ < 3 kg/m$^3$ aún en estuarios ($\Delta \rho$ < 3%).
+
+---
+Podemos asumir que la densidad $\rho$ no varía mucho respecto a un valor de referencia promedio $\rho_0$:
+
+$\rho(x,y,z,t)=\rho_0 + \rho'(x,y,z,t) $
+
+con $|\rho'|<<\rho_0$ causada por la estratifición o por el movimiento del fluido.
+
+Usando esta aproximación, ¿cómo se modificacn las ecuaciones que llevamos hasta ahora?
+
+---
+### Ecuacion de continuidad
+
+(Ya lo habíamos visto)
+
+$$\frac{D\rho}{Dt}+\rho\nabla\cdot\mathbf{u}=0,$$
+
+Derivadas donde aparece $\rho'$ se vuelven muy chiquitas en comparación a términos con $\rho_0$ y entonces queda 
+
+$$\nabla\cdot\mathbf{u}=0.$$
+
+La conservación de masa se simplifica a ser conservación de volumen.
+---
+
+### Ecuaciones de momento horizontales
+
+$\rho$ aparece multiplicando del lado izquierdo, y los términos con $\rho_0$ dominarán sobre los términos con $\rho'$:
+
+$$\rho\_0\frac{Du}{Dt}-fv=-\frac{\partial P}{\partial x} + F\_{rx}$$
+
+$$\rho\_0\frac{Dv}{Dt}+fu=-\frac{\partial P}{\partial y} + F\_{ry}$$
+
+---
+### Ecuación de momento vertical
+
+La densidad aparece en la presión hidrostática $P_0$ $(\partial P\_0/\partial z=-\rho\_0g)$.
+
+Escribimos a la presión como:
+$$P=P\_0(z) + P'(x,y,z,t)$$
+
+y la ecuación de momento vertical queda como:
+
+$$\frac{Dw}{Dt} = -\frac{1}{\rho\_0}\frac{\partial P'}{\partial z}- \boxed{\frac{\rho'g}{\rho\_0}} + F\_{rz}.$$
+
+en la caja: fuerzas de flotación.
+
+---
+### Ecuación energía 
+
+Todo es más complicado pero podemos aproximarla como (Eg. Spiegel, Spiegel y Veronis (1960))
+
+$$\frac{D\rho}{Dt}=\kappa\nabla^2\rho'$$
+
+---
+class: left
+### Consecuencias de Boussinesq
+
+* Dejaremos de usar las primas ($\rho'$ y $P'$) por comodidad pero nos referiremos a las perturbaciones.
+* La presión total solo aparece en la ecuación de estado, las demás ocurrencias de $P$ son perturbaciones de presión.
+* ¡No hay ondas de sonido si hacemos esta aproximación!
+
+---
+class: left
+## El término de fricción en las ecuaciones de momento
+
+* No hablamos mucho de estos términos, pero los flujos geofísicos están en estado **turbulento**.
+* Nos interesa encontrar ecuaciones para el comportamiento estadístico (Reynolds: Ej. $u=< u > +u'$, promedio + variaciones) (Cushman cap. 4.1).
+* Nuestras ecuaciones funcionan para las $< u >$, $< v >$, $< w >$, ...
+
+---
+* La viscosidad molecular no refleja la disipación a escala de nuestras ecuaciones (filtradas) y la sustituimos por una **viscosidad equivalente** que incluya procesos disipativos y turbulentos que no podemos resolver en nuestra escala (Ej. microescala)
+
+<img style="width:90%"  src="./figures/hig_res_low_res.jpg">
+.caption[Imagen de [contemporary comunications inc.](https://ccideas.com/chatter/high-resolution-images-vs-low-resolution-images-a-short-primer-for-beginners/)]
+
+---
+## Resumen de ecuaciones 
+
+Aproximación de Boussinesq + argumentos de escalas + viscosidad efectiva constante:
+
+1. Continuidad:
+$$\frac{\partial u}{\partial x}+ \frac{\partial v}{\partial y}+ \frac{\partial w}{\partial z}=0$$
+
+2-4. Momento:
+$$\frac{Du}{Dt}-fv=-\frac{1}{\rho\_0}\frac{\partial P}{\partial x}+\mathcal{A}\left(\frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}\right) + \nu\_E\frac{\partial^2 u}{\partial z^2}$$
+$$\frac{Dv}{Dt}+fu=-\frac{1}{\rho\_0}\frac{\partial P}{\partial y}+\mathcal{A}\left(\frac{\partial^2 v}{\partial x^2}+\frac{\partial^2 v}{\partial y^2}\right) + \nu\_E\frac{\partial^2 v}{\partial z^2}$$
+$$0=-\rho g - \frac{\partial P}{\partial z}$$.
+
+---
+class: left
+5.Energía:
+$$\frac{D \rho}{Dt} = \mathcal{\kappa_H}\left(\frac{\partial^2 \rho}{\partial x^2}+\frac{\partial^2 \rho}{\partial y^2}\right) + \kappa_E\frac{\partial^2 \rho}{\partial z^2}$$
+
+**Incógnitas**: $u$, $v$, $w$, $p$, $\rho$ ($T$ y $Q$ quedan dentro de $\rho$)
+
+**Constantes**: Densidad de referencia $\rho_0$ , aceleración de la gravedad $g$.
+
+**Cuasi-constantes**: 
+
+$f = 2\Omega \sin{\varphi}$ (depende de la latitud o puede tomarse como constante si aproximamos un plano alrededor de una latitud).
+
+Viscosidades efectivas (eddy) $\mathcal{A}$ y $\nu_E$, difusividades efectivas (eddy) $\kappa_H$ y $\kappa_E$. Para esta clase tomamos a $\mathcal{A}$, $\nu_E$, $\kappa_E$, $\kappa_H$ como constantes pero estríctamente pueden ser función del espacio, tiempo o variables de estado.
+
+1-5 se conocen como **ecuaciones primitivas**.
+---
+
+class: left
+# Referencias
+
+
+   * Holton, Introduction to Dynamic Meteorology, 4ta edición, Capítulo 2
+   * Cushman-Roisin y Beckers, Introduction to Geophysical Fluid Dynamics, 2da edición, Capítulo 3.
+
+
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>

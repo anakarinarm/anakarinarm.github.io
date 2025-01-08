@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinámica de Fluidos Geofísicos </title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[Dinámica de Fluidos Geofísicos]     
+.subtitle[Clase 11 - Flujos geostróficos (cont.) y ecuaciones de aguas someras]
+<br/><br/>          
+.author[Semestre 2024-I]  
+.institution[Facultad de Ciencias]      
+<br/>
+.date[21 de septiembre de 2023] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+    
+---
+name: toc
+class: left
+ <img style="width:50%"  src="./figures/ink.jpg">
+
+#Contenido        
+
+1. [Repaso](#repaso)
+1. [Generalización a flujos no geostróficos](#generalizacion)
+1. [Ecuaciones de aguas someras]
+
+<!-- Comment out the next slide if you don't want the Table of Contents link -->         
+---
+layout: true  .toc[[&#10023;](#toc)]
+       
+---
+class: left
+## Repaso
+
+---
+class: left
+
+**1. ¿Qué términos de las ecuaciones de momento participan en el balance geostrófico?**
+
+a) Aceleración de Coriolis, términos advectivos y términos disipativos.
+
+b) Aceleración de Coriolis y gradiente de presión.
+
+c) Gradiente de presión y términos disipativos.
+
+d) Aceleración de Coriolis, gradiente de presión y términos disipativos.
+
+--
+
+**respuesta: b**
+
+---
+**Un flujo isobárico es aquel que**
+
+a) sigue contornos de presión, es decir, las isóbaras coinciden con sus líneas de corriente.
+
+b) es paralelo al gradiente de presión en todo punto.
+
+c) tiene la misma presión en todo el espacio.
+
+d) atraviesa contornos de presión perpendicularmente.
+
+--
+
+**respuesta: a**
+
+---
+**¿En que dirección giran los vientos de un sistema de baja presión que se aproxima a la costa oeste de México? **
+
+a) Sentido horario
+
+b) Sentido antihorario
+
+
+--
+**respuesta: b**
+
+.center[<img style="width:70%"  src="./figures/baja_pres_HN.jpg">]
+
+---
+**En un flujo geostrófico sobre fondo plano, la velocidad horizontal _____1_____ y la vertical _____2_____.**
+
+a) 1. es independiente de la profundidad, 2. es diferente de cero.
+
+b) 1. aumenta con la profundidad, 2. es cero.
+
+c) 1. es independiente de la profundidad, 2. es cero.
+
+d) 1. disminuye con la profundidad, 2. disminuye con la profundidad.
+
+--
+
+**respuesta: c**
+
+
+---
+name: generalizacion
+class: left
+## Generalización a flujos no geostróficos
+</br></br>
+Consideremos que el flujo no gira tan rápido, de manera que el término de Coriolis no domina a los demás términos de aceleración, pero sigamos considerando al flujo homogéneo y sin fricción.
+
+</br></br>
+
+Vamos a las notas...
+
+
+
+---
+## Referencias:
+
+Cushman-Roisin y Beckers - Capítulo 7 
+
+Kundu y Cohen - Capítulo 5
+
+</br></br></br></br></br></br></br></br>
+.note[Notas creadas con [{Liminal}](https://github.com/jonathanlilly/liminal) usando [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>

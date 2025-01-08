@@ -3,6 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://anakarinarm.github.io/tag/cursos/</loc>
+    <lastmod>2025-01-08T13:05:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/</loc>
+    <lastmod>2025-01-08T13:05:07-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/ocedin2025/</loc>
+    <lastmod>2025-01-08T13:05:07-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/tags/</loc>
+    <lastmod>2025-01-08T13:05:07-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/</loc>
+    <lastmod>2025-01-08T13:05:07-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://anakarinarm.github.io/en/teaching/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://anakarinarm.github.io/teaching/"
+                />
+  </url>
+  
+  <url>
     <loc>https://anakarinarm.github.io/publication-type/2/</loc>
     <lastmod>2023-07-13T17:10:37-07:00</lastmod>
     <xhtml:link
@@ -33,21 +88,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/</loc>
-    <lastmod>2024-08-19T10:22:01-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/"
-                />
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/publication_types/</loc>
     <lastmod>2023-07-13T17:10:37-07:00</lastmod>
     <xhtml:link
@@ -63,11 +103,6 @@
   </url>
   
   <url>
-    <loc>https://anakarinarm.github.io/tag/cursos/</loc>
-    <lastmod>2024-03-13T14:50:32-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://anakarinarm.github.io/teaching/diplomadoicaycc2023/</loc>
     <lastmod>2023-03-01T13:15:01-08:00</lastmod>
   </url>
@@ -75,36 +110,6 @@
   <url>
     <loc>https://anakarinarm.github.io/teaching/diplomadoicaycc2024/</loc>
     <lastmod>2024-03-13T14:50:32-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/tags/</loc>
-    <lastmod>2024-03-13T14:50:32-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://anakarinarm.github.io/teaching/</loc>
-    <lastmod>2024-03-13T14:50:32-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://anakarinarm.github.io/en/teaching/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://anakarinarm.github.io/teaching/"
-                />
   </url>
   
   <url>

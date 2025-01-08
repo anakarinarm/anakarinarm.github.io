@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dinámica de Fluidos Geofísicos </title> <!-- You'll want to change that obviously-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="./stylesheets/katex.min.css">
+    <link rel="stylesheet" href="./stylesheets/liminal.css">
+
+    <style>            
+        /* Overall styling for slide */
+        .remark-slide-content {
+            padding:0em 4em 0em 4em;
+            font-family: 'Georgia';
+            letter-spacing: 0.025em;
+        }
+     
+        /* Styling for level one header, #Text */
+        .remark-slide-content h1 {
+            font-size: 2.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level two header, ##Text */
+        .remark-slide-content h2 {
+            font-size: 1.55em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Styling for level three header, ###Text */
+        .remark-slide-content h3 {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        /* Styling for paragraphs and lists */
+        .remark-slide-content p,ol,ul {font-size: 1.2em;}
+
+        /* Styling for code blocks */
+        .remark-code,.remark-inline-code {font-family: 'Ubuntu Mono';}
+        
+        /* Styling for links */
+        a {text-decoration: none;color: #666666;}
+        /* Setting link properties is particular, do not change order below*/
+        a:visited {color: #666666}        
+        a:hover {color: #33AA99}
+        a:active,a#active {color: #FF9700;}
+        
+        /* Some special classes for the title slide */
+        .title {
+            font-size: 2.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+        
+        .author {
+            font-size: 1.4em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .coauthor {
+            font-size: 1.0em;
+            color: #606060;
+            font-weight: bold;
+            letter-spacing: 0.02em;
+        }
+        
+        .subtitle, .institution {
+            font-size: 1.2em;
+        }
+        
+        .date {
+            font-size: 1.0em;
+            font-style: italic;
+        }
+        
+        .note {
+            font-size: 0.8em;
+        }
+        
+        /* Other special classes */
+        .cite {
+            font-size: 0.8em;
+            color: #33AA99;
+            font-style: italic;
+        }
+        
+        .footnote {
+            position: absolute;
+            bottom: 2em;
+            left: 6em;
+            font-size: 0.7em;
+        }
+        
+        .caption {
+            font-size: 0.5em;
+            line-height: 10%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+class: center, middle
+<br/><br/>                     
+.title[Dinámica de Fluidos Geofísicos]     
+.subtitle[Clase 23 - Un poco de ondas internas]
+<br/><br/>          
+.author[Semestre 2022-I]  
+.institution[Facultad de Ciencias]      
+<br/>
+.date[10 de enero de 2022] 
+<br/><br/>
+ <img style="width:100%"  src="./figures/green_waves.png"> 
+
+ <!-- .note[Created with [{Liminal}](https://github.com/jonathanlilly/liminal) using [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)] -->
+           
+---
+class: left
+Si la estratificación es principalmente vertical (capas de distinta densidad apliadas) --> 
+**ondas de gravedad internas** 
+
+
+.center[<img style="width:90%" src="./figures/modis_int_waves.jpg">]
+.caption[MODIS-Terra NASA, 11/nov/2003.]
+
+---
+.center[<img style="width:90%" src="./figures/int_waves_col.jpg">]
+
+---
+class: left
+## Ejemplo de ondas entre dos capas 
+
+* Aceite y agua
+* Instabilidades
+
+---
+class: left
+
+## Modelos de capas
+
+* Idealización -> Estratificación continua vista como una serie de capas finitas de distinta densidad
+
+* Nos fijamos en el movimiento de la interfase entre las capas.
+
+* Gravedad reducida $g'=\frac{\Delta \rho}{\rho_0}g$, $\Delta\rho$ diferencia entre densidades de cada capa.
+
+* Radio interno de deformación de Rossby: $R=\frac{\sqrt{g'H}}{f}$, mucho menor que el externo (el que usa $g$).
+
+---
+class: left
+
+Puede haber ondas en las interfases entre culaquier capa.
+
+Si pensamos en un fluido con 3 capas, tendremos dos interfases. Si la capa media es delgadita, los desplazamientos verticales de las interfases pueden interactuar y habrá intercambio de energía entre capas.
+
+En el límite en que tenemos una infinidad de capas (flujo estratificado) tendremos también una infinidad de modos de vibración, y la onda tendrá con componentes horizontales y verticales de propagación.
+
+No importa lo complicado que parezca, el mecanismo es el mismo: un juego entre gravedad e inercia e intercambios continuos de energía potenical y cinética.
+
+---
+class: left
+
+En las notas podrán encontrar el desarrollo y descripción de las ondas internas de gravedad en un flujo continuamente estratificado.
+
+Una vez que revisen las notas, contesten las preguntas que aparecen en la parte final y entreguen sus respuestas la siguiente clase.
+
+
+
+
+---
+class: left
+
+### Referencias:
+Cushman-Roisin y Beckers, capítulo 13.
+
+
+
+</br></br></br></br></br></br></br></br>
+.note[Notas creadas con [{Liminal}](https://github.com/jonathanlilly/liminal) usando [{Remark.js}](http://remarkjs.com/) + [{Markdown}](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) +  [{KaTeX}](https://katex.org)]
+
+    </textarea>
+    <script src="./javascript/remark-latest.min.js" type="text/javascript"></script>
+    <script defer src="./javascript/katex.min.js"></script>
+    <script defer src="./javascript/auto-render.min.js"></script>
+    <!-- Call remark.js and KaTeX with liminal default settings -->
+    <script type="text/javascript" src="./javascript/call-javascript.js">
+</script>
+       
+</body>
+</html>
