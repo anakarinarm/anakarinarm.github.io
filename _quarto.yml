@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 # Meta
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-author-meta: "Dr. Gang He"
+description-meta: "Personal website of Karina Ramos Musalem"
+author-meta: "Karina Ramos Musalem"
 
 website:
-  title: "Quarto Academic"
+  title: "Karina Ramos Musalem"
   image: "https://quarto.org/quarto.png"
-  description: "Quarto Academic Website Template adapted by Dr. Gang He"
+  description: "Personal website of Karina Ramos Musalem based on Quarto Academic Website Template adapted by Dr. Gang He"
  
   navbar:
     background: light  # You can change the background color here
