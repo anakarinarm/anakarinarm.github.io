@@ -1,7 +1,7 @@
 ---
-title: "Quarto Academic, PhD"
-description-meta: "Quarto Academic Website Template adapted by Dr. Gang He"
-image: "files/images/placeholder4.JPG"
+title: "Karina Ramos Musalem"
+description-meta: "Academic website of Karina Ramos Muslalem "
+image: "files/profiles/krm_hojas.jpg"
 page-navigation: false
 toc: false
 #sidebar: false
@@ -12,36 +12,21 @@ about:
   template: trestles
   image-width: 70%
   links:
-    - icon: sun
-      text: Lab
-      href: https://www.github.com
-      target: _blank
-    - icon: globe
-      text: Uprofile
-      href: https://baruch.cuny.edu
+    - icon: github
+      text: GitHub
+      href: https://www.github.com/anakarinarm
       target: _blank
     - icon: envelope
       text: E-mail
-      href: mailto:email@gmail.com    
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-      target: _blank
-    - icon: youtube
-      text: YouTube
-      href: https://www.youtube.com     
-      target: _blank 
+      href: mailto:kramosmu@cicese.edu.mx    
     - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
-      href: https://orcid.org
+      href: https://orcid.org/0000-0002-4022-9024
       target: _blank
-    - text: "{{< ai clarivate >}} Web of Science"
-      href: https://www.webofscience.com  
-      target: _blank
-    - text: "{{< ai scopus >}} Scopus"
-      href: https://www.scopus.com
-      target: _blank
+#    - text: "{{< ai clarivate >}} Web of Science"
+#      href: https://www.webofscience.com  
+#      target: _blank
     - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com
+      href: https://scholar.google.com.mx/citations?user=vNg4iCgAAAAJ&hl=es
       target: _blank
 #    - text: "{{< ai researchgate >}} Research Gate"
 #      href: https://www.researchgate.net
@@ -67,34 +52,23 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 
 :::{#hero-heading}
 
-I'm a [Quarto Academeic Website Template](https://github.com/drganghe/quarto-academic-website-template) adapted by [Dr. Gang He](http://drganghe.github.io).
+I'm a physical oceanographer who studies how geophysical flows—including ocean currents and atmospheric circulation—interact with topography. Using numerical simulations, I investigate how seafloor features drive the cross-shelf exchange of water, nutrients, and dissolved gases between the deep ocean and continental shelves.
 
-I'm a template that you can fork to build your own website with easy adaptation and deployment.
+I'm currently part of the [Department of Physical Oceanography](https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1") at the [Center for Scientific Research and Higher Education of Ensenada, Baja California (CICESE)](https://www.cicese.edu.mx/).
 
-1. **Star** this repository to bookmark it for future reference.  
-1. **Fork** this repository and rename it to `YourGitHubUserName.github.io`.  
-1. **Update** the `_quarto.yml` file to configure your site’s basic settings.  
-1. **Add or edit content** in the following files and folders:
-   - `/posts/` – posts about publications, news, events  
-   - `teaching.qmd` – teaching information  
-   - `projects.yml` – research or other projects  
-   - `people.qmd` and `/people/` – team or collaborators  
-   - `/files/` - profiles, images, pdfs, and includes 
-1. [**Render and preview**](https://quarto.org/docs/websites/) your site locally.  
-1. [**Publish**](https://quarto.org/docs/publishing/github-pages.html) your site using GitHub Pages.  
-1. **Refine and polish** your content and design as needed.  
-1. ✅ Enjoy your new website!
+From 2021 to 2024, I was a researcher with the [Ocean-Atmosphere Interaction group](http://grupo-ioa.atmosfera.unam.mx/index.php/) at the [Instituto de Ciencias de la Atmósfera y Cambio Climático](https://www.atmosfera.unam.mx/). I completed my Ph.D. in the Mesoscale Ocean and Atmospheric Dynamics Group under [Professor Susan Allen](https://www.eoas.ubc.ca/~sallen/) at the [University of British Columbia](https://www.eoas.ubc.ca/).
 
-## Experience
+## Research Interests
+* Stratified flow over topography and associated mixing processes
+* Cross-shelf exchange and transport mechanisms in submarine canyons
+* Analytical and numerical modeling of geophysical flows.
 
-- Researcher, Univerisity
+## Education  
+* Ph.D. in Oceanography, University of British Columbia (2020)
+* B.Sc. in Physics, Universidad Nacional Autónoma de México (2013)
 
-## Education
-
-- PhD, Univerisity
 
 :::
-
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
 ## Recent Posts

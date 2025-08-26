@@ -1,24 +1,23 @@
 ---
 title: "Contact"
-description-meta: "Reach out to me with questions and comments"
+description-meta: "Reach out"
 title-block-banner: false
 ---
 
 <center>
 
-**Quarto Academic**
+**Reach out :-)**
 
-School
+Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California
 
-College
+Departamento de Oceanografía Física
 
-University
+Address: Carretera Ensenada - Tijuana No. 3918, Zona Playitas, CP. 22860, Ensenada, B.C. México.
 
-Address: 
+Phone: +52 646-175-05-00, ext 24054
 
-Phone: 
+E-mail: kramosmu@cicese.edu.mx 
 
-E-mail: 
-
-
+![View from CICESE](files/images/cicese.jpg){ width=100% }
+: The view from CICESE.
 </center>

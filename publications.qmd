@@ -7,28 +7,24 @@ title-block-banner: false
 css: custom.css
 ---
 
+## Peer-reviewed
 
-<!--Include academic icons or buttons-->
-{{< include /files/includes/_academic.qmd >}}
+Moreles, E., Romero, E., **Ramos-Musalem, K.**, & Tenorio-Fernandez, L. (Accepted). The global ocean mixed layer depth derived from an energy approach. *Ocean Science*, 1–27. DOI: [10.5194/egusphere-2024-4079](https://doi.org/10.5194/egusphere-2024-4079)
 
-Notes: \* corresponding author; <sup>GS</sup> graduate student advisee; <sup>VS</sup> visiting scholar; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) 
+**Ramos-Musalem, K.**, Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. *Journal of Geophysical Research: Oceans*, e2022JC019547. DOI:[10.1029/2022JC019547](https://doi.org/10.1029/2022JC019547).
 
-Total citations as of January 2025:
+Burgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., **Ramos-Musalem, K.**, & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. *Atmósfera*. DOI:[10.20937/ATM.53156](https://doi.org/10.20937/ATM.53156)
 
-- [Web of Science](https://www.webofscience.com): 100,000 (h-index = 100)   
-- [Google Scholar](https://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en): 179,000 (h-index = 127, i10-index = 377) 
+Saldías, G. S., **Ramos-Musalem, K.**, & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. *Geophysical Research Letters*, 48(11), e2021GL093548. DOI:[10.1029/2021GL093548](https://doi.org/10.1029/2021GL093548)
 
-## Selected Work
+**Ramos-Musalem, K.** & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. *Journal of Geophysical Research: Oceans*, 125(3), e2019JC015785. DOI:[10.1029/2019JC015785](https://doi.org/10.1029/2019JC015785)
 
-Einstein, A., Podolsky, B., & Rosen, N. (1935). [Can quantum-mechanical description of physical reality be considered complete?](posts/paper-title/index.qmd). *Physical review*, 47(10), 777. \[[pdf](https://scholar.google.com/)\] \[[code and data](https://doi.org)\] ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1103/PhysRev.47.777" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+**Ramos-Musalem, K.** & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. *Journal of Physical Oceanography*, 49(2), 561–584. DOI: [10.1175/JPO-D-18-0174.1](https://doi.org/10.1175/JPO-D-18-0174.1)
 
+Arane, T., **Musalem, A. K. R**., & Fridman, M. (2009). Coupling between two singing wineglasses. *American Journal of Physics*, 77(11), 1066–1067. DOI: [10.1119/1.3119175](https://doi.org/10.1119/1.3119175)
 
-<center><hr style="width:50%"></center>
+## Academic writing
 
-Einstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. *American Journal of Physics*, 33(5), 367. [[pdf](https://icg.isy.liu.se/en/phd-courses/quantum_foundations/references/Einstein1905b.pdf)] <span class="__dimensions_badge_embed__" data-doi="10.1038/s41560-023-01304-w" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1038/s41560-023-01304-w" data-hide-no-mentions="true" class="altmetric-embed"></div>
+PhD Thesis: Transport through submarine canyons (2020). University of British Columbia. [link](https://open.library.ubc.ca/collections/ubctheses/24/items/1.0388506)
 
-
-
-<!--Include social share buttons-->
-
-{{< include /files/includes/_socialshare.qmd >}}
+BSc Thesis: Estudio numérico de los forzamientos que generan la surgencia de Yucatán (2013). UNAM, Mexico, 77. (In Spanish) [link](https://hdl.handle.net/20.500.14330/TES01000692102)

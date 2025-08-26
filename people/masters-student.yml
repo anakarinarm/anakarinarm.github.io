@@ -1,10 +1,10 @@
-    - path: https://drganghe.github.io/quarto-academic-website-template
-      image: "/files/profiles/profile3.JPG"
-      title: "Student B"
-      lastname: "B"
+    - path: https://github.com/Estebanovich
+#      image: "/files/profiles/profile3.JPG"
+      title: "Esteban Cruz Isidro"
+      lastname: "Cruz Isidro"
 #      author: 
       subtitle: "Masters Student"
 #      date: "2024-03-12"
       categories: [Masters Student] 
-      started: "2024"
-      ended: "2025"
+      started: "2023"
+      ended: ""

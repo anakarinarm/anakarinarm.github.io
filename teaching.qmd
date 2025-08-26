@@ -1,31 +1,32 @@
 ---
 title: "Teaching"
-subtitle: "I teach."
 title-block-banner: false
 ---
 
+Most resources in Spanish.
 
-## Class 1
+## Oceanografía Dinámica I
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder1.jpg)
+![](files/images/eddie_zoom.png)
 
 :::
 
 ::: {.g-col-12 .g-col-md-10}
 
-[Fall 2024](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+[2025-I](https://www.google.com), &nbsp; [2026-I](teaching/ocedin1_2026.qmd)
 
-Class 1 introduction.
+Graduate program in Physical Oceanography, CICESE
+
 
 :::
 
 :::
 
 
-## Class 2
+## At Faculty of Science, UNAM (Undergraduate)
 
 ::: {.grid}
 
@@ -36,16 +37,19 @@ Class 1 introduction.
 
 ::: {.g-col-12 .g-col-md-10}
 
-[Spring 2025](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+Taller de Modelación Numérica (2021-II, 2022-II)
 
-Class 2 introduction.
+Dinámica de Fluidos Geofísicos (2022-I, 2024-I)
 
+Introducción a la Oceanografía Física (2023-I)
+
+Técnicas Experimentales (2021-I)
 :::
 
 :::
 
 
-## Class 3
+## Earth Science Graduate Program, UNAM
 
 ::: {.grid}
 
@@ -56,9 +60,9 @@ Class 2 introduction.
 
 ::: {.g-col-12 .g-col-md-10}
 
-[Spring 2025](https://www.google.com), &nbsp; [Spring 2024](https://www.google.com)
+Dynamical Oceanography I (2023-I)
 
-Class 3 introduction. 
+Dynamical Oceanography II (2023-II)
 
 :::
 

@@ -2,42 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/posts.html</loc>
-    <lastmod>2025-06-06T22:28:53.960Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/publications.html</loc>
-    <lastmod>2025-03-11T20:28:51.830Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/projects.html</loc>
-    <lastmod>2025-02-10T13:31:20.796Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/index.html</loc>
-    <lastmod>2025-06-06T22:34:03.868Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/index.html</loc>
-    <lastmod>2025-02-08T20:29:49.171Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/teaching.html</loc>
-    <lastmod>2025-02-10T15:14:33.036Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/contact.html</loc>
-    <lastmod>2025-02-08T02:43:14.168Z</lastmod>
+    <lastmod>2025-08-21T19:12:55.257Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/posts/event-title/index.html</loc>
-    <lastmod>2025-02-10T14:44:43.941Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/index.html</loc>
-    <lastmod>2025-06-06T22:45:22.039Z</lastmod>
+    <lastmod>2025-08-23T20:24:04.555Z</lastmod>
   </url>
   <url>
     <loc>https://drganghe.github.io/quarto-academic-website-template/people.html</loc>
-    <lastmod>2025-06-06T22:28:53.959Z</lastmod>
+    <lastmod>2025-08-21T17:57:09.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/publications.html</loc>
+    <lastmod>2025-08-25T01:49:45.126Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/index.html</loc>
+    <lastmod>2025-08-25T01:54:18.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/teaching.html</loc>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/projects.html</loc>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/people.html</loc>
+    <lastmod>2025-08-25T01:56:05.970Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/quarto-academic-website-template/posts.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/people.html</loc>
+    <lastmod>2025-08-25T01:56:05.970Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/index.html</loc>
+    <lastmod>2025-08-25T01:54:18.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching.html</loc>
+    <lastmod>2025-08-26T04:53:47.897Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/publications.html</loc>
+    <lastmod>2025-08-26T04:47:21.115Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/contact.html</loc>
+    <lastmod>2025-08-21T19:12:55.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/event-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/paper-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/news-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/ocedin1_2026.html</loc>
+    <lastmod>2025-08-26T04:54:57.590Z</lastmod>
   </url>
 </urlset>

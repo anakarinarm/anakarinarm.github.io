@@ -1,10 +1,32 @@
-    - path: https://drganghe.github.io/quarto-academic-website-template
-      image: "/files/profiles/profile1.JPG"
-      title: "Student A"
-      lastname: "A"
+    - path: https://github.com/kaftkatt
+      image: "/files/profiles/amelia.png"
+      title: "Amelia Thelandersson"
+      lastname: "Thelandersson"
 #      author: 
       subtitle: "PhD Student"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2024"
-      ended: "2025"
+      ended: ""
+
+    - path: https://drganghe.github.io/quarto-academic-website-template
+      image: "/files/profiles/yuritzy.JPG"
+      title: "Yuritzy Pérez Corona"
+      lastname: "Pérez Corona"
+#      author: 
+      subtitle: "PhD Student"
+#      date: "2024-03-12"
+      categories: [PhD Student] 
+      started: "2023"
+      ended: ""
+    
+    - path: https://drganghe.github.io/quarto-academic-website-template
+#      image: "/files/profiles/yuritzy.JPG"
+      title: "Andrea Mitre Apaez"
+      lastname: "Mitre Apaez"
+#      author: 
+      subtitle: "PhD Student"
+#      date: "2024-03-12"
+      categories: [PhD Student] 
+      started: "2023"
+      ended: ""

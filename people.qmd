@@ -1,6 +1,5 @@
 ---
-title: "People"
-subtitle: "Who we are"
+title: "Group"
 #image: files/group.jpeg
 page-layout: full
 listing:  #an example of listing external links
@@ -24,15 +23,16 @@ listing:  #an example of listing external links
 - id: lab-alumni
   sort: "lastname asc"
   type: table
-  fields: [image, title, subtitle, started, ended]
+  fields: [title, subtitle, project, institution, ended]
   grid-item-align: center  
-  grid-columns: 4
+  grid-columns: 5
   image-height: 25px
   field-display-names: 
       title: "Name"
       subtitle: "Role"
-      started: "Started"
-      ended: "Ended"
+      project: "Project"
+      institution: "Institution"
+      ended: "Graduated"
 #  categories: true
 #  sort-ui: true
 #  filter-ui: true

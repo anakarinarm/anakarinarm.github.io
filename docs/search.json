@@ -11,7 +11,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Notes: * corresponding author; GS graduate student advisee; VS visiting scholar;  ESI Highly Cited Paper (top 1%);  ESI Hot Paper (top 0.1%)\nTotal citations as of January 2025:"
+    "text": "Moreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (Accepted). The global ocean mixed layer depth derived from an energy approach. Ocean Science, 1–27. DOI: 10.5194/egusphere-2024-4079\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175"
   },
   {
     "objectID": "publications.html#selected-work",
@@ -60,7 +60,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Fall 2024,   Fall 2023\nClass 1 introduction."
+    "text": "Most resources in Spanish."
   },
   {
     "objectID": "teaching.html#class-1",
@@ -88,55 +88,125 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Quarto Academic\nSchool\nCollege\nUniversity\nAddress:\nPhone:\nE-mail:"
+    "text": "Reach out :-)\nCentro de Investigación Científica y de Educación Superior de Ensenada, Baja California\nDepartamento de Oceanografía Física\nAddress: Carretera Ensenada - Tijuana No. 3918, Zona Playitas, CP. 22860, Ensenada, B.C. México.\nPhone: +52 646-175-05-00, ext 24054\nE-mail: kramosmu@cicese.edu.mx\n\n\n\nThe view from CICESE."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Quarto Academic, PhD",
+    "title": "Karina Ramos Musalem",
     "section": "",
-    "text": "Lab\n  \n  \n    \n     Uprofile\n  \n  \n    \n     E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     YouTube\n  \n  \n      ORCID\n  \n  \n      Web of Science\n  \n  \n      Scopus\n  \n  \n      Google Scholar\n  \n\n  \n  \nI’m a Quarto Academeic Website Template adapted by Dr. Gang He.\nI’m a template that you can fork to build your own website with easy adaptation and deployment.\n\nStar this repository to bookmark it for future reference.\n\nFork this repository and rename it to YourGitHubUserName.github.io.\n\nUpdate the _quarto.yml file to configure your site’s basic settings.\n\nAdd or edit content in the following files and folders:\n\n/posts/ – posts about publications, news, events\n\nteaching.qmd – teaching information\n\nprojects.yml – research or other projects\n\npeople.qmd and /people/ – team or collaborators\n\n/files/ - profiles, images, pdfs, and includes\n\nRender and preview your site locally.\n\nPublish your site using GitHub Pages.\n\nRefine and polish your content and design as needed.\n\n✅ Enjoy your new website!\n\n\n\n\nResearcher, Univerisity\n\n\n\n\n\nPhD, Univerisity"
+    "text": "GitHub\n  \n  \n    \n     E-mail\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \nI’m a physical oceanographer who studies how geophysical flows—including ocean currents and atmospheric circulation—interact with topography. Using numerical simulations, I investigate how seafloor features drive the cross-shelf exchange of water, nutrients, and dissolved gases between the deep ocean and continental shelves.\nI’m currently part of the Department of Physical Oceanography at the Center for Scientific Research and Higher Education of Ensenada, Baja California (CICESE).\nFrom 2021 to 2024, I was a researcher with the Ocean-Atmosphere Interaction group at the Instituto de Ciencias de la Atmósfera y Cambio Climático. I completed my Ph.D. in the Mesoscale Ocean and Atmospheric Dynamics Group under Professor Susan Allen at the University of British Columbia.\n\n\n\nStratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows.\n\n\n\n\n\nPh.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
   },
   {
     "objectID": "index.html#experience",
     "href": "index.html#experience",
-    "title": "Quarto Academic, PhD",
+    "title": "Karina Ramos Musalem",
     "section": "",
     "text": "Researcher, Univerisity"
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
-    "title": "Quarto Academic, PhD",
+    "title": "Karina Ramos Musalem",
     "section": "",
-    "text": "PhD, Univerisity"
+    "text": "Ph.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
   },
   {
     "objectID": "index.html#recent-posts",
     "href": "index.html#recent-posts",
-    "title": "Quarto Academic, PhD",
+    "title": "Karina Ramos Musalem",
     "section": "Recent Posts",
     "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Website Examples and Tips\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\nJun 24, 2024\n\n\n\n\n\n\nNo matching items\n\n\nAll Posts »"
   },
   {
     "objectID": "people.html",
     "href": "people.html",
-    "title": "People",
+    "title": "Group",
     "section": "",
-    "text": "PhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nMasters Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\nNo matching items"
+    "text": "Masters Student\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people.html#team",
     "href": "people.html#team",
-    "title": "People",
+    "title": "Group",
     "section": "",
-    "text": "PhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nMasters Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\nNo matching items"
+    "text": "Masters Student\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people.html#alumni",
     "href": "people.html#alumni",
-    "title": "People",
+    "title": "Group",
     "section": "Alumni",
-    "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n      \n      \n        Name\n      \n      \n        Role\n      \n      \n        Started\n      \n      \n        Ended\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n \n\n\n\nName\n\n\n\nRole\n\n\n\nStarted\n\n\n\nEnded\n\n\n\n\n\n\n\n\n\n\n\nAlumni A\n\n\nPhD Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni B\n\n\nMasters Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\n\n\nAlumni C\n\n\nUndergraduate Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Name\n      \n      \n        Role\n      \n      \n        Graduated\n      \n      \n        Project\n      \n      \n        Institution\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nName\n\n\n\nRole\n\n\n\nProject\n\n\n\nInstitution\n\n\n\nGraduated\n\n\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nUndergraduate Alumni\n\n\nDynamical interaction between two adjacent submarine canyons\n\n\nUNAM, Mexico\n\n\n2023\n\n\n\n\n\n\nFélix López García\n\n\nUndergraduate Alumni\n\n\nBuoyancy potential energy content in a vertical density profile\n\n\nIPN, Mexico\n\n\n2023\n\n\n\n\n\n\nJimena Ortiz Villalva\n\n\nUndergraduate Alumni\n\n\nMountain waves over the Valley of Mexico and Guanajuato\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nMasters Alumni\n\n\nHigh-frequency coastal trapped waves generated at Sebastián Vizcaino Bay\n\n\nU. of Gothenburg, Sweden\n\n\n2023\n\n\n\n\n\n\nJesica Villalobos García\n\n\nUndergraduate Alumni\n\n\nMountain waves and ozone events in the Valley of Mexico\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Karina Ramos Musalem",
+    "section": "",
+    "text": "Stratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows."
+  },
+  {
+    "objectID": "publications.html#peer-reviewed",
+    "href": "publications.html#peer-reviewed",
+    "title": "Publications",
+    "section": "",
+    "text": "Moreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (Accepted). The global ocean mixed layer depth derived from an energy approach. Ocean Science, 1–27. DOI: 10.5194/egusphere-2024-4079\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175"
+  },
+  {
+    "objectID": "publications.html#academic-writing",
+    "href": "publications.html#academic-writing",
+    "title": "Publications",
+    "section": "Academic writing",
+    "text": "Academic writing\nPhD Thesis: Transport through submarine canyons (2020). University of British Columbia. link\nBSc Thesis: Estudio numérico de los forzamientos que generan la surgencia de Yucatán (2013). UNAM, Mexico, 77. (In Spanish) link"
+  },
+  {
+    "objectID": "teaching.html#oceanografía-dinámica-i",
+    "href": "teaching.html#oceanografía-dinámica-i",
+    "title": "Teaching",
+    "section": "Oceanografía Dinámica I",
+    "text": "Oceanografía Dinámica I\n\n\n\n\n\n2025-I,   2026-I\nGraduate program in Physical Oceanography, CICESE"
+  },
+  {
+    "objectID": "teaching.html#at-faculty-of-science-unam-undergraduate",
+    "href": "teaching.html#at-faculty-of-science-unam-undergraduate",
+    "title": "Teaching",
+    "section": "At Faculty of Science, UNAM (Undergraduate)",
+    "text": "At Faculty of Science, UNAM (Undergraduate)\n\n\n\n\n\nTaller de Modelación Numérica (2021-II, 2022-II)\nDinámica de Fluidos Geofísicos (2022-I, 2024-I)\nIntroducción a la Oceanografía Física (2023-I)\nTécnicas Experimentales (2021-I)"
+  },
+  {
+    "objectID": "teaching.html#earth-science-graduate-program-unam",
+    "href": "teaching.html#earth-science-graduate-program-unam",
+    "title": "Teaching",
+    "section": "Earth Science Graduate Program, UNAM",
+    "text": "Earth Science Graduate Program, UNAM\n\n\n\n\n\nDynamical Oceanography I (2023-I)\nDynamical Oceanography II (2023-II)"
+  },
+  {
+    "objectID": "teaching/ocedin1_2026.html",
+    "href": "teaching/ocedin1_2026.html",
+    "title": "Oceanografía Dinámica I",
+    "section": "",
+    "text": "Diapositivas\n\n\nNotebooks\n\n\nNotas"
+  },
+  {
+    "objectID": "teaching/ocedin1_2026.html#oceanografía-dinámica-i",
+    "href": "teaching/ocedin1_2026.html#oceanografía-dinámica-i",
+    "title": "Oceanografía Dinámica I",
+    "section": "",
+    "text": "2025-I,   2026-I\nGraduate program in Physical Oceanography, CICESE"
+  },
+  {
+    "objectID": "teaching/ocedin1_2026.html#at-faculty-of-science-unam-undergraduate",
+    "href": "teaching/ocedin1_2026.html#at-faculty-of-science-unam-undergraduate",
+    "title": "Oceanografía Dinámica I",
+    "section": "At Faculty of Science, UNAM (Undergraduate)",
+    "text": "At Faculty of Science, UNAM (Undergraduate)\n\n\n\n\n\nTaller de Modelación Numérica (2021-II, 2022-II)\nDinámica de Fluidos Geofísicos (2022-I, 2024-I)\nIntroducción a la Oceanografía Física (2023-I)\nTécnicas Experimentales (2021-I)"
+  },
+  {
+    "objectID": "teaching/ocedin1_2026.html#earth-science-graduate-program-unam",
+    "href": "teaching/ocedin1_2026.html#earth-science-graduate-program-unam",
+    "title": "Oceanografía Dinámica I",
+    "section": "Earth Science Graduate Program, UNAM",
+    "text": "Earth Science Graduate Program, UNAM\n\n\n\n\n\nDynamical Oceanography I (2023-I)\nDynamical Oceanography II (2023-II)"
   }
 ]

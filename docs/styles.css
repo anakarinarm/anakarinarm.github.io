@@ -1,1 +1,50 @@
 /* css styles */
+.navbar {
+  background-color: #009367; /* Change to your desired color */
+  color: #fff;
+}
+.navbar a {
+  color: #fff; /* Ensures nav links are visible */
+}
+
+a {
+  color: #ff851b; /* Your desired link color */
+  text-decoration: underline; /* Optional */
+}
+
+a:hover {
+  color: #47c29d; /* Changed hover color to a green shade, no blue */
+}
+
+.navbar .active > a,
+.navbar a.active {
+  color: #fff !important;   /* Active link color */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar .dropdown-menu {
+  background-color: #009367;
+}
+
+.navbar .dropdown-menu a {
+  color: #fff !important; /* Dropdown menu link color */
+}
+
+.navbar .dropdown-menu a:hover {
+  color: #04c68c !important; /* Dropdown hover color, green shade */
+  background-color: #fff !important;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #81d565 !important;      /* Your desired hover color */
+  background-color: transparent !important;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #81d565 !important;      /* Match your desired hover color */
+  background-color: transparent !important;
+}
