@@ -16,7 +16,7 @@ Most resources in Spanish.
 
 ::: {.g-col-12 .g-col-md-10}
 
-[2025-I](https://www.google.com), &nbsp; [2026-I](teaching/ocedin1_2026.qmd)
+2025-I, &nbsp; [2026-I](teaching/ocedin1_2026.qmd)
 
 Graduate program in Physical Oceanography, CICESE
 
@@ -25,44 +25,48 @@ Graduate program in Physical Oceanography, CICESE
 
 :::
 
-
-## At Faculty of Science, UNAM (Undergraduate)
+## Introducción a la programación científica
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder2.JPG)
+![](files/images/swc_titulo.png)
 
 :::
 
 ::: {.g-col-12 .g-col-md-10}
 
-Taller de Modelación Numérica (2021-II, 2022-II)
+[Septiembre 2025](teaching/intro_scicomp_2025.qmd)
 
-Dinámica de Fluidos Geofísicos (2022-I, 2024-I)
+3-day bootcamp for PO graduate students at CICESE.
 
-Introducción a la Oceanografía Física (2023-I)
-
-Técnicas Experimentales (2021-I)
 :::
 
 :::
 
 
-## Earth Science Graduate Program, UNAM
+## Other courses
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder3.JPG)
+![](files/images/double_diff.jpg)
 
 :::
 
 ::: {.g-col-12 .g-col-md-10}
 
-Dynamical Oceanography I (2023-I)
+At UNAM, Faculty of Science (undergraduate)
+  
+    * Taller de Modelación Numérica (2021-II, 2022-II)
+    * Dinámica de Fluidos Geofísicos (2022-I, 2024-I)
+    * Introducción a la Oceanografía Física (2023-I)
+    * Técnicas Experimentales (2021-I)
 
-Dynamical Oceanography II (2023-II)
+At UNAM, Earth Sciences Graduate Program
+
+    * Oceanografía Dinámica I (2023-I)
+    * Oceanografía Dinámica II (2023-II)
 
 :::
 

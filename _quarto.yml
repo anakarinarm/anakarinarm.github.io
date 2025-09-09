@@ -19,10 +19,10 @@ website:
 #        href: index.qmd
       - text: About
         menu:
-          - text: News
-            href: posts.qmd#category=news
-          - text: Events
-            href: posts.qmd#category=event      
+#          - text: News
+#            href: posts.qmd#category=news
+#          - text: Events
+#            href: posts.qmd#category=event      
           - text: Contact
             href: contact.qmd             
       - text: Research
@@ -44,7 +44,7 @@ website:
  #     - text: CV
  #       href: files/nsf-biosketch.pdf
       - icon: github
-        href: https://github.com/drganghe/quarto-academic-website-template
+        href: https://github.com/anakarinarm
  #       target: _blank
  #     - text: "{{< fa brands bluesky >}}"
  #       href: https://bsky.app

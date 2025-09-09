@@ -2,30 +2,32 @@
       image: "/files/profiles/amelia.png"
       title: "Amelia Thelandersson"
       lastname: "Thelandersson"
-#      author: 
+#     author: 
+      project: "Exchange Processes Across Sills in the Northern Gulf of California "
       subtitle: "PhD Student"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2024"
       ended: ""
 
-    - path: https://drganghe.github.io/quarto-academic-website-template
-      image: "/files/profiles/yuritzy.JPG"
+    - image: "/files/profiles/yuritzy.JPG"
       title: "Yuritzy Pérez Corona"
       lastname: "Pérez Corona"
-#      author: 
+      project: "Synergy between SST and SSH in the Gulf of California mesoscale eddies"
+      #      author: 
       subtitle: "PhD Student"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2023"
       ended: ""
     
-    - path: https://drganghe.github.io/quarto-academic-website-template
+#    - path: https://drganghe.github.io/quarto-academic-website-template
 #      image: "/files/profiles/yuritzy.JPG"
-      title: "Andrea Mitre Apaez"
+    - title: "Andrea Mitre Apaez"
       lastname: "Mitre Apaez"
 #      author: 
       subtitle: "PhD Student"
+      project: "Internal tides in Punta Banda Canyon"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2023"

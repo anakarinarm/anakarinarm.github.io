@@ -3,12 +3,13 @@ title: "Group"
 #image: files/group.jpeg
 page-layout: full
 listing:  #an example of listing external links
-#  template: item-default-external.ejs
 - id: lab-member
   sort: "lastname asc"
   type: grid
-  fields: [image, title, subtitle]
-  grid-item-align: center
+  fields: [image, title, subtitle, project]
+  field-display-names: 
+      project: " "
+  grid-item-align: left
   grid-columns: 4
   image-height: 200px
   categories: true

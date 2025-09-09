@@ -1,4 +1,4 @@
-    - path: https://drganghe.github.io/quarto-academic-website-template
+    - path: https://github.com/Estebanovich/
 #      image: "/files/profiles/profile6.JPG"
       title: "Esteban Cruz Isidro"
       lastname: "Cruz Isidro"
@@ -11,9 +11,9 @@
       project: "Dynamical interaction between two adjacent submarine canyons" 
       institution: "UNAM, Mexico" 
 
-    - path: https://drganghe.github.io/quarto-academic-website-template
+#    - path: https://drganghe.github.io/quarto-academic-website-template
 #      image: "/files/profiles/profile6.JPG"
-      title: "Félix López García"
+    - title: "Félix López García"
       lastname: "López García"
 #      author: 
       subtitle: "Undergraduate Alumni"
@@ -21,12 +21,12 @@
       categories: [Undergraduate Student] 
       started: "2022"
       ended: "2023"
-      project: "Buoyancy potential energy content in a vertical density profile"
+      project: "Energy content in a vertical density profile"
       institution: "IPN, Mexico"  
 
-    - path: https://drganghe.github.io/quarto-academic-website-template
+#    - path: https://drganghe.github.io/quarto-academic-website-template
 #      image: "/files/profiles/profile6.JPG"
-      title: "Jimena Ortiz Villalva"
+    - title: "Jimena Ortiz Villalva"
       lastname: "Ortiz Villalva"
 #      author: 
       subtitle: "Undergraduate Alumni"
@@ -36,9 +36,9 @@
       ended: "2023"
       project: "Mountain waves over the Valley of Mexico and Guanajuato"  
       institution: "UAM-I, Mexico"
-    - path: https://drganghe.github.io/quarto-academic-website-template
+#    - path: https://drganghe.github.io/quarto-academic-website-template
 #      image: "/files/profiles/profile6.JPG"
-      title: "Jesica Villalobos García"
+    - title: "Jesica Villalobos García"
       lastname: "Villalobos García"
 #      author: 
       subtitle: "Undergraduate Alumni"

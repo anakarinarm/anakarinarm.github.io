@@ -1,8 +1,9 @@
-    - path: https://drganghe.github.io/quarto-academic-website-template
-#      image: "/files/profiles/profile5.JPG"
+#    - path: https://drganghe.github.io/quarto-academic-website-template
+    - image: "/files/profiles/ondaspopo2.png"
       title: "Eva Rojas Razo"
       lastname: "Rojas Razo"
-#      author: 
+#     author: 
+      project: "Dynamical similarity between mountain waves in the Valley of Mexico and a physical lab model"
       subtitle: "Undergraduate Student"
 #      date: "2024-03-12"
       categories: [Undergraduate Student] 

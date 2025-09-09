@@ -1,13 +1,14 @@
 
-    - path: https://www.nsf.gov/ 
-      image: https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/2023-10/NSF_Official_logo_Med_Res_600ppi_rectangle.png
-      title: "Exploring "
-      author: Academic Website
-      subtitle: "Funder"
-      description: "The goal of this project is to investigate ."
-      started: "2024"
-      ended: "2025"
-      funding: "$0"
+#    - path: https://www.nsf.gov/ 
+    - title: "Dinámica mareal y submareal del intercambio a tráves de cañones submarinos "
+      role: "PI"
+      subtitle: "SECIHTI"
+      started: "2025"
+      ended: "2027"
 #      date: "2022-10-26"
 #      categories: [] 
-
+    - title: "Ondas de montaña en el Valle de México"
+      role: "PI"
+      subtitle: "PAPIIT-UNAM"
+      started: "2022"
+      ended: "2024"

@@ -32,22 +32,22 @@ about:
 #      href: https://www.researchgate.net
 #      target: _blank
 
-listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
-  - id: recent-posts
-    contents: 
-      - posts
-      - posts/post-links.yml
-    exclude:
-      title: ""
-    type: grid
-    max-items: 3
-#    image-height: 150px
-    page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image, date, title, subtitle]
-    max-description-length: 75
-    sort: 
-      - "date desc"
-      - "title asc"
+#listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
+#  - id: recent-posts
+#    contents: 
+#      - posts
+#      - posts/post-links.yml
+#    exclude:
+#      title: ""
+#    type: grid
+#    max-items: 3
+##    image-height: 150px
+#    page-size: 3 #set same as max-times to remove the page number setting
+#    fields: [image, date, title, subtitle]
+#    max-description-length: 75
+#    sort: 
+#      - "date desc"
+#      - "title asc"
 ---
 
 :::{#hero-heading}
@@ -70,11 +70,3 @@ From 2021 to 2024, I was a researcher with the [Ocean-Atmosphere Interaction gro
 
 :::
 
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
-
-:::{#recent-posts}
-:::
-
-<p align="right">[All Posts »](/posts.qmd)</p>
