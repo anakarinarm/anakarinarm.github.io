@@ -61,6 +61,12 @@ Cupo limitado a 20 personas.
 ## Día 1. Línea de comandos
 #### 15 de septiembre de 2025
 
+* Esta clase está basada en la lección ["La terminal de Unix"](https://swcarpentry.github.io/shell-novice-es/) de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.
+
+* Da click [aquí]() para descargar la carpeta con la que estaremos trabajando.
+
+* Puedes consultar las diapositivas de clase en [este enlace](SWC2025_DOF/slides_shell_novice.qmd).
+
 ## Día 2. Introducción a python
 #### 22 de septiembre de 2025
 

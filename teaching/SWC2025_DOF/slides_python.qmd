@@ -1,0 +1,29 @@
+---
+title: "Python para principantes"
+subtitle: "Basada en la python novice"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/quarto.png
+    css: styles.css
+    footer: 'Introducción a la programación científica - Septiembre 2025'
+resources:
+  - demo.pdf
+---
+
+## Repaso. `ls` comprensión de lectura
+
+Suponiendo una estructura de directorio como en la figura anterior, si pwd muestra /Users/backup, y -r le dice a ls que muestre el resultado en orden inverso, ¿qué comando mostrará:
+SALIDA
+
+<img src="img/filesystem_challenge.png" width="700">
+
+pnas_sub/ pnas_final/ original/
+
+    ls pwd
+    ls -r -F
+    ls -r -F /Users/backup
+    #2 y #3, pero no #1.

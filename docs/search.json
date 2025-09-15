@@ -165,7 +165,7 @@
     "href": "teaching/intro_scicomp_2025.html#día-1.-línea-de-comandos",
     "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
     "section": "Día 1. Línea de comandos",
-    "text": "Día 1. Línea de comandos\n\n15 de septiembre de 2025"
+    "text": "Día 1. Línea de comandos\n\n15 de septiembre de 2025\n\nEsta clase está basada en la lección “La terminal de Unix” de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.\nDa click aquí para descargar la carpeta con la que estaremos trabajando.\nPuedes consultar las diapositivas de clase en este enlace."
   },
   {
     "objectID": "teaching/intro_scicomp_2025.html#día-2.-introducción-a-python",
@@ -180,5 +180,320 @@
     "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
     "section": "Día 3. Introducción a git",
     "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#getting-up",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#getting-up",
+    "title": "Línea de comandos",
+    "section": "Getting up",
+    "text": "Getting up\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#going-to-sleep",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#going-to-sleep",
+    "title": "Línea de comandos",
+    "section": "Going to sleep",
+    "text": "Going to sleep\n\nGet in bed\nCount sheep"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-marina",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-marina",
+    "title": "La línea de comandos",
+    "section": "El caso de Marina",
+    "text": "El caso de Marina\n\nUna estudiante del posgrado en biología Marina.\n1520 muestras para procesar\nbla bla\n\nTardaría meses –&gt; Automatizar!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-ismael",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-ismael",
+    "title": "La línea de comandos",
+    "section": "El caso de Ismael",
+    "text": "El caso de Ismael\n\nCorrer un modelo en su computadora tardaría mucho, debe usar una supercomputadora o cluster\nNo hay interfaz gráfica!\n\n–&gt; Debe poder comunicarse con la supercomputadora!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-1",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-1",
+    "title": "Línea de comandos",
+    "section": "Reto 1",
+    "text": "Reto 1\nRutas Absolutas vs Relativas\nA partir de /Users/amanda/data/, ¿Cuál de los siguientes comandos podría Amanda usar para navegar a su directorio de inicio, que es /Users/amanda?\n1. cd .\n2. cd /\n3. cd /home/amanda\n4. cd ../..\n5. cd ~\n6. cd home\n7. cd ~/data/..\n8. cd\n9. cd ..\n. . .\nSolución: 5, 7, 8, 9"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\nEl sistema de archivos es responsable de administrar la información en el disco.\ncd path cambia el directorio de trabajo actual.\nls path imprime un listado de un archivo o directorio específico; ls por si solo lista el contenido del directorio de trabajo actual.\npwd imprime el directorio de trabajo actual del usuario.\nwhoami muestra la identidad actual del usuario.\n/ es el directorio raíz de todo el sistema de archivos.\nUna ruta relativa especifica una ubicación desde la ubicación actual.\nUna ruta absoluta especifica una ubicación desde la raíz del sistema de archivos.\nLos nombres de directorio en una ruta están separados por / en Unix y por \\ en Windows.\n.. significa ‘el directorio por encima del actual’ ; . significa ‘el directorio actual’.\nLa mayoría de los nombres de los archivos son algo.extension. La extensión no es necesaria y no garantiza nada, pero normalmente se utiliza para indicar el tipo de datos en el archivo.\nLa mayoría de los comandos toman opciones (flags) que comienzan con un -.\n\n¿Qué más aprendieron?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-1",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-1",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\ncp old new copia un archivo.\nmkdir path crea un nuevo directorio.\nmv old new mueve (renombra) un archivo o directorio.\nrm path elimina un archivo.\nEl uso de la tecla Control puede ser descrito de muchas maneras, incluyendo Ctrl-X, Control-X y^ X.\nShell no tiene una papelera de reciclaje o bote de basura: una vez que algo se elimina, se borra completamente.\nDependiendo del tipo de trabajo que se requiera, puede ser necesario utilizar un editor de textos más poderoso que Nano."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-2",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-2",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\ncat muestra el contenido de sus entradas. -head muestra las primeras líneas de su entrada.\ntail muestra las últimas líneas de su entrada.\nsort ordena sus entradas.\nwc cuenta líneas, palabras y caracteres en sus entradas.\n* coincide con cero o más caracteres en un nombre de archivo, por lo que*.txt coincide con todos los archivos que terminan en .txt.\n? Coincide con un solo carácter en un nombre de archivo, así que ?.txt coincide con a.txt pero no any.txt.\ncommando &gt; archivo redirige la salida de un comando a un archivo.\nfirst | second es un pipeline: la salida del primer comando se utiliza como entrada para el segundo.\nLa mejor manera de usar la terminal es utilizar pipes para combinar programas sencillos de propósito único (filtros)."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-3",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-3",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\nUn loop o ciclo for repite comandos una vez para cada elemento de una lista.\nCada ciclo for necesita una variable para referirse al elemento en el que está trabajando actualmente.\nUsar $name para expandir una variable (es decir, obtener su valor). También se puede usar ${name}.\nNo utilizar espacios, comillas o caracteres especiales como ’*’ o ‘?’ en nombres de directorios, ya que complica la expansión de variables.\nProporcionar a los archivos nombres coherentes que sean fáciles de combinar con los caracteres especiales para facilitar la selección de los ciclos.\nUtilizar la tecla de flecha hacia arriba para desplazarse por los comandos anteriores para editarlos y repetirlos.\nUsar Ctrl-R para buscar a través de los comandos previamente introducidos.\nUsar history para mostrar comandos recientes, y !number para repetir un comando por número."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-4",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-4",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\nGuardar comandos en archivos (normalmente llamados scripts de la terminal) para su reutilización.\nbash archivo ejecuta los comandos guardados en archivo.\n$@se refiere a todos los parámetros de la línea de comandos de un script de la terminal.\n$1, $2, etc., se refieren al primer parámetro de la línea de comandos, al segundo parámetro, etc.\nColoque las variables entre comillas si los valores tienen espacios en ellas.\nDejar que los usuarios decidan qué archivos procesar es más flexible y más consistente con los comandos de Unix."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-5",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-5",
+    "title": "La línea de comandos",
+    "section": "En corto",
+    "text": "En corto\n\nfind encuentra archivos con propiedades específicas que coinciden con los patrones especificados.\ngrep selecciona líneas en archivos que coinciden con los patrones especificados.\n--help es un indicador usado por muchos comandos bash y programas que se pueden ejecutar desde dentro de Bash, se usa para mostrar más información sobre cómo usar estos comandos o programas.\nman commando muestra la página del manual de un comando.\n$(comando) contiene la salida de un comando."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-.smaller",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-.smaller",
+    "title": "Línea de comandos",
+    "section": "En corto {.smaller}",
+    "text": "En corto {.smaller}\n\nEl sistema de archivos es responsable de administrar la información en el disco.\ncd path cambia el directorio de trabajo actual.\nls path imprime un listado de un archivo o directorio específico; ls por si solo lista el contenido del directorio de trabajo actual.\npwd imprime el directorio de trabajo actual del usuario.\nwhoami muestra la identidad actual del usuario.\n/ es el directorio raíz de todo el sistema de archivos.\nUna ruta relativa especifica una ubicación desde la ubicación actual.\nUna ruta absoluta especifica una ubicación desde la raíz del sistema de archivos.\nLos nombres de directorio en una ruta están separados por / en Unix y por \\ en Windows.\n.. significa ‘el directorio por encima del actual’ ; . significa ‘el directorio actual’.\nLa mayoría de los nombres de los archivos son algo.extension. La extensión no es necesaria y no garantiza nada, pero normalmente se utiliza para indicar el tipo de datos en el archivo.\nLa mayoría de los comandos toman opciones (flags) que comienzan con un -.\n\n¿Qué más aprendieron?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-cont.",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#en-corto-cont.",
+    "title": "Línea de comandos",
+    "section": "En corto cont.",
+    "text": "En corto cont.\n\nUna ruta relativa especifica una ubicación desde la ubicación actual.\nUna ruta absoluta especifica una ubicación desde la raíz del sistema de archivos.\nLos nombres de directorio en una ruta están separados por / en Unix y por \\ en Windows.\n.. significa ‘el directorio por encima del actual’ ; . significa ‘el directorio actual’.\nLa mayoría de los nombres de los archivos son algo.extension. La extensión no es necesaria y no garantiza nada, pero normalmente se utiliza para indicar el tipo de datos en el archivo.\nLa mayoría de los comandos toman opciones (flags) que comienzan con un -.\n\n¿Qué más aprendieron?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-1.-rutas-absolutas-vs-relativas",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-1.-rutas-absolutas-vs-relativas",
+    "title": "La línea de comandos",
+    "section": "Reto 1. Rutas Absolutas vs Relativas",
+    "text": "Reto 1. Rutas Absolutas vs Relativas\nA partir de /Users/amanda/data/, ¿Cuál de los siguientes comandos podría Amanda usar para navegar a su directorio de inicio, que es /Users/amanda?\n1. cd .\n2. cd /\n3. cd /home/amanda\n4. cd ../..\n5. cd ~\n6. cd home\n7. cd ~/data/..\n8. cd\n9. cd ..\n\nSolución: 5, 7, 8, 9"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-2.-resuelve-la-ruta-relativa",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-2.-resuelve-la-ruta-relativa",
+    "title": "La línea de comandos",
+    "section": "Reto 2. Resuelve la ruta relativa",
+    "text": "Reto 2. Resuelve la ruta relativa\nSi se utiliza el diagrama de sistema de directorios y pwd muestra /Users/thing, ¿Qué mostrará ls -F ../backup?\n\n\n1. ../backup: No such file or directory\n\n2. 2012-12-01 2013-01-08 2013-01-27\n\n3. 2012-12-01/ 2013-01-08/ 2013-01-27/\n\n4. original/ pnas_final/ pnas_sub/\n\n\n\n\nSolución: 4. original/ pnas_final/ pnas_sub/"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-3.-copiar-con-varios-archivos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-3.-copiar-con-varios-archivos",
+    "title": "Línea de comandos",
+    "section": "Reto 3. Copiar con varios archivos",
+    "text": "Reto 3. Copiar con varios archivos\nPara este ejercicio puedes probar los comandos del directorio data-shell/data. En el ejemplo que sigue, ¿qué hace cp cuando se le dan varios nombres de archivo y un nombre de directorio?:\nmkdir backup\ncp amino-acids.txt animals.txt backup/"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
+    "href": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
+    "title": "Python para principantes",
+    "section": "Repaso. ls comprensión de lectura",
+    "text": "Repaso. ls comprensión de lectura\nSuponiendo una estructura de directorio como en la figura anterior, si pwd muestra /Users/backup, y -r le dice a ls que muestre el resultado en orden inverso, ¿qué comando mostrará: SALIDA\n\npnas_sub/ pnas_final/ original/\nls pwd\nls -r -F\nls -r -F /Users/backup\n#2 y #3, pero no #1."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#section",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#section",
+    "title": "La línea de comandos",
+    "section": "",
+    "text": "En el siguiente ejemplo, ¿qué hace cp cuando se le dan tres o más nombres de archivo?\nls -F\nSalida:\n amino-acids.txt  animals.txt  backup/  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt \ncp amino-acids.txt animals.txt morse.txt"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-3.-cambiando-el-nombre-de-archivos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-3.-cambiando-el-nombre-de-archivos",
+    "title": "La línea de comandos",
+    "section": "Reto 3. Cambiando el nombre de archivos",
+    "text": "Reto 3. Cambiando el nombre de archivos\nSupón que has creado un archivo .txt en tu directorio actual para incluír una lista de las pruebas estadísticas que necesitas hacer para analizar tus datos, y lo llamarás: statstics.txt\nDespués de crear y guardar este archivo, te das cuenta de que has escrito mal el nombre del archivo. Si deseas corregir el error, ¿cuál de los siguientes comandos podrías utilizar para hacerlo?\n1. cp statstics.txt statistics.txt\n\n2. mv statstics.txt statistics.txt\n\n3. mv statstics.txt .\n\n4. cp statstics.txt .\n\nSolución: 2. mv statstics.txt statistics.txt"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-4.-organización-de-directorios-y-archivos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-4.-organización-de-directorios-y-archivos",
+    "title": "La línea de comandos",
+    "section": "Reto 4. Organización de directorios y archivos",
+    "text": "Reto 4. Organización de directorios y archivos\nJamie está trabajando en un proyecto y nota que sus archivos no están muy bien organizados:\nls -F\n$ analyzed/  fructose.dat    raw/   sucrose.dat\nLos archivos fructose.dat y sucrose.dat contienen la salida de sus análisis. ¿Qué comando(s) cubierto(s) necesitas ejecutar para que los comandos a continuación produzcan la salida mostrada?\nls -F\nanalyzed/   raw/\nls analyzed\nfructose.dat    sucrose.dat"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-5.-copiar-con-varios-archivos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-5.-copiar-con-varios-archivos",
+    "title": "La línea de comandos",
+    "section": "Reto 5. Copiar con varios archivos",
+    "text": "Reto 5. Copiar con varios archivos\nPara este ejercicio puedes probar los comandos del directorio data-shell/data. En el ejemplo que sigue, ¿qué hace cp cuando se le dan varios nombres de archivo y un nombre de directorio?:\nmkdir backup\ncp amino-acids.txt animals.txt backup/"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-6.-uniendo-comandos-con-pipes",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-6.-uniendo-comandos-con-pipes",
+    "title": "La línea de comandos",
+    "section": "Reto 6. Uniendo comandos con pipes",
+    "text": "Reto 6. Uniendo comandos con pipes\nEn nuestro directorio actual, queremos encontrar los 3 archivos que tienen el menor número de líneas. ¿Cuál de los siguientes comandos funcionaría?\n\nwc -l * &gt; sort -n &gt; head -n 3\nwc -l * | sort -n | head -n 1-3\nwc -l * | head -n 3 | sort -n\nwc -l * | sort -n | head -n 3\n\n. . . Solución: 4. Inténtalo en el directorio data-shell/molecules."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-7.-comprensión-de-lectura-de-pipes",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-7.-comprensión-de-lectura-de-pipes",
+    "title": "La línea de comandos",
+    "section": "Reto 7. Comprensión de lectura de pipes",
+    "text": "Reto 7. Comprensión de lectura de pipes\nUn archivo llamado animals.txt (en el directorio data-shell/data) contiene los siguientes datos:\n2012-11-05,deer\n2012-11-05,rabbit\n2012-11-05,raccoon\n2012-11-06,rabbit\n2012-11-06,deer\n2012-11-06,fox\n2012-11-07,rabbit\n2012-11-07,bear\n¿Qué texto pasa a través de cada uno de los pipes y qué incluye el redireccionamiento final en el siguiente pipeline?\n$ cat animals.txt | head -n 5 | tail -n 3 | sort -r &gt; final.txt\nPista: construye el pipeline agregando un comando a la vez para comprobar tu respuesta."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-8.",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-8.",
+    "title": "Línea de comandos",
+    "section": "Reto 8.",
+    "text": "Reto 8.\nEliminación de archivos innecesarios\nSupón que deseas borrar tus archivos de datos procesados y sólo conservar los archivos sin procesar y el script de procesamiento para ahorrar espacio en disco. Los archivos sin procesar terminan en .dat y los archivos procesados terminan en .txt. ¿Cuál de las siguientes opciones eliminaría todos los archivos de datos procesados, y nada más que los archivos de datos procesados?\nrm ?.txt\nrm *.txt\nrm * .txt\nrm *.*"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-9.-qué-tubería",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-9.-qué-tubería",
+    "title": "La línea de comandos",
+    "section": "Reto 9. ¿Qué tubería?",
+    "text": "Reto 9. ¿Qué tubería?\nEl archivo data-shell/data/animals.txt contiene 586 líneas de datos en el siguiente formato:\n2012-11-05,deer\n2012-11-05,rabbit\n2012-11-05,raccoon\n2012-11-06,rabbit\n...\nAsumiendo que tu directorio actual sea data-shell/data/, ¿qué comando usarías para producir una tabla que muestre el recuento total de cada tipo de animal en el archivo?\n1. grep {deer, rabbit, raccoon, deer, fox, bear} animals.txt | wc -l\n2. sort animals.txt | uniq -c\n3. sort -t, -k2,2 animals.txt | uniq -c\n4. cut -d, -f 2 animals.txt | uniq -c\n5. cut -d, -f 2 animals.txt | sort | uniq -c\n6. cut -d, -f 2 animals.txt | sort | uniq -c | wc -l\n\nSolución: 5. ¡Pruébalo!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-8.-eliminación-de-archivos-innecesarios",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-8.-eliminación-de-archivos-innecesarios",
+    "title": "La línea de comandos",
+    "section": "Reto 8. Eliminación de archivos innecesarios",
+    "text": "Reto 8. Eliminación de archivos innecesarios\nSupón que deseas borrar tus archivos de datos procesados y sólo conservar los archivos sin procesar y el script de procesamiento para ahorrar espacio en disco. Los archivos sin procesar terminan en .dat y los archivos procesados terminan en .txt. ¿Cuál de las siguientes opciones eliminaría todos los archivos de datos procesados, y nada más que los archivos de datos procesados?\nrm ?.txt\nrm *.txt\nrm * .txt\nrm *.*"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-10.-variables-en-ciclos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-10.-variables-en-ciclos",
+    "title": "La línea de comandos",
+    "section": "Reto 10. Variables en ciclos",
+    "text": "Reto 10. Variables en ciclos\nEn el directorio data-shell/molecules, ls regresa la siguiente salida:\ncubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb\n¿Cuál es la salida del siguiente código?:\nfor datafile in *.pdb\ndo\n    ls *.pdb\ndone\nAhora, ¿cuál es la salida de este código?:\nfor datafile in *.pdb\ndo\n    ls $datafile\ndone\n¿Por qué estos dos loops dan resultados diferentes?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-11.-loops-anidados",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-11.-loops-anidados",
+    "title": "La línea de comandos",
+    "section": "Reto 11. Loops anidados",
+    "text": "Reto 11. Loops anidados\nSupón que queremos configurar una estructura de directorios para organizar algunos experimentos que miden constantes de velocidad de reacción que involucran distintos compuestos y distintas temperaturas. ¿Cuál sería el resultado del siguiente código?:\nfor species in cubane ethane methane\ndo\n    for temperature in 25 30 37 40\n    do\n        mkdir $species-$temperature\n    done\ndone\n\nIntenta ejecutar el código para descubrir qué directorio se crean."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-12.-depuración-debugging-de-scripts",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-12.-depuración-debugging-de-scripts",
+    "title": "Línea de comandos",
+    "section": "Reto 12. Depuración (debugging) de scripts",
+    "text": "Reto 12. Depuración (debugging) de scripts\nSupongamos que se ha guardado el siguiente script en un archivo denominado do-errors.sh en el directorio north-pacific-gyre/2012-07-03 de Marina:\n# Calcular las estadísticas de los archivos de datos.\nfor datafile in \"$@\"\ndo\n    echo $datfile\n    bash goostats $datafile stats-$datafile\ndone\nCuando lo ejecutas:\n$ bash do-errors.sh NENE*[AB].txt\nEl output está en blanco. Para averiguar por qué, vuelve a ejecutar el script utilizando la opción -x:\n$ bash -x do-errors.sh NENE*[AB].txt\n¿Cuál es el resultado que muestra? ¿Qué línea es responsable del error?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-12.-lectura-y-comprensión-de-scripts",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-12.-lectura-y-comprensión-de-scripts",
+    "title": "La línea de comandos",
+    "section": "Reto 12. Lectura y comprensión de scripts",
+    "text": "Reto 12. Lectura y comprensión de scripts\nScript 1. Considera el directorio data-shell/molecules que contiene una cantidad de archivos .pdb además de otro archivo que hayas creado. Explica, para los siguientes tres ejemplos, que hace el script llamado example.sh cuando lo ejecutas como bash example.sh *.pdb:\n# Script 1\necho *.*\n\nSolución: El script 1 mostrará una lista de todos los archivos que contienen un punto en su nombre.\n\n\nScript 2\n# Script 2\nfor filename in $1 $2 $3\ndo\n    cat $filename\ndone\n\n\nSolución: El script 2 mostrará el contenido de los primeros 3 archivos que coinciden con la extensión del archivo. La terminal expande el caracter especial antes de pasar los argumentos al script example.sh.\n\n\nScript 3\n# Script 3\necho $@.dat\n\n\nSolución: El script 3 mostrará todos los parámetros del script (es decir, todos los archivos .pdb), seguido de .dat. cubane.pdb etano.pdb metano.pdb octano.pdb pentano.pdb propano.pdb.dat"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-14.-depuración-debugging-de-scripts",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-14.-depuración-debugging-de-scripts",
+    "title": "La línea de comandos",
+    "section": "Reto 14. Depuración (debugging) de scripts",
+    "text": "Reto 14. Depuración (debugging) de scripts\nSupongamos que se ha guardado el siguiente script en un archivo denominado do-errors.sh en el directorio north-pacific-gyre/2012-07-03 de Marina:\n# Calcular las estadísticas de los archivos de datos.\nfor datafile in \"$@\"\ndo\n    echo $datfile\n    bash goostats $datafile stats-$datafile\ndone\nCuando lo ejecutas:\n$ bash do-errors.sh NENE*[AB].txt\nEl output está en blanco. Para averiguar por qué, vuelve a ejecutar el script utilizando la opción -x:\n$ bash -x do-errors.sh NENE*[AB].txt\n¿Cuál es el resultado que muestra? ¿Qué línea es responsable del error?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#section-1",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#section-1",
+    "title": "La línea de comandos",
+    "section": "",
+    "text": "Solución:\n\n\nLas variables $1, $2 y $3 representan los argumentos para el script, tal que los comandos ejecutados son: $ head -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb $ tail -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb La terminal no expande ‘* .pdb’ porque está rodeado por comillas."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#section-2",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#section-2",
+    "title": "Línea de comandos",
+    "section": "",
+    "text": "# Script 3\necho $@.dat\n\nSolución: El script 3 mostrará todos los parámetros del script (es decir, todos los archivos .pdb), seguido de .dat. cubane.pdb etano.pdb metano.pdb octano.pdb pentano.pdb propano.pdb.dat"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#section-3",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#section-3",
+    "title": "Línea de comandos",
+    "section": "",
+    "text": "Solución:\n\n\nLas variables $1, $2 y $3 representan los argumentos para el script, tal que los comandos ejecutados son: $ head -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb $ tail -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb La terminal no expande ‘* .pdb’ porque está rodeado por comillas."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-13.-variables-en-los-scripts-de-la-terminal",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-13.-variables-en-los-scripts-de-la-terminal",
+    "title": "La línea de comandos",
+    "section": "Reto 13. Variables en los scripts de la terminal",
+    "text": "Reto 13. Variables en los scripts de la terminal\nEn el directorio molecules, imagina que tienes un script de la terminal llamado script.sh que contiene los siguientes comandos:\nhead -n $2 $1\ntail -n $3 $1\nMientras estás en el directorio molecules, escribes el siguiente comando:\nbash script.sh '*.pdb' 1 1\n¿Cuál de los siguientes resultados esperarías ver?\n\nTodas las líneas entre la primera y la última línea de cada archivo que terminan en .pdb en el directorio molecules.\nLa primera y la última línea de cada archivo que termina en .pdb en el directorio molecules.\nLa primera y la última línea de cada archivo en el directorio molecules.\nUn error debido a las comillas alrededor de *.pdb."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-15.-mujercitas",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-15.-mujercitas",
+    "title": "La línea de comandos",
+    "section": "Reto 15. Mujercitas",
+    "text": "Reto 15. Mujercitas\nTú y tu amigue tienen una desacuerdo, después de terminar de leer Little Women de Louisa May Alcott. De las cuatro hermanas en el libro, Jo, Meg, Beth, y Amy, tu amigue piensa que Jo era la más mencionada. Tú, sin embargo, estás segure de que era Amy. Afortunadamente tú tienes un archivo llamado LittleWomen.txt en data/, que contiene el texto completo de la novela. Utilizando un ciclo for, ¿cómo tabularías el número de veces que cada una de las cuatro hermanas es mencionada?\nSugerencia: una solución sería emplear los comandos grep y wc y un |, mientras que otra solución podría utilizar opciones de grep. Normalmente hay más de una forma para solucionar una tarea de programación. Cada solución es seleccionada de acuerdo a la combinación entre cuál es la que produce el resultado correcto, con mayor elegancia, de la manera más clara y con mayor velocidad.\n\nSolución: (una posible) ## En corto {.smaller}\n\nfind encuentra archivos con propiedades específicas que coinciden con los patrones especificados.\ngrep selecciona líneas en archivos que coinciden con los patrones especificados.\n--help es un indicador usado por muchos comandos bash y programas que se pueden ejecutar desde dentro de Bash, se usa para mostrar más información sobre cómo usar estos comandos o programas.\nman commando muestra la página del manual de un comando.\n$(comando) contiene la salida de un comando."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-15.-lista-de-especies",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-15.-lista-de-especies",
+    "title": "La línea de comandos",
+    "section": "Reto 15. Lista de especies",
+    "text": "Reto 15. Lista de especies\nJuilia tiene varios cientos de archivos de datos guardados en un directorio, cada uno de los cuales tiene el formato siguiente:\n2013-11-05,venado,5\n2013-11-05,conejo,22\n2013-11-05,mapache,7\n2013-11-06,conejo,19\n2013-11-06,venado,2\nQuiere escribir un script de shell que tome un directorio y una especie como parámetros de línea de comandos y que le devuelva un archivo llamado especies.txt que contenga una lista de fechas y el número de individuos de esa especie observados en esa fecha, como este archivo de números de conejos:\n2013-11-05,22\n2013-11-06,19\n2013-11-07,18\nEscribe estos comandos y pipes en el orden correcto para lograrlo (Sugerencia: usa man grep, man cut y data-shell/data/animal-counts/animals.txt como guía):\ncut -d : -f 2  \n&gt;  \n|  \ngrep -w $1 -r $2  \n|  \n$1.txt  \ncut -d , -f 1,3  \n\nSolución: grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3  &gt; $1.txt\n¿Cómo llamas a tu función? Ej. bash count-species.sh bear ."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-16.-buscando-coincidencias-y-restando",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#reto-16.-buscando-coincidencias-y-restando",
+    "title": "La línea de comandos",
+    "section": "Reto 16. Buscando coincidencias y restando",
+    "text": "Reto 16. Buscando coincidencias y restando\n-v es una opción de grep que invierte la coincidencia de patrones, de modo que sólo las líneas que no coinciden con el patrón se imprimen. Dado esto ¿cuál de los siguientes comandos encontrarán todos los archivos en /data cuyos nombres terminan en s.txt (por ejemplo, animals.txt or planets.txt), pero no contienen la palabra net? Después de pensar en tu respuesta, puedes probar los comandos en el directorio data-shell.\n1. find data -name '*s.txt' | grep -v net\n2. find data -name *s.txt | grep -v net\n3. grep -v \"temp\" $(find data -name '*s.txt')\n4. Ninguna de las anteriores.\n\nSolución: La respuesta correcta es 1. Poniendo la expresión entre comillas, evita que el shell la expanda, y luego lo pasa al comando find.\nLa opción 2 es incorrecta porque el shell expande *s.txt en lugar de mandar el nombre correcto al find.\nLa opción 3 es incorrecta porque busca en los contenidos de los archivos las líneas que no coinciden con “temp”, en lugar de buscar los nombres de los archivos."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#un-poquito-de-historia-de-la-terminal",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#un-poquito-de-historia-de-la-terminal",
+    "title": "La línea de comandos",
+    "section": "Un poquito de historia de la terminal",
+    "text": "Un poquito de historia de la terminal\n\n\nLas computadoras realizan cuatro funciones básicas:\n\nEjecutar programas\nGuardar datos\nComunicarse entre ellas\nInteractuar con nosotros\n\nInterfaces: desde conexiones cerebro-computadora y voz → hasta pantallas, ratones, teclados.\nLas interfaces gráficas (GUI) son comunes desde los 80s; origen en los 60s con Doug Engelbart y “La Madre de todos los Demos”.\n\n Imagen de ss64.com/bash/syntax-terminal.html\nMás info en: unixdigest\n\nAntes de la GUI → solo existía la interfaz de línea de comandos (CLI).\nEntrada/salida limitada a texto (teclado estándar, impresoras de línea).\nBasada en el ciclo REPL: leer (read) → ejecutar (execute) → imprimir (print) → repetir (loop)."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#la-terminal-y-su-utilidad",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#la-terminal-y-su-utilidad",
+    "title": "La línea de comandos",
+    "section": "La terminal y su utilidad",
+    "text": "La terminal y su utilidad\nTerminal (shell): programa intermediario entre usuario y sistema operativo.\nEjecuta otros programas en lugar de hacer cálculos directamente.\nEjemplo popular: Bash (Bourne Again Shell) en Unix/Linux.\nVentajas del uso de la terminal (CLI):\n\nComodidad para programar: comandos cortos y rápidos.\nPermite combinar herramientas en pipelines.\nAutomatización de tareas → productividad y reproducibilidad.\nInteracción sencilla con máquinas remotas y supercomputadores.\n\n¡Es una habilidad clave en computación científica, clusters y la nube!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-gala",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-gala",
+    "title": "La línea de comandos",
+    "section": "El caso de Gala",
+    "text": "El caso de Gala\n\n\nTécnica de proyecto que debe correr un modelo oceánico, pero en su computadora tardaría mucho así que debe usar una supercomputadora o cluster.\n\n¡No hay interfaz gráfica (GUI)!\n–&gt; Debe poder comunicarse con la supercomputadora para configurar y correr el modelo, analizar las salidas y graficarlas por medio de la terminal.\n\n\n Imagen de MPAS-Ocean"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-macarena",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-macarena",
+    "title": "La línea de comandos",
+    "section": "El caso de Macarena",
+    "text": "El caso de Macarena\n\n\nTécnica de proyecto que debe correr un modelo oceánico, pero en su computadora tardaría mucho así que debe usar una supercomputadora o cluster.\n\n¡No hay interfaz gráfica (GUI)!\n–&gt; Debe poder comunicarse con la supercomputadora para configurar y correr el modelo, analizar las salidas y graficarlas por medio de la terminal.\n\n\n Imagen de MPAS-Ocean"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-nelle",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#el-caso-de-nelle",
+    "title": "La línea de comandos",
+    "section": "El caso de Nelle",
+    "text": "El caso de Nelle\n\n\n\n\nOceanógrafa biológica, ha recolectado 1,520 muestras de vida marina gelatinosa en el Giro del Pacífico Norte.\nAhora debe:\n\nProcesar cada muestra en máquina de ensayo → 300 proteínas por muestra.\nCalcular estadísticas con goostat.\nComparar estadísticas con goodiff.\nResumir resultados para un artículo en Aquatic Goo Letters.\n\n\nPeeero,\n* Ensayo: 30 min/muestra, 8 máquinas en paralelo → ~2 semanas.\n* Procesamiento manual: 46,370 ejecuciones (≈2+ semanas sin pausa).\n* Riesgo de errores y retraso en la entrega.\nSolución: ¡¡¡Automatización con línea de comandos!!!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#sistema-de-archivos",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#sistema-de-archivos",
+    "title": "La línea de comandos",
+    "section": "Sistema de archivos",
+    "text": "Sistema de archivos\n\n\n\nSistema de archivos de Nelle.\n\n\nDirectorio /home de Nelle."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#árbol-de-directorios-ejemplo",
+    "href": "teaching/SWC2025_DOF/slides_shell_novice.html#árbol-de-directorios-ejemplo",
+    "title": "La línea de comandos",
+    "section": "Árbol de directorios ejemplo",
+    "text": "Árbol de directorios ejemplo"
   }
 ]
