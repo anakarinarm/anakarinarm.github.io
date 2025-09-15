@@ -63,7 +63,7 @@ Cupo limitado a 20 personas.
 
 * Esta clase está basada en la lección ["La terminal de Unix"](https://swcarpentry.github.io/shell-novice-es/) de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.
 
-* Da click [aquí]() para descargar la carpeta con la que estaremos trabajando.
+* Da click [aquí](https://swcarpentry.github.io/shell-novice-es/data/shell-novice-data.zip) para descargar la carpeta data-shell con la que estaremos trabajando y sálvala en el escritorio (Desktop).
 
 * Puedes consultar las diapositivas de clase en [este enlace](SWC2025_DOF/slides_shell_novice.qmd).
 
