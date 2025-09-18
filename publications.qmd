@@ -9,7 +9,7 @@ css: custom.css
 
 ## Peer-reviewed
 
-Moreles, E., Romero, E., **Ramos-Musalem, K.**, & Tenorio-Fernandez, L. (Accepted). The global ocean mixed layer depth derived from an energy approach. *Ocean Science*, 1–27. DOI: [10.5194/egusphere-2024-4079](https://doi.org/10.5194/egusphere-2024-4079)
+Moreles, E., Romero, E., **Ramos-Musalem, K.**, & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. *Ocean Science*, Vol. 21, Issue 5, 2019–2039. DOI: [10.5194/os-21-2019-2025](https://doi.org/10.5194/os-21-2019-2025)
 
 **Ramos-Musalem, K.**, Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. *Journal of Geophysical Research: Oceans*, e2022JC019547. DOI:[10.1029/2022JC019547](https://doi.org/10.1029/2022JC019547).
 
