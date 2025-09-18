@@ -4,7 +4,7 @@
       lastname: "Thelandersson"
 #     author: 
       project: "Exchange Processes Across Sills in the Northern Gulf of California "
-      subtitle: "PhD Student"
+      subtitle: "PhD Student / Co-advised with [Dr. Manuel López](https://www.cicese.edu.mx/investigacion/personal_academico/701)"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2024"
@@ -15,18 +15,18 @@
       lastname: "Pérez Corona"
       project: "Synergy between SST and SSH in the Gulf of California mesoscale eddies"
       #      author: 
-      subtitle: "PhD Student"
+      subtitle: "PhD Student / Co-advised with [Dr. Hector Torres](https://airbornescience.nasa.gov/person/Hector_Torres_Gutierrez)"
 #      date: "2024-03-12"
       categories: [PhD Student] 
       started: "2023"
       ended: ""
     
 #    - path: https://drganghe.github.io/quarto-academic-website-template
-#      image: "/files/profiles/yuritzy.JPG"
-    - title: "Andrea Mitre Apaez"
+    - image: "/files/profiles/espigon.jpg"
+      title: "Andrea Mitre Apaez"
       lastname: "Mitre Apaez"
 #      author: 
-      subtitle: "PhD Student"
+      subtitle: "PhD Student / Co-advised with [Dr. Sheila Estrada Allis](https://www.cicese.edu.mx/investigacion/personal_academico/3559)"
       project: "Internal tides in Punta Banda Canyon"
 #      date: "2024-03-12"
       categories: [PhD Student] 

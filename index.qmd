@@ -1,7 +1,7 @@
 ---
 title: "Karina Ramos Musalem"
 description-meta: "Academic website of Karina Ramos Muslalem "
-image: "files/profiles/krm_hojas.jpg"
+image: "/files/profiles/conQuilla.jpg"
 page-navigation: false
 toc: false
 #sidebar: false

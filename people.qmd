@@ -10,13 +10,13 @@ listing:  #an example of listing external links
   field-display-names: 
       project: " "
   grid-item-align: left
-  grid-columns: 4
+  grid-columns: 3
   image-height: 200px
   categories: true
 #  sort-ui: true
 #  filter-ui: true
   contents: 
-    - /people/pi.yml  # Use individual files here as you may use each person at different occasions such as events, news.
+#    - /people/pi.yml  # Use individual files here as you may use each person at different occasions such as events, news.
     - /people/phd-student.yml
     - /people/masters-student.yml
     - /people/undergraduate-student.yml
@@ -53,8 +53,6 @@ format:
     link-external-newwindow: true
 ---
 
-
-## Team
 
 :::{#lab-member}
 :::

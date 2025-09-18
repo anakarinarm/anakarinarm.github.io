@@ -8,7 +8,7 @@
       categories: [Undergraduate Student] 
       started: "2021"
       ended: "2023"
-      project: "Dynamical interaction between two adjacent submarine canyons" 
+      project: "Dynamical interaction between two adjacent submarine canyons ([thesis in Spanish](https://ru.dgb.unam.mx/items/0d253f28-fd2c-42f4-9139-ae7ef8c3d645))" 
       institution: "UNAM, Mexico" 
 
 #    - path: https://drganghe.github.io/quarto-academic-website-template
@@ -16,7 +16,7 @@
     - title: "Félix López García"
       lastname: "López García"
 #      author: 
-      subtitle: "Undergraduate Alumni"
+      subtitle: "Undergraduate Alumni (Co-supervised with [Dr. Efrain Moreles](https://www.icmyl.unam.mx/es/quienes_somos/personal_academico/moreles-vazquez-luis-efrain))"
 #      date: "2024-03-12"
       categories: [Undergraduate Student] 
       started: "2022"
