@@ -63,12 +63,14 @@ Cupo limitado a 20 personas.
 
 * Esta clase está basada en la lección ["La terminal de Unix"](https://swcarpentry.github.io/shell-novice-es/) de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.
 
-* Da click [aquí](https://swcarpentry.github.io/shell-novice-es/data/shell-novice-data.zip) para descargar la carpeta data-shell con la que estaremos trabajando y sálvala en el escritorio (Desktop).
+* Descarga el directorio data-shell de [esta liga](https://swcarpentry.github.io/shell-novice-es/) y expande el .zip en tu directorio Escritorio/ o Desktop/.
 
 * Puedes consultar las diapositivas de clase en [este enlace](SWC2025_DOF/slides_shell_novice.qmd).
 
 ## Día 2. Introducción a python
 #### 22 de septiembre de 2025
+
+* Descarga el siguiente [repositorio](https://github.com/anakarinarm/intro_python_DOF) en formato .zip y expándelo en tu directorio Escritorio/ o Desktop/. 
 
 ## Día 3. Introducción a git
 #### 29 de septiembre de 2025
