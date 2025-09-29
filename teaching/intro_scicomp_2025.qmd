@@ -36,13 +36,12 @@ Este curso está basado en los [Software Carpentry Workshops](https://software-c
     - Lectura de archivos en formato NetCDF.
     - Visualización básica de datos (matplotlib)
 
-3. Git y GitHub (basado en Version Control with Git)
+3. Git y GitHub (basado en [Version Control with Git](https://swcarpentry.github.io/git-novice/))
     - ¿Qué es el control de versiones?
     - Registrar cambios en tu código
     - Navegar por el historial
     - Trabajar con repositorios remotos en GitHub
-    - Buenas prácticas para colaboración y reproducibilidad
-
+    
 
 ### Calendario
 Tres sesiones de 2 a 2.5 horas (lunes 10:00 am-12:00 pm)
@@ -72,6 +71,11 @@ Cupo limitado a 20 personas.
 
 * Descarga el siguiente [repositorio](https://github.com/anakarinarm/intro_python_DOF) en formato .zip y expándelo en tu directorio Escritorio/ o Desktop/. 
 
-## Día 3. Introducción a git
+## Día 3. Introducción a git 
 #### 29 de septiembre de 2025
 
+En esta clase seguiremos la lección [Version Control with Git](https://swcarpentry.github.io/git-novice/) de [Software Carpentry Workshops](https://software-carpentry.org/).
+
+* Asegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.
+
+* Puedes consultar las diapositivas de la clase [aquí](SWC2025_DOF/slides_git_novice.qmd).

@@ -179,7 +179,7 @@
     "href": "teaching/intro_scicomp_2025.html#día-3.-introducción-a-git",
     "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
     "section": "Día 3. Introducción a git",
-    "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025"
+    "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025\nEn esta clase seguiremos la lección Version Control with Git de Software Carpentry Workshops.\n\nAsegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.\nPuedes consultar las diapositivas de la clase aquí."
   },
   {
     "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#getting-up",
@@ -495,5 +495,299 @@
     "title": "La línea de comandos",
     "section": "Árbol de directorios ejemplo",
     "text": "Árbol de directorios ejemplo"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#un-poquito-de-historia-del-control-de-versiones",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#un-poquito-de-historia-del-control-de-versiones",
+    "title": "Control de versiones con git",
+    "section": "Un poquito de historia del control de versiones",
+    "text": "Un poquito de historia del control de versiones"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
+    "title": "Control de versiones con git",
+    "section": "¿Cuándo debo usar control de versiones? Un ejemplo",
+    "text": "¿Cuándo debo usar control de versiones? Un ejemplo\n\n\n\n\n\n\n\n\nAspecto\nCódigo del artículo (control de versiones: Git)\nManuscrito del artículo (control de cambios: Word)\n\n\n\n\nObjetivo\nReproducir análisis/figuras con historial confiable\nPulir redacción, estructura y estilo del texto\n\n\nFormato típico\nTexto simple (R/Python/Julia, Markdown, LaTeX)\nDOCX o Google Docs con formato y figuras\n\n\nUnidad de cambios\nCommits con mensajes (pequeños)\nSugerencias/comentarios sobre frases y párrafos\n\n\nFlujo de trabajo\nRamas para features/experimentos; pull requests\nRevisión editorial; aceptar/rechazar sugerencias\n\n\nIncorporar cambios\nMerges para mezclar trabajo paralelo; resolución de conflictos en archivos\nManual; se complica con muchos editores simultáneos\n\n\nRevertir\nVolver a cualquier commit/etiqueta; revert selectivo\nRestaurar versión del documento solo si salvamos\n\n\nReproducibilidad\nAlto: environment files, scripts y pipelines versionados\nEl texto describe métodos; no garantiza ejecución\n\n\nResponsabilidad\nQuién cambió qué archivo/línea y por qué (mensaje)\nQuién propuso qué edición textual y cuándo\n\n\nMejor para\nExperimentos, notebooks, scripts, plantillas LaTeX\nIntroducción, discusión, respuesta a revisores\n\n\nEntregables\nRepo con README, instrucciones y environment\nManuscrito formateado según la revista\n\n\nMomento ideal de uso\nDesde el inicio del proyecto hasta la aceptación\nBorradores medios y finales"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#el-caso-de-nelle",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#el-caso-de-nelle",
+    "title": "Control de versiones con git",
+    "section": "El caso de Nelle",
+    "text": "El caso de Nelle\n\n\n\n\nOceanógrafa biológica, ha recolectado 1,520 muestras de vida marina gelatinosa en el Giro del Pacífico Norte.\nAhora debe:\n\nProcesar cada muestra en máquina de ensayo → 300 proteínas por muestra.\nCalcular estadísticas con goostat.\nComparar estadísticas con goodiff.\nResumir resultados para un artículo en Aquatic Goo Letters.\n\n\nPeeero,\n* Ensayo: 30 min/muestra, 8 máquinas en paralelo → ~2 semanas.\n* Procesamiento manual: 46,370 ejecuciones (≈2+ semanas sin pausa).\n* Riesgo de errores y retraso en la entrega.\nSolución: ¡¡¡Automatización con línea de comandos!!!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#el-caso-de-gala",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#el-caso-de-gala",
+    "title": "Control de versiones con git",
+    "section": "El caso de Gala",
+    "text": "El caso de Gala\n\n\nTécnica de proyecto que debe correr un modelo oceánico, pero en su computadora tardaría mucho así que debe usar una supercomputadora o cluster.\n\n¡No hay interfaz gráfica (GUI)!\n–&gt; Debe poder comunicarse con la supercomputadora para configurar y correr el modelo, analizar las salidas y graficarlas por medio de la terminal.\n\n\n Imagen de MPAS-Ocean"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#sistema-de-archivos",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#sistema-de-archivos",
+    "title": "Control de versiones con git",
+    "section": "Sistema de archivos",
+    "text": "Sistema de archivos\n\n\n\nSistema de archivos de Nelle.\n\n\nDirectorio /home de Nelle."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1.-rutas-absolutas-vs-relativas",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1.-rutas-absolutas-vs-relativas",
+    "title": "Control de versiones con git",
+    "section": "Reto 1. Rutas Absolutas vs Relativas",
+    "text": "Reto 1. Rutas Absolutas vs Relativas\nA partir de /Users/amanda/data/, ¿Cuál de los siguientes comandos podría Amanda usar para navegar a su directorio de inicio, que es /Users/amanda?\n1. cd .\n2. cd /\n3. cd /home/amanda\n4. cd ../..\n5. cd ~\n6. cd home\n7. cd ~/data/..\n8. cd\n9. cd ..\n\nSolución: 5, 7, 8, 9"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2.-resuelve-la-ruta-relativa",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2.-resuelve-la-ruta-relativa",
+    "title": "Control de versiones con git",
+    "section": "Reto 2. Resuelve la ruta relativa",
+    "text": "Reto 2. Resuelve la ruta relativa\nSi se utiliza el diagrama de sistema de directorios y pwd muestra /Users/thing, ¿Qué mostrará ls -F ../backup?\n\n\n1. ../backup: No such file or directory\n\n2. 2012-12-01 2013-01-08 2013-01-27\n\n3. 2012-12-01/ 2013-01-08/ 2013-01-27/\n\n4. original/ pnas_final/ pnas_sub/\n\n\n\n\nSolución: 4. original/ pnas_final/ pnas_sub/"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\nEl sistema de archivos es responsable de administrar la información en el disco.\ncd path cambia el directorio de trabajo actual.\nls path imprime un listado de un archivo o directorio específico; ls por si solo lista el contenido del directorio de trabajo actual.\npwd imprime el directorio de trabajo actual del usuario.\nwhoami muestra la identidad actual del usuario.\n/ es el directorio raíz de todo el sistema de archivos.\nUna ruta relativa especifica una ubicación desde la ubicación actual.\nUna ruta absoluta especifica una ubicación desde la raíz del sistema de archivos.\nLos nombres de directorio en una ruta están separados por / en Unix y por \\ en Windows.\n.. significa ‘el directorio por encima del actual’ ; . significa ‘el directorio actual’.\nLa mayoría de los nombres de los archivos son algo.extension. La extensión no es necesaria y no garantiza nada, pero normalmente se utiliza para indicar el tipo de datos en el archivo.\nLa mayoría de los comandos toman opciones (flags) que comienzan con un -.\n\n¿Qué más aprendieron?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3.-cambiando-el-nombre-de-archivos",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3.-cambiando-el-nombre-de-archivos",
+    "title": "Control de versiones con git",
+    "section": "Reto 3. Cambiando el nombre de archivos",
+    "text": "Reto 3. Cambiando el nombre de archivos\nSupón que has creado un archivo .txt en tu directorio actual para incluír una lista de las pruebas estadísticas que necesitas hacer para analizar tus datos, y lo llamarás: statstics.txt\nDespués de crear y guardar este archivo, te das cuenta de que has escrito mal el nombre del archivo. Si deseas corregir el error, ¿cuál de los siguientes comandos podrías utilizar para hacerlo?\n1. cp statstics.txt statistics.txt\n\n2. mv statstics.txt statistics.txt\n\n3. mv statstics.txt .\n\n4. cp statstics.txt .\n\nSolución: 2. mv statstics.txt statistics.txt"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.-organización-de-directorios-y-archivos",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.-organización-de-directorios-y-archivos",
+    "title": "Control de versiones con git",
+    "section": "Reto 4. Organización de directorios y archivos",
+    "text": "Reto 4. Organización de directorios y archivos\nJamie está trabajando en un proyecto y nota que sus archivos no están muy bien organizados:\nls -F\n$ analyzed/  fructose.dat    raw/   sucrose.dat\nLos archivos fructose.dat y sucrose.dat contienen la salida de sus análisis. ¿Qué comando(s) cubierto(s) necesitas ejecutar para que los comandos a continuación produzcan la salida mostrada?\nls -F\nanalyzed/   raw/\nls analyzed\nfructose.dat    sucrose.dat"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-5.-copiar-con-varios-archivos",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-5.-copiar-con-varios-archivos",
+    "title": "Control de versiones con git",
+    "section": "Reto 5. Copiar con varios archivos",
+    "text": "Reto 5. Copiar con varios archivos\nPara este ejercicio puedes probar los comandos del directorio data-shell/data. En el ejemplo que sigue, ¿qué hace cp cuando se le dan varios nombres de archivo y un nombre de directorio?:\nmkdir backup\ncp amino-acids.txt animals.txt backup/"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#section",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#section",
+    "title": "Control de versiones con git",
+    "section": "",
+    "text": "En el siguiente ejemplo, ¿qué hace cp cuando se le dan tres o más nombres de archivo?\nls -F\nSalida:\n amino-acids.txt  animals.txt  backup/  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt \ncp amino-acids.txt animals.txt morse.txt"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-1",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-1",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\ncp old new copia un archivo.\nmkdir path crea un nuevo directorio.\nmv old new mueve (renombra) un archivo o directorio.\nrm path elimina un archivo.\nEl uso de la tecla Control puede ser descrito de muchas maneras, incluyendo Ctrl-X, Control-X y^ X.\nShell no tiene una papelera de reciclaje o bote de basura: una vez que algo se elimina, se borra completamente.\nDependiendo del tipo de trabajo que se requiera, puede ser necesario utilizar un editor de textos más poderoso que Nano."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-6.-uniendo-comandos-con-pipes",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-6.-uniendo-comandos-con-pipes",
+    "title": "Control de versiones con git",
+    "section": "Reto 6. Uniendo comandos con pipes",
+    "text": "Reto 6. Uniendo comandos con pipes\nEn nuestro directorio actual, queremos encontrar los 3 archivos que tienen el menor número de líneas. ¿Cuál de los siguientes comandos funcionaría?\n\nwc -l * &gt; sort -n &gt; head -n 3\nwc -l * | sort -n | head -n 1-3\nwc -l * | head -n 3 | sort -n\nwc -l * | sort -n | head -n 3\n\n. . . Solución: 4. Inténtalo en el directorio data-shell/molecules."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-7.-comprensión-de-lectura-de-pipes",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-7.-comprensión-de-lectura-de-pipes",
+    "title": "Control de versiones con git",
+    "section": "Reto 7. Comprensión de lectura de pipes",
+    "text": "Reto 7. Comprensión de lectura de pipes\nUn archivo llamado animals.txt (en el directorio data-shell/data) contiene los siguientes datos:\n2012-11-05,deer\n2012-11-05,rabbit\n2012-11-05,raccoon\n2012-11-06,rabbit\n2012-11-06,deer\n2012-11-06,fox\n2012-11-07,rabbit\n2012-11-07,bear\n¿Qué texto pasa a través de cada uno de los pipes y qué incluye el redireccionamiento final en el siguiente pipeline?\n$ cat animals.txt | head -n 5 | tail -n 3 | sort -r &gt; final.txt\nPista: construye el pipeline agregando un comando a la vez para comprobar tu respuesta."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-8.-eliminación-de-archivos-innecesarios",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-8.-eliminación-de-archivos-innecesarios",
+    "title": "Control de versiones con git",
+    "section": "Reto 8. Eliminación de archivos innecesarios",
+    "text": "Reto 8. Eliminación de archivos innecesarios\nSupón que deseas borrar tus archivos de datos procesados y sólo conservar los archivos sin procesar y el script de procesamiento para ahorrar espacio en disco. Los archivos sin procesar terminan en .dat y los archivos procesados terminan en .txt. ¿Cuál de las siguientes opciones eliminaría todos los archivos de datos procesados, y nada más que los archivos de datos procesados?\nrm ?.txt\nrm *.txt\nrm * .txt\nrm *.*"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-9.-qué-tubería",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-9.-qué-tubería",
+    "title": "Control de versiones con git",
+    "section": "Reto 9. ¿Qué tubería?",
+    "text": "Reto 9. ¿Qué tubería?\nEl archivo data-shell/data/animals.txt contiene 586 líneas de datos en el siguiente formato:\n2012-11-05,deer\n2012-11-05,rabbit\n2012-11-05,raccoon\n2012-11-06,rabbit\n...\nAsumiendo que tu directorio actual sea data-shell/data/, ¿qué comando usarías para producir una tabla que muestre el recuento total de cada tipo de animal en el archivo?\n1. grep {deer, rabbit, raccoon, deer, fox, bear} animals.txt | wc -l\n2. sort animals.txt | uniq -c\n3. sort -t, -k2,2 animals.txt | uniq -c\n4. cut -d, -f 2 animals.txt | uniq -c\n5. cut -d, -f 2 animals.txt | sort | uniq -c\n6. cut -d, -f 2 animals.txt | sort | uniq -c | wc -l\n\nSolución: 5. ¡Pruébalo!"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-2",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-2",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\ncat muestra el contenido de sus entradas. -head muestra las primeras líneas de su entrada.\ntail muestra las últimas líneas de su entrada.\nsort ordena sus entradas.\nwc cuenta líneas, palabras y caracteres en sus entradas.\n* coincide con cero o más caracteres en un nombre de archivo, por lo que*.txt coincide con todos los archivos que terminan en .txt.\n? Coincide con un solo carácter en un nombre de archivo, así que ?.txt coincide con a.txt pero no any.txt.\ncommando &gt; archivo redirige la salida de un comando a un archivo.\nfirst | second es un pipeline: la salida del primer comando se utiliza como entrada para el segundo.\nLa mejor manera de usar la terminal es utilizar pipes para combinar programas sencillos de propósito único (filtros)."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-3",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-3",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\nUn loop o ciclo for repite comandos una vez para cada elemento de una lista.\nCada ciclo for necesita una variable para referirse al elemento en el que está trabajando actualmente.\nUsar $name para expandir una variable (es decir, obtener su valor). También se puede usar ${name}.\nNo utilizar espacios, comillas o caracteres especiales como ’*’ o ‘?’ en nombres de directorios, ya que complica la expansión de variables.\nProporcionar a los archivos nombres coherentes que sean fáciles de combinar con los caracteres especiales para facilitar la selección de los ciclos.\nUtilizar la tecla de flecha hacia arriba para desplazarse por los comandos anteriores para editarlos y repetirlos.\nUsar Ctrl-R para buscar a través de los comandos previamente introducidos.\nUsar history para mostrar comandos recientes, y !number para repetir un comando por número."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-10.-variables-en-ciclos",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-10.-variables-en-ciclos",
+    "title": "Control de versiones con git",
+    "section": "Reto 10. Variables en ciclos",
+    "text": "Reto 10. Variables en ciclos\nEn el directorio data-shell/molecules, ls regresa la siguiente salida:\ncubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb\n¿Cuál es la salida del siguiente código?:\nfor datafile in *.pdb\ndo\n    ls *.pdb\ndone\nAhora, ¿cuál es la salida de este código?:\nfor datafile in *.pdb\ndo\n    ls $datafile\ndone\n¿Por qué estos dos loops dan resultados diferentes?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-11.-loops-anidados",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-11.-loops-anidados",
+    "title": "Control de versiones con git",
+    "section": "Reto 11. Loops anidados",
+    "text": "Reto 11. Loops anidados\nSupón que queremos configurar una estructura de directorios para organizar algunos experimentos que miden constantes de velocidad de reacción que involucran distintos compuestos y distintas temperaturas. ¿Cuál sería el resultado del siguiente código?:\nfor species in cubane ethane methane\ndo\n    for temperature in 25 30 37 40\n    do\n        mkdir $species-$temperature\n    done\ndone\n\nIntenta ejecutar el código para descubrir qué directorio se crean."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-12.-lectura-y-comprensión-de-scripts",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-12.-lectura-y-comprensión-de-scripts",
+    "title": "Control de versiones con git",
+    "section": "Reto 12. Lectura y comprensión de scripts",
+    "text": "Reto 12. Lectura y comprensión de scripts\nScript 1. Considera el directorio data-shell/molecules que contiene una cantidad de archivos .pdb además de otro archivo que hayas creado. Explica, para los siguientes tres ejemplos, que hace el script llamado example.sh cuando lo ejecutas como bash example.sh *.pdb:\n# Script 1\necho *.*\n\nSolución: El script 1 mostrará una lista de todos los archivos que contienen un punto en su nombre.\n\n\nScript 2\n# Script 2\nfor filename in $1 $2 $3\ndo\n    cat $filename\ndone\n\n\nSolución: El script 2 mostrará el contenido de los primeros 3 archivos que coinciden con la extensión del archivo. La terminal expande el caracter especial antes de pasar los argumentos al script example.sh.\n\n\nScript 3\n# Script 3\necho $@.dat\n\n\nSolución: El script 3 mostrará todos los parámetros del script (es decir, todos los archivos .pdb), seguido de .dat. cubane.pdb etano.pdb metano.pdb octano.pdb pentano.pdb propano.pdb.dat"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-13.-variables-en-los-scripts-de-la-terminal",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-13.-variables-en-los-scripts-de-la-terminal",
+    "title": "Control de versiones con git",
+    "section": "Reto 13. Variables en los scripts de la terminal",
+    "text": "Reto 13. Variables en los scripts de la terminal\nEn el directorio molecules, imagina que tienes un script de la terminal llamado script.sh que contiene los siguientes comandos:\nhead -n $2 $1\ntail -n $3 $1\nMientras estás en el directorio molecules, escribes el siguiente comando:\nbash script.sh '*.pdb' 1 1\n¿Cuál de los siguientes resultados esperarías ver?\n\nTodas las líneas entre la primera y la última línea de cada archivo que terminan en .pdb en el directorio molecules.\nLa primera y la última línea de cada archivo que termina en .pdb en el directorio molecules.\nLa primera y la última línea de cada archivo en el directorio molecules.\nUn error debido a las comillas alrededor de *.pdb."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#section-1",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#section-1",
+    "title": "Control de versiones con git",
+    "section": "",
+    "text": "Solución:\n\n\nLas variables $1, $2 y $3 representan los argumentos para el script, tal que los comandos ejecutados son: $ head -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb $ tail -n 1 cubane.pdb ethane.pdb octane.pdb pentane.pdb propane.pdb La terminal no expande ‘* .pdb’ porque está rodeado por comillas."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-14.-depuración-debugging-de-scripts",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-14.-depuración-debugging-de-scripts",
+    "title": "Control de versiones con git",
+    "section": "Reto 14. Depuración (debugging) de scripts",
+    "text": "Reto 14. Depuración (debugging) de scripts\nSupongamos que se ha guardado el siguiente script en un archivo denominado do-errors.sh en el directorio north-pacific-gyre/2012-07-03 de Marina:\n# Calcular las estadísticas de los archivos de datos.\nfor datafile in \"$@\"\ndo\n    echo $datfile\n    bash goostats $datafile stats-$datafile\ndone\nCuando lo ejecutas:\n$ bash do-errors.sh NENE*[AB].txt\nEl output está en blanco. Para averiguar por qué, vuelve a ejecutar el script utilizando la opción -x:\n$ bash -x do-errors.sh NENE*[AB].txt\n¿Cuál es el resultado que muestra? ¿Qué línea es responsable del error?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-4",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-4",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\nGuardar comandos en archivos (normalmente llamados scripts de la terminal) para su reutilización.\nbash archivo ejecuta los comandos guardados en archivo.\n$@se refiere a todos los parámetros de la línea de comandos de un script de la terminal.\n$1, $2, etc., se refieren al primer parámetro de la línea de comandos, al segundo parámetro, etc.\nColoque las variables entre comillas si los valores tienen espacios en ellas.\nDejar que los usuarios decidan qué archivos procesar es más flexible y más consistente con los comandos de Unix."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#árbol-de-directorios-ejemplo",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#árbol-de-directorios-ejemplo",
+    "title": "Control de versiones con git",
+    "section": "Árbol de directorios ejemplo",
+    "text": "Árbol de directorios ejemplo"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-15.-lista-de-especies",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-15.-lista-de-especies",
+    "title": "Control de versiones con git",
+    "section": "Reto 15. Lista de especies",
+    "text": "Reto 15. Lista de especies\nJuilia tiene varios cientos de archivos de datos guardados en un directorio, cada uno de los cuales tiene el formato siguiente:\n2013-11-05,venado,5\n2013-11-05,conejo,22\n2013-11-05,mapache,7\n2013-11-06,conejo,19\n2013-11-06,venado,2\nQuiere escribir un script de shell que tome un directorio y una especie como parámetros de línea de comandos y que le devuelva un archivo llamado especies.txt que contenga una lista de fechas y el número de individuos de esa especie observados en esa fecha, como este archivo de números de conejos:\n2013-11-05,22\n2013-11-06,19\n2013-11-07,18\nEscribe estos comandos y pipes en el orden correcto para lograrlo (Sugerencia: usa man grep, man cut y data-shell/data/animal-counts/animals.txt como guía):\ncut -d : -f 2  \n&gt;  \n|  \ngrep -w $1 -r $2  \n|  \n$1.txt  \ncut -d , -f 1,3  \n\nSolución: grep -w $1 -r $2 | cut -d : -f 2 | cut -d , -f 1,3  &gt; $1.txt\n¿Cómo llamas a tu función? Ej. bash count-species.sh bear ."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-16.-buscando-coincidencias-y-restando",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-16.-buscando-coincidencias-y-restando",
+    "title": "Control de versiones con git",
+    "section": "Reto 16. Buscando coincidencias y restando",
+    "text": "Reto 16. Buscando coincidencias y restando\n-v es una opción de grep que invierte la coincidencia de patrones, de modo que sólo las líneas que no coinciden con el patrón se imprimen. Dado esto ¿cuál de los siguientes comandos encontrarán todos los archivos en /data cuyos nombres terminan en s.txt (por ejemplo, animals.txt or planets.txt), pero no contienen la palabra net? Después de pensar en tu respuesta, puedes probar los comandos en el directorio data-shell.\n1. find data -name '*s.txt' | grep -v net\n2. find data -name *s.txt | grep -v net\n3. grep -v \"temp\" $(find data -name '*s.txt')\n4. Ninguna de las anteriores.\n\nSolución: La respuesta correcta es 1. Poniendo la expresión entre comillas, evita que el shell la expanda, y luego lo pasa al comando find.\nLa opción 2 es incorrecta porque el shell expande *s.txt en lugar de mandar el nombre correcto al find.\nLa opción 3 es incorrecta porque busca en los contenidos de los archivos las líneas que no coinciden con “temp”, en lugar de buscar los nombres de los archivos."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-5",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#en-corto-5",
+    "title": "Control de versiones con git",
+    "section": "En corto",
+    "text": "En corto\n\nfind encuentra archivos con propiedades específicas que coinciden con los patrones especificados.\ngrep selecciona líneas en archivos que coinciden con los patrones especificados.\n--help es un indicador usado por muchos comandos bash y programas que se pueden ejecutar desde dentro de Bash, se usa para mostrar más información sobre cómo usar estos comandos o programas.\nman commando muestra la página del manual de un comando.\n$(comando) contiene la salida de un comando."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo-.smaller-.scrollable",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo-.smaller-.scrollable",
+    "title": "Control de versiones con git",
+    "section": "¿Cuándo debo usar control de versiones? Un ejemplo {.smaller, .scrollable}",
+    "text": "¿Cuándo debo usar control de versiones? Un ejemplo {.smaller, .scrollable}\n\n\n\n\n\n\n\n\nAspecto\nCódigo del artículo (control de versiones: Git)\nManuscrito del artículo (control de cambios: Word)\n\n\n\n\nObjetivo\nReproducir análisis/figuras con historial confiable\nPulir redacción, estructura y estilo del texto\n\n\nFormato típico\nTexto simple (R/Python/Julia, Markdown, LaTeX)\nDOCX o Google Docs con formato y figuras\n\n\nUnidad de cambios\nCommits con mensajes (pequeños)\nSugerencias/comentarios sobre frases y párrafos\n\n\nFlujo de trabajo\nRamas para features/experimentos; pull requests\nRevisión editorial; aceptar/rechazar sugerencias\n\n\nIncorporar cambios\nMerges para mezclar trabajo paralelo; resolución de conflictos en archivos\nManual; se complica con muchos editores simultáneos\n\n\nRevertir\nVolver a cualquier commit/etiqueta; revert selectivo\nRestaurar versión del documento solo si salvamos\n\n\nReproducibilidad\nAlto: environment files, scripts y pipelines versionados\nEl texto describe métodos; no garantiza ejecución\n\n\nResponsabilidad\nQuién cambió qué archivo/línea y por qué (mensaje)\nQuién propuso qué edición textual y cuándo\n\n\nMejor para\nExperimentos, notebooks, scripts, plantillas LaTeX\nIntroducción, discusión, respuesta a revisores\n\n\nEntregables\nRepo con README, instrucciones y environment\nManuscrito formateado según la revista\n\n\nMomento ideal de uso\nDesde el inicio del proyecto hasta la aceptación\nBorradores medios y finales"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
+    "title": "Control de versiones con git",
+    "section": "Ejemplos de uso (Git + GitHub)",
+    "text": "Ejemplos de uso (Git + GitHub)\n\n\n Repositorios con DOI (Releases)\n\n Herramientas compartidas dentro y entre grupos - SalishSeaCast"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#un-poquito-de-historia-del-control-de-versiones-.smaller-.scrollable",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#un-poquito-de-historia-del-control-de-versiones-.smaller-.scrollable",
+    "title": "Control de versiones con git",
+    "section": "Un poquito de historia del control de versiones {.smaller, .scrollable}",
+    "text": "Un poquito de historia del control de versiones {.smaller, .scrollable}\n\n\nLas computadoras realizan cuatro funciones básicas:\n\nEjecutar programas\nGuardar datos\nComunicarse entre ellas\nInteractuar con nosotros\n\nInterfaces: desde conexiones cerebro-computadora y voz → hasta pantallas, ratones, teclados.\nLas interfaces gráficas (GUI) son comunes desde los 80s; origen en los 60s con Doug Engelbart y “La Madre de todos los Demos”.\n\n Imagen de ss64.com/bash/syntax-terminal.html\nMás info en: unixdigest\n\nAntes de la GUI → solo existía la interfaz de línea de comandos (CLI).\nEntrada/salida limitada a texto (teclado estándar, impresoras de línea).\nBasada en el ciclo REPL: leer (read) → ejecutar (execute) → imprimir (print) → repetir (loop)."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#usuario",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#usuario",
+    "title": "Control de versiones con git",
+    "section": "Usuario",
+    "text": "Usuario\n$ git config --global user.name \"Alfredo Linguini\"\n$ git config --global user.email \"a.linguini@ratatouille.fr\"\n\ngit config --global init.defaultBranch main . . . Sugerido Linux/Mac:\n$ git config --global core.autocrlf input\nWindows:\n$ git config --global core.autocrlf true"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
+    "title": "Control de versiones con git",
+    "section": "Agregar cambios con add",
+    "text": "Agregar cambios con add\n\nImagen: Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
+    "title": "Control de versiones con git",
+    "section": "Comprometer cambios con commit",
+    "text": "Comprometer cambios con commit\n\nImagen: Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
+    "title": "Control de versiones con git",
+    "section": "Por qué hacer add antes de commit?",
+    "text": "Por qué hacer add antes de commit?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
+    "title": "Control de versiones con git",
+    "section": "Configuración global",
+    "text": "Configuración global\n$ git config --global user.name \"Alfredo Linguini\"\n$ git config --global user.email \"a.linguini@ratatouille.fr\"\n\nEditor de texto (hay muchas opciones)\n$ git config --global core.editor \"nano -w\"\n\n\nNombre de la rama default\ngit config --global init.defaultBranch main\n\n\nSugerido Linux/Mac:\n$ git config --global core.autocrlf input\nWindows:\n$ git config --global core.autocrlf true\n\n\nRevisemos Configuración\ngit config --list --global"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
+    "title": "Control de versiones con git",
+    "section": "Reto 1",
+    "text": "Reto 1\nHaciendo Commit de Cambios a Git\n¿Cuál de los siguientes comandos debería guardar los cambios de myfile.txt a mi repositorio local Git?\ngit commit -m \"my recent changes\"\ngit init myfile.txt $ git commit -m \"my recent changes\"\ngit add myfile.txt $ git commit -m \"my recent changes\"\ngit commit -m myfile.txt \"my recent changes\""
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
+    "title": "Control de versiones con git",
+    "section": "Reto 3",
+    "text": "Reto 3\n\nCrea un nuevo repositorio Git en tu computadora, llamado bio.\nEscribe una autobiografía de tres líneas en un archivo llamado me.txt, haz commit de tus cambios\nModifica una línea, agrega una cuarta línea\nMuestra las diferencias entre el estado actualizado y el original"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
+    "title": "Control de versiones con git",
+    "section": "Reto 2",
+    "text": "Reto 2\nHaciendo Commit a Multiples Archivos\nEl staging area puede tener cambios de cualquier número de archivos a los que quieras hacer commit, como una sola foto.\n\nAgrega algún ingrediente a guacamole.md.\nCrea un nuevo archivo guacamole_secreto.md con tus ideas para una nueva recea de guacamole.\nAgrega los cambios de ambos archivos al staging area, y haz un commit de esos cambios."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
+    "title": "Control de versiones con git",
+    "section": "Reto 4.",
+    "text": "Reto 4.\nCuál es el output al final de los siguientes comandos?\n$ cd recipes\n\n$ echo \"I like tomatoes, therefore I like ketchup\" &gt; ketchup.md\n\n$ git add ketchup.md\n\n$ echo \"ketchup enhances pasta dishes\" &gt;&gt; ketchup.md\n\n$ git commit -m \"My opinions about the red sauce\"\n\n$ git restore ketchup.md\n\n$ cat ketchup.md # this will print the content of ketchup.md on screen\n\nRespuesta: I like tomatoes, therefore I like ketchup"
   }
 ]
