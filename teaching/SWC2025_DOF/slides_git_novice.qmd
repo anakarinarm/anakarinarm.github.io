@@ -16,6 +16,25 @@ resources:
 # Introducción
 <img src="img/bn-vc-all-things.png" width="900">
 
+## Pensemos en cambios/ediciones como diferencias {.smaller}
+<img src="img/change_as_diff.png" width="800">
+
+Imagen de Software Carpentry
+
+## Distintas versiones {.smaller}
+
+Conjuntos de cambios nos pueden dar distintas versiones (Ej. ramas o *branches*)
+
+<img src="img/branch.png" width="500">
+Imagen de Software Carpentry
+
+## Incorporar cambios  {.smaller}
+Cambios en la misma parte pueden generar conflictos que se pueden resolver (*merge* y *merge conflict*).
+
+<img src="img/merge.png" width="500">
+Imagen de Software Carpentry
+
+
 ## ¿Cuándo debo usar control de versiones? Un ejemplo {.smaller .scrollable}
 
 | Aspecto                 | **Código del artículo** (control de versiones: Git)                                 | **Manuscrito del artículo** (control de cambios: Word)                   |
@@ -31,6 +50,7 @@ resources:
 | Mejor para              | Experimentos, notebooks, scripts, plantillas LaTeX                                  | Introducción, discusión, respuesta a revisores                |
 | Entregables             | Repo con README, instrucciones y *environment*                                      | Manuscrito formateado según la revista                                               |
 | Momento ideal de uso    | Desde el inicio del proyecto hasta la aceptación                                    | Borradores medios y finales                         |
+
 
 ## Ejemplos de uso (Git + GitHub){.smaller}
 

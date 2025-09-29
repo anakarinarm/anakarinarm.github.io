@@ -789,5 +789,40 @@
     "title": "Control de versiones con git",
     "section": "Reto 4.",
     "text": "Reto 4.\nCuál es el output al final de los siguientes comandos?\n$ cd recipes\n\n$ echo \"I like tomatoes, therefore I like ketchup\" &gt; ketchup.md\n\n$ git add ketchup.md\n\n$ echo \"ketchup enhances pasta dishes\" &gt;&gt; ketchup.md\n\n$ git commit -m \"My opinions about the red sauce\"\n\n$ git restore ketchup.md\n\n$ cat ketchup.md # this will print the content of ketchup.md on screen\n\nRespuesta: I like tomatoes, therefore I like ketchup"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
+    "title": "Control de versiones con git",
+    "section": "Pensemos en cambios/ediciones como diferencias",
+    "text": "Pensemos en cambios/ediciones como diferencias\n\nImagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#conjuntos-de-cambios-nos-pueden-dar-distintas-versiones",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#conjuntos-de-cambios-nos-pueden-dar-distintas-versiones",
+    "title": "Control de versiones con git",
+    "section": "Conjuntos de cambios nos pueden dar distintas versiones",
+    "text": "Conjuntos de cambios nos pueden dar distintas versiones\n Imagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#cambios-en-la-misma-parte-pueden-generar-conflictos-que-se-pueden-resolver",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#cambios-en-la-misma-parte-pueden-generar-conflictos-que-se-pueden-resolver",
+    "title": "Control de versiones con git",
+    "section": "Cambios en la misma parte pueden generar conflictos que se pueden resolver",
+    "text": "Cambios en la misma parte pueden generar conflictos que se pueden resolver\n Imagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
+    "title": "Control de versiones con git",
+    "section": "Distintas versiones",
+    "text": "Distintas versiones\nConjuntos de cambios nos pueden dar distintas versiones (Ej. ramas o branches)\n Imagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
+    "title": "Control de versiones con git",
+    "section": "Incorporar cambios",
+    "text": "Incorporar cambios\nCambios en la misma parte pueden generar conflictos que se pueden resolver (merge y merge conflict).\n Imagen de Software Carpentry"
   }
 ]
