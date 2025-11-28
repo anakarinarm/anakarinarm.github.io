@@ -19,10 +19,10 @@ listing:  #an example of listing external links
 #    - /people/pi.yml  # Use individual files here as you may use each person at different occasions such as events, news.
     - /people/phd-student.yml
     - /people/masters-student.yml
-    - /people/undergraduate-student.yml
+#    - /people/undergraduate-student.yml
 
 - id: lab-alumni
-  sort: "lastname asc"
+  sort: "ended des"
   type: table
   fields: [title, subtitle, project, institution, ended]
   grid-item-align: center  

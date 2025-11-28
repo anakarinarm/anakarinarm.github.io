@@ -48,3 +48,14 @@
       ended: "2023"
       project: "Mountain waves and ozone events in the Valley of Mexico"  
       institution: "UAM-I, Mexico"
+
+    - title: "Eva Rojas Razo"
+      lastname: "Rojas Razo"
+#      author: 
+      subtitle: "Undergraduate Alumni"
+#      date: "2024-03-12"
+      categories: [Undergraduate Student] 
+      started: " "
+      ended: "2025"
+      project: "Dynamical similarity between mountain waves in the Valley of Mexico and a physical lab model"
+      institution: "IPN, Mexico"
