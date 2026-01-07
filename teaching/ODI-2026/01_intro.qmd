@@ -27,7 +27,7 @@ Ayudante: Alejandro Dominguez Guadarrama (adomingu@cicese.edu.mx)
 **Clases**  
     
 - Lunes 8:30-10:30
-- Miércoles 9:00-11:00
+- Miércoles 8:30-10:30
 - Viernes 9:00-10:20 ("laboratorio")
 
 Laboratorio incluye algunas demostraciones experimentales y prácticas numéricas con jupyter notebooks.
