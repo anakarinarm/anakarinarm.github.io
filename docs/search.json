@@ -655,7 +655,7 @@
     "href": "teaching/ocedin1_2026.html",
     "title": "Oceanografía Dinámica I",
     "section": "",
-    "text": "Diapositivas\n\nIntroducción (7 y 9 de enero 2026)\n\n\n\nNotebooks\n\n\nNotas\n\nApuntes de apoyo: se irán actualizando conforme avance el cuatrimestre."
+    "text": "Diapositivas\n\nIntroducción (7 de enero 2026)\nCinemática y conservación de masa y momento(12 de enero de 2026)\n\n\n\nNotebooks\n\n\nNotas\n\nApuntes de apoyo: se irán actualizando conforme avance el cuatrimestre."
   },
   {
     "objectID": "teaching/intro_scicomp_2025.html",
@@ -684,5 +684,299 @@
     "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
     "section": "Día 3. Introducción a git",
     "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025\nEn esta clase seguiremos la lección Version Control with Git de Software Carpentry Workshops.\n\nAsegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.\nPuedes consultar las diapositivas de la clase aquí."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#instructorxs",
+    "href": "teaching/ODI-2026/02_cinematica.html#instructorxs",
+    "title": "01 Introducción",
+    "section": "Instructorxs",
+    "text": "Instructorxs\nProfesora: Karina Ramos Musalem (kramosmu@cicese.mx)\nProfesor: Manuel López (malope@cicese.mx)\nAyudante: Alejandro Dominguez Guadarrama (adomingu@cicese.edu.mx)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#horario",
+    "href": "teaching/ODI-2026/02_cinematica.html#horario",
+    "title": "01 Introducción",
+    "section": "Horario",
+    "text": "Horario\nClases\n\nLunes 8:30-10:30\nMiércoles 8:30-10:30\nViernes 9:00-10:20 (“laboratorio”)\n\nLaboratorio incluye algunas demostraciones experimentales y prácticas numéricas con jupyter notebooks.\nDudas por correo, en el cubículo o en Classroom para que todes participemos :-)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#temario-del-curso",
+    "href": "teaching/ODI-2026/02_cinematica.html#temario-del-curso",
+    "title": "01 Introducción",
+    "section": "Temario del curso",
+    "text": "Temario del curso\nPueden consultar el temario en classroom.\n\nFolder “Bibliografía” en Classroom\nLes iremos indicando las referencias principales de cada tema a lo largo del curso."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#evaluación",
+    "href": "teaching/ODI-2026/02_cinematica.html#evaluación",
+    "title": "01 Introducción",
+    "section": "Evaluación",
+    "text": "Evaluación\nTareas 45%\nParciales 45%\nExposición de artículo 10%\n Tareas: Habrá aproximadamente 7 en el semestre (~ 1 cada 2 semanas). Se entregan individualmente. Las prácticas de python cuentan como parte de la tarea correspondiente a esa semana.  Parciales: Habrá al menos dos exámenes parciales. El twist es que 80% de su calificación será del examen individual y 20% del examen en equipo (En mi examen).  Exposición de un artículo: - Más detalles pronto"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#código-de-conducta",
+    "href": "teaching/ODI-2026/02_cinematica.html#código-de-conducta",
+    "title": "01 Introducción",
+    "section": "Código de conducta",
+    "text": "Código de conducta\nDecidamos entre todes las reglas de convivencia del curso (pizarrón)."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#introducción",
+    "href": "teaching/ODI-2026/02_cinematica.html#introducción",
+    "title": "01 Introducción",
+    "section": "Introducción",
+    "text": "Introducción\nEsta clase es de dinámica del océano, pero en general veremos conceptos que aplican a flujos geofísicos en general.\n¿De qué hablamos cuando hablamos de flujos geofísicos?\n\n\n\nHuracanes Nora (izq.) e Ida (der.) Fuente: NOAA Satellites"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#características-de-los-fluidos-geofísicos-fg",
+    "href": "teaching/ODI-2026/02_cinematica.html#características-de-los-fluidos-geofísicos-fg",
+    "title": "01 Introducción",
+    "section": "Características de los fluidos geofísicos (FG)",
+    "text": "Características de los fluidos geofísicos (FG)\n\nSe encuentran en un sistema de referencia en rotación;\npor lo regular están estratificados y son turbulentos;\nEn la naturaleza ocurren a “gran escala” (en un momento definiremos “gran”).\n\nEste curso tratará de las peculiaridades que aparecen en la dinámica del flujo debidas a la influencia de una, otra o ambas características."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#otros-ejemplos",
+    "href": "teaching/ODI-2026/02_cinematica.html#otros-ejemplos",
+    "title": "01 Introducción",
+    "section": "Otros ejemplos",
+    "text": "Otros ejemplos\n\n\nEstructuras de mesoescala (ciclones, tiempo oceánico) y submesoescala (remolinos, frentes, surgencias, etc).\n\nFuente: NOAA Atlantic Oceanographic and Meteorological Laboratory"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#productividad-biológica",
+    "href": "teaching/ODI-2026/02_cinematica.html#productividad-biológica",
+    "title": "01 Introducción",
+    "section": "Productividad biológica",
+    "text": "Productividad biológica\n\n\n\nFuente: NASA Identifier: ge_05147. Clorofila en el Golfo de Tehuantepec en enero 4 del 2005, tomada por el Moderate Resolution Imaging Spectroradiometer (MODIS) en el satélite Aqua de NASA."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-estratificación",
+    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-estratificación",
+    "title": "01 Introducción",
+    "section": "Efecto de la estratificación",
+    "text": "Efecto de la estratificación\nLa estratificación es la variación vertical de la densidad."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#frecuencia-de-brunt-väisälä",
+    "href": "teaching/ODI-2026/02_cinematica.html#frecuencia-de-brunt-väisälä",
+    "title": "01 Introducción",
+    "section": "Frecuencia de Brunt-Väisälä",
+    "text": "Frecuencia de Brunt-Väisälä\n\n\n\n\nMuevo elemento de fluido en equilibrio de \\(Z\\) hasta \\(Z+h\\) \\(\\rightarrow\\) fuerza boyante\nLa frecuencia de oscilación1 del elemento de fluido está dada por: \\[N^2=\\frac{g}{\\rho_0}\\frac{\\partial{\\rho}}{\\partial z}\\]\n\\(\\uparrow N^2\\) inhibe movimientos verticales y da estructura vertical al flujo.\n\nConocida como frecuencia de Brunt-Väisälä"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación",
+    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación",
+    "title": "01 Introducción",
+    "section": "Efecto de la rotación",
+    "text": "Efecto de la rotación\n\n\n \\(\\Omega=7.2921\\times10^{-5}\\) rad s\\(^{-1}\\)\n\nAgrega el término \\(2\\vec{\\Omega} \\times \\vec{u}\\) a las ecuaciones de momento.\nFlujos tienden a desviarse a la derecha en el hemisferio norte y a la izquierda en el hemisferio sur.\nParámetro de Coriolis  \\[f=2\\Omega\\sin{\\varphi},\\] donde \\(\\varphi\\) es la latitud.\nPor ejemplo:\nEn Huatulco (\\(\\varphi=17.09^{\\circ}\\) N), \\(f=4.28\\times10^{-5}\\) s\\(^{-1}\\)\nEn Ensenada (\\(\\varphi=30.90^{\\circ}\\) N), \\(f=7.47\\times10^{-5}\\) s\\(^{-1}\\)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación-1",
+    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación-1",
+    "title": "01 Introducción",
+    "section": "Efecto de la rotación",
+    "text": "Efecto de la rotación\nPara que el flujo sienta el efecto de la rotación, las escalas temporales deben ser del orden de un periodo de rotación.\n\\[\n\\epsilon = \\frac{\\textrm{tiempo de una revolución}}{\\textrm{tiempo en avanzar } L \\textrm{ a velocidad } U}\n\\] \\[= \\frac{\\frac{2\\pi}{\\Omega}}{\\frac{L}{U}} = \\frac{2\\pi U}{\\Omega L}.\\]\nSi \\(\\epsilon \\le 1\\), la rotación es importante. Esto limita el tamaño y velocidad del flujo y nos da una definición de “gran escala”.\nNombre especial de \\(\\epsilon\\): Número de Rossby en forma \\(Ro=U/fL\\)."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica",
+    "href": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica",
+    "title": "01 Introducción",
+    "section": "Similaridad dinámica",
+    "text": "Similaridad dinámica\n¿Por qué podemos estudiar la atmósfera, el océano y un tanque con las mismas ecuaciones?\n\\[\\frac{\\partial\\vec{u}}{\\partial t}+ \\vec{u}\\cdot\\nabla\\vec{u} + \\vec{f}\\times\\vec{u} = \\frac{1}{\\rho} \\nabla P - \\vec{g} + \\mu \\nabla^2\\vec{u}\\]\nEj. Para que la rotación importe, \\(Ro=U/fL&lt;1\\):\nTierra \\(f\\) ~ \\(10^{-4}\\) s\\(^{-1}\\)\nOcéano: \\(L\\sim10^3\\) km, \\(U\\sim10\\) cm s\\(^{-1}\\), \\(Ro\\sim10^{-2}\\)\nAtmósfera: \\(L\\sim10^4\\) km, \\(U\\sim10\\) ms\\(^{-1}\\), \\(Ro\\sim10^{-3}\\)\nPlataforma giratoria \\(f\\) ~ \\(10^{-1}\\) s\\(^{-1}\\)\nLaboratorio: \\(L\\sim1\\) m, \\(U\\sim10^{-2}\\) cm s\\(^{-1}\\), \\(Ro\\sim10^{-1}\\)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica-1",
+    "href": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica-1",
+    "title": "01 Introducción",
+    "section": "Similaridad dinámica",
+    "text": "Similaridad dinámica\nPara que dos flujos sean físicamente equivalentes o análogos deben tener similaridad dinámica (cinemática y geométrica).\nLa importancia relativa entre distintos tipos de fuerza (e.g., inerciales, viscosas, etc.) debe ser la misma para ambos flujos.\n \n\n\nInteracción de remolinos cerca de Japón y remolinos en el laboratorio - LEGI Plataforma Coriolis (J.B. Flor, 2005). Imágenes tomadas de http://www.legi.grenoble-inp.fr/web/spip.php?article757."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#habrá-similaridad-dinámica-si",
+    "href": "teaching/ODI-2026/02_cinematica.html#habrá-similaridad-dinámica-si",
+    "title": "01 Introducción",
+    "section": "Habrá similaridad dinámica si…",
+    "text": "Habrá similaridad dinámica si…\n…los grupos adimensionales de ambos flujos son iguales.\nAlgunos ejemplos de números adimensionales relevantes:\n\n\nRossby\nrotación vs. advección\n\\(Ro=\\frac{U}{fL}\\)\n\nBurger\nrotación vs. estratificación\n\\(Bu=\\frac{NH}{fL}\\)\n\nReynolds\ninerciales vs. fricción\n\\(Re=\\frac{UL}{\\nu\\_E}\\)\n\n \n\n\nVórtices de von Kárman sobre la isla de Selkirk y experimento análogo de A. Stegner (2005). Imágenes tomadas de [http://www.legi.grenoble-inp.fr]."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#dfg-en-el-laboratorio",
+    "href": "teaching/ODI-2026/02_cinematica.html#dfg-en-el-laboratorio",
+    "title": "01 Introducción",
+    "section": "DFG en el laboratorio",
+    "text": "DFG en el laboratorio\n\n\nRotación: Plataforma o mesa giratoria\nEstratificación: Distintas concentraciones de sal o gradientes de temperatura\nMedio: Usamos agua en vez de aire para modelar tanto océano como atmósfera (nunca he visto un túnel de viento giratorio, pero ¿tal vez sí hay?).\n\n\n\n\n\nMesa giratoria del Laboratorio de Fluidos Geofísicos, UBC"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#dfg-con-simulaciones-numéricas",
+    "href": "teaching/ODI-2026/02_cinematica.html#dfg-con-simulaciones-numéricas",
+    "title": "01 Introducción",
+    "section": "DFG con simulaciones numéricas",
+    "text": "DFG con simulaciones numéricas\nEn general discretizamos el dominio de interés y las ecuaciones de movimiento y termodinámica usando diferencias finitas o volumen finito (entre otras).\n\n\n\nSimulación de una corriente de gravedad a escala de laboratorio usando el modelo MITgcm."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#section",
+    "href": "teaching/ODI-2026/02_cinematica.html#section",
+    "title": "01 Introducción",
+    "section": "",
+    "text": "La DFG se trata de representar matemáticamente e interpretar físicamente el movimiento de flujos geofísicos.\nLas matemáticas de la DFG son muy “computacionales” (Ej. modelación numérica de la circulación oceánica y las nubes son los problemas computacionales más grandes en la historia de la ciencia)\nEsto se debe a que los experimentos de laboratorio solo pueden responder algunas de las preguntas interesantes.\nEn geofísica muchos de los avances teóricos están basados en DFG y no en experimentos porque obtener mediciones en campo es complicado, caro y muchas veces imposible."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#por-qué-estudiar-dinámica-del-oceáno",
+    "href": "teaching/ODI-2026/02_cinematica.html#por-qué-estudiar-dinámica-del-oceáno",
+    "title": "01 Introducción",
+    "section": "¿Por qué estudiar dinámica del oceáno?",
+    "text": "¿Por qué estudiar dinámica del oceáno?\nLos océanos son el motor del clima y los sistemas meteorológicos de la Tierra. \nEntender la dinámica oceánica ayuda a:\n\nPredecir corrientes y ondas en el océano.\nGestionar pesquerías y ecosistemas.\nMitigar los impactos del cambio climático."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#geostrofía-el-balance-de-fuerzas",
+    "href": "teaching/ODI-2026/02_cinematica.html#geostrofía-el-balance-de-fuerzas",
+    "title": "01 Introducción",
+    "section": "Geostrofía: El Balance de Fuerzas",
+    "text": "Geostrofía: El Balance de Fuerzas\nConcepto\n\nBalance entre la fuerza de Coriolis y el gradiente de presión.\nGenera corrientes a gran escala.\nGiros ciclónicos o anticiclónicos, diámetro típicamente entre 50–200 km, importantes en el transporte de calor y nutrientes.\n\nEjemplo de la Vida Real\nRemolinos de la Corriente del Lazo"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#oscilaciones-inerciales",
+    "href": "teaching/ODI-2026/02_cinematica.html#oscilaciones-inerciales",
+    "title": "01 Introducción",
+    "section": "Oscilaciones Inerciales",
+    "text": "Oscilaciones Inerciales\n\n\nConcepto - Movimientos circulares de partículas de agua debido a la fuerza de Coriolis, sin fuerzas restauradoras.\nEjemplo de la Vida Real\n\nRespuesta a Ciclones en el Golfo de México: -Tras eventos como huracanes la capa superficial oscila en sentido de las manecillas del reloj.\nEsta energía puede progagarse al interior en el borde de remolinos o en la corriente del Lazo."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ondas-de-kelvin-mensajeras-costeras",
+    "href": "teaching/ODI-2026/02_cinematica.html#ondas-de-kelvin-mensajeras-costeras",
+    "title": "01 Introducción",
+    "section": "Ondas de Kelvin: Mensajeras Costeras",
+    "text": "Ondas de Kelvin: Mensajeras Costeras\nConcepto\n\nOndas no dispersivas atrapadas a la costa o al ecuador debido a la rotación de la Tierra.\n\nEjemplo de la Vida Real - El Niño y el Pacífico Mexicano: - Las ondas de Kelvin suprimen la termoclina propiciando la aparición de aguas anómalamente cálidas en las costas del Pacífico durante eventos de El Niño, afectando la pesca y provocando lluvias intensas en México."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#section-3",
+    "href": "teaching/ODI-2026/02_cinematica.html#section-3",
+    "title": "01 Introducción",
+    "section": "",
+    "text": "Animaciones de NOAA climate y NASA JPL"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ondas-internas",
+    "href": "teaching/ODI-2026/02_cinematica.html#ondas-internas",
+    "title": "01 Introducción",
+    "section": "Ondas Internas",
+    "text": "Ondas Internas\nConcepto\n\nOndas que se propagan dentro del océano debidas a los cambios de densidad en el océano.\n\n** Ejemplo de la Vida Real**\n\nOndas Internas en el Golfo de California:\n\nGeneradas por la interacción de las mareas con la topografía submarina, contribuyen al transporte de nutrientes hacia la superficie y sostienen pesquerías como la sardina y el camarón."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#section-4",
+    "href": "teaching/ODI-2026/02_cinematica.html#section-4",
+    "title": "01 Introducción",
+    "section": "",
+    "text": "Animación de MIT ondas internas en el estrecho de Luzón (mar del Sur de China)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#section-5",
+    "href": "teaching/ODI-2026/02_cinematica.html#section-5",
+    "title": "01 Introducción",
+    "section": "",
+    "text": "Experimento en la Universidad de Washington:"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#consecuencias-sociales",
+    "href": "teaching/ODI-2026/02_cinematica.html#consecuencias-sociales",
+    "title": "01 Introducción",
+    "section": "Consecuencias sociales",
+    "text": "Consecuencias sociales\nLa dinámica del oceáno es central para resolver los desafíos globales actuales.\nCorrientes Geostróficas: Redistribuyen el calor entre el ecuador y los polos.\n\nEstabilizan las temperaturas globales.\nInfluyen en climas regionales, por ejemplo, los inviernos suaves en Europa debido a la Corriente del Golfo.\n\nOscilaciones Inerciales: Ofrecen información sobre la redistribución de energía tras huracanes.\n\nPredicción de erosión costera y daños en infraestructura.\nApoyo en la recuperación post-desastre.\n\nOndas Internas: Potencial de llevar nutrientes desde las capas profundas a la superficie.\n\nSostienen pesquerías y ecosistemas marinos.\n\nRemolinos de Mesoscala: Pueden influir en la mezcla vertical\n\nSecuestro de carbono.\nRedistribución de calor y nutrientes.\n\nDinámica Oceánica en Modelos Climáticos:\n\nSimular con precisión intercambios de calor, el aumento del nivel del mar y los retroalimentación climática.\nOrientar políticas climáticas internacionales (e.g., Acuerdo de París)."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#sus-perspectivas",
+    "href": "teaching/ODI-2026/02_cinematica.html#sus-perspectivas",
+    "title": "01 Introducción",
+    "section": "Sus Perspectivas",
+    "text": "Sus Perspectivas\n\n¿Cómo puede el entendimiento de la dinámica oceánica ayudar a nuestra comunidad localmente?\n¿Qué tema te emociona más? ¿Por qué?"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#elemento-de-fluido",
+    "href": "teaching/ODI-2026/02_cinematica.html#elemento-de-fluido",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Elemento de fluido",
+    "text": "Elemento de fluido\nEs un pedazo o porción arbitrariamente pequeña del continuo que nos facilita entender cómo se comporta un fluido. Es una construcción conceptual, no física, en la que asumimos que:\n\nsu volumen es tan pequeño que sus propiedades son uniformes;\ntiene masa constante (usualmente);\nse mueve bajo la influencia del fluido que lo rodea."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#cinemática-cómo-vamos-a-describir-al-fluido",
+    "href": "teaching/ODI-2026/02_cinematica.html#cinemática-cómo-vamos-a-describir-al-fluido",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Cinemática: ¿Cómo vamos a describir al fluido?",
+    "text": "Cinemática: ¿Cómo vamos a describir al fluido?\nDescribir el movimiento de un objeto pequeño, como una piedra, es relativamente sencillo. Podemos seguir la trayectoria del centro de masa como una función \\(\\vec{x}=\\vec{x}(t)\\) y relacionar las fuerzas que actúan sobre la piedra con la velocidad y aceleración a partir de nuestro conocimiento de \\(\\vec{x}(t)\\).\nLa descripción de un fluido no es tan simple. El fluido está en todos lados. No nos interesa la trayectoria del centro de masas sino el movimiento del continuo, constituido por una inifindad de elementos de fluido.\nEn general hay dos métodos útiles:\nDescripción euleriana\nDescripción lagrangiana"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#analogía-entre-descripciones",
+    "href": "teaching/ODI-2026/02_cinematica.html#analogía-entre-descripciones",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Analogía entre descripciones",
+    "text": "Analogía entre descripciones"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#descripción-euleriana",
+    "href": "teaching/ODI-2026/02_cinematica.html#descripción-euleriana",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Descripción euleriana",
+    "text": "Descripción euleriana\n\n\nFluido en espacio 3D y tiempo. Podemos describir una propiedad \\(P\\) como función del vector de posición \\(\\vec{x} = (x, y, z)\\) y el tiempo, \\(P=P(\\vec{x},t)\\).\nDescripción de P en cada punto y para cada tiempo sin especificar qué elemento de fluido ocupa qué posición a un tiempo dado1.\n\nAnemómetro fijo\nCorrientímetro\n\n\n\n\nE.g. Ve a nvs.nanoos.org para ver ejemplos de series de tiempo de “plataformas fijas”."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#descripción-lagrangiana",
+    "href": "teaching/ODI-2026/02_cinematica.html#descripción-lagrangiana",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Descripción lagrangiana",
+    "text": "Descripción lagrangiana\n\n\n“Monitorea” elementos de fluido individuales y especifica las propiedades con respecto a cada elemento.\nDescripción del flujo siguiendo a cada partícula de fluido.\nEjemplos de mediciones lagrangianas:\n\nDrifters o flotadores en el océano1\n\n\n \n\nPor ejemplo: Derivadores del Lagrangian Drifter Lab del Global Drifter Program de NOAA en vivo y ARGO floats (Imagen de Commonwealth Scientific and Industrial Research Organisation (CSIRO))"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#tasas-de-cambio",
+    "href": "teaching/ODI-2026/02_cinematica.html#tasas-de-cambio",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Tasas de cambio",
+    "text": "Tasas de cambio\nImagina que viajas de Cuernavaca al Puerto de Veracruz en bicicleta. En el camino notarás un cambio de temperatura. Esto puede ser debido a que la temperatura cambió en el tiempo (hora del día, fenómeno meteorológico, etc.) o a que atravesamos un gradiente espacial de temperatura (altitud, vegetación, etc.).\n\nVeremos 3 nociones de tasa de cambio:\n\nCambio temporal local (tasa de cambio en un punto fijo),\ntasa de cambio de un observador en movimiento y\ntasa de cambio de un elemento de fluido dentro del flujo."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-local",
+    "href": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-local",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Tasa de cambio local",
+    "text": "Tasa de cambio local\nDefinimos la tasa de cambio de una propiedad \\(P\\) con respecto al tiempo en un punto fijo \\(\\vec{x}\\) como:\n\\[\\textrm{Derivada temporal local} = {\\frac{\\partial P}{\\partial t}}\\Big|_{\\vec{x}}\\]\nRegularmente omitimos el subíndice \\(\\vec{x}\\). Podemos ver esto como el cambio de \\(P\\) conforme una serie de elementos de fluido pasan por el punto \\(\\vec{x}\\)."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-de-un-observador-en-movimiento",
+    "href": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-de-un-observador-en-movimiento",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Tasa de cambio de un observador en movimiento",
+    "text": "Tasa de cambio de un observador en movimiento\nVolvamos a la ciclista viajando a Veracruz. Digamos que se mueve a velocidad \\(\\vec{v}=(v_1,v_2,v_3)\\) distinta al fluido (aire), de manera que para ella \\(\\vec{v}=d\\vec{x}/dt\\).\nEl cambio total en la propiedad \\(P\\) medido por la ciclista es:\n\\[\\frac{dP}{dt}=\\frac{\\partial P}{\\partial t} + \\frac{\\partial P}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial P}{\\partial y}\\frac{dy}{dt} + \\frac{\\partial P}{\\partial z}\\frac{dz}{dt}\\]\n\\[\\frac{dP}{dt}=\\frac{\\partial P}{\\partial t}+\\vec{v}\\cdot\\nabla P\\]"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ejemplo",
+    "href": "teaching/ODI-2026/02_cinematica.html#ejemplo",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ejemplo:",
+    "text": "Ejemplo:\nTasa de cambio de la altura sobre el piso de una niña que baja por una resbaladilla."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-de-un-elemento-de-fluido-dentro-del-flujo",
+    "href": "teaching/ODI-2026/02_cinematica.html#tasa-de-cambio-de-un-elemento-de-fluido-dentro-del-flujo",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Tasa de cambio de un elemento de fluido dentro del flujo",
+    "text": "Tasa de cambio de un elemento de fluido dentro del flujo\nEl “observador” ahora es el mismo flujo, que se mueve con la misma velocidad que el fluido, \\(\\vec{u}\\). La tasa de cambio es simplemente la tasa de cambio de la propiedad \\(P\\) del propio elemento de fluido:\n\\[\\frac{DP}{Dt}=\\frac{\\partial P}{\\partial t}+\\vec{u}\\cdot\\nabla P.\\]\nA esta tasa de cambio se le conoce como derivada material o derivada total."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ejemplo-1",
+    "href": "teaching/ODI-2026/02_cinematica.html#ejemplo-1",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ejemplo:",
+    "text": "Ejemplo:\nPropiedad cuya distribución está dada por \\(P=P_0\\cos{\\omega t}\\sin{kx}\\), donde \\(\\omega=2\\pi/T\\) es la frecuencia de la onda y \\(k=2\\pi/\\lambda_x\\) es el número de onda en dirección \\(x\\). Supongamos que el flujo es únicamente en dirección \\(x\\) con magnitud \\(U\\).\n(pizarrón)"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento-1",
+    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento-1",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ecuación de conservación de momento",
+    "text": "Ecuación de conservación de momento\n\\[\\rho\\frac{D\\vec{u}}{Dt}=\\rho \\vec{g} + \\nabla\\cdot[\\sigma]\\]\nEsta expresión es cierta para cualquier fluido. ¡La física está guardada en el tensor de esfuerzos!\nRelaciones constitutivas\nLos esfuerzos \\([\\sigma_{ij}]\\) son una combinación de presión \\(p\\) y fricción viscosa:\n\\[\\sigma_{ii} = -p + \\lambda \\nabla \\cdot \\vec{v} + 2\\mu\\frac{\\partial{u_i}}{\\partial{x_i}}\\]\n\\[\\sigma_{ij} = \\mu\\Big(\\frac{\\partial u_i}{\\partial{x_j}}+\\frac{\\partial u_j}{\\partial{x_i}}\\Big)\\]"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#relaciones-constitutivas",
+    "href": "teaching/ODI-2026/02_cinematica.html#relaciones-constitutivas",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Relaciones constitutivas",
+    "text": "Relaciones constitutivas\nLos esfuerzos \\([\\sigma_{ij}]\\) son una combinación de presión \\(p\\) y fricción viscosa:\n\\[\\sigma_{ii} = -p + \\lambda \\nabla \\cdot \\vec{v} + 2\\mu\\frac{\\partial{u_i}}{\\partial{x_i}}\\]\n\\[\\sigma_{ij} = \\mu\\Big(\\frac{\\partial u_i}{\\partial{x_j}}+\\frac{\\partial u_j}{\\partial{x_i}}\\Big)\\]\n\\(\\lambda\\) y \\(\\mu\\) son los coeficientes de viscosidad dinámica y estática, respectivamente.\nASUMIENDO que la relación entre esfuerzo y gradientes de velocidad es lineal (fluido Newtoniano) e isotrópica (las propiedades intrínsecas del fluido no tienen dirección preferencial)."
   }
 ]
