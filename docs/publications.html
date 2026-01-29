@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./files/images/monster_icon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3e8f12d1b5c8d04d32925f9f9ead600c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -220,6 +221,7 @@ https://badge.dimensions.ai/
 
 <section id="peer-reviewed" class="level2">
 <h2 class="anchored" data-anchor-id="peer-reviewed">Peer-reviewed</h2>
+<p>Perez-Corona, Y.<sup>*</sup>, Torres, H., &amp; <strong>Ramos-Musalem, K.</strong> (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. <em>Remote Sensing</em>, 18(3), 434. DOI: <a href="https://doi.org/10.3390/rs18030434">10.3390/rs18030434</a></p>
 <p>Moreles, E., Romero, E., <strong>Ramos-Musalem, K.</strong>, &amp; Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. <em>Ocean Science</em>, Vol. 21, Issue 5, 2019–2039. DOI: <a href="https://doi.org/10.5194/os-21-2019-2025">10.5194/os-21-2019-2025</a></p>
 <p><strong>Ramos-Musalem, K.</strong>, Gille, S. T., Cornuelle, B. D., &amp; Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. <em>Journal of Geophysical Research: Oceans</em>, e2022JC019547. DOI:<a href="https://doi.org/10.1029/2022JC019547">10.1029/2022JC019547</a>.</p>
 <p>Burgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., <strong>Ramos-Musalem, K.</strong>, &amp; Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. <em>Atmósfera</em>. DOI:<a href="https://doi.org/10.20937/ATM.53156">10.20937/ATM.53156</a></p>
@@ -227,6 +229,7 @@ https://badge.dimensions.ai/
 <p><strong>Ramos-Musalem, K.</strong> &amp; Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. <em>Journal of Geophysical Research: Oceans</em>, 125(3), e2019JC015785. DOI:<a href="https://doi.org/10.1029/2019JC015785">10.1029/2019JC015785</a></p>
 <p><strong>Ramos-Musalem, K.</strong> &amp; Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. <em>Journal of Physical Oceanography</em>, 49(2), 561–584. DOI: <a href="https://doi.org/10.1175/JPO-D-18-0174.1">10.1175/JPO-D-18-0174.1</a></p>
 <p>Arane, T., <strong>Musalem, A. K. R</strong>., &amp; Fridman, M. (2009). Coupling between two singing wineglasses. <em>American Journal of Physics</em>, 77(11), 1066–1067. DOI: <a href="https://doi.org/10.1119/1.3119175">10.1119/1.3119175</a></p>
+<p>* PhD student</p>
 </section>
 <section id="academic-writing" class="level2">
 <h2 class="anchored" data-anchor-id="academic-writing">Academic writing</h2>
@@ -288,13 +291,14 @@ https://badge.dimensions.ai/
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

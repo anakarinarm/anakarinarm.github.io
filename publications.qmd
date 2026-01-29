@@ -8,6 +8,7 @@ css: custom.css
 ---
 
 ## Peer-reviewed
+Perez-Corona, Y.^\*^, Torres, H., & **Ramos-Musalem, K.** (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. *Remote Sensing*, 18(3), 434. DOI: [10.3390/rs18030434](https://doi.org/10.3390/rs18030434)
 
 Moreles, E., Romero, E., **Ramos-Musalem, K.**, & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. *Ocean Science*, Vol. 21, Issue 5, 2019–2039. DOI: [10.5194/os-21-2019-2025](https://doi.org/10.5194/os-21-2019-2025)
 
@@ -22,6 +23,8 @@ Saldías, G. S., **Ramos-Musalem, K.**, & Allen, S. E. (2021). Circulation and u
 **Ramos-Musalem, K.** & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. *Journal of Physical Oceanography*, 49(2), 561–584. DOI: [10.1175/JPO-D-18-0174.1](https://doi.org/10.1175/JPO-D-18-0174.1)
 
 Arane, T., **Musalem, A. K. R**., & Fridman, M. (2009). Coupling between two singing wineglasses. *American Journal of Physics*, 77(11), 1066–1067. DOI: [10.1119/1.3119175](https://doi.org/10.1119/1.3119175)
+
+\* PhD student
 
 ## Academic writing
 
