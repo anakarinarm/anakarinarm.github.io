@@ -7,8 +7,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.27">
 
   <meta name="author" content="Karina Ramos Musalem">
   <title>Karina Ramos Musalem – La línea de comandos</title>
@@ -96,7 +96,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
   <link rel="stylesheet" href="styles.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
@@ -393,27 +393,27 @@
 <section id="reto-4.-organización-de-directorios-y-archivos" class="slide level2 smaller">
 <h2>Reto 4. Organización de directorios y archivos</h2>
 <p>Jamie está trabajando en un proyecto y nota que sus archivos no están muy bien organizados:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>$ analyzed/  fructose.dat    raw/   sucrose.dat</code></pre>
 <p>Los archivos <code>fructose.dat</code> y <code>sucrose.dat</code> contienen la salida de sus análisis. ¿Qué comando(s) cubierto(s) necesitas ejecutar para que los comandos a continuación produzcan la salida mostrada?</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>analyzed/   raw/</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">ls</span> analyzed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">ls</span> analyzed</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <pre><code>fructose.dat    sucrose.dat</code></pre>
 </section>
 <section id="reto-5.-copiar-con-varios-archivos" class="slide level2">
 <h2>Reto 5. Copiar con varios archivos</h2>
 <p>Para este ejercicio puedes probar los comandos del directorio <code>data-shell/data</code>. En el ejemplo que sigue, ¿qué hace <code>cp</code> cuando se le dan varios nombres de archivo y un nombre de directorio?:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="fu">mkdir</span> backup</span>
-<span id="cb11-2"><a></a><span class="fu">cp</span> amino-acids.txt animals.txt backup/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="fu">mkdir</span> backup</span>
+<span id="cb11-2"><a></a><span class="fu">cp</span> amino-acids.txt animals.txt backup/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
 <p>En el siguiente ejemplo, ¿qué hace <code>cp</code> cuando se le dan tres o más nombres de archivo?</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">ls</span> <span class="at">-F</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Salida:</p>
 <pre><code> amino-acids.txt  animals.txt  backup/  elements/  morse.txt  pdb/  planets.txt  salmon.txt  sunspot.txt </code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="fu">cp</span> amino-acids.txt animals.txt morse.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="fu">cp</span> amino-acids.txt animals.txt morse.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="en-corto-1" class="slide level2 smaller">
 <h2>En corto</h2>
@@ -455,7 +455,7 @@
 2012-11-07,rabbit
 2012-11-07,bear</code></pre>
 <p>¿Qué texto pasa a través de cada uno de los pipes y qué incluye el redireccionamiento final en el siguiente pipeline?</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="ex">$</span> cat animals.txt <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5 <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 3 <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="op">&gt;</span> final.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="ex">$</span> cat animals.txt <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 5 <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 3 <span class="kw">|</span> <span class="fu">sort</span> <span class="at">-r</span> <span class="op">&gt;</span> final.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Pista: construye el pipeline agregando un comando a la vez para comprobar tu respuesta.</p>
 </section>
 <section id="reto-8.-eliminación-de-archivos-innecesarios" class="slide level2">
@@ -522,27 +522,27 @@ rm *.*</code></pre>
 <p>En el directorio <code>data-shell/molecules</code>, <code>ls</code> regresa la siguiente salida:</p>
 <pre><code>cubane.pdb  ethane.pdb  methane.pdb  octane.pdb  pentane.pdb  propane.pdb</code></pre>
 <p>¿Cuál es la salida del siguiente código?:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
 <span id="cb21-2"><a></a><span class="cf">do</span></span>
 <span id="cb21-3"><a></a>    <span class="fu">ls</span> <span class="pp">*</span>.pdb</span>
-<span id="cb21-4"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb21-4"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Ahora, ¿cuál es la salida de este código?:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="pp">*</span>.pdb</span>
 <span id="cb22-2"><a></a><span class="cf">do</span></span>
 <span id="cb22-3"><a></a>    <span class="fu">ls</span> <span class="va">$datafile</span></span>
-<span id="cb22-4"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-4"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>¿Por qué estos dos loops dan resultados diferentes?</p>
 </section>
 <section id="reto-11.-loops-anidados" class="slide level2">
 <h2>Reto 11. Loops anidados</h2>
 <p>Supón que queremos configurar una estructura de directorios para organizar algunos experimentos que miden constantes de velocidad de reacción que involucran distintos compuestos y distintas temperaturas. ¿Cuál sería el resultado del siguiente código?:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="cf">for</span> species <span class="kw">in</span> cubane ethane methane</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="cf">for</span> species <span class="kw">in</span> cubane ethane methane</span>
 <span id="cb23-2"><a></a><span class="cf">do</span></span>
 <span id="cb23-3"><a></a>    <span class="cf">for</span> temperature <span class="kw">in</span> 25 30 37 40</span>
 <span id="cb23-4"><a></a>    <span class="cf">do</span></span>
 <span id="cb23-5"><a></a>        <span class="fu">mkdir</span> <span class="va">$species</span>-<span class="va">$temperature</span></span>
 <span id="cb23-6"><a></a>    <span class="cf">done</span></span>
-<span id="cb23-7"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-7"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p>Intenta ejecutar el código para descubrir qué directorio se crean.</p>
 </div>
@@ -555,26 +555,26 @@ rm *.*</code></pre>
 <section id="reto-12.-lectura-y-comprensión-de-scripts" class="slide level2 scrollable">
 <h2>Reto 12. Lectura y comprensión de scripts</h2>
 <p><strong>Script 1.</strong> Considera el directorio <code>data-shell/molecules</code> que contiene una cantidad de archivos .pdb además de otro archivo que hayas creado. Explica, para los siguientes tres ejemplos, que hace el script llamado <code>example.sh</code> cuando lo ejecutas como <code>bash example.sh *.pdb</code>:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="co"># Script 1</span></span>
-<span id="cb24-2"><a></a><span class="bu">echo</span> <span class="pp">*</span>.<span class="pp">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="co"># Script 1</span></span>
+<span id="cb24-2"><a></a><span class="bu">echo</span> <span class="pp">*</span>.<span class="pp">*</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="fragment">
 <p>Solución: El script 1 mostrará una lista de todos los archivos que contienen un punto en su nombre.</p>
 </div>
 <div class="fragment">
 <p><strong>Script 2</strong></p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a></a><span class="co"># Script 2</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a></a><span class="co"># Script 2</span></span>
 <span id="cb25-2"><a></a><span class="cf">for</span> filename <span class="kw">in</span> <span class="va">$1</span> <span class="va">$2</span> <span class="va">$3</span></span>
 <span id="cb25-3"><a></a><span class="cf">do</span></span>
 <span id="cb25-4"><a></a>    <span class="fu">cat</span> <span class="va">$filename</span></span>
-<span id="cb25-5"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-5"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <p>Solución: El script 2 mostrará el contenido de los primeros 3 archivos que coinciden con la extensión del archivo. La terminal expande el caracter especial antes de pasar los argumentos al script <code>example.sh</code>.</p>
 </div>
 <div class="fragment">
 <p><strong>Script 3</strong></p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="co"># Script 3</span></span>
-<span id="cb26-2"><a></a><span class="bu">echo</span> <span class="va">$@</span>.dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="co"># Script 3</span></span>
+<span id="cb26-2"><a></a><span class="bu">echo</span> <span class="va">$@</span>.dat</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="fragment">
 <p>Solución: El script 3 mostrará todos los parámetros del script (es decir, todos los archivos .pdb), seguido de .dat. <code>cubane.pdb etano.pdb metano.pdb octano.pdb pentano.pdb propano.pdb.dat</code></p>
@@ -583,8 +583,8 @@ rm *.*</code></pre>
 <section id="reto-13.-variables-en-los-scripts-de-la-terminal" class="slide level2 smaller">
 <h2>Reto 13. Variables en los scripts de la terminal</h2>
 <p>En el directorio molecules, imagina que tienes un script de la terminal llamado <code>script.sh</code> que contiene los siguientes comandos:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="va">$2</span> <span class="va">$1</span></span>
-<span id="cb27-2"><a></a><span class="fu">tail</span> <span class="at">-n</span> <span class="va">$3</span> <span class="va">$1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb27"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a></a><span class="fu">head</span> <span class="at">-n</span> <span class="va">$2</span> <span class="va">$1</span></span>
+<span id="cb27-2"><a></a><span class="fu">tail</span> <span class="at">-n</span> <span class="va">$3</span> <span class="va">$1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Mientras estás en el directorio <code>molecules</code>, escribes el siguiente comando:</p>
 <pre><code>bash script.sh '*.pdb' 1 1</code></pre>
 <p>¿Cuál de los siguientes resultados esperarías ver?</p>
@@ -607,12 +607,12 @@ rm *.*</code></pre>
 <section id="reto-14.-depuración-debugging-de-scripts" class="slide level2 smaller">
 <h2>Reto 14. Depuración (debugging) de scripts</h2>
 <p>Supongamos que se ha guardado el siguiente script en un archivo denominado <code>do-errors.sh</code> en el directorio <code>north-pacific-gyre/2012-07-03</code> de Marina:</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a></a><span class="co"># Calcular las estadísticas de los archivos de datos.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb29"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb29-1"><a></a><span class="co"># Calcular las estadísticas de los archivos de datos.</span></span>
 <span id="cb29-2"><a></a><span class="cf">for</span> datafile <span class="kw">in</span> <span class="st">"</span><span class="va">$@</span><span class="st">"</span></span>
 <span id="cb29-3"><a></a><span class="cf">do</span></span>
 <span id="cb29-4"><a></a>    <span class="bu">echo</span> <span class="va">$datfile</span></span>
 <span id="cb29-5"><a></a>    <span class="fu">bash</span> goostats <span class="va">$datafile</span> stats-<span class="va">$datafile</span></span>
-<span id="cb29-6"><a></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-6"><a></a><span class="cf">done</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Cuando lo ejecutas:</p>
 <p><code>$ bash do-errors.sh NENE*[AB].txt</code></p>
 <p>El output está en blanco. Para averiguar por qué, vuelve a ejecutar el script utilizando la opción -x:</p>
@@ -882,7 +882,7 @@ cut -d , -f 1,3  </code></pre>
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -956,13 +956,14 @@ cut -d , -f 1,3  </code></pre>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
