@@ -10,6 +10,7 @@ title-block-banner: false
 
 
 ### Notebooks
+- [Conceptos de cinemática de ondas](ODI-2026/ondas_conceptos_html.html) - Puedes descargar el notebook de la página de Classroom del curso.
 
 ### Notas
 - [Apuntes de apoyo](ODI-2026/notas_ODI.pdf): se irán actualizando conforme avance el cuatrimestre.

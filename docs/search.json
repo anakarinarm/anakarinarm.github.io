@@ -655,7 +655,7 @@
     "href": "teaching/ocedin1_2026.html",
     "title": "Oceanografía Dinámica I",
     "section": "",
-    "text": "Diapositivas\n\nIntroducción (7 de enero 2026)\nCinemática y conservación de masa y momento(12 de enero de 2026)\n\n\n\nNotebooks\n\n\nNotas\n\nApuntes de apoyo: se irán actualizando conforme avance el cuatrimestre."
+    "text": "Diapositivas\n\nIntroducción (7 de enero 2026)\nCinemática y conservación de masa y momento(12 de enero de 2026)\n\n\n\nNotebooks\n\nConceptos de cinemática de ondas - Puedes descargar el notebook de la página de Classroom del curso.\n\n\n\nNotas\n\nApuntes de apoyo: se irán actualizando conforme avance el cuatrimestre."
   },
   {
     "objectID": "teaching/intro_scicomp_2025.html",
@@ -978,5 +978,19 @@
     "title": "02 Conceptos de cinemática y conservación de masa y volumen",
     "section": "Relaciones constitutivas",
     "text": "Relaciones constitutivas\nLos esfuerzos \\([\\sigma_{ij}]\\) son una combinación de presión \\(p\\) y fricción viscosa:\n\\[\\sigma_{ii} = -p + \\lambda \\nabla \\cdot \\vec{v} + 2\\mu\\frac{\\partial{u_i}}{\\partial{x_i}}\\]\n\\[\\sigma_{ij} = \\mu\\Big(\\frac{\\partial u_i}{\\partial{x_j}}+\\frac{\\partial u_j}{\\partial{x_i}}\\Big)\\]\n\\(\\lambda\\) y \\(\\mu\\) son los coeficientes de viscosidad dinámica y estática, respectivamente.\nASUMIENDO que la relación entre esfuerzo y gradientes de velocidad es lineal (fluido Newtoniano) e isotrópica (las propiedades intrínsecas del fluido no tienen dirección preferencial)."
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
+    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ecuación de conservación de masa",
+    "text": "Ecuación de conservación de masa\n\\[\\frac{D\\rho}{Dt}+\\rho\\nabla\\cdot\\vec{u}=0\\]\nEl cambio local en la masa dentro de un volumen de control se compensa con la divergencia local del flujo de masa en el volumen.\nEn un fluido incompresible \\(\\rho\\) es constante, por lo que \\(D\\rho/ Dt=0\\) y la ecuación de continuidad queda como: \\[\\nabla\\cdot\\vec{u}=0.\\]"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
+    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ecuación de conservación de momento",
+    "text": "Ecuación de conservación de momento\nExpresión de la segunda ley de newton para un fluido \\[F=d\\vec{p}/dt\\approx m\\vec{a}.\\]\nFuerzas en un fluido:\n\nde cuerpo: Actúan directamente sobre la masa del elemento y se distribuyen sobre todo el volúmen. Ej. gravitacional, electromagnética (si el fluido es conductor). \\[\\vec{F}_{cuerpo} = m\\vec{g} = \\int_V dV\\rho\\vec g\\]\n\nFuerzas en un fluido:\n\nde superficie: Actúan sobre la superfice, son direccionales. Ej. presión, esfuerzos cortantes.\n\n\nTensor de esfuerzos: elementos en la diagonal, presión; fuera de la diagonal, esfuerzos cortantes\n\\[\\vec{F}_{superficie}=\\int_S[\\sigma]\\cdot\\hat{n}dS\\].\nVamos a las notas (derivación consevación de momento)"
   }
 ]

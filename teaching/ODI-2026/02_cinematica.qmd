@@ -153,7 +153,7 @@ Cambio en la masa dentro de la cubeta es igual a la masa de agua que sale de la 
 
 Vamos a las notas (derivación conservación de masa)
 
-#  Ecuación de conservación de masa
+##  Ecuación de conservación de masa{.smaller}
 
 $$\frac{D\rho}{Dt}+\rho\nabla\cdot\vec{u}=0$$
 
@@ -163,7 +163,7 @@ El cambio local en la masa dentro de un volumen de control se compensa con la di
 En un *fluido incompresible* $\rho$ es constante, por lo que $D\rho/ Dt=0$ y la ecuación de continuidad queda como:  $$\nabla\cdot\vec{u}=0.$$
 
 
-#  Ecuación de conservación de momento
+##  Ecuación de conservación de momento{.smaller}
 
 Expresión de la segunda ley de newton para un fluido $$F=d\vec{p}/dt\approx m\vec{a}.$$
 
@@ -186,7 +186,7 @@ $$\vec{F}_{superficie}=\int_S[\sigma]\cdot\hat{n}dS$$.
 
 Vamos a las notas (derivación consevación de momento)
 
-## Ecuación de conservación de momento
+## Ecuación de conservación de momento{.smaller}
 
 $$\rho\frac{D\vec{u}}{Dt}=\rho \vec{g} + \nabla\cdot[\sigma]$$
 
@@ -201,7 +201,7 @@ $$\sigma_{ii} = -p + \lambda \nabla \cdot \vec{v} + 2\mu\frac{\partial{u_i}}{\pa
 $$\sigma_{ij} = \mu\Big(\frac{\partial u_i}{\partial{x_j}}+\frac{\partial u_j}{\partial{x_i}}\Big)$$
 
 
-## **Relaciones constitutivas**
+## **Relaciones constitutivas**{.smaller}
 
 Los esfuerzos $[\sigma_{ij}]$ son una combinación de presión $p$ y fricción viscosa:
 
