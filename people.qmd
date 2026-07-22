@@ -1,5 +1,5 @@
 ---
-title: "Group"
+title: " "
 #image: files/group.jpeg
 page-layout: full
 listing:  #an example of listing external links
@@ -12,7 +12,7 @@ listing:  #an example of listing external links
   grid-item-align: left
   grid-columns: 3
   image-height: 200px
-  categories: true
+#  categories: true
 #  sort-ui: true
 #  filter-ui: true
   contents: 
@@ -20,6 +20,7 @@ listing:  #an example of listing external links
     - /people/phd-student.yml
     - /people/masters-student.yml
 #    - /people/undergraduate-student.yml
+
 
 - id: lab-alumni
   sort: "ended des"
@@ -46,19 +47,40 @@ listing:  #an example of listing external links
 
 page-navigation: false
 title-block-banner: false
-toc: false
+toc: true
 
 format:
   html:
     link-external-newwindow: true
 ---
 
+### Research group
 
 :::{#lab-member}
 :::
 
+### Prospective students
 
-## Alumni
+#### Interested in joining us?
+
+I welcome students interested in physical oceanography and geophysical fluid dynamics, particularly coastal circulation, waves, flow–topography interactions, and ocean transport. Projects may involve numerical modeling, oceanographic observations, satellite data, or combinations of these approaches.
+
+Students can join through [CICESE's MSc or PhD](https://posgrados.cicese.mx/oceanografiafisica) program in Physical Oceanography. Our program includes students from Mexico and around the world, although classes are taught in Spanish. Students admitted to the program may be eligible to apply for [SECIHTI graduate funding](https://secihti.mx/becas-nacionales/).
+
+Thinking about graduate school? Get in touch. I am always happy to discuss possible research questions, available projects, and what studying physical oceanography at CICESE is like.
+
+
+#### ¿Te interesa trabajar con nosotros?
+
+Escríbeme si te interesa la oceanografía física y dinámica de fluidos geofísicos, particularmente la circulación costera, ondas, interacción flujo–topografía y transporte oceánico. Posibles proyectos pueden involucrar modelación numérica, observaciones oceanográficas, datos satelitales o una combinación de estas herramientas.
+
+Es posible incorporarse a través de la [Maestría o el Doctorado en Oceanografía Física del CICESE](https://posgrados.cicese.mx/oceanografiafisica). En el programa participan estudiantes de México y de otros países; las clases se imparten en español. Les estudiantes admitides pueden ser candidates a solicitar una [beca de posgrado de SECIHTI](https://secihti.mx/becas-nacionales/).
+
+¿Estás pensando en hacer un posgrado? Escríbeme y podemos platicar sobre posibles preguntas de investigación, proyectos disponibles y cómo es estudiar Oceanografía Física en CICESE.
+
+
+
+### Alumni
 
 :::{#lab-alumni}
 :::

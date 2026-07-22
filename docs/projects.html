@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3e8f12d1b5c8d04d32925f9f9ead600c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-f07a380226b71dccd824dee245407231.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -147,7 +146,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -165,9 +164,11 @@ window.Quarto = {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Research – Karina Ramos Musalem">
+<meta property="og:description" content="Personal website of Karina Ramos Musalem based on Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 <meta property="og:image" content="https://anakarinarm.github.io/files/images/canyons_lab.jpg">
 <meta property="og:site_name" content="Karina Ramos Musalem">
 <meta name="twitter:title" content="Research – Karina Ramos Musalem">
+<meta name="twitter:description" content="Personal website of Karina Ramos Musalem based on Quarto Academic Website Template adapted by Dr.&nbsp;Gang He">
 <meta name="twitter:image" content="https://anakarinarm.github.io/files/images/canyons_lab.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -251,8 +252,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cross-shelf-exchange-induced-by-submarine-canyons" id="toc-cross-shelf-exchange-induced-by-submarine-canyons" class="nav-link active" data-scroll-target="#cross-shelf-exchange-induced-by-submarine-canyons">Cross shelf exchange induced by submarine canyons</a></li>
-  <li><a href="#the-shape-of-the-coastline" id="toc-the-shape-of-the-coastline" class="nav-link" data-scroll-target="#the-shape-of-the-coastline">The shape of the coastline</a></li>
+  <li><a href="#flowtopography-interactions-and-coastal-exchange" id="toc-flowtopography-interactions-and-coastal-exchange" class="nav-link active" data-scroll-target="#flowtopography-interactions-and-coastal-exchange">Flow–topography interactions and coastal exchange</a></li>
+  <li><a href="#internal-waves-and-coastal-trapped-waves" id="toc-internal-waves-and-coastal-trapped-waves" class="nav-link" data-scroll-target="#internal-waves-and-coastal-trapped-waves">Internal waves and coastal-trapped waves</a></li>
+  <li><a href="#sills-overflows-and-marginal-sea-exchange" id="toc-sills-overflows-and-marginal-sea-exchange" class="nav-link" data-scroll-target="#sills-overflows-and-marginal-sea-exchange">Sills, overflows, and marginal-sea exchange</a></li>
+  <li><a href="#broader-geophysical-fluid-dynamics" id="toc-broader-geophysical-fluid-dynamics" class="nav-link" data-scroll-target="#broader-geophysical-fluid-dynamics">Broader geophysical fluid dynamics</a></li>
   <li><a href="#funded-projects" id="toc-funded-projects" class="nav-link" data-scroll-target="#funded-projects">Funded projects</a></li>
   </ul>
 </nav>
@@ -279,39 +282,64 @@ window.Quarto = {
 </header>
 
 
-<section id="cross-shelf-exchange-induced-by-submarine-canyons" class="level3">
-<h3 class="anchored" data-anchor-id="cross-shelf-exchange-induced-by-submarine-canyons">Cross shelf exchange induced by submarine canyons</h3>
+<p>I am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean.</p>
+<p>My research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation.</p>
+<section id="flowtopography-interactions-and-coastal-exchange" class="level3">
+<h3 class="anchored" data-anchor-id="flowtopography-interactions-and-coastal-exchange">Flow–topography interactions and coastal exchange</h3>
 <div class="grid">
 <div class="g-col-12 g-col-md-4">
 <p><img src="files/images/canyons_lab.jpg" class="img-fluid"></p>
 </div>
 <div class="g-col-12 g-col-md-8">
-<p>My research focuses on understanding the role of submarine canyons in cross-shelf exchange and coastal circulation. Submarine canyons, which incise continental shelves worldwide, are biodiversity hotspots because they act as conduits for biologically relevant tracers such as nitrate and phosphate by enhancing upwelling. I investigate how canyons influence the amount and distribution of tracers and water exchanged between the shelf and the deep ocean on timescales ranging from days to a year, under the influence of processes such as coastal trapped waves, internal tides, winds, and alongshore currents. Using both idealized configurations and regional applications of the MIT general circulation model (MITgcm), I study how canyon geometry, geographic setting, and local mixing conditions control the transport of tracers and their spatial and temporal patterns on the shelf. Ultimately, my work aims to develop a scaling framework for predicting canyon-driven tracer exchange and its implications for shelf ecosystems and biogeochemistry.</p>
-<p><strong>Relevant publications:</strong></p>
-<ul>
-<li><p>Saldías, G. S., Ramos-Musalem, K., &amp; Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48, e2021GL093548. https://doi.org/10.1029/2021GL093548</p></li>
-<li><p>Ramos‐Musalem, K., &amp; Allen, S. E. (2020). The Impact of Initial Tracer Profile on the Exchange and On‐Shelf Distribution of Tracers Induced by a Submarine Canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. https://doi.org/10.1029/2019JC015785</p></li>
-<li><p>Ramos-Musalem, K., &amp; Allen, S. E. (2019). The Impact of Locally Enhanced Vertical Diffusivity on the Cross-Shelf Transport of Tracers Induced by a Submarine Canyon. Journal of Physical Oceanography, 49(2), 561-584. https://doi.org/10.1175/JPO-D-18-0174.1</p></li>
-<li><p><a href="https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0388506">PhD Thesis</a></p></li>
-<li><p>Esteban Cruz Isidro’s <a href="https://ru.dgb.unam.mx/items/0d253f28-fd2c-42f4-9139-ae7ef8c3d645">BSc Thesis</a> (in Spanish)</p></li>
-</ul>
+<p><em>How do submarine canyons and other topographic features modify coastal circulation and transport?</em></p>
+<p>Submarine canyons can strongly alter currents, vertical transport, mixing, and exchange between the continental shelf and the deep ocean. Our work investigates how these processes depend on stratification, tides, mixing, winds, background currents, and canyon geometry.</p>
+<p>A current focus is Punta Banda Canyon, at the entrance of Todos Santos Bay, Ensenada, Baja California. We use observations and numerical experiments to study tidal and residual exchange, internal tides, and the interaction between canyon geometry and the surrounding coastal circulation. Punta Banda serves as a natural laboratory for understanding processes that may occur in submarine canyons elsewhere.</p>
+<p>Keywords: submarine canyons, cross-shelf exchange, tidal rectification, mixing, tracer transport, MITgcm</p>
 </div>
 </div>
 </section>
-<section id="the-shape-of-the-coastline" class="level3">
-<h3 class="anchored" data-anchor-id="the-shape-of-the-coastline">The shape of the coastline</h3>
+<section id="internal-waves-and-coastal-trapped-waves" class="level3">
+<h3 class="anchored" data-anchor-id="internal-waves-and-coastal-trapped-waves">Internal waves and coastal-trapped waves</h3>
 <div class="grid">
 <div class="g-col-12 g-col-md-4">
 <p><img src="files/images/SVB.png" class="img-fluid"></p>
 </div>
 <div class="g-col-12 g-col-md-8">
-<p>What variability do we miss in our regional models if we do not include Sebastián Vizcaino Bay?</p>
-<p><strong>Relevant publications:</strong></p>
-<ul>
-<li>Ramos-Musalem, K., Gille, S. T., Cornuelle, B. D., &amp; Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. <em>Journal of Geophysical Research: Oceans</em>, e2022JC019547. DOI:<a href="https://doi.org/10.1029/2022JC019547">10.1029/2022JC019547</a>.</li>
-<li>Amelia thelanderson’s MSc. Thesis (2023)</li>
-<li>Esteban Cruz Isidro’s MSc Thesis (2025)</li>
-</ul>
+<p><em>How is wave energy generated, transmitted, and transformed in a coastal ocean with realistic topography?</em></p>
+<p>We study both internal waves and lower-frequency coastal-trapped waves, particularly how their propagation is modified by stratification and bathymetry.</p>
+<p>In Punta Banda Canyon, we are investigating internal-tide generation and propagation and how changes in stratification associated with seasonal upwelling and low-frequency motions modify internal-tide energy.</p>
+<p>Farther south, our work in Sebastián Vizcaíno Bay examines coastal-trapped waves generated by wind events and how shelf width, slope, and small-scale bathymetric roughness modify their propagation toward Southern California.</p>
+<p>We also use idealized models to investigate how wind-driven oscillations in semi-enclosed bays can transfer energy from surface motions into internal waves.</p>
+<p>Keywords: internal tides, internal waves, coastal-trapped waves, wave energetics, stratification, flow–topography interaction</p>
+</div>
+</div>
+</section>
+<section id="sills-overflows-and-marginal-sea-exchange" class="level3">
+<h3 class="anchored" data-anchor-id="sills-overflows-and-marginal-sea-exchange">Sills, overflows, and marginal-sea exchange</h3>
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
+<p><img src="files/images/overflow_amelia.png" class="img-fluid"></p>
+</div>
+<div class="g-col-12 g-col-md-8">
+<p><em>What controls the exchange of water between semi-enclosed basins and the open ocean?</em></p>
+<p>The narrow channels and sills of the northern Gulf of California provide an excellent setting for studying interactions among buoyancy forcing, tides, mixing, and topographically controlled flows.</p>
+<p>With Amelia Thelandersson and Manuel Lopez, we are using idealized numerical experiments to understand bottom-water renewal, overflows, upwelling, and exchange across the sills surrounding the Ballenas Channel, and how these processes contribute to the unusual hydrography of the northern Gulf.</p>
+<p>(<em>Image: Amelia Thelandersson</em>)</p>
+<p>Keywords: overflows, marginal seas, tidal pumping, water-mass exchange</p>
+</div>
+</div>
+</section>
+<section id="broader-geophysical-fluid-dynamics" class="level3">
+<h3 class="anchored" data-anchor-id="broader-geophysical-fluid-dynamics">Broader geophysical fluid dynamics</h3>
+<div class="grid">
+<div class="g-col-12 g-col-md-4">
+<p><img src="files/images/odm_modelo_eva.png" class="img-fluid"></p>
+</div>
+<div class="g-col-12 g-col-md-8">
+<p>Although most of my current research concerns the ocean, I am broadly interested in stratified geophysical flows interacting with topography.</p>
+<p>This has also included atmospheric mountain waves, particularly the response of the atmosphere to the complex topography surrounding the Valley of Mexico. A previous project explored this problem through numerical modeling and student projects.</p>
+<p>The oceanic and atmospheric problems share much of the same underlying physics: stratification, rotation, waves, topographic steering, and the transfer of momentum and energy across scales.</p>
+<p>(<em>Image: Eva Rojas</em>)</p>
 </div>
 </div>
 </section>
@@ -416,16 +444,6 @@ window.Quarto = {
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
 
 
 
@@ -483,14 +501,13 @@ https://quarto.org/docs/authoring/includes.html
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -52,7 +52,7 @@ about:
 
 :::{#hero-heading}
 
-I'm a physical oceanographer who studies how geophysical flows—including ocean currents and atmospheric circulation—interact with topography. Using numerical simulations, I investigate how seafloor features drive the cross-shelf exchange of water, nutrients, and dissolved gases between the deep ocean and continental shelves.
+I am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean. My research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation.
 
 I'm currently part of the [Department of Physical Oceanography](https://www.cicese.edu.mx/investigacion/oceanografia_fisica/1") at the [Center for Scientific Research and Higher Education of Ensenada, Baja California (CICESE)](https://www.cicese.edu.mx/).
 
