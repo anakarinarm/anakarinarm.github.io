@@ -1,0 +1,71 @@
+---
+title: "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible"
+subtitle: " "
+title-block-banner: false
+---
+
+### Descripción general
+Este curso estilo bootcamp de 3 sesiones (2 horas cada una) está pensado para estudiantes de nuevo ingreso al posgrado en Oceanografía Física, aunque está abierto a cualquier persona interesada en adquirir habilidades computacionales básicas para el trabajo científico.
+El objetivo principal es ayudarles a organizar su ambiente de trabajo y a familiarizarse con herramientas esenciales de programación, automatización y control de versiones. Estas habilidades son fundamentales para lograr una ciencia más reproducible, eficiente y colaborativa desde el inicio del posgrado.
+Este curso es introductorio, orientado a personas sin experiencia previa en programación. Se recomienda ampliamente tomar el curso “Computación en Ciencia” para profundizar en estas herramientas y conceptos.
+Todo el material está basado en las lecciones abiertas de [Software Carpentry Workshops](https://software-carpentry.org/lessons/)
+
+### Requisitos
+* Traer la laptop con la que van a trabajar (esto ya está establecido como requisito de ingreso al posgrado).
+* Haber completado las instrucciones de preparación que se enviarán previamente (instalación de software).
+
+
+Si tienes problemas con la instalación, envía un correo a: kramosmu@cicese.edu.mx antes del inicio del curso.
+
+
+### Contenido del curso
+
+Este curso está basado en los [Software Carpentry Workshops](https://software-carpentry.org/lessons/), adaptando contenido de sus clases oficiales para las necesidades específicas del posgrado en oceanografía física:
+
+1. Línea de comandos (basado en [The Unix Shell](https://swcarpentry.github.io/shell-novice-es/))
+    - Navegación por el sistema de archivos
+    - Automatización de tareas repetitivas
+    - Pipes y redirecciones
+    - Escritura de scripts simples para manejo de archivos
+
+2. Python con Jupyter Notebooks (basado en [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/))
+    - Variables, tipos de datos, listas y arreglos (NumPy)
+    - Estructuras de control: ciclos y condicionales
+    - Funciones y como reutilizar código
+    - Scripts de python
+    - Lectura de archivos en formato NetCDF.
+    - Visualización básica de datos (matplotlib)
+
+3. Git y GitHub (basado en [Version Control with Git](https://swcarpentry.github.io/git-novice/))
+    - ¿Qué es el control de versiones?
+    - Registrar cambios en tu código
+    - Navegar por el historial
+    - Trabajar con repositorios remotos en GitHub
+    
+
+### Calendario
+Tres sesiones de 2 a 2.5 horas (lunes 10:00 am-12:00 pm)
+
+Sep 14: Línea de comandos
+
+Sep 21: Introducción a Python
+
+Sep 28: Git y GitHub básico
+
+Oct 04: Si hay interés
+
+### Inscripción
+Para participar, envía un correo a kramosmu@cicese.edu.mx.
+Cupo limitado a 20 personas.
+
+
+## Día 1. Línea de comandos
+#### 14 de septiembre de 2026
+
+* Esta clase está basada en la lección ["La terminal de Unix"](https://swcarpentry.github.io/shell-novice-es/) de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.
+
+* Descarga el directorio data-shell de [esta liga](https://swcarpentry.github.io/shell-novice-es/) y expande el .zip en tu directorio Escritorio/ o Desktop/.
+
+* Puedes consultar las diapositivas de clase en [este enlace](SWC2025_DOF/slides_shell_novice_2026.qmd).
+
+

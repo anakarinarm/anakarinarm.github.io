@@ -2,3 +2,4 @@
 */.DS_Store
 docs/files/.DS_Store
 **/*.quarto_ipynb
+.DS_Store
