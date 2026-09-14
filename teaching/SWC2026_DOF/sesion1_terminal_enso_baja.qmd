@@ -480,6 +480,8 @@ Usando la terminal, responde:
 
 Comandos sugeridos:
 
+. . . 
+
 ```bash
 ls descargas/*.csv
 ls descargas/*.nc
@@ -696,6 +698,8 @@ inventario_datos.txt
 que contenga la lista de archivos dentro de `data/`.
 
 Pista:
+
+. . . 
 
 ```bash
 ls data > inventario_datos.txt

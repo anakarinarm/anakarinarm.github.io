@@ -452,7 +452,7 @@
     "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-3-primer-diagnóstico-de-datos",
     "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
     "section": "Reto 3 · Primer diagnóstico de datos",
-    "text": "Reto 3 · Primer diagnóstico de datos\nUsando la terminal, responde:\n\n¿Cuántos archivos .csv hay?\n¿Cuántos archivos .nc hay?\n¿Cuántas líneas tiene el archivo del ONI?\n¿Qué columnas parecen tener los archivos .csv?\n\nComandos sugeridos:\nls descargas/*.csv\nls descargas/*.nc\nwc -l descargas/oni_mensual.csv\nhead descargas/oni_mensual.csv"
+    "text": "Reto 3 · Primer diagnóstico de datos\nUsando la terminal, responde:\n\n¿Cuántos archivos .csv hay?\n¿Cuántos archivos .nc hay?\n¿Cuántas líneas tiene el archivo del ONI?\n¿Qué columnas parecen tener los archivos .csv?\n\nComandos sugeridos:\n\nls descargas/*.csv\nls descargas/*.nc\nwc -l descargas/oni_mensual.csv\nhead descargas/oni_mensual.csv"
   },
   {
     "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-organizar-un-proyecto",
@@ -550,7 +550,7 @@
     "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-5-inventario-rápido",
     "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
     "section": "Reto 5 · Inventario rápido",
-    "text": "Reto 5 · Inventario rápido\nCrea un archivo llamado:\ninventario_datos.txt\nque contenga la lista de archivos dentro de data/.\nPista:\nls data &gt; inventario_datos.txt\nLuego revísalo con:\ncat inventario_datos.txt"
+    "text": "Reto 5 · Inventario rápido\nCrea un archivo llamado:\ninventario_datos.txt\nque contenga la lista de archivos dentro de data/.\nPista:\n\nls data &gt; inventario_datos.txt\nLuego revísalo con:\ncat inventario_datos.txt"
   },
   {
     "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pero-en-mi-computadora-sí-funciona",
