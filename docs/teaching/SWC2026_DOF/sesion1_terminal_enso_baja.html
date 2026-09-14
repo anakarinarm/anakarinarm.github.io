@@ -741,23 +741,28 @@ Posgrado en Oceanografía Física · CICESE
 </ul>
 <p>Un ambiente permite agrupar esas dependencias.</p>
 </section>
+<section id="crear-el-ambiente" class="slide level2">
+<h2>Crear el ambiente</h2>
+<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se crea el ambiante a partir de la lista de paquetes en el archivo yaml</p>
+</section>
 <section id="activar-el-ambiente" class="slide level2">
 <h2>Activar el ambiente</h2>
-<p>Para el curso usaremos algo como:</p>
-<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb52-1"><a></a><span class="ex">conda</span> activate oceanografia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Para el curso usaremos:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a></a><span class="ex">conda</span> activate oceanografia</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Después podemos revisar:</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a></a><span class="ex">python</span> <span class="at">--version</span></span>
-<span id="cb53-2"><a></a><span class="fu">which</span> python</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En Windows puede ser:</p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a></a><span class="ex">where</span> python</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb54-1"><a></a><span class="ex">python</span> <span class="at">--version</span></span>
+<span id="cb54-2"><a></a><span class="fu">which</span> python</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En Windows es (creo):</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a></a><span class="ex">where</span> python</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="arrancar-jupyterlab-desde-el-proyecto" class="slide level2">
 <h2>Arrancar JupyterLab desde el proyecto</h2>
 <p>Primero asegúrate de estar en <code>enso_baja/</code>:</p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a></a><span class="bu">pwd</span></span>
-<span id="cb55-2"><a></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a></a><span class="bu">pwd</span></span>
+<span id="cb56-2"><a></a><span class="fu">ls</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Luego:</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a></a><span class="ex">jupyter</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb57-1"><a></a><span class="ex">jupyter</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Jupyter abrirá el proyecto desde ese directorio.</p>
 </section>
 <section id="crear-el-primer-notebook" class="slide level2">
@@ -770,19 +775,19 @@ Posgrado en Oceanografía Física · CICESE
 <li>escribe una celda Markdown con la pregunta del proyecto.</li>
 </ol>
 <p>Ejemplo:</p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb57-1"><a></a><span class="fu"># Exploración inicial ENSO–Baja</span></span>
-<span id="cb57-2"><a></a></span>
-<span id="cb57-3"><a></a>Pregunta: ¿cómo se relacionan ENSO, SST frente a Baja California y precipitación en Ensenada?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb58-1"><a></a><span class="fu"># Exploración inicial ENSO–Baja</span></span>
+<span id="cb58-2"><a></a></span>
+<span id="cb58-3"><a></a>Pregunta: ¿cómo se relacionan ENSO, SST frente a Baja California y precipitación en Ensenada?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="primer-código-en-el-notebook" class="slide level2">
 <h2>Primer código en el notebook</h2>
 <p>En una celda de Python:</p>
-<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb58-1"><a></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
-<span id="cb58-2"><a></a></span>
-<span id="cb58-3"><a></a>project <span class="op">=</span> Path(<span class="st">".."</span>)</span>
-<span id="cb58-4"><a></a>data_dir <span class="op">=</span> project <span class="op">/</span> <span class="st">"data"</span></span>
-<span id="cb58-5"><a></a></span>
-<span id="cb58-6"><a></a><span class="bu">list</span>(data_dir.iterdir())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb59-2"><a></a></span>
+<span id="cb59-3"><a></a>project <span class="op">=</span> Path(<span class="st">".."</span>)</span>
+<span id="cb59-4"><a></a>data_dir <span class="op">=</span> project <span class="op">/</span> <span class="st">"data"</span></span>
+<span id="cb59-5"><a></a></span>
+<span id="cb59-6"><a></a><span class="bu">list</span>(data_dir.iterdir())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>No importa si todavía no entiendes todos los detalles.</p>
 <p>La idea es conectar Jupyter con la estructura del proyecto.</p>
 </section></section>
@@ -806,17 +811,17 @@ Posgrado en Oceanografía Física · CICESE
 </section>
 <section id="el-proyecto-después-de-la-sesión-1" class="slide level2">
 <h2>El proyecto después de la sesión 1</h2>
-<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb59-1"><a></a>enso_baja/</span>
-<span id="cb59-2"><a></a>├── data/</span>
-<span id="cb59-3"><a></a>│   ├── sst_baja_mensual_1994_2024.nc</span>
-<span id="cb59-4"><a></a>│   ├── precipitacion_ensenada_mensual.csv</span>
-<span id="cb59-5"><a></a>│   └── oni_mensual.csv</span>
-<span id="cb59-6"><a></a>├── notebooks/</span>
-<span id="cb59-7"><a></a>│   └── exploracion_inicial.ipynb</span>
-<span id="cb59-8"><a></a>├── scripts/</span>
-<span id="cb59-9"><a></a>├── figures/</span>
-<span id="cb59-10"><a></a>├── README.md</span>
-<span id="cb59-11"><a></a>└── inventario_datos.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb60-1"><a></a>enso_baja/</span>
+<span id="cb60-2"><a></a>├── data/</span>
+<span id="cb60-3"><a></a>│   ├── sst_baja_mensual_1994_2024.nc</span>
+<span id="cb60-4"><a></a>│   ├── precipitacion_ensenada_mensual.csv</span>
+<span id="cb60-5"><a></a>│   └── oni_mensual.csv</span>
+<span id="cb60-6"><a></a>├── notebooks/</span>
+<span id="cb60-7"><a></a>│   └── exploracion_inicial.ipynb</span>
+<span id="cb60-8"><a></a>├── scripts/</span>
+<span id="cb60-9"><a></a>├── figures/</span>
+<span id="cb60-10"><a></a>├── README.md</span>
+<span id="cb60-11"><a></a>└── inventario_datos.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="pregunta-para-la-sesión-2" class="slide level2">
 <h2>Pregunta para la sesión 2</h2>
@@ -845,19 +850,19 @@ Posgrado en Oceanografía Física · CICESE
 </section>
 <section id="comandos-esenciales-de-hoy" class="slide level2">
 <h2>Comandos esenciales de hoy</h2>
-<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb60-1"><a></a><span class="bu">pwd</span></span>
-<span id="cb60-2"><a></a><span class="fu">ls</span></span>
-<span id="cb60-3"><a></a><span class="bu">cd</span></span>
-<span id="cb60-4"><a></a><span class="fu">mkdir</span></span>
-<span id="cb60-5"><a></a><span class="fu">touch</span></span>
-<span id="cb60-6"><a></a><span class="fu">cp</span></span>
-<span id="cb60-7"><a></a><span class="fu">mv</span></span>
-<span id="cb60-8"><a></a><span class="fu">rm</span></span>
-<span id="cb60-9"><a></a><span class="fu">head</span></span>
-<span id="cb60-10"><a></a><span class="fu">cat</span></span>
-<span id="cb60-11"><a></a><span class="fu">wc</span> <span class="at">-l</span></span>
-<span id="cb60-12"><a></a><span class="ex">conda</span> activate oceanografia</span>
-<span id="cb60-13"><a></a><span class="ex">jupyter</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb61-1"><a></a><span class="bu">pwd</span></span>
+<span id="cb61-2"><a></a><span class="fu">ls</span></span>
+<span id="cb61-3"><a></a><span class="bu">cd</span></span>
+<span id="cb61-4"><a></a><span class="fu">mkdir</span></span>
+<span id="cb61-5"><a></a><span class="fu">touch</span></span>
+<span id="cb61-6"><a></a><span class="fu">cp</span></span>
+<span id="cb61-7"><a></a><span class="fu">mv</span></span>
+<span id="cb61-8"><a></a><span class="fu">rm</span></span>
+<span id="cb61-9"><a></a><span class="fu">head</span></span>
+<span id="cb61-10"><a></a><span class="fu">cat</span></span>
+<span id="cb61-11"><a></a><span class="fu">wc</span> <span class="at">-l</span></span>
+<span id="cb61-12"><a></a><span class="ex">conda</span> activate oceanografia</span>
+<span id="cb61-13"><a></a><span class="ex">jupyter</span> lab</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section></section>

@@ -731,9 +731,17 @@ Un proyecto científico depende de software:
 
 Un ambiente permite agrupar esas dependencias.
 
+## Crear el ambiente
+
+```bash
+conda env create -f environment.yml
+````
+
+Se crea el ambiante a partir de la lista de paquetes en el archivo yaml
+
 ## Activar el ambiente
 
-Para el curso usaremos algo como:
+Para el curso usaremos:
 
 ```bash
 conda activate oceanografia
@@ -746,7 +754,7 @@ python --version
 which python
 ```
 
-En Windows puede ser:
+En Windows es (creo):
 
 ```bash
 where python

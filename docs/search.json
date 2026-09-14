@@ -567,11 +567,18 @@
     "text": "¿Por qué necesitamos un ambiente?\nUn proyecto científico depende de software:\n\nPython;\nxarray;\npandas;\nmatplotlib;\nnetCDF4;\nJupyterLab.\n\nUn ambiente permite agrupar esas dependencias."
   },
   {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-ambiente",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-ambiente",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Crear el ambiente",
+    "text": "Crear el ambiente\nconda env create -f environment.yml\nSe crea el ambiante a partir de la lista de paquetes en el archivo yaml"
+  },
+  {
     "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#activar-el-ambiente",
     "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#activar-el-ambiente",
     "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
     "section": "Activar el ambiente",
-    "text": "Activar el ambiente\nPara el curso usaremos algo como:\nconda activate oceanografia\nDespués podemos revisar:\npython --version\nwhich python\nEn Windows puede ser:\nwhere python"
+    "text": "Activar el ambiente\nPara el curso usaremos:\nconda activate oceanografia\nDespués podemos revisar:\npython --version\nwhich python\nEn Windows es (creo):\nwhere python"
   },
   {
     "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#arrancar-jupyterlab-desde-el-proyecto",
