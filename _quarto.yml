@@ -1,7 +1,9 @@
 project:
   type: website
   output-dir: docs
-
+  resources:
+    - teaching/SWC2026_DOF/files/materiales_sesion1.zip
+  
 # Meta
 description-meta: "Personal website of Karina Ramos Musalem"
 author-meta: "Karina Ramos Musalem"
