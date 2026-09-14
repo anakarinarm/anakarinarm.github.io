@@ -208,7 +208,7 @@ Esta sesión está basada parcialmente en la lección [La terminal de Unix](http
 ### Material
 
 - [Diapositivas de la sesión 1](SWC2026_DOF/sesion1_terminal_enso_baja.html)
-- Descarga y descomprime el siguiente archivo antes de comenzar: [📦 Descargar `materiales.zip`](files/materiales.zip)
+- Descarga y descomprime el siguiente archivo antes de comenzar: [📦 Descargar `materiales_sesion1.zip`](files/materiales_sesion1.zip)
 
 ---
 
