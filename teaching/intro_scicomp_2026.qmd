@@ -1,71 +1,244 @@
 ---
-title: "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible"
-subtitle: " "
+title: "Minicurso: Introducción a herramientas computacionales para Oceanografía Física"
+subtitle: "De datos oceanográficos a un proyecto reproducible"
 title-block-banner: false
 ---
 
 ### Descripción general
-Este curso estilo bootcamp de 3 sesiones (2 horas cada una) está pensado para estudiantes de nuevo ingreso al posgrado en Oceanografía Física, aunque está abierto a cualquier persona interesada en adquirir habilidades computacionales básicas para el trabajo científico.
-El objetivo principal es ayudarles a organizar su ambiente de trabajo y a familiarizarse con herramientas esenciales de programación, automatización y control de versiones. Estas habilidades son fundamentales para lograr una ciencia más reproducible, eficiente y colaborativa desde el inicio del posgrado.
-Este curso es introductorio, orientado a personas sin experiencia previa en programación. Se recomienda ampliamente tomar el curso “Computación en Ciencia” para profundizar en estas herramientas y conceptos.
-Todo el material está basado en las lecciones abiertas de [Software Carpentry Workshops](https://software-carpentry.org/lessons/)
+
+Este minicurso está pensado principalmente para estudiantes de nuevo ingreso al Posgrado en Oceanografía Física de CICESE, aunque está abierto a cualquier persona interesada en adquirir herramientas computacionales básicas para el trabajo científico.
+
+El curso está organizado alrededor de un pequeño proyecto oceanográfico que desarrollaremos a lo largo de las tres sesiones. Trabajaremos con datos de temperatura superficial del mar (SST) frente a Baja California, precipitación en Ensenada y el índice oceánico de El Niño (ONI) para explorar una pregunta general:
+
+> **¿Qué relación existe entre ENSO, la temperatura superficial del mar frente a Baja California y la precipitación en Ensenada?**
+
+La intención no es realizar un análisis climático completo, sino utilizar una pregunta científica sencilla para aprender un flujo de trabajo que puedan reutilizar durante el posgrado:
+
+**organizar archivos → trabajar desde la terminal → explorar datos con Python → producir figuras → documentar el análisis → llevar control de versiones con Git → compartir el proyecto en GitHub.**
+
+No se asume experiencia previa con la terminal, Git o GitHub. Se espera únicamente cierta familiaridad básica con Python; repasaremos lo necesario conforme aparezca en el proyecto.
+
+El material está inspirado en las lecciones abiertas de [Software Carpentry](https://software-carpentry.org/lessons/), adaptadas a las necesidades del Posgrado en Oceanografía Física.
+
+### Objetivos
+
+Al terminar el minicurso podrán:
+
+- navegar y trabajar con archivos desde la línea de comandos;
+- organizar un directorio de trabajo para un proyecto científico;
+- reconocer y utilizar rutas relativas y absolutas;
+- activar un ambiente de Python y ejecutar programas desde la terminal;
+- abrir y explorar archivos NetCDF con `xarray`;
+- leer series de tiempo almacenadas en archivos CSV;
+- realizar operaciones sencillas con datos oceanográficos y producir figuras;
+- distinguir entre exploración en un notebook y ejecución de un script;
+- registrar cambios con Git;
+- decidir qué archivos conviene (y cuáles no conviene) incluir en un repositorio;
+- respaldar y compartir un proyecto mediante GitHub.
 
 ### Requisitos
-* Traer la laptop con la que van a trabajar (esto ya está establecido como requisito de ingreso al posgrado).
-* Haber completado las instrucciones de preparación que se enviarán previamente (instalación de software).
 
+- Traer la laptop con la que trabajarán durante el posgrado.
+- Completar las instrucciones de preparación e instalación antes de la primera sesión.
+- Tener instalada una terminal, Git y el ambiente de Python indicado para el curso.
+- Crear una cuenta gratuita de GitHub antes de la sesión 3.
 
-Si tienes problemas con la instalación, envía un correo a: kramosmu@cicese.edu.mx antes del inicio del curso.
+Si tienes problemas con la instalación, escribe a **kramosmu@cicese.edu.mx** antes del inicio del curso.
 
+---
 
-### Contenido del curso
+## El proyecto del curso
 
-Este curso está basado en los [Software Carpentry Workshops](https://software-carpentry.org/lessons/), adaptando contenido de sus clases oficiales para las necesidades específicas del posgrado en oceanografía física:
+Trabajaremos con tres tipos de datos:
 
-1. Línea de comandos (basado en [The Unix Shell](https://swcarpentry.github.io/shell-novice-es/))
-    - Navegación por el sistema de archivos
-    - Automatización de tareas repetitivas
-    - Pipes y redirecciones
-    - Escritura de scripts simples para manejo de archivos
+- **SST de Baja California:** promedios mensuales en formato NetCDF.
+- **Precipitación en Ensenada:** serie de tiempo en formato CSV.
+- **ONI:** índice de ENSO en formato CSV.
 
-2. Python con Jupyter Notebooks (basado en [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/))
-    - Variables, tipos de datos, listas y arreglos (NumPy)
-    - Estructuras de control: ciclos y condicionales
-    - Funciones y como reutilizar código
-    - Scripts de python
-    - Lectura de archivos en formato NetCDF.
-    - Visualización básica de datos (matplotlib)
+Al terminar, cada participante tendrá un repositorio organizado aproximadamente de esta forma:
 
-3. Git y GitHub (basado en [Version Control with Git](https://swcarpentry.github.io/git-novice/))
-    - ¿Qué es el control de versiones?
-    - Registrar cambios en tu código
-    - Navegar por el historial
-    - Trabajar con repositorios remotos en GitHub
-    
+```text
+enso-baja-project/
+├── data/
+├── notebooks/
+│   └── analysis.ipynb
+├── scripts/
+├── figures/
+├── README.md
+├── .gitignore
+└── environment.yml
+```
 
-### Calendario
-Tres sesiones de 2 a 2.5 horas (lunes 10:00 am-12:00 pm)
+---
 
-Sep 14: Línea de comandos
+## Contenido del curso
 
-Sep 21: Introducción a Python
+### 1. De archivos a un proyecto: línea de comandos
 
-Sep 28: Git y GitHub básico
+Basado en [The Unix Shell](https://swcarpentry.github.io/shell-novice-es/).
 
-Oct 04: Si hay interés
+- ¿Qué es la terminal y para qué sirve en computación científica?
+- Navegación por el sistema de archivos: `pwd`, `ls`, `cd`.
+- Rutas relativas y absolutas.
+- Creación y organización de directorios y archivos.
+- Copiar, mover y eliminar archivos.
+- Comodines para trabajar con grupos de archivos.
+- Inspección de archivos de texto con `cat`, `head` y `wc`.
+- Introducción a redirecciones y pipes.
+- Activar un ambiente de Python.
+- Ejecutar JupyterLab y programas de Python desde la terminal.
 
-### Inscripción
-Para participar, envía un correo a kramosmu@cicese.edu.mx.
+El objetivo de esta sesión es que cada participante construya y entienda la estructura de su propio proyecto.
+
+### 2. De datos a una pregunta: Python, xarray y series de tiempo
+
+Inspirado en [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/) y adaptado al análisis de datos oceanográficos.
+
+No será una introducción exhaustiva al lenguaje Python. Repasaremos únicamente los elementos necesarios para trabajar con los datos del proyecto.
+
+- Uso básico de JupyterLab.
+- Importar paquetes y leer mensajes de error.
+- Arreglos y operaciones básicas con NumPy.
+- Abrir archivos NetCDF con `xarray`.
+- `Dataset`, `DataArray`, dimensiones, coordenadas y atributos.
+- Seleccionar y reducir datos.
+- Calcular una serie regional de SST.
+- Introducción a climatologías y anomalías.
+- Leer archivos CSV con pandas.
+- Explorar las series de ONI y precipitación.
+- Visualización básica con `xarray` y matplotlib.
+- Guardar una figura.
+- Notebook vs. script.
+
+Al final de esta sesión tendremos varias piezas del análisis y empezaremos a pensar qué relaciones vale la pena explorar en el proyecto final.
+
+### 3. De análisis a proyecto reproducible: Git y GitHub
+
+Basado en [Version Control with Git](https://swcarpentry.github.io/git-novice/).
+
+- ¿Qué problema resuelve el control de versiones?
+- Diferencia entre Git y GitHub.
+- Crear un repositorio con `git init`.
+- Revisar el estado del proyecto con `git status`.
+- Inspeccionar cambios con `git diff`.
+- Preparar cambios con `git add`.
+- Crear commits con mensajes informativos.
+- Consultar el historial.
+- Recuperar cambios sencillos.
+- Usar `.gitignore`.
+- ¿Qué archivos científicos deben entrar a Git y cuáles no?
+- Crear un repositorio remoto.
+- `push` y `pull`.
+
+La sesión terminará con el inicio del **proyecto final**.
+
+---
+
+## Proyecto final
+
+Como trabajo posterior a la sesión 3, cada participante o pareja preparará un notebook que combine los datos disponibles para investigar una pregunta propia.
+
+Algunas posibilidades son:
+
+- ¿Cómo cambia la SST frente a Baja California durante eventos El Niño y La Niña?
+- ¿Cómo se comporta la precipitación en Ensenada durante distintas fases de ENSO?
+- ¿Existe una relación aparente entre ONI y anomalías regionales de SST?
+- ¿Todos los eventos El Niño muestran una respuesta regional similar?
+- ¿Qué ocurre si se introduce un desfase entre dos de las series?
+
+El notebook final deberá incluir:
+
+1. una pregunta clara;
+2. una breve descripción de los datos utilizados;
+3. el análisis;
+4. una o dos figuras;
+5. una interpretación breve de los resultados.
+
+---
+
+## Sesión 4 opcional: resultados, problemas y discusión
+
+Si existe interés, tendremos una cuarta sesión para revisar los proyectos.
+
+La sesión se dedicará a:
+
+- resolver algunos de los problemas más comunes encontrados durante el análisis;
+- revisar dificultades con fechas, dimensiones, datos faltantes, figuras o Git;
+- presentar brevemente los proyectos;
+- discutir qué conclusiones están sustentadas por los datos y cuáles requerirían un análisis más cuidadoso;
+- identificar posibles extensiones: estacionalidad, tendencias, autocorrelación, desfases, significancia estadística y causalidad.
+
+La intención es cerrar el curso mostrando cómo un flujo de trabajo computacional sencillo puede convertirse en el punto de partida de una investigación científica.
+
+---
+
+## Calendario
+
+Tres sesiones de aproximadamente 2 horas, los lunes de **10:00 a 12:00**.
+
+| Fecha | Sesión |
+|---|---|
+| **14 septiembre 2026** | De archivos a un proyecto: línea de comandos |
+| **21 septiembre 2026** | De datos a una pregunta: Python, xarray y series de tiempo |
+| **28 septiembre 2026** | De análisis a proyecto reproducible: Git y GitHub |
+| **5 octubre 2026** | Sesión opcional: proyectos, problemas y discusión |
+
+---
+
+## Inscripción
+
+Para participar, envía un correo a **kramosmu@cicese.edu.mx**.
+
 Cupo limitado a 20 personas.
 
+---
 
-## Día 1. Línea de comandos
+# Día 1. De archivos a un proyecto
 #### 14 de septiembre de 2026
 
-* Esta clase está basada en la lección ["La terminal de Unix"](https://swcarpentry.github.io/shell-novice-es/) de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.
+Esta sesión está basada parcialmente en la lección [La terminal de Unix](https://swcarpentry.github.io/shell-novice-es/) de Software Carpentry. El material original es una excelente referencia para repasar y profundizar después de la clase.
 
-* Descarga el directorio data-shell de [esta liga](https://swcarpentry.github.io/shell-novice-es/) y expande el .zip en tu directorio Escritorio/ o Desktop/.
+### Antes de comenzar
 
-* Puedes consultar las diapositivas de clase en [este enlace](SWC2025_DOF/slides_shell_novice_2026.qmd).
+1. Descarga el archivo de materiales del curso.
+2. Expande el archivo `.zip` en un lugar que puedas localizar fácilmente, por ejemplo `Desktop/` o `Escritorio/`.
+3. No reorganices los archivos todavía: esa será una de las primeras actividades de la sesión.
+4. Verifica que puedes activar el ambiente del curso.
 
+### Material
 
+- [Diapositivas de la sesión 1](SWC2026_DOF/sesion1_terminal_enso_baja.html)
+- Descarga y descomprime el siguiente archivo antes de comenzar: [📦 Descargar `materiales.zip`](files/materiales.zip)
+
+---
+
+# Día 2. De datos a una pregunta
+#### 21 de septiembre de 2026
+
+Trabajaremos sobre el mismo proyecto creado en la sesión 1.
+
+Usaremos Python, JupyterLab, xarray y pandas para explorar SST, ONI y precipitación, y construiremos algunas de las piezas que después podrán integrarse en el proyecto final.
+
+### Material
+
+- [Diapositivas de la sesión 2]()
+
+---
+
+# Día 3. De análisis a proyecto reproducible
+#### 28 de septiembre de 2026
+
+Usaremos Git sobre el proyecto que ya hemos desarrollado durante las sesiones anteriores. Aprenderemos a registrar cambios, ignorar archivos que no deben versionarse y respaldar el proyecto en GitHub.
+
+Al final de la sesión se planteará formalmente el proyecto final.
+
+### Material
+
+- 
+
+---
+
+# Día 4. Proyectos, problemas y discusión
+#### 5 de octubre de 2026 — opcional
+
+Si hay interés, utilizaremos esta sesión para revisar los retos encontrados, comparar estrategias de análisis y presentar brevemente los proyectos desarrollados.

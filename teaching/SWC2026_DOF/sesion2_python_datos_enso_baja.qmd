@@ -1,0 +1,611 @@
+---
+title: "Sesión 2 · De datos a una primera figura"
+subtitle: "Python, xarray, pandas y el proyecto ENSO–Baja"
+author: "Posgrado en Oceanografía Física · CICESE"
+date: "Septiembre 2026"
+format:
+  revealjs:
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    code-copy: true
+    code-overflow: wrap
+    footer: "Introducción a programación científica · DOF · Sesión 2"
+    theme: simple
+    transition: slide
+execute:
+  echo: true
+  eval: false
+---
+
+# Dónde vamos
+
+## Recordatorio de la historia
+
+Marina recibió tres tipos de datos:
+
+- SST mensual frente a Baja California en NetCDF;
+- precipitación mensual en Ensenada en CSV;
+- índice ONI en CSV.
+
+Hoy quiere pasar de:
+
+```text
+archivos en data/
+      ↓
+leer datos con Python
+      ↓
+entender dimensiones y fechas
+      ↓
+hacer una primera figura
+```
+
+## Pregunta guía
+
+> **¿Cómo han variado la SST frente a Baja California, la precipitación en Ensenada y ENSO durante los últimos 30 años?**
+
+Hoy no buscamos una respuesta final.
+
+Buscamos dejar listo un flujo de trabajo para explorar la pregunta.
+
+## Al final de hoy
+
+Queremos tener:
+
+```text
+enso_baja/
+├── data/
+├── notebooks/
+│   └── 01_explora_datos.ipynb
+├── scripts/
+│   └── plot_sst_timeseries.py
+├── figures/
+│   └── sst_baja_promedio.png
+├── README.md
+└── environment.yml
+```
+
+::: {.notes}
+Este archivo asume que los datos dummy ya existen en data/. Los nombres finales pueden cambiar.
+:::
+
+# Abrir el proyecto
+
+## Empezamos desde la terminal
+
+Entramos al proyecto:
+
+```bash
+cd enso_baja
+pwd
+ls -F
+```
+
+Activamos el ambiente:
+
+```bash
+conda activate oceanografia
+```
+
+Abrimos JupyterLab:
+
+```bash
+jupyter lab
+```
+
+## Antes de programar: inspeccionar
+
+Desde la terminal:
+
+```bash
+ls data
+ls data/*.csv
+ls data/*.nc
+head data/oni_mensual.csv
+head data/precipitacion_ensenada_mensual.csv
+```
+
+**Pregunta:**
+
+¿Qué tipo de archivo parece cada uno?
+
+¿Podemos leerlos todos de la misma forma?
+
+## NetCDF vs CSV
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**NetCDF**
+
+Bueno para datos científicos multidimensionales:
+
+```text
+sst(time, lat, lon)
+```
+
+Lo leeremos con `xarray`.
+
+:::
+
+::: {.column width="50%"}
+
+**CSV**
+
+Bueno para tablas:
+
+```text
+fecha, valor
+```
+
+Lo leeremos con `pandas`.
+
+:::
+
+::::
+
+# Primer notebook
+
+## Crear notebook
+
+En `notebooks/`, crea:
+
+```text
+01_explora_datos.ipynb
+```
+
+Primera celda:
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import xarray as xr
+```
+
+## Regla práctica
+
+Un notebook científico debe combinar:
+
+- código;
+- texto;
+- figuras;
+- interpretación.
+
+No queremos sólo una lista de celdas ejecutadas.
+
+Queremos que alguien pueda seguir la historia.
+
+# Leer SST con xarray
+
+## Abrir el NetCDF
+
+```python
+ds = xr.open_dataset("../data/sst_baja_mensual_1994_2024.nc")
+ds
+```
+
+En los datos dummy el nombre puede ser:
+
+```python
+ds = xr.open_dataset("../data/sst_baja_dummy.nc")
+```
+
+::: {.notes}
+Antes de la clase, ajustar el nombre del archivo en los materiales finales.
+:::
+
+## ¿Qué estamos viendo?
+
+Al abrir `ds`, buscar:
+
+- dimensiones;
+- coordenadas;
+- variables;
+- unidades;
+- rango temporal.
+
+Preguntas:
+
+```python
+ds.dims
+```
+
+```python
+ds.coords
+```
+
+```python
+ds.data_vars
+```
+
+## Dataset y DataArray
+
+En xarray:
+
+```text
+Dataset
+  ├── coordenadas
+  ├── atributos
+  └── variables
+        ↓
+      DataArray
+```
+
+Una variable típica sería:
+
+```python
+sst = ds["sst"]
+sst
+```
+
+## Reto 1 · Explorar la SST
+
+En parejas:
+
+1. ¿Cuáles son las dimensiones de `sst`?
+2. ¿Cuántos tiempos hay?
+3. ¿Qué unidades tiene la variable?
+4. ¿Cuál es el primer y último tiempo?
+
+Pistas:
+
+```python
+sst.dims
+sst.shape
+sst.attrs
+sst.time.min(), sst.time.max()
+```
+
+## Una primera figura espacial
+
+```python
+sst.isel(time=0).plot()
+plt.title("SST · primer mes disponible")
+```
+
+Pregunta:
+
+> ¿Qué estamos viendo: un valor absoluto o una anomalía?
+
+## Seleccionar un tiempo
+
+Podemos seleccionar por posición:
+
+```python
+sst.isel(time=0)
+```
+
+O por coordenada:
+
+```python
+sst.sel(time="2000-01")
+```
+
+Si la fecha exacta no existe:
+
+```python
+sst.sel(time="2000-01", method="nearest")
+```
+
+# Una serie de tiempo regional
+
+## Promedio espacial
+
+Para obtener una serie mensual promedio frente a Baja California:
+
+```python
+sst_bc = sst.mean(dim=("lat", "lon"))
+sst_bc
+```
+
+Graficamos:
+
+```python
+sst_bc.plot()
+plt.title("SST promedio frente a Baja California")
+plt.ylabel("SST")
+```
+
+## ¿Qué domina la serie?
+
+Miren la figura.
+
+Pregunta:
+
+> ¿Qué variabilidad salta primero a la vista?
+
+Normalmente veremos un ciclo estacional fuerte.
+
+Eso puede ocultar variabilidad interanual.
+
+## Climatología mensual
+
+Calculamos el promedio para cada mes del año:
+
+```python
+clim = sst_bc.groupby("time.month").mean("time")
+clim
+```
+
+Graficamos:
+
+```python
+clim.plot(marker="o")
+plt.title("Climatología mensual de SST")
+plt.xlabel("Mes")
+plt.ylabel("SST")
+```
+
+## Anomalía mensual
+
+Restamos la climatología de cada mes:
+
+```python
+ssta_bc = sst_bc.groupby("time.month") - clim
+ssta_bc
+```
+
+Graficamos:
+
+```python
+ssta_bc.plot()
+plt.axhline(0, color="k", linewidth=0.8)
+plt.title("Anomalía de SST frente a Baja California")
+plt.ylabel("SSTA")
+```
+
+## Pausa conceptual
+
+```text
+SST absoluta
+   = temperatura observada
+
+SSTA
+   = temperatura observada - ciclo estacional típico
+```
+
+La anomalía nos ayuda a comparar enero con enero, julio con julio, etc.
+
+## Reto 2 · Tu primera figura guardada
+
+Haz una figura de la anomalía de SST y guárdala en `figures/`.
+
+```python
+fig, ax = plt.subplots()
+ssta_bc.plot(ax=ax)
+ax.axhline(0, color="k", linewidth=0.8)
+ax.set_title("Anomalía de SST frente a Baja California")
+ax.set_ylabel("SSTA")
+fig.savefig("../figures/ssta_baja_timeseries.png", dpi=150, bbox_inches="tight")
+```
+
+Verifica desde la terminal:
+
+```bash
+ls figures
+```
+
+# Leer ONI con pandas
+
+## Abrir el CSV
+
+```python
+oni = pd.read_csv("../data/oni_mensual.csv")
+oni.head()
+```
+
+Preguntas:
+
+- ¿Qué columnas tiene?
+- ¿Cómo está escrita la fecha?
+- ¿Cómo se llama la columna del índice?
+
+## Fechas
+
+Idealmente queremos una columna de tiempo entendida como fecha:
+
+```python
+oni = pd.read_csv("../data/oni_mensual.csv", parse_dates=["time"])
+oni = oni.set_index("time")
+oni.head()
+```
+
+Si la columna se llama distinto, hay que adaptar el código.
+
+## Graficar ONI
+
+```python
+oni["oni"].plot()
+plt.axhline(0, color="k", linewidth=0.8)
+plt.title("Índice ONI")
+plt.ylabel("ONI")
+```
+
+Pregunta:
+
+> ¿Cuándo aparecen eventos positivos y negativos?
+
+## Reto 3 · Identificar años cálidos/fríos
+
+Usando la gráfica de ONI:
+
+1. identifica un periodo con ONI positivo;
+2. identifica un periodo con ONI negativo;
+3. pregunta si la SSTA regional responde igual.
+
+No necesitamos responder todavía.
+
+Sólo estamos formulando una pregunta.
+
+# Leer precipitación
+
+## Abrir precipitación
+
+```python
+rain = pd.read_csv("../data/precipitacion_ensenada_mensual.csv", parse_dates=["time"])
+rain = rain.set_index("time")
+rain.head()
+```
+
+Preguntas:
+
+- ¿qué unidades tiene la precipitación?
+- ¿hay meses sin datos?
+- ¿la precipitación se comporta como la SST?
+
+## Graficar precipitación
+
+```python
+rain["precip_mm"].plot()
+plt.title("Precipitación mensual en Ensenada")
+plt.ylabel("Precipitación [mm]")
+```
+
+Pregunta:
+
+> ¿Conviene comparar precipitación mensual directamente con ONI mensual?
+
+## Agregación estacional
+
+Para precipitación quizá nos interesen acumulados invernales.
+
+Ejemplo simple:
+
+```python
+rain_winter = rain["precip_mm"].resample("YE").sum()
+rain_winter.plot(marker="o")
+plt.title("Precipitación anual acumulada")
+plt.ylabel("Precipitación [mm]")
+```
+
+::: {.notes}
+Para el curso corto, no entrar aún a definición rigurosa de invierno hidrológico. Mostrarlo como una decisión científica que se puede refinar.
+:::
+
+# Juntar ideas
+
+## Tres series, tres comportamientos
+
+Hasta ahora tenemos:
+
+```text
+SST regional
+SSTA regional
+ONI
+precipitación local
+```
+
+Cada una responde a una pregunta distinta.
+
+El proyecto final consistirá en decidir:
+
+> ¿qué comparación vale la pena mostrar?
+
+## Una comparación guiada
+
+Ejemplo: SSTA regional y ONI.
+
+```python
+fig, ax = plt.subplots()
+ssta_bc.plot(ax=ax, label="SSTA Baja California")
+ax.set_title("SSTA regional")
+ax.set_ylabel("SSTA")
+ax.legend()
+```
+
+Para comparar con ONI puede ser necesario alinear fechas y unidades.
+
+## Precaución científica
+
+Dos series que se parecen no prueban causalidad.
+
+Preguntas importantes:
+
+- ¿hay desfase?
+- ¿la relación cambia entre eventos?
+- ¿la precipitación responde de manera más ruidosa?
+- ¿qué otros procesos regionales podrían intervenir?
+
+# Notebook a script
+
+## ¿Por qué hacer un script?
+
+El notebook sirve muy bien para explorar.
+
+Un script sirve para repetir una tarea.
+
+Por ejemplo:
+
+```text
+scripts/plot_sst_timeseries.py
+```
+
+## Script mínimo
+
+```python
+import matplotlib.pyplot as plt
+import xarray as xr
+
+# Leer datos
+ds = xr.open_dataset("data/sst_baja_mensual_1994_2024.nc")
+sst = ds["sst"]
+
+# Calcular anomalía regional
+sst_bc = sst.mean(dim=("lat", "lon"))
+clim = sst_bc.groupby("time.month").mean("time")
+ssta_bc = sst_bc.groupby("time.month") - clim
+
+# Figura
+fig, ax = plt.subplots()
+ssta_bc.plot(ax=ax)
+ax.axhline(0, color="k", linewidth=0.8)
+ax.set_title("Anomalía de SST frente a Baja California")
+ax.set_ylabel("SSTA")
+fig.savefig("figures/ssta_baja_timeseries.png", dpi=150, bbox_inches="tight")
+```
+
+## Ejecutar desde terminal
+
+Desde el directorio principal del proyecto:
+
+```bash
+python scripts/plot_sst_timeseries.py
+```
+
+Verificar:
+
+```bash
+ls figures
+```
+
+# Cierre
+
+## ¿Qué cambió hoy en el proyecto?
+
+```text
+notebooks/01_explora_datos.ipynb
+scripts/plot_sst_timeseries.py
+figures/ssta_baja_timeseries.png
+```
+
+También empezamos a entender:
+
+- qué contiene cada archivo;
+- qué variables podemos comparar;
+- qué decisiones científicas quedan abiertas.
+
+## Gancho para la sesión 3
+
+Marina ya tiene código, figuras y decisiones.
+
+Pero mañana puede cambiar algo y arrepentirse.
+
+Pregunta final:
+
+> **¿Cómo guardamos la historia del proyecto sin llenar la carpeta de versiones finales?**
+
+Mañana: Git y GitHub.
+

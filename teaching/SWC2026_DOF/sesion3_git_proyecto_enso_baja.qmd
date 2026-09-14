@@ -1,0 +1,586 @@
+---
+title: "Sesión 3 · Guardar la historia del proyecto"
+subtitle: "Git, GitHub y proyecto final ENSO–Baja"
+author: "Posgrado en Oceanografía Física · CICESE"
+date: "Septiembre 2026"
+format:
+  revealjs:
+    slide-number: true
+    chalkboard:
+      buttons: false
+    preview-links: auto
+    code-copy: true
+    code-overflow: wrap
+    footer: "Introducción a programación científica · DOF · Sesión 3"
+    theme: simple
+    transition: slide
+execute:
+  echo: true
+  eval: false
+---
+
+# Dónde vamos
+
+## Recordatorio de la historia
+
+Marina ya tiene:
+
+```text
+enso_baja/
+├── data/
+├── notebooks/
+│   └── 01_explora_datos.ipynb
+├── scripts/
+│   └── plot_sst_timeseries.py
+├── figures/
+│   └── ssta_baja_timeseries.png
+├── README.md
+└── environment.yml
+```
+
+Hoy quiere evitar esto:
+
+```text
+analisis.ipynb
+analisis_final.ipynb
+analisis_final_ahora_si.ipynb
+analisis_final_corregido_2.ipynb
+```
+
+## Pregunta guía
+
+> **¿Cómo guardamos la historia de un análisis sin duplicar archivos ni perder versiones?**
+
+Hoy usaremos Git para:
+
+- registrar cambios;
+- recuperar versiones;
+- ignorar archivos que no deben subirse;
+- respaldar el proyecto en GitHub;
+- preparar el proyecto final.
+
+## Git no es GitHub
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Git**
+
+Sistema de control de versiones.
+
+Vive en tu computadora.
+
+Registra la historia del proyecto.
+
+:::
+
+::: {.column width="50%"}
+
+**GitHub**
+
+Plataforma en línea.
+
+Hospeda repositorios.
+
+Facilita respaldo y colaboración.
+
+:::
+
+::::
+
+# Configurar Git
+
+## Una sola vez por computadora
+
+```bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu_correo@ejemplo.edu"
+git config --global init.defaultBranch main
+```
+
+Revisar:
+
+```bash
+git config --list --global
+```
+
+::: {.notes}
+No dedicar demasiado tiempo a configuración. Si algo falla, resolver caso por caso.
+:::
+
+## El ciclo básico
+
+```text
+working directory
+      ↓ git add
+staging area
+      ↓ git commit
+repository
+      ↓ git push
+GitHub
+```
+
+Hoy repetiremos este ciclo varias veces.
+
+No basta con hacer un solo commit al final.
+
+# Crear el repositorio
+
+## Entrar al proyecto
+
+Desde la terminal:
+
+```bash
+cd enso_baja
+pwd
+ls -F
+```
+
+Inicializar Git:
+
+```bash
+git init
+```
+
+Revisar:
+
+```bash
+git status
+```
+
+## ¿Qué ve Git?
+
+`git status` nos dice:
+
+- si estamos en un repositorio;
+- qué archivos cambiaron;
+- qué archivos todavía no están registrados;
+- qué archivos están listos para commit.
+
+Regla de oro:
+
+```bash
+git status
+```
+
+antes y después de cada paso.
+
+## Primer commit: estructura del proyecto
+
+Agregar archivos pequeños y esenciales:
+
+```bash
+git add README.md environment.yml
+```
+
+Revisar:
+
+```bash
+git status
+```
+
+Guardar:
+
+```bash
+git commit -m "Create ENSO Baja project structure"
+```
+
+## Reto 1 · ¿Qué pasó?
+
+Ejecuta:
+
+```bash
+git status
+git log --oneline
+```
+
+Responde:
+
+1. ¿hay cambios pendientes?
+2. ¿cuántos commits hay?
+3. ¿qué mensaje tiene el commit?
+
+# Agregar análisis
+
+## Segundo commit: notebook y script
+
+Agregar el análisis exploratorio:
+
+```bash
+git add notebooks/01_explora_datos.ipynb
+```
+
+Agregar el script:
+
+```bash
+git add scripts/plot_sst_timeseries.py
+```
+
+Guardar:
+
+```bash
+git commit -m "Add initial SST analysis"
+```
+
+## Ver la historia
+
+```bash
+git log --oneline
+```
+
+Ahora el proyecto tiene memoria.
+
+Cada commit debe representar una unidad de trabajo con sentido.
+
+## Cambiar algo
+
+Edita el título de la figura en:
+
+```text
+scripts/plot_sst_timeseries.py
+```
+
+Por ejemplo cambia:
+
+```python
+ax.set_title("Anomalía de SST frente a Baja California")
+```
+
+por algo más específico.
+
+## Ver diferencias
+
+```bash
+git status
+git diff
+```
+
+`git diff` muestra qué cambió línea por línea.
+
+Esto es una de las razones principales para usar archivos de texto como scripts.
+
+## Tercer commit
+
+Si el cambio nos gusta:
+
+```bash
+git add scripts/plot_sst_timeseries.py
+git commit -m "Improve SST anomaly figure title"
+```
+
+Revisar:
+
+```bash
+git log --oneline
+```
+
+## Reto 2 · Commit pequeño
+
+Haz un cambio pequeño en el README:
+
+- agrega una frase sobre la pregunta científica del proyecto;
+- revisa `git diff`;
+- haz commit.
+
+Mensaje sugerido:
+
+```bash
+git commit -m "Describe project question in README"
+```
+
+# No todo va a Git
+
+## El problema
+
+Si hacemos:
+
+```bash
+git add .
+```
+
+podríamos intentar agregar:
+
+```text
+data/
+figures/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+```
+
+Pero no todo debe estar en Git.
+
+## ¿Qué sí y qué no?
+
+| Archivo | ¿Git? | Razón |
+|---|---:|---|
+| `README.md` | sí | explica el proyecto |
+| `environment.yml` | sí | permite recrear el ambiente |
+| scripts `.py` | sí | reproducen el análisis |
+| notebooks `.ipynb` | sí | documentan exploración |
+| datos grandes `.nc` | no | pesan mucho; pueden tener restricciones |
+| figuras regenerables | depende | si se generan con código, no siempre hace falta |
+| tokens/contraseñas | jamás | riesgo de seguridad |
+
+## Crear `.gitignore`
+
+Crear un archivo llamado:
+
+```text
+.gitignore
+```
+
+con:
+
+```text
+data/
+figures/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+```
+
+Agregarlo:
+
+```bash
+git add .gitignore
+git commit -m "Ignore data and generated files"
+```
+
+## Reto 3 · Verificar `.gitignore`
+
+Ejecuta:
+
+```bash
+git status
+```
+
+Pregunta:
+
+> ¿Aparecen los archivos de `data/` como pendientes?
+
+Si aparecen, algo está mal en `.gitignore` o ya habían sido agregados antes.
+
+# Deshacer con cuidado
+
+## Antes de commit
+
+Si modificaste un archivo y quieres descartar el cambio:
+
+```bash
+git restore archivo
+```
+
+Ejemplo:
+
+```bash
+git restore README.md
+```
+
+Cuidado: esto elimina cambios no guardados en Git.
+
+## Después de commit
+
+Para este curso basta saber:
+
+- `git log` muestra la historia;
+- cada commit es un punto al que podemos referirnos;
+- no tenemos que duplicar archivos para conservar versiones.
+
+No entraremos a `rebase` ni historia avanzada.
+
+# GitHub
+
+## Crear repositorio remoto
+
+En GitHub:
+
+1. crear repositorio nuevo;
+2. no agregar README desde GitHub si ya existe localmente;
+3. copiar la URL del repositorio.
+
+Después en terminal:
+
+```bash
+git remote add origin URL_DEL_REPOSITORIO
+git push -u origin main
+```
+
+## Revisar en GitHub
+
+Deberían verse:
+
+```text
+README.md
+environment.yml
+notebooks/
+scripts/
+.gitignore
+```
+
+No deberían verse:
+
+```text
+data/
+```
+
+## Reto 4 · Modificar y subir
+
+1. Haz un cambio pequeño en `README.md`.
+2. Revisa:
+
+```bash
+git diff
+```
+
+3. Haz commit.
+4. Sube a GitHub:
+
+```bash
+git push
+```
+
+5. Verifica el cambio en el navegador.
+
+# Proyecto final
+
+## La tarea
+
+Usando los datos del proyecto:
+
+- SST frente a Baja California;
+- precipitación en Ensenada;
+- ONI;
+
+cada persona o pareja debe construir un notebook final.
+
+Pregunta general:
+
+> **¿Qué relación interesante puedes mostrar entre ENSO, SST regional y precipitación local?**
+
+## Reglas del proyecto
+
+El notebook debe incluir:
+
+1. una pregunta clara;
+2. descripción breve de los datos usados;
+3. una o dos figuras;
+4. interpretación corta;
+5. código que corra de principio a fin.
+
+No tiene que ser perfecto.
+
+Sí tiene que ser entendible.
+
+## Preguntas posibles
+
+Puedes elegir una o inventar otra:
+
+- ¿La SST regional tiende a ser más cálida durante eventos El Niño?
+- ¿Los años El Niño son más lluviosos en Ensenada?
+- ¿Hay desfase entre ONI y SSTA de Baja California?
+- ¿La relación cambia entre eventos?
+- ¿La precipitación parece más ruidosa que la SST?
+- ¿Hay años que contradicen la expectativa inicial?
+
+## Producto esperado
+
+```text
+enso_baja/
+├── notebooks/
+│   └── proyecto_final.ipynb
+├── scripts/
+├── figures/
+├── README.md
+├── .gitignore
+└── environment.yml
+```
+
+El repositorio debe estar en GitHub.
+
+## Commits esperados
+
+No hacer un solo commit al final.
+
+Ejemplos de commits útiles:
+
+```text
+Load SST and ONI data
+Calculate SST anomalies
+Compare ONI and precipitation
+Add final interpretation
+Clean notebook for submission
+```
+
+Mínimo sugerido: tres commits con sentido.
+
+## README del proyecto final
+
+El README puede ser breve:
+
+```markdown
+# Proyecto ENSO–Baja
+
+Este repositorio contiene un análisis exploratorio de SST frente a Baja California,
+precipitación en Ensenada e índice ONI.
+
+## Pregunta
+
+...
+
+## Datos
+
+...
+
+## Cómo correr el análisis
+
+Abrir `notebooks/proyecto_final.ipynb`.
+```
+
+# Cierre
+
+## Lo que ya saben hacer
+
+En tres sesiones practicamos:
+
+```text
+terminal
+  ↓
+proyecto organizado
+  ↓
+Python / xarray / pandas
+  ↓
+figuras
+  ↓
+Git
+  ↓
+GitHub
+```
+
+Éste es un flujo de trabajo básico para empezar investigación computacional.
+
+## Para la sesión 4 opcional
+
+Traeremos:
+
+- notebook final;
+- repositorio en GitHub;
+- una figura que quieran discutir;
+- un problema que no hayan podido resolver.
+
+La sesión 4 será clínica + presentaciones relámpago.
+
+## Última idea
+
+El objetivo no es que el análisis sea definitivo.
+
+El objetivo es que el análisis sea:
+
+- claro;
+- repetible;
+- compartible;
+- mejorable.
+
+Eso es programación científica.
+

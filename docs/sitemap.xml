@@ -2,58 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anakarinarm.github.io/posts.html</loc>
-    <lastmod>2026-01-29T19:40:09.939Z</lastmod>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
   </url>
   <url>
     <loc>https://anakarinarm.github.io/teaching/ODI-2026/01_intro.html</loc>
-    <lastmod>2026-01-29T19:40:09.942Z</lastmod>
+    <lastmod>2026-01-07T18:44:13.568Z</lastmod>
   </url>
   <url>
-    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_shell_novice.html</loc>
-    <lastmod>2026-01-29T19:40:09.971Z</lastmod>
+    <loc>https://anakarinarm.github.io/teaching/intro_scicomp_2026.html</loc>
+    <lastmod>2026-09-14T04:33:14.220Z</lastmod>
   </url>
   <url>
-    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_git_novice.html</loc>
-    <lastmod>2026-01-29T19:40:09.971Z</lastmod>
+    <loc>https://anakarinarm.github.io/teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html</loc>
+    <lastmod>2026-09-14T04:24:05.698Z</lastmod>
   </url>
   <url>
-    <loc>https://anakarinarm.github.io/publications.html</loc>
-    <lastmod>2026-02-13T19:33:21.962Z</lastmod>
+    <loc>https://anakarinarm.github.io/teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html</loc>
+    <lastmod>2026-09-14T00:36:53.288Z</lastmod>
   </url>
   <url>
-    <loc>https://anakarinarm.github.io/projects.html</loc>
-    <lastmod>2026-07-22T19:45:30.745Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/posts/news-title/index.html</loc>
-    <lastmod>2026-01-29T19:40:09.939Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/posts/paper-title/index.html</loc>
-    <lastmod>2026-01-29T19:40:09.941Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/teaching.html</loc>
-    <lastmod>2025-09-09T17:13:26.699Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/contact.html</loc>
-    <lastmod>2025-08-21T19:12:55.257Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/posts/event-title/index.html</loc>
-    <lastmod>2026-01-29T19:40:09.939Z</lastmod>
-  </url>
-  <url>
-    <loc>https://anakarinarm.github.io/index.html</loc>
-    <lastmod>2026-07-22T18:56:48.935Z</lastmod>
+    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_python.html</loc>
+    <lastmod>2025-09-11T19:30:40.142Z</lastmod>
   </url>
   <url>
     <loc>https://anakarinarm.github.io/people.html</loc>
     <lastmod>2026-07-22T19:09:55.497Z</lastmod>
   </url>
   <url>
-    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_python.html</loc>
-    <lastmod>2026-01-29T19:40:09.971Z</lastmod>
+    <loc>https://anakarinarm.github.io/index.html</loc>
+    <lastmod>2026-07-22T19:56:27.415Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/event-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/contact.html</loc>
+    <lastmod>2025-08-21T19:12:55.257Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching.html</loc>
+    <lastmod>2026-09-14T01:00:12.045Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/paper-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/posts/news-title/index.html</loc>
+    <lastmod>2025-08-11T17:47:32.770Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/projects.html</loc>
+    <lastmod>2026-07-22T19:47:49.727Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/publications.html</loc>
+    <lastmod>2026-02-13T19:33:21.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_git_novice.html</loc>
+    <lastmod>2025-10-04T01:28:19.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/SWC2025_DOF/slides_shell_novice.html</loc>
+    <lastmod>2025-09-15T05:41:46.736Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html</loc>
+    <lastmod>2026-09-14T00:36:46.204Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/ocedin1_2026.html</loc>
+    <lastmod>2026-02-13T19:31:47.674Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/ODI-2026/02_cinematica.html</loc>
+    <lastmod>2026-01-12T03:35:22.113Z</lastmod>
+  </url>
+  <url>
+    <loc>https://anakarinarm.github.io/teaching/intro_scicomp_2025.html</loc>
+    <lastmod>2025-09-29T14:42:49.533Z</lastmod>
   </url>
 </urlset>

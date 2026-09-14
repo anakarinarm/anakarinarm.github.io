@@ -210,6 +210,874 @@
     "text": "Sus Perspectivas\n\n¿Cómo puede el entendimiento de la dinámica oceánica ayudar a nuestra comunidad localmente?\n¿Qué tema te emociona más? ¿Por qué?"
   },
   {
+    "objectID": "teaching/intro_scicomp_2026.html",
+    "href": "teaching/intro_scicomp_2026.html",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "",
+    "text": "Este minicurso está pensado principalmente para estudiantes de nuevo ingreso al Posgrado en Oceanografía Física de CICESE, aunque está abierto a cualquier persona interesada en adquirir herramientas computacionales básicas para el trabajo científico.\nEl curso está organizado alrededor de un pequeño proyecto oceanográfico que desarrollaremos a lo largo de las tres sesiones. Trabajaremos con datos de temperatura superficial del mar (SST) frente a Baja California, precipitación en Ensenada y el índice oceánico de El Niño (ONI) para explorar una pregunta general:\n\n¿Qué relación existe entre ENSO, la temperatura superficial del mar frente a Baja California y la precipitación en Ensenada?\n\nLa intención no es realizar un análisis climático completo, sino utilizar una pregunta científica sencilla para aprender un flujo de trabajo que puedan reutilizar durante el posgrado:\norganizar archivos → trabajar desde la terminal → explorar datos con Python → producir figuras → documentar el análisis → llevar control de versiones con Git → compartir el proyecto en GitHub.\nNo se asume experiencia previa con la terminal, Git o GitHub. Se espera únicamente cierta familiaridad básica con Python; repasaremos lo necesario conforme aparezca en el proyecto.\nEl material está inspirado en las lecciones abiertas de Software Carpentry, adaptadas a las necesidades del Posgrado en Oceanografía Física."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#el-proyecto-del-curso",
+    "href": "teaching/intro_scicomp_2026.html#el-proyecto-del-curso",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "El proyecto del curso",
+    "text": "El proyecto del curso\nTrabajaremos con tres tipos de datos:\n\nSST de Baja California: promedios mensuales en formato NetCDF.\nPrecipitación en Ensenada: serie de tiempo en formato CSV.\nONI: índice de ENSO en formato CSV.\n\nAl terminar, cada participante tendrá un repositorio organizado aproximadamente de esta forma:\nenso-baja-project/\n├── data/\n├── notebooks/\n│   └── analysis.ipynb\n├── scripts/\n├── figures/\n├── README.md\n├── .gitignore\n└── environment.yml"
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#contenido-del-curso",
+    "href": "teaching/intro_scicomp_2026.html#contenido-del-curso",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "Contenido del curso",
+    "text": "Contenido del curso\n\n1. De archivos a un proyecto: línea de comandos\nBasado en The Unix Shell.\n\n¿Qué es la terminal y para qué sirve en computación científica?\nNavegación por el sistema de archivos: pwd, ls, cd.\nRutas relativas y absolutas.\nCreación y organización de directorios y archivos.\nCopiar, mover y eliminar archivos.\nComodines para trabajar con grupos de archivos.\nInspección de archivos de texto con cat, head y wc.\nIntroducción a redirecciones y pipes.\nActivar un ambiente de Python.\nEjecutar JupyterLab y programas de Python desde la terminal.\n\nEl objetivo de esta sesión es que cada participante construya y entienda la estructura de su propio proyecto.\n\n\n2. De datos a una pregunta: Python, xarray y series de tiempo\nInspirado en Programming with Python y adaptado al análisis de datos oceanográficos.\nNo será una introducción exhaustiva al lenguaje Python. Repasaremos únicamente los elementos necesarios para trabajar con los datos del proyecto.\n\nUso básico de JupyterLab.\nImportar paquetes y leer mensajes de error.\nArreglos y operaciones básicas con NumPy.\nAbrir archivos NetCDF con xarray.\nDataset, DataArray, dimensiones, coordenadas y atributos.\nSeleccionar y reducir datos.\nCalcular una serie regional de SST.\nIntroducción a climatologías y anomalías.\nLeer archivos CSV con pandas.\nExplorar las series de ONI y precipitación.\nVisualización básica con xarray y matplotlib.\nGuardar una figura.\nNotebook vs. script.\n\nAl final de esta sesión tendremos varias piezas del análisis y empezaremos a pensar qué relaciones vale la pena explorar en el proyecto final.\n\n\n3. De análisis a proyecto reproducible: Git y GitHub\nBasado en Version Control with Git.\n\n¿Qué problema resuelve el control de versiones?\nDiferencia entre Git y GitHub.\nCrear un repositorio con git init.\nRevisar el estado del proyecto con git status.\nInspeccionar cambios con git diff.\nPreparar cambios con git add.\nCrear commits con mensajes informativos.\nConsultar el historial.\nRecuperar cambios sencillos.\nUsar .gitignore.\n¿Qué archivos científicos deben entrar a Git y cuáles no?\nCrear un repositorio remoto.\npush y pull.\n\nLa sesión terminará con el inicio del proyecto final."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#proyecto-final",
+    "href": "teaching/intro_scicomp_2026.html#proyecto-final",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "Proyecto final",
+    "text": "Proyecto final\nComo trabajo posterior a la sesión 3, cada participante o pareja preparará un notebook que combine los datos disponibles para investigar una pregunta propia.\nAlgunas posibilidades son:\n\n¿Cómo cambia la SST frente a Baja California durante eventos El Niño y La Niña?\n¿Cómo se comporta la precipitación en Ensenada durante distintas fases de ENSO?\n¿Existe una relación aparente entre ONI y anomalías regionales de SST?\n¿Todos los eventos El Niño muestran una respuesta regional similar?\n¿Qué ocurre si se introduce un desfase entre dos de las series?\n\nEl notebook final deberá incluir:\n\nuna pregunta clara;\nuna breve descripción de los datos utilizados;\nel análisis;\nuna o dos figuras;\nuna interpretación breve de los resultados."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#sesión-4-opcional-resultados-problemas-y-discusión",
+    "href": "teaching/intro_scicomp_2026.html#sesión-4-opcional-resultados-problemas-y-discusión",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "Sesión 4 opcional: resultados, problemas y discusión",
+    "text": "Sesión 4 opcional: resultados, problemas y discusión\nSi existe interés, tendremos una cuarta sesión para revisar los proyectos.\nLa sesión se dedicará a:\n\nresolver algunos de los problemas más comunes encontrados durante el análisis;\nrevisar dificultades con fechas, dimensiones, datos faltantes, figuras o Git;\npresentar brevemente los proyectos;\ndiscutir qué conclusiones están sustentadas por los datos y cuáles requerirían un análisis más cuidadoso;\nidentificar posibles extensiones: estacionalidad, tendencias, autocorrelación, desfases, significancia estadística y causalidad.\n\nLa intención es cerrar el curso mostrando cómo un flujo de trabajo computacional sencillo puede convertirse en el punto de partida de una investigación científica."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#calendario",
+    "href": "teaching/intro_scicomp_2026.html#calendario",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "Calendario",
+    "text": "Calendario\nTres sesiones de aproximadamente 2 horas, los lunes de 10:00 a 12:00.\n\n\n\n\n\n\n\nFecha\nSesión\n\n\n\n\n14 septiembre 2026\nDe archivos a un proyecto: línea de comandos\n\n\n21 septiembre 2026\nDe datos a una pregunta: Python, xarray y series de tiempo\n\n\n28 septiembre 2026\nDe análisis a proyecto reproducible: Git y GitHub\n\n\n5 octubre 2026\nSesión opcional: proyectos, problemas y discusión"
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2026.html#inscripción",
+    "href": "teaching/intro_scicomp_2026.html#inscripción",
+    "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
+    "section": "Inscripción",
+    "text": "Inscripción\nPara participar, envía un correo a kramosmu@cicese.edu.mx.\nCupo limitado a 20 personas."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#objetivo-del-minicurso",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#objetivo-del-minicurso",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Objetivo del minicurso",
+    "text": "Objetivo del minicurso\nAl final del minicurso queremos poder seguir un flujo de trabajo como::\narchivos de datos\n      ↓\nproyecto organizado\n      ↓\nAnálisis \n      ↓\nfiguras e interpretación\n      ↓\nGit / GitHub\nSe trata de empezar a trabajar de forma reproducible.\n\nEnfatizar que el curso no intenta cubrir “todo Python” ni “todo Git”. El objetivo es construir un flujo de trabajo útil para el primer semestre del posgrado."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#la-historia-maría-luisa",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#la-historia-maría-luisa",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "La historia María Luisa",
+    "text": "La historia María Luisa\nEstudiante de primer ingreso al DOF. Su asesora le da tres tipos de datos:\n\ntemperatura superficial del mar frente a Baja California;\nprecipitación en Ensenada;\níndice ONI.\n\nSu pregunta inicial es:\n\n¿Cómo se relacionan ENSO, la SST regional y la precipitación local durante los últimos 30 años?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-haremos-hoy",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-haremos-hoy",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Qué haremos hoy?",
+    "text": "¿Qué haremos hoy?\nHoy todavía no analizaremos los datos.\nHoy aprenderemos a:\n\nmovernos en la computadora desde la terminal;\ninspeccionar archivos y directorios;\norganizar un proyecto científico;\ndistinguir archivos de datos, código, figuras y documentación;\nabrir JupyterLab desde el proyecto."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-empezar-con-la-terminal",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-empezar-con-la-terminal",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Por qué empezar con la terminal?",
+    "text": "¿Por qué empezar con la terminal?\nTarde o temprano van a necesitar:\n\norganizar muchos archivos;\ncorrer scripts;\nusar servidores o clusters;\nrepetir análisis;\ncompartir proyectos con otras personas;\nentender qué está pasando cuando algo falla.\n\n¡La terminal conecta todo!"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#el-escenario",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#el-escenario",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "El escenario",
+    "text": "El escenario\nMaría Luisa recibió una carpeta llamada:\nmateriales_sesion1/\nDentro hay archivos mezclados:\nmateriales_sesion1/\n├── descargas/\n├── notas/\n└── README_inicial.txt\nSu primera tarea es entender qué tiene."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#los-datos-del-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#los-datos-del-proyecto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Los datos del proyecto",
+    "text": "Los datos del proyecto\nDurante el minicurso trabajaremos con tres fuentes:\nsst_baja_mensual_1994_2024.nc\nprecipitacion_ensenada_mensual.csv\noni_mensual.csv\n(Ojo que hoy son archivos con datos sintéticos)\nLo importante por ahora es aprender a:\n\nencontrarlos;\nreconocerlos;\norganizarlos;\npreparar el proyecto para analizarlos después."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#section",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#section",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "",
+    "text": "Al final de la sesión 1 tendremos una carpeta que se verá así:\nenso_baja/\n├── data/\n├── notebooks/\n├── scripts/\n├── figures/\n├── README.md\n└── environment.yml\nÉste será el proyecto que seguiremos usando en las sesiones 2 y 3."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#un-poquito-de-historia-de-la-terminal",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#un-poquito-de-historia-de-la-terminal",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Un poquito de historia de la terminal",
+    "text": "Un poquito de historia de la terminal\n\n\nLas computadoras realizan cuatro funciones básicas:\n\nEjecutar programas\nGuardar datos\nComunicarse entre ellas\nInteractuar con nosotros\n\nInterfaces: desde conexiones cerebro-computadora y voz → hasta pantallas, ratones, teclados.\nLas interfaces gráficas (GUI) son comunes desde los 80s; origen en los 60s con Doug Engelbart y “La Madre de todos los Demos”.\n\n Imagen de ss64.com/bash/syntax-terminal.html\nMás info en: unixdigest\n\nAntes de la GUI → solo existía la interfaz de línea de comandos (CLI).\nEntrada/salida limitada a texto (teclado estándar, impresoras de línea).\nBasada en el ciclo REPL: leer (read) → ejecutar (execute) → imprimir (print) → repetir (loop)."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#la-terminal-y-su-utilidad",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#la-terminal-y-su-utilidad",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "La terminal y su utilidad",
+    "text": "La terminal y su utilidad\nTerminal (shell): programa intermediario entre usuario y sistema operativo.\nEjecuta otros programas en lugar de hacer cálculos directamente.\nEjemplo popular: Bash (Bourne Again Shell) en Unix/Linux.\nVentajas del uso de la terminal (CLI):\n\nComodidad para programar: comandos cortos y rápidos.\nPermite combinar herramientas en pipelines.\nAutomatización de tareas → productividad y reproducibilidad.\nInteracción sencilla con máquinas remotas y supercomputadores.\n\n¡Es una habilidad clave en computación científica, clusters y la nube!"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-es-la-terminal",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-es-la-terminal",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Qué es la terminal?",
+    "text": "¿Qué es la terminal?\nLa terminal es una interfaz de texto para hablar con la computadora.\nNos permite escribir comandos como:\npwd\nls\ncd\nLa computadora responde con texto."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#para-empezar",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#para-empezar",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Para empezar",
+    "text": "Para empezar\nAbre una terminal:\nMac\nCmd + Space → escribir Terminal → Enter\nWindows\ntecla Windows → escribir Git Bash → Enter\nLinux\nCtrl + Alt + T"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#dónde-estamos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#dónde-estamos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Dónde estamos?",
+    "text": "¿Dónde estamos?\nEn la terminal:\npwd\nEste comando significa:\n\nprint working directory\n\nNos dice dónde estamos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#directorio-de-trabajo",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#directorio-de-trabajo",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Directorio de trabajo",
+    "text": "Directorio de trabajo\nEn cada momento la terminal está “parada” en un directorio.\nA ese lugar le llamamos:\n\ndirectorio de trabajo actual\n\nMuchos comandos actúan sobre ese directorio.\nPor eso pwd es nuestro primer comando de seguridad."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-qué-hay-aquí",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-qué-hay-aquí",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Ver qué hay aquí",
+    "text": "Ver qué hay aquí\nls\nls muestra el contenido del directorio actual.\nTambién podemos pedir más información:\nls -l\no distinguir directorios:\nls -F"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-1-dónde-estoy",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-1-dónde-estoy",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Reto 1 · ¿Dónde estoy?",
+    "text": "Reto 1 · ¿Dónde estoy?\nEjecuta:\npwd\nls\nls -F\nResponde:\n\n¿En qué directorio estás?\n¿Qué archivos o carpetas ves?\n¿Puedes identificar cuál es la carpeta del curso?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#cambiar-de-directorio",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#cambiar-de-directorio",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Cambiar de directorio",
+    "text": "Cambiar de directorio\ncd nombre_del_directorio\nEjemplo:\ncd materiales_sesion1\nLuego:\npwd\nls"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#subir-un-nivel",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#subir-un-nivel",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Subir un nivel",
+    "text": "Subir un nivel\ncd ..\n.. significa:\n\nel directorio que está arriba del actual\n\n. significa:\n\nel directorio actual"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ir-al-home",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ir-al-home",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Ir al home",
+    "text": "Ir al home\ncd ~\no simplemente:\ncd\n~ representa tu directorio personal."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#cuando-llevas-cuatro-cd-..-y-ya-no-sabes-dónde-estás",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#cuando-llevas-cuatro-cd-..-y-ya-no-sabes-dónde-estás",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Cuando llevas cuatro cd .. y ya no sabes dónde estás",
+    "text": "Cuando llevas cuatro cd .. y ya no sabes dónde estás\n\nUsa pwd :-)"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#rutas-relativas-y-absolutas",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#rutas-relativas-y-absolutas",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Rutas relativas y absolutas",
+    "text": "Rutas relativas y absolutas\nUna ruta relativa depende de dónde estás:\ncd descargas\ncd ../notas\nUna ruta absoluta empieza desde la raíz del sistema:\n/Users/karina/...\n/home/usuario/..."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-2-rutas",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-2-rutas",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Reto 2 · Rutas",
+    "text": "Reto 2 · Rutas\nSupón que estás en:\nmateriales_sesion1/descargas/\n¿Qué comando te lleva a:\nmateriales_sesion1/notas/\n?\nOpciones:\n\ncd notas\ncd ../notas\ncd ../../notas\ncd /notas\n\n\nRespuesta: cd ../notas"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pista-muy-útil",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pista-muy-útil",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Pista muy útil",
+    "text": "Pista muy útil\nUsa la tecla Tab.\nLa terminal puede completar nombres de archivos y directorios.\nEjemplo:\ncd mate&lt;Tab&gt;\nEsto evita muchos errores de escritura."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-archivos-tenemos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#qué-archivos-tenemos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Qué archivos tenemos?",
+    "text": "¿Qué archivos tenemos?\nDesde la carpeta del material:\nls\nls descargas\nls notas\nTambién podemos listar sólo ciertos tipos de archivos:\nls descargas/*.csv\nls descargas/*.nc\nls notas/*.txt"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#comodines",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#comodines",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Comodines",
+    "text": "Comodines\nEl símbolo * significa:\n\ncualquier secuencia de caracteres\n\nEjemplos:\nls *.txt\nls *.csv\nls sst_*.nc\nEsto será muy útil cuando tengamos muchos archivos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-el-inicio-de-un-archivo-de-texto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-el-inicio-de-un-archivo-de-texto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Ver el inicio de un archivo de texto",
+    "text": "Ver el inicio de un archivo de texto\nhead notas/README_datos.txt\nhead muestra las primeras líneas de un archivo.\nPara archivos grandes, es más seguro que abrir todo el archivo."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-todo-un-archivo-corto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#ver-todo-un-archivo-corto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Ver todo un archivo corto",
+    "text": "Ver todo un archivo corto\ncat notas/README_datos.txt\ncat imprime el contenido completo.\nUsarlo sólo con archivos pequeños."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#contar-líneas",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#contar-líneas",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Contar líneas",
+    "text": "Contar líneas\nwc -l descargas/oni_mensual.csv\nwc -l cuenta líneas.\nEsto sirve para revisar rápidamente el tamaño de un archivo de texto."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-3-primer-diagnóstico-de-datos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-3-primer-diagnóstico-de-datos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Reto 3 · Primer diagnóstico de datos",
+    "text": "Reto 3 · Primer diagnóstico de datos\nUsando la terminal, responde:\n\n¿Cuántos archivos .csv hay?\n¿Cuántos archivos .nc hay?\n¿Cuántas líneas tiene el archivo del ONI?\n¿Qué columnas parecen tener los archivos .csv?\n\nComandos sugeridos:\nls descargas/*.csv\nls descargas/*.nc\nwc -l descargas/oni_mensual.csv\nhead descargas/oni_mensual.csv"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-organizar-un-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-organizar-un-proyecto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Por qué organizar un proyecto?",
+    "text": "¿Por qué organizar un proyecto?\n\n\nUn proyecto reproducible separa:\n\ndatos;\ncódigo;\nfiguras;\ndocumentación;\nconfiguración del ambiente.\n\n\n\n\nSi todo vive en el mismo directorio, el análisis se vuelve frágil."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-directorio-principal",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-directorio-principal",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Crear el directorio principal",
+    "text": "Crear el directorio principal\nDesde donde quieras guardar tu trabajo:\nmkdir enso_baja\ncd enso_baja\nRevisamos:\npwd\nls"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-subdirectorios",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-subdirectorios",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Crear subdirectorios",
+    "text": "Crear subdirectorios\nmkdir data notebooks scripts figures\nRevisamos:\nls -F\nEsperamos ver:\ndata/  figures/  notebooks/  scripts/"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-documentación-inicial",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-documentación-inicial",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Crear documentación inicial",
+    "text": "Crear documentación inicial\ntouch README.md\ntouch crea un archivo vacío si no existe.\nDespués:\nls -F"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#copiar-datos-al-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#copiar-datos-al-proyecto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Copiar datos al proyecto",
+    "text": "Copiar datos al proyecto\nDesde dentro de enso_baja/, si el material está al lado:\ncp ../materiales_sesion1/descargas/*.csv data/\ncp ../materiales_sesion1/descargas/*.nc data/\ncp ../materiales_sesion1/environment.yml .\nRevisamos:\nls data"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#copiar-vs-mover",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#copiar-vs-mover",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Copiar vs mover",
+    "text": "Copiar vs mover\ncp archivo destino\ncopia.\nmv archivo destino\nmueve o renombra.\nHoy preferimos copiar los datos originales."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-4-construir-el-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-4-construir-el-proyecto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Reto 4 · Construir el proyecto",
+    "text": "Reto 4 · Construir el proyecto\nCrea esta estructura:\nenso_baja/\n├── data/\n├── notebooks/\n├── scripts/\n├── figures/\n└── README.md\nDespués copia los archivos .csv y .nc a data/.\nVerifica con:\nls -F\nls data"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#borrar-archivos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#borrar-archivos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Borrar archivos",
+    "text": "Borrar archivos\nrm archivo\nrm elimina archivos.\nEn la terminal normalmente no hay “papelera”."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#yo-0.3-segundos-después-de-ejecutar-rm-en-el-directorio-equivocado",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#yo-0.3-segundos-después-de-ejecutar-rm-en-el-directorio-equivocado",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Yo, 0.3 segundos después de ejecutar rm en el directorio equivocado",
+    "text": "Yo, 0.3 segundos después de ejecutar rm en el directorio equivocado\n\n¡Si borras algo con rm puede ser imposible recuperarlo!"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#borrar-directorios-vacíos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#borrar-directorios-vacíos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Borrar directorios vacíos",
+    "text": "Borrar directorios vacíos\nrmdir directorio_vacio\nNo usaremos comandos de borrado recursivo hoy."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#regla-de-seguridad",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#regla-de-seguridad",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Regla de seguridad",
+    "text": "Regla de seguridad\nAntes de borrar:\npwd\nls\nPregúntate:\n\n¿Estoy donde creo que estoy?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#guardar-la-salida-de-un-comando",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#guardar-la-salida-de-un-comando",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Guardar la salida de un comando",
+    "text": "Guardar la salida de un comando\nls data &gt; lista_archivos.txt\n&gt; redirige la salida a un archivo.\nDespués:\ncat lista_archivos.txt"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#combinar-comandos",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#combinar-comandos",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Combinar comandos",
+    "text": "Combinar comandos\nls data | wc -l\nEl símbolo | se llama pipe.\nToma la salida de un comando y la usa como entrada del siguiente."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-5-inventario-rápido",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#reto-5-inventario-rápido",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Reto 5 · Inventario rápido",
+    "text": "Reto 5 · Inventario rápido\nCrea un archivo llamado:\ninventario_datos.txt\nque contenga la lista de archivos dentro de data/.\nPista:\nls data &gt; inventario_datos.txt\nLuego revísalo con:\ncat inventario_datos.txt"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pero-en-mi-computadora-sí-funciona",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pero-en-mi-computadora-sí-funciona",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Pero en mi computadora sí funciona…",
+    "text": "Pero en mi computadora sí funciona…"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-necesitamos-un-ambiente",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#por-qué-necesitamos-un-ambiente",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "¿Por qué necesitamos un ambiente?",
+    "text": "¿Por qué necesitamos un ambiente?\nUn proyecto científico depende de software:\n\nPython;\nxarray;\npandas;\nmatplotlib;\nnetCDF4;\nJupyterLab.\n\nUn ambiente permite agrupar esas dependencias."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#activar-el-ambiente",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#activar-el-ambiente",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Activar el ambiente",
+    "text": "Activar el ambiente\nPara el curso usaremos algo como:\nconda activate oceanografia\nDespués podemos revisar:\npython --version\nwhich python\nEn Windows puede ser:\nwhere python"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#arrancar-jupyterlab-desde-el-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#arrancar-jupyterlab-desde-el-proyecto",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Arrancar JupyterLab desde el proyecto",
+    "text": "Arrancar JupyterLab desde el proyecto\nPrimero asegúrate de estar en enso_baja/:\npwd\nls\nLuego:\njupyter lab\nJupyter abrirá el proyecto desde ese directorio."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-primer-notebook",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#crear-el-primer-notebook",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Crear el primer notebook",
+    "text": "Crear el primer notebook\nEn JupyterLab:\n\nentra a notebooks/;\ncrea un notebook nuevo;\nllámalo exploracion_inicial.ipynb;\nescribe una celda Markdown con la pregunta del proyecto.\n\nEjemplo:\n# Exploración inicial ENSO–Baja\n\nPregunta: ¿cómo se relacionan ENSO, SST frente a Baja California y precipitación en Ensenada?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#primer-código-en-el-notebook",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#primer-código-en-el-notebook",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Primer código en el notebook",
+    "text": "Primer código en el notebook\nEn una celda de Python:\nfrom pathlib import Path\n\nproject = Path(\"..\")\ndata_dir = project / \"data\"\n\nlist(data_dir.iterdir())\nNo importa si todavía no entiendes todos los detalles.\nLa idea es conectar Jupyter con la estructura del proyecto."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#el-proyecto-después-de-la-sesión-1",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#el-proyecto-después-de-la-sesión-1",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "El proyecto después de la sesión 1",
+    "text": "El proyecto después de la sesión 1\nenso_baja/\n├── data/\n│   ├── sst_baja_mensual_1994_2024.nc\n│   ├── precipitacion_ensenada_mensual.csv\n│   └── oni_mensual.csv\n├── notebooks/\n│   └── exploracion_inicial.ipynb\n├── scripts/\n├── figures/\n├── README.md\n└── inventario_datos.txt"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pregunta-para-la-sesión-2",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#pregunta-para-la-sesión-2",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Pregunta para la sesión 2",
+    "text": "Pregunta para la sesión 2\nYa tenemos un proyecto organizado.\nAhora necesitamos abrir los datos.\nPreguntas:\n\n¿qué contiene el NetCDF de SST?\n¿cómo leemos los CSV de precipitación y ONI?\n¿cómo convertimos datos en figuras?\n¿cómo calculamos anomalías mensuales?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#mini-tarea-opcional",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#mini-tarea-opcional",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Mini tarea opcional",
+    "text": "Mini tarea opcional\nAntes de la siguiente sesión:\n\nabre tu proyecto en la terminal;\nactiva el ambiente;\nabre JupyterLab;\ncrea o edita notebooks/exploracion_inicial.ipynb;\nescribe en Markdown qué crees que contiene cada archivo de datos.\n\nNo tienes que analizar nada todavía.\nSólo deja el proyecto listo."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#comandos-esenciales-de-hoy",
+    "href": "teaching/SWC2026_DOF/sesion1_terminal_enso_baja.html#comandos-esenciales-de-hoy",
+    "title": "Sesión 1 · La terminal y el proyecto ENSO–Baja",
+    "section": "Comandos esenciales de hoy",
+    "text": "Comandos esenciales de hoy\npwd\nls\ncd\nmkdir\ntouch\ncp\nmv\nrm\nhead\ncat\nwc -l\nconda activate oceanografia\njupyter lab"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#recordatorio-de-la-historia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#recordatorio-de-la-historia",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Recordatorio de la historia",
+    "text": "Recordatorio de la historia\nMarina ya tiene:\nenso_baja/\n├── data/\n├── notebooks/\n│   └── 01_explora_datos.ipynb\n├── scripts/\n│   └── plot_sst_timeseries.py\n├── figures/\n│   └── ssta_baja_timeseries.png\n├── README.md\n└── environment.yml\nHoy quiere evitar esto:\nanalisis.ipynb\nanalisis_final.ipynb\nanalisis_final_ahora_si.ipynb\nanalisis_final_corregido_2.ipynb"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#pregunta-guía",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#pregunta-guía",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Pregunta guía",
+    "text": "Pregunta guía\n\n¿Cómo guardamos la historia de un análisis sin duplicar archivos ni perder versiones?\n\nHoy usaremos Git para:\n\nregistrar cambios;\nrecuperar versiones;\nignorar archivos que no deben subirse;\nrespaldar el proyecto en GitHub;\npreparar el proyecto final."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#git-no-es-github",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#git-no-es-github",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Git no es GitHub",
+    "text": "Git no es GitHub\n\n\nGit\nSistema de control de versiones.\nVive en tu computadora.\nRegistra la historia del proyecto.\n\nGitHub\nPlataforma en línea.\nHospeda repositorios.\nFacilita respaldo y colaboración."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#una-sola-vez-por-computadora",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#una-sola-vez-por-computadora",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Una sola vez por computadora",
+    "text": "Una sola vez por computadora\ngit config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tu_correo@ejemplo.edu\"\ngit config --global init.defaultBranch main\nRevisar:\ngit config --list --global\n\nNo dedicar demasiado tiempo a configuración. Si algo falla, resolver caso por caso."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#el-ciclo-básico",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#el-ciclo-básico",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "El ciclo básico",
+    "text": "El ciclo básico\nworking directory\n      ↓ git add\nstaging area\n      ↓ git commit\nrepository\n      ↓ git push\nGitHub\nHoy repetiremos este ciclo varias veces.\nNo basta con hacer un solo commit al final."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#entrar-al-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#entrar-al-proyecto",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Entrar al proyecto",
+    "text": "Entrar al proyecto\nDesde la terminal:\ncd enso_baja\npwd\nls -F\nInicializar Git:\ngit init\nRevisar:\ngit status"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#qué-ve-git",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#qué-ve-git",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "¿Qué ve Git?",
+    "text": "¿Qué ve Git?\ngit status nos dice:\n\nsi estamos en un repositorio;\nqué archivos cambiaron;\nqué archivos todavía no están registrados;\nqué archivos están listos para commit.\n\nRegla de oro:\ngit status\nantes y después de cada paso."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#primer-commit-estructura-del-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#primer-commit-estructura-del-proyecto",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Primer commit: estructura del proyecto",
+    "text": "Primer commit: estructura del proyecto\nAgregar archivos pequeños y esenciales:\ngit add README.md environment.yml\nRevisar:\ngit status\nGuardar:\ngit commit -m \"Create ENSO Baja project structure\""
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-1-qué-pasó",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-1-qué-pasó",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Reto 1 · ¿Qué pasó?",
+    "text": "Reto 1 · ¿Qué pasó?\nEjecuta:\ngit status\ngit log --oneline\nResponde:\n\n¿hay cambios pendientes?\n¿cuántos commits hay?\n¿qué mensaje tiene el commit?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#segundo-commit-notebook-y-script",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#segundo-commit-notebook-y-script",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Segundo commit: notebook y script",
+    "text": "Segundo commit: notebook y script\nAgregar el análisis exploratorio:\ngit add notebooks/01_explora_datos.ipynb\nAgregar el script:\ngit add scripts/plot_sst_timeseries.py\nGuardar:\ngit commit -m \"Add initial SST analysis\""
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#ver-la-historia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#ver-la-historia",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Ver la historia",
+    "text": "Ver la historia\ngit log --oneline\nAhora el proyecto tiene memoria.\nCada commit debe representar una unidad de trabajo con sentido."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#cambiar-algo",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#cambiar-algo",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Cambiar algo",
+    "text": "Cambiar algo\nEdita el título de la figura en:\nscripts/plot_sst_timeseries.py\nPor ejemplo cambia:\nax.set_title(\"Anomalía de SST frente a Baja California\")\npor algo más específico."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#ver-diferencias",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#ver-diferencias",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Ver diferencias",
+    "text": "Ver diferencias\ngit status\ngit diff\ngit diff muestra qué cambió línea por línea.\nEsto es una de las razones principales para usar archivos de texto como scripts."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#tercer-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#tercer-commit",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Tercer commit",
+    "text": "Tercer commit\nSi el cambio nos gusta:\ngit add scripts/plot_sst_timeseries.py\ngit commit -m \"Improve SST anomaly figure title\"\nRevisar:\ngit log --oneline"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-2-commit-pequeño",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-2-commit-pequeño",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Reto 2 · Commit pequeño",
+    "text": "Reto 2 · Commit pequeño\nHaz un cambio pequeño en el README:\n\nagrega una frase sobre la pregunta científica del proyecto;\nrevisa git diff;\nhaz commit.\n\nMensaje sugerido:\ngit commit -m \"Describe project question in README\""
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#el-problema",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#el-problema",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "El problema",
+    "text": "El problema\nSi hacemos:\ngit add .\npodríamos intentar agregar:\ndata/\nfigures/\n.ipynb_checkpoints/\n__pycache__/\n.DS_Store\nPero no todo debe estar en Git."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#qué-sí-y-qué-no",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#qué-sí-y-qué-no",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "¿Qué sí y qué no?",
+    "text": "¿Qué sí y qué no?\n\n\n\n\n\n\n\n\nArchivo\n¿Git?\nRazón\n\n\n\n\nREADME.md\nsí\nexplica el proyecto\n\n\nenvironment.yml\nsí\npermite recrear el ambiente\n\n\nscripts .py\nsí\nreproducen el análisis\n\n\nnotebooks .ipynb\nsí\ndocumentan exploración\n\n\ndatos grandes .nc\nno\npesan mucho; pueden tener restricciones\n\n\nfiguras regenerables\ndepende\nsi se generan con código, no siempre hace falta\n\n\ntokens/contraseñas\njamás\nriesgo de seguridad"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#crear-.gitignore",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#crear-.gitignore",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Crear .gitignore",
+    "text": "Crear .gitignore\nCrear un archivo llamado:\n.gitignore\ncon:\ndata/\nfigures/\n.ipynb_checkpoints/\n__pycache__/\n.DS_Store\nAgregarlo:\ngit add .gitignore\ngit commit -m \"Ignore data and generated files\""
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-3-verificar-.gitignore",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-3-verificar-.gitignore",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Reto 3 · Verificar .gitignore",
+    "text": "Reto 3 · Verificar .gitignore\nEjecuta:\ngit status\nPregunta:\n\n¿Aparecen los archivos de data/ como pendientes?\n\nSi aparecen, algo está mal en .gitignore o ya habían sido agregados antes."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#antes-de-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#antes-de-commit",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Antes de commit",
+    "text": "Antes de commit\nSi modificaste un archivo y quieres descartar el cambio:\ngit restore archivo\nEjemplo:\ngit restore README.md\nCuidado: esto elimina cambios no guardados en Git."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#después-de-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#después-de-commit",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Después de commit",
+    "text": "Después de commit\nPara este curso basta saber:\n\ngit log muestra la historia;\ncada commit es un punto al que podemos referirnos;\nno tenemos que duplicar archivos para conservar versiones.\n\nNo entraremos a rebase ni historia avanzada."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#crear-repositorio-remoto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#crear-repositorio-remoto",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Crear repositorio remoto",
+    "text": "Crear repositorio remoto\nEn GitHub:\n\ncrear repositorio nuevo;\nno agregar README desde GitHub si ya existe localmente;\ncopiar la URL del repositorio.\n\nDespués en terminal:\ngit remote add origin URL_DEL_REPOSITORIO\ngit push -u origin main"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#revisar-en-github",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#revisar-en-github",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Revisar en GitHub",
+    "text": "Revisar en GitHub\nDeberían verse:\nREADME.md\nenvironment.yml\nnotebooks/\nscripts/\n.gitignore\nNo deberían verse:\ndata/"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-4-modificar-y-subir",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reto-4-modificar-y-subir",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Reto 4 · Modificar y subir",
+    "text": "Reto 4 · Modificar y subir\n\nHaz un cambio pequeño en README.md.\nRevisa:\n\ngit diff\n\nHaz commit.\nSube a GitHub:\n\ngit push\n\nVerifica el cambio en el navegador."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#la-tarea",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#la-tarea",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "La tarea",
+    "text": "La tarea\nUsando los datos del proyecto:\n\nSST frente a Baja California;\nprecipitación en Ensenada;\nONI;\n\ncada persona o pareja debe construir un notebook final.\nPregunta general:\n\n¿Qué relación interesante puedes mostrar entre ENSO, SST regional y precipitación local?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reglas-del-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#reglas-del-proyecto",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Reglas del proyecto",
+    "text": "Reglas del proyecto\nEl notebook debe incluir:\n\nuna pregunta clara;\ndescripción breve de los datos usados;\nuna o dos figuras;\ninterpretación corta;\ncódigo que corra de principio a fin.\n\nNo tiene que ser perfecto.\nSí tiene que ser entendible."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#preguntas-posibles",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#preguntas-posibles",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Preguntas posibles",
+    "text": "Preguntas posibles\nPuedes elegir una o inventar otra:\n\n¿La SST regional tiende a ser más cálida durante eventos El Niño?\n¿Los años El Niño son más lluviosos en Ensenada?\n¿Hay desfase entre ONI y SSTA de Baja California?\n¿La relación cambia entre eventos?\n¿La precipitación parece más ruidosa que la SST?\n¿Hay años que contradicen la expectativa inicial?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#producto-esperado",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#producto-esperado",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Producto esperado",
+    "text": "Producto esperado\nenso_baja/\n├── notebooks/\n│   └── proyecto_final.ipynb\n├── scripts/\n├── figures/\n├── README.md\n├── .gitignore\n└── environment.yml\nEl repositorio debe estar en GitHub."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#commits-esperados",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#commits-esperados",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Commits esperados",
+    "text": "Commits esperados\nNo hacer un solo commit al final.\nEjemplos de commits útiles:\nLoad SST and ONI data\nCalculate SST anomalies\nCompare ONI and precipitation\nAdd final interpretation\nClean notebook for submission\nMínimo sugerido: tres commits con sentido."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#readme-del-proyecto-final",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#readme-del-proyecto-final",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "README del proyecto final",
+    "text": "README del proyecto final\nEl README puede ser breve:\n# Proyecto ENSO–Baja\n\nEste repositorio contiene un análisis exploratorio de SST frente a Baja California,\nprecipitación en Ensenada e índice ONI.\n\n## Pregunta\n\n...\n\n## Datos\n\n...\n\n## Cómo correr el análisis\n\nAbrir `notebooks/proyecto_final.ipynb`."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#lo-que-ya-saben-hacer",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#lo-que-ya-saben-hacer",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Lo que ya saben hacer",
+    "text": "Lo que ya saben hacer\nEn tres sesiones practicamos:\nterminal\n  ↓\nproyecto organizado\n  ↓\nPython / xarray / pandas\n  ↓\nfiguras\n  ↓\nGit\n  ↓\nGitHub\nÉste es un flujo de trabajo básico para empezar investigación computacional."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#para-la-sesión-4-opcional",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#para-la-sesión-4-opcional",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Para la sesión 4 opcional",
+    "text": "Para la sesión 4 opcional\nTraeremos:\n\nnotebook final;\nrepositorio en GitHub;\nuna figura que quieran discutir;\nun problema que no hayan podido resolver.\n\nLa sesión 4 será clínica + presentaciones relámpago."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#última-idea",
+    "href": "teaching/SWC2026_DOF/sesion3_git_proyecto_enso_baja.html#última-idea",
+    "title": "Sesión 3 · Guardar la historia del proyecto",
+    "section": "Última idea",
+    "text": "Última idea\nEl objetivo no es que el análisis sea definitivo.\nEl objetivo es que el análisis sea:\n\nclaro;\nrepetible;\ncompartible;\nmejorable.\n\nEso es programación científica."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
+    "href": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
+    "title": "Python para principantes",
+    "section": "Repaso. ls comprensión de lectura",
+    "text": "Repaso. ls comprensión de lectura\nSuponiendo una estructura de directorio como en la figura anterior, si pwd muestra /Users/backup, y -r le dice a ls que muestre el resultado en orden inverso, ¿qué comando mostrará: SALIDA\n\npnas_sub/ pnas_final/ original/\nls pwd\nls -r -F\nls -r -F /Users/backup\n#2 y #3, pero no #1."
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "Karina Ramos Musalem",
+    "section": "",
+    "text": "Research group\n\n\n\n\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nMasters Student\n\n\n\n\n\n\n\nNumerical study of internal waves generated by a seiche in a bay\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAndrea Mitre Apaez\n\n\nPhD Student / Co-advised with Dr. Sheila Estrada Allis\n\n\n\n\n\n\n\nInternal tides in Punta Banda Canyon\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYuritzy Pérez Corona\n\n\nPhD Student / Co-advised with Dr. Hector Torres\n\n\n\n\n\n\n\nSynergy between SST and SSH in the Gulf of California mesoscale eddies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nPhD Student / Co-advised with Dr. Manuel López\n\n\n\n\n\n\n\nExchange Processes Across Sills in the Northern Gulf of California\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nProspective students\n\nInterested in joining us?\nI welcome students interested in physical oceanography and geophysical fluid dynamics, particularly coastal circulation, waves, flow–topography interactions, and ocean transport. Projects may involve numerical modeling, oceanographic observations, satellite data, or combinations of these approaches.\nStudents can join through CICESE’s MSc or PhD program in Physical Oceanography. Our program includes students from Mexico and around the world, although classes are taught in Spanish. Students admitted to the program may be eligible to apply for SECIHTI graduate funding.\nThinking about graduate school? Get in touch. I am always happy to discuss possible research questions, available projects, and what studying physical oceanography at CICESE is like.\n\n\n¿Te interesa trabajar con nosotros?\nEscríbeme si te interesa la oceanografía física y dinámica de fluidos geofísicos, particularmente la circulación costera, ondas, interacción flujo–topografía y transporte oceánico. Posibles proyectos pueden involucrar modelación numérica, observaciones oceanográficas, datos satelitales o una combinación de estas herramientas.\nEs posible incorporarse a través de la Maestría o el Doctorado en Oceanografía Física del CICESE. En el programa participan estudiantes de México y de otros países; las clases se imparten en español. Les estudiantes admitides pueden ser candidates a solicitar una beca de posgrado de SECIHTI.\n¿Estás pensando en hacer un posgrado? Escríbeme y podemos platicar sobre posibles preguntas de investigación, proyectos disponibles y cómo es estudiar Oceanografía Física en CICESE.\n\n\n\nAlumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Name\n      \n      \n        Role\n      \n      \n        Graduated\n      \n      \n        Project\n      \n      \n        Institution\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nName\n\n\n\nRole\n\n\n\nProject\n\n\n\nInstitution\n\n\n\nGraduated\n\n\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n\nEva Rojas Razo\n\n\nUndergraduate Alumni\n\n\nDynamical similarity between mountain waves in the Valley of Mexico and a physical lab model\n\n\nIPN, Mexico\n\n\n2025\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nMasters Alumni\n\n\nHigh-frequency coastal trapped waves generated at Sebastián Vizcaino Bay\n\n\nU. of Gothenburg, Sweden\n\n\n2023\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nUndergraduate Alumni\n\n\nDynamical interaction between two adjacent submarine canyons (thesis in Spanish)\n\n\nUNAM, Mexico\n\n\n2023\n\n\n\n\n\n\nFélix López García\n\n\nUndergraduate Alumni (Co-supervised with Dr. Efrain Moreles)\n\n\nEnergy content in a vertical density profile\n\n\nIPN, Mexico\n\n\n2023\n\n\n\n\n\n\nJimena Ortiz Villalva\n\n\nUndergraduate Alumni\n\n\nMountain waves over the Valley of Mexico and Guanajuato\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nJesica Villalobos García\n\n\nUndergraduate Alumni\n\n\nMountain waves and ozone events in the Valley of Mexico\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Karina Ramos Musalem",
+    "section": "",
+    "text": "GitHub\n  \n  \n    \n     E-mail\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \nI am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean. My research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation.\nI’m currently part of the Department of Physical Oceanography at the Center for Scientific Research and Higher Education of Ensenada, Baja California (CICESE).\nFrom 2021 to 2024, I was a researcher with the Ocean-Atmosphere Interaction group at the Instituto de Ciencias de la Atmósfera y Cambio Climático. I completed my Ph.D. in the Mesoscale Ocean and Atmospheric Dynamics Group under Professor Susan Allen at the University of British Columbia.\n\n\n\nStratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows.\n\n\n\n\n\nPh.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Karina Ramos Musalem",
+    "section": "",
+    "text": "Stratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Karina Ramos Musalem",
+    "section": "",
+    "text": "Ph.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Reach out :-)\nCentro de Investigación Científica y de Educación Superior de Ensenada, Baja California\nDepartamento de Oceanografía Física\nAddress: Carretera Ensenada - Tijuana No. 3918, Zona Playitas, CP. 22860, Ensenada, B.C. México.\nPhone: +52 646-175-05-00, ext 24054\nE-mail: kramosmu@cicese.edu.mx\n\n\n\nThe view from CICESE."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Most resources in Spanish."
+  },
+  {
+    "objectID": "teaching.html#oceanografía-dinámica-i",
+    "href": "teaching.html#oceanografía-dinámica-i",
+    "title": "Teaching",
+    "section": "Oceanografía Dinámica I",
+    "text": "Oceanografía Dinámica I\n\n\n\n\n\n2025-I,   2026-I\nGraduate program in Physical Oceanography, CICESE"
+  },
+  {
+    "objectID": "teaching.html#introducción-a-la-programación-científica",
+    "href": "teaching.html#introducción-a-la-programación-científica",
+    "title": "Teaching",
+    "section": "Introducción a la programación científica",
+    "text": "Introducción a la programación científica\n\n\n\n\n\n2026,   2025\n3-day bootcamp for PO graduate students at CICESE."
+  },
+  {
+    "objectID": "teaching.html#other-courses",
+    "href": "teaching.html#other-courses",
+    "title": "Teaching",
+    "section": "Other courses",
+    "text": "Other courses\n\n\n\n\n\nAt UNAM, Faculty of Science (undergraduate)\n* Taller de Modelación Numérica (2021-II, 2022-II)\n* Dinámica de Fluidos Geofísicos (2022-I, 2024-I)\n* Introducción a la Oceanografía Física (2023-I)\n* Técnicas Experimentales (2021-I)\nAt UNAM, Earth Sciences Graduate Program\n* Oceanografía Dinámica I (2023-I)\n* Oceanografía Dinámica II (2023-II)"
+  },
+  {
+    "objectID": "posts/paper-title/index.html#abstract",
+    "href": "posts/paper-title/index.html#abstract",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Abstract",
+    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
+  },
+  {
+    "objectID": "posts/paper-title/index.html#links",
+    "href": "posts/paper-title/index.html#links",
+    "title": "Can quantum-mechanical description of physical reality be considered complete?",
+    "section": "Links",
+    "text": "Links\nPublished paper"
+  },
+  {
+    "objectID": "posts/news-title/index.html",
+    "href": "posts/news-title/index.html",
+    "title": "News item",
+    "section": "",
+    "text": "About the news"
+  },
+  {
+    "objectID": "posts/news-title/index.html#summary",
+    "href": "posts/news-title/index.html#summary",
+    "title": "News item",
+    "section": "",
+    "text": "About the news"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Research",
+    "section": "",
+    "text": "I am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean.\nMy research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation."
+  },
+  {
+    "objectID": "projects.html#funded-projects",
+    "href": "projects.html#funded-projects",
+    "title": "Research",
+    "section": "Funded projects",
+    "text": "Funded projects\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Role\n      \n      \n        Funder\n      \n      \n        Start\n      \n      \n        End\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nRole\n\n\n\nFunder\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\nDinámica mareal y submareal del intercambio a tráves de cañones submarinos \n\n\nPI\n\n\nSECIHTI\n\n\n2025\n\n\n2027\n\n\n\n\n\n\nOndas de montaña en el Valle de México\n\n\nPI\n\n\nPAPIIT-UNAM\n\n\n2022\n\n\n2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Perez-Corona, Y.*, Torres, H., & Ramos-Musalem, K. (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. Remote Sensing, 18(3), 434. DOI: 10.3390/rs18030434\nMoreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. Ocean Science, Vol. 21, Issue 5, 2019–2039. DOI: 10.5194/os-21-2019-2025\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175\n* PhD student"
+  },
+  {
+    "objectID": "publications.html#peer-reviewed",
+    "href": "publications.html#peer-reviewed",
+    "title": "Publications",
+    "section": "",
+    "text": "Perez-Corona, Y.*, Torres, H., & Ramos-Musalem, K. (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. Remote Sensing, 18(3), 434. DOI: 10.3390/rs18030434\nMoreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. Ocean Science, Vol. 21, Issue 5, 2019–2039. DOI: 10.5194/os-21-2019-2025\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175\n* PhD student"
+  },
+  {
+    "objectID": "publications.html#academic-writing",
+    "href": "publications.html#academic-writing",
+    "title": "Publications",
+    "section": "Academic writing",
+    "text": "Academic writing\nPhD Thesis: Transport through submarine canyons (2020). University of British Columbia. link\nBSc Thesis: Estudio numérico de los forzamientos que generan la surgencia de Yucatán (2013). UNAM, Mexico, 77. (In Spanish) link"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
+    "title": "Control de versiones con git",
+    "section": "Pensemos en cambios/ediciones como diferencias",
+    "text": "Pensemos en cambios/ediciones como diferencias\n\nImagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
+    "title": "Control de versiones con git",
+    "section": "Distintas versiones",
+    "text": "Distintas versiones\nConjuntos de cambios nos pueden dar distintas versiones (Ej. ramas o branches)\n Imagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
+    "title": "Control de versiones con git",
+    "section": "Incorporar cambios",
+    "text": "Incorporar cambios\nCambios en la misma parte pueden generar conflictos que se pueden resolver (merge y merge conflict).\n Imagen de Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
+    "title": "Control de versiones con git",
+    "section": "¿Cuándo debo usar control de versiones? Un ejemplo",
+    "text": "¿Cuándo debo usar control de versiones? Un ejemplo\n\n\n\n\n\n\n\n\nAspecto\nCódigo del artículo (control de versiones: Git)\nManuscrito del artículo (control de cambios: Word)\n\n\n\n\nObjetivo\nReproducir análisis/figuras con historial confiable\nPulir redacción, estructura y estilo del texto\n\n\nFormato típico\nTexto simple (R/Python/Julia, Markdown, LaTeX)\nDOCX o Google Docs con formato y figuras\n\n\nUnidad de cambios\nCommits con mensajes (pequeños)\nSugerencias/comentarios sobre frases y párrafos\n\n\nFlujo de trabajo\nRamas para features/experimentos; pull requests\nRevisión editorial; aceptar/rechazar sugerencias\n\n\nIncorporar cambios\nMerges para mezclar trabajo paralelo; resolución de conflictos en archivos\nManual; se complica con muchos editores simultáneos\n\n\nRevertir\nVolver a cualquier commit/etiqueta; revert selectivo\nRestaurar versión del documento solo si salvamos\n\n\nReproducibilidad\nAlto: environment files, scripts y pipelines versionados\nEl texto describe métodos; no garantiza ejecución\n\n\nResponsabilidad\nQuién cambió qué archivo/línea y por qué (mensaje)\nQuién propuso qué edición textual y cuándo\n\n\nMejor para\nExperimentos, notebooks, scripts, plantillas LaTeX\nIntroducción, discusión, respuesta a revisores\n\n\nEntregables\nRepo con README, instrucciones y environment\nManuscrito formateado según la revista\n\n\nMomento ideal de uso\nDesde el inicio del proyecto hasta la aceptación\nBorradores medios y finales"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
+    "title": "Control de versiones con git",
+    "section": "Ejemplos de uso (Git + GitHub)",
+    "text": "Ejemplos de uso (Git + GitHub)\n\n\n Repositorios con DOI (Releases)\n\n Herramientas compartidas dentro y entre grupos - SalishSeaCast"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
+    "title": "Control de versiones con git",
+    "section": "Configuración global",
+    "text": "Configuración global\n$ git config --global user.name \"Alfredo Linguini\"\n$ git config --global user.email \"a.linguini@ratatouille.fr\"\n\nEditor de texto (hay muchas opciones)\n$ git config --global core.editor \"nano -w\"\n\n\nNombre de la rama default\ngit config --global init.defaultBranch main\n\n\nSugerido Linux/Mac:\n$ git config --global core.autocrlf input\nWindows:\n$ git config --global core.autocrlf true\n\n\nRevisemos Configuración\ngit config --list --global"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
+    "title": "Control de versiones con git",
+    "section": "Agregar cambios con add",
+    "text": "Agregar cambios con add\n\nImagen: Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
+    "title": "Control de versiones con git",
+    "section": "Comprometer cambios con commit",
+    "text": "Comprometer cambios con commit\n\nImagen: Software Carpentry"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
+    "title": "Control de versiones con git",
+    "section": "Por qué hacer add antes de commit?",
+    "text": "Por qué hacer add antes de commit?"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
+    "title": "Control de versiones con git",
+    "section": "Reto 1",
+    "text": "Reto 1\nHaciendo Commit de Cambios a Git\n¿Cuál de los siguientes comandos debería guardar los cambios de myfile.txt a mi repositorio local Git?\ngit commit -m \"my recent changes\"\ngit init myfile.txt $ git commit -m \"my recent changes\"\ngit add myfile.txt $ git commit -m \"my recent changes\"\ngit commit -m myfile.txt \"my recent changes\""
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
+    "title": "Control de versiones con git",
+    "section": "Reto 2",
+    "text": "Reto 2\nHaciendo Commit a Multiples Archivos\nEl staging area puede tener cambios de cualquier número de archivos a los que quieras hacer commit, como una sola foto.\n\nAgrega algún ingrediente a guacamole.md.\nCrea un nuevo archivo guacamole_secreto.md con tus ideas para una nueva recea de guacamole.\nAgrega los cambios de ambos archivos al staging area, y haz un commit de esos cambios."
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
+    "title": "Control de versiones con git",
+    "section": "Reto 3",
+    "text": "Reto 3\n\nCrea un nuevo repositorio Git en tu computadora, llamado bio.\nEscribe una autobiografía de tres líneas en un archivo llamado me.txt, haz commit de tus cambios\nModifica una línea, agrega una cuarta línea\nMuestra las diferencias entre el estado actualizado y el original"
+  },
+  {
+    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
+    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
+    "title": "Control de versiones con git",
+    "section": "Reto 4.",
+    "text": "Reto 4.\nCuál es el output al final de los siguientes comandos?\n$ cd recipes\n\n$ echo \"I like tomatoes, therefore I like ketchup\" &gt; ketchup.md\n\n$ git add ketchup.md\n\n$ echo \"ketchup enhances pasta dishes\" &gt;&gt; ketchup.md\n\n$ git commit -m \"My opinions about the red sauce\"\n\n$ git restore ketchup.md\n\n$ cat ketchup.md # this will print the content of ketchup.md on screen\n\nRespuesta: I like tomatoes, therefore I like ketchup"
+  },
+  {
     "objectID": "teaching/SWC2025_DOF/slides_shell_novice.html#un-poquito-de-historia-de-la-terminal",
     "href": "teaching/SWC2025_DOF/slides_shell_novice.html#un-poquito-de-historia-de-la-terminal",
     "title": "La línea de comandos",
@@ -420,235 +1288,249 @@
     "text": "En corto\n\nfind encuentra archivos con propiedades específicas que coinciden con los patrones especificados.\ngrep selecciona líneas en archivos que coinciden con los patrones especificados.\n--help es un indicador usado por muchos comandos bash y programas que se pueden ejecutar desde dentro de Bash, se usa para mostrar más información sobre cómo usar estos comandos o programas.\nman commando muestra la página del manual de un comando.\n$(comando) contiene la salida de un comando."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#pensemos-en-cambiosediciones-como-diferencias",
-    "title": "Control de versiones con git",
-    "section": "Pensemos en cambios/ediciones como diferencias",
-    "text": "Pensemos en cambios/ediciones como diferencias\n\nImagen de Software Carpentry"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#recordatorio-de-la-historia",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#recordatorio-de-la-historia",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Recordatorio de la historia",
+    "text": "Recordatorio de la historia\nMarina recibió tres tipos de datos:\n\nSST mensual frente a Baja California en NetCDF;\nprecipitación mensual en Ensenada en CSV;\níndice ONI en CSV.\n\nHoy quiere pasar de:\narchivos en data/\n      ↓\nleer datos con Python\n      ↓\nentender dimensiones y fechas\n      ↓\nhacer una primera figura"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#distintas-versiones",
-    "title": "Control de versiones con git",
-    "section": "Distintas versiones",
-    "text": "Distintas versiones\nConjuntos de cambios nos pueden dar distintas versiones (Ej. ramas o branches)\n Imagen de Software Carpentry"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#pregunta-guía",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#pregunta-guía",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Pregunta guía",
+    "text": "Pregunta guía\n\n¿Cómo han variado la SST frente a Baja California, la precipitación en Ensenada y ENSO durante los últimos 30 años?\n\nHoy no buscamos una respuesta final.\nBuscamos dejar listo un flujo de trabajo para explorar la pregunta."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#incorporar-cambios",
-    "title": "Control de versiones con git",
-    "section": "Incorporar cambios",
-    "text": "Incorporar cambios\nCambios en la misma parte pueden generar conflictos que se pueden resolver (merge y merge conflict).\n Imagen de Software Carpentry"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#al-final-de-hoy",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#al-final-de-hoy",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Al final de hoy",
+    "text": "Al final de hoy\nQueremos tener:\nenso_baja/\n├── data/\n├── notebooks/\n│   └── 01_explora_datos.ipynb\n├── scripts/\n│   └── plot_sst_timeseries.py\n├── figures/\n│   └── sst_baja_promedio.png\n├── README.md\n└── environment.yml\n\nEste archivo asume que los datos dummy ya existen en data/. Los nombres finales pueden cambiar."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#cuándo-debo-usar-control-de-versiones-un-ejemplo",
-    "title": "Control de versiones con git",
-    "section": "¿Cuándo debo usar control de versiones? Un ejemplo",
-    "text": "¿Cuándo debo usar control de versiones? Un ejemplo\n\n\n\n\n\n\n\n\nAspecto\nCódigo del artículo (control de versiones: Git)\nManuscrito del artículo (control de cambios: Word)\n\n\n\n\nObjetivo\nReproducir análisis/figuras con historial confiable\nPulir redacción, estructura y estilo del texto\n\n\nFormato típico\nTexto simple (R/Python/Julia, Markdown, LaTeX)\nDOCX o Google Docs con formato y figuras\n\n\nUnidad de cambios\nCommits con mensajes (pequeños)\nSugerencias/comentarios sobre frases y párrafos\n\n\nFlujo de trabajo\nRamas para features/experimentos; pull requests\nRevisión editorial; aceptar/rechazar sugerencias\n\n\nIncorporar cambios\nMerges para mezclar trabajo paralelo; resolución de conflictos en archivos\nManual; se complica con muchos editores simultáneos\n\n\nRevertir\nVolver a cualquier commit/etiqueta; revert selectivo\nRestaurar versión del documento solo si salvamos\n\n\nReproducibilidad\nAlto: environment files, scripts y pipelines versionados\nEl texto describe métodos; no garantiza ejecución\n\n\nResponsabilidad\nQuién cambió qué archivo/línea y por qué (mensaje)\nQuién propuso qué edición textual y cuándo\n\n\nMejor para\nExperimentos, notebooks, scripts, plantillas LaTeX\nIntroducción, discusión, respuesta a revisores\n\n\nEntregables\nRepo con README, instrucciones y environment\nManuscrito formateado según la revista\n\n\nMomento ideal de uso\nDesde el inicio del proyecto hasta la aceptación\nBorradores medios y finales"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#empezamos-desde-la-terminal",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#empezamos-desde-la-terminal",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Empezamos desde la terminal",
+    "text": "Empezamos desde la terminal\nEntramos al proyecto:\ncd enso_baja\npwd\nls -F\nActivamos el ambiente:\nconda activate oceanografia\nAbrimos JupyterLab:\njupyter lab"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#ejemplos-de-uso-git-github",
-    "title": "Control de versiones con git",
-    "section": "Ejemplos de uso (Git + GitHub)",
-    "text": "Ejemplos de uso (Git + GitHub)\n\n\n Repositorios con DOI (Releases)\n\n Herramientas compartidas dentro y entre grupos - SalishSeaCast"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#antes-de-programar-inspeccionar",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#antes-de-programar-inspeccionar",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Antes de programar: inspeccionar",
+    "text": "Antes de programar: inspeccionar\nDesde la terminal:\nls data\nls data/*.csv\nls data/*.nc\nhead data/oni_mensual.csv\nhead data/precipitacion_ensenada_mensual.csv\nPregunta:\n¿Qué tipo de archivo parece cada uno?\n¿Podemos leerlos todos de la misma forma?"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#configuración-global",
-    "title": "Control de versiones con git",
-    "section": "Configuración global",
-    "text": "Configuración global\n$ git config --global user.name \"Alfredo Linguini\"\n$ git config --global user.email \"a.linguini@ratatouille.fr\"\n\nEditor de texto (hay muchas opciones)\n$ git config --global core.editor \"nano -w\"\n\n\nNombre de la rama default\ngit config --global init.defaultBranch main\n\n\nSugerido Linux/Mac:\n$ git config --global core.autocrlf input\nWindows:\n$ git config --global core.autocrlf true\n\n\nRevisemos Configuración\ngit config --list --global"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#netcdf-vs-csv",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#netcdf-vs-csv",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "NetCDF vs CSV",
+    "text": "NetCDF vs CSV\n\n\nNetCDF\nBueno para datos científicos multidimensionales:\nsst(time, lat, lon)\nLo leeremos con xarray.\n\nCSV\nBueno para tablas:\nfecha, valor\nLo leeremos con pandas."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#agregar-cambios-con-add",
-    "title": "Control de versiones con git",
-    "section": "Agregar cambios con add",
-    "text": "Agregar cambios con add\n\nImagen: Software Carpentry"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#crear-notebook",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#crear-notebook",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Crear notebook",
+    "text": "Crear notebook\nEn notebooks/, crea:\n01_explora_datos.ipynb\nPrimera celda:\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport xarray as xr"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#comprometer-cambios-con-commit",
-    "title": "Control de versiones con git",
-    "section": "Comprometer cambios con commit",
-    "text": "Comprometer cambios con commit\n\nImagen: Software Carpentry"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#regla-práctica",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#regla-práctica",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Regla práctica",
+    "text": "Regla práctica\nUn notebook científico debe combinar:\n\ncódigo;\ntexto;\nfiguras;\ninterpretación.\n\nNo queremos sólo una lista de celdas ejecutadas.\nQueremos que alguien pueda seguir la historia."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#por-qué-hacer-add-antes-de-commit",
-    "title": "Control de versiones con git",
-    "section": "Por qué hacer add antes de commit?",
-    "text": "Por qué hacer add antes de commit?"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-el-netcdf",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-el-netcdf",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Abrir el NetCDF",
+    "text": "Abrir el NetCDF\nds = xr.open_dataset(\"../data/sst_baja_mensual_1994_2024.nc\")\nds\nEn los datos dummy el nombre puede ser:\nds = xr.open_dataset(\"../data/sst_baja_dummy.nc\")\n\nAntes de la clase, ajustar el nombre del archivo en los materiales finales."
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-1",
-    "title": "Control de versiones con git",
-    "section": "Reto 1",
-    "text": "Reto 1\nHaciendo Commit de Cambios a Git\n¿Cuál de los siguientes comandos debería guardar los cambios de myfile.txt a mi repositorio local Git?\ngit commit -m \"my recent changes\"\ngit init myfile.txt $ git commit -m \"my recent changes\"\ngit add myfile.txt $ git commit -m \"my recent changes\"\ngit commit -m myfile.txt \"my recent changes\""
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-estamos-viendo",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-estamos-viendo",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "¿Qué estamos viendo?",
+    "text": "¿Qué estamos viendo?\nAl abrir ds, buscar:\n\ndimensiones;\ncoordenadas;\nvariables;\nunidades;\nrango temporal.\n\nPreguntas:\nds.dims\nds.coords\nds.data_vars"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-2",
-    "title": "Control de versiones con git",
-    "section": "Reto 2",
-    "text": "Reto 2\nHaciendo Commit a Multiples Archivos\nEl staging area puede tener cambios de cualquier número de archivos a los que quieras hacer commit, como una sola foto.\n\nAgrega algún ingrediente a guacamole.md.\nCrea un nuevo archivo guacamole_secreto.md con tus ideas para una nueva recea de guacamole.\nAgrega los cambios de ambos archivos al staging area, y haz un commit de esos cambios."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#dataset-y-dataarray",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#dataset-y-dataarray",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Dataset y DataArray",
+    "text": "Dataset y DataArray\nEn xarray:\nDataset\n  ├── coordenadas\n  ├── atributos\n  └── variables\n        ↓\n      DataArray\nUna variable típica sería:\nsst = ds[\"sst\"]\nsst"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-3",
-    "title": "Control de versiones con git",
-    "section": "Reto 3",
-    "text": "Reto 3\n\nCrea un nuevo repositorio Git en tu computadora, llamado bio.\nEscribe una autobiografía de tres líneas en un archivo llamado me.txt, haz commit de tus cambios\nModifica una línea, agrega una cuarta línea\nMuestra las diferencias entre el estado actualizado y el original"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-1-explorar-la-sst",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-1-explorar-la-sst",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Reto 1 · Explorar la SST",
+    "text": "Reto 1 · Explorar la SST\nEn parejas:\n\n¿Cuáles son las dimensiones de sst?\n¿Cuántos tiempos hay?\n¿Qué unidades tiene la variable?\n¿Cuál es el primer y último tiempo?\n\nPistas:\nsst.dims\nsst.shape\nsst.attrs\nsst.time.min(), sst.time.max()"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
-    "href": "teaching/SWC2025_DOF/slides_git_novice.html#reto-4.",
-    "title": "Control de versiones con git",
-    "section": "Reto 4.",
-    "text": "Reto 4.\nCuál es el output al final de los siguientes comandos?\n$ cd recipes\n\n$ echo \"I like tomatoes, therefore I like ketchup\" &gt; ketchup.md\n\n$ git add ketchup.md\n\n$ echo \"ketchup enhances pasta dishes\" &gt;&gt; ketchup.md\n\n$ git commit -m \"My opinions about the red sauce\"\n\n$ git restore ketchup.md\n\n$ cat ketchup.md # this will print the content of ketchup.md on screen\n\nRespuesta: I like tomatoes, therefore I like ketchup"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#una-primera-figura-espacial",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#una-primera-figura-espacial",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Una primera figura espacial",
+    "text": "Una primera figura espacial\nsst.isel(time=0).plot()\nplt.title(\"SST · primer mes disponible\")\nPregunta:\n\n¿Qué estamos viendo: un valor absoluto o una anomalía?"
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Perez-Corona, Y.*, Torres, H., & Ramos-Musalem, K. (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. Remote Sensing, 18(3), 434. DOI: 10.3390/rs18030434\nMoreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. Ocean Science, Vol. 21, Issue 5, 2019–2039. DOI: 10.5194/os-21-2019-2025\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175\n* PhD student"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#seleccionar-un-tiempo",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#seleccionar-un-tiempo",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Seleccionar un tiempo",
+    "text": "Seleccionar un tiempo\nPodemos seleccionar por posición:\nsst.isel(time=0)\nO por coordenada:\nsst.sel(time=\"2000-01\")\nSi la fecha exacta no existe:\nsst.sel(time=\"2000-01\", method=\"nearest\")"
   },
   {
-    "objectID": "publications.html#peer-reviewed",
-    "href": "publications.html#peer-reviewed",
-    "title": "Publications",
-    "section": "",
-    "text": "Perez-Corona, Y.*, Torres, H., & Ramos-Musalem, K. (2026). Detection and Characterization of Mesoscale Eddies in the Gulf of California Using High-Resolution Satellite Altimetry. Remote Sensing, 18(3), 434. DOI: 10.3390/rs18030434\nMoreles, E., Romero, E., Ramos-Musalem, K., & Tenorio-Fernandez, L. (2025). The global ocean mixed layer depth derived from an energy approach. Ocean Science, Vol. 21, Issue 5, 2019–2039. DOI: 10.5194/os-21-2019-2025\nRamos-Musalem, K., Gille, S. T., Cornuelle, B. D., & Mazloff, M. R. (2023). High-frequency variability induced in the Southern California Bight by a wind event in Sebastián Vizcaíno Bay, Baja California. Journal of Geophysical Research: Oceans, e2022JC019547. DOI:10.1029/2022JC019547.\nBurgos-Cuevas, A., Ruiz-Angulo, A., Morales, C. A. P., Ramos-Musalem, K., & Molina, C. D. G. (2022). Experimental downslope gravity currents over a synthetic topography. Atmósfera. DOI:10.20937/ATM.53156\nSaldías, G. S., Ramos-Musalem, K., & Allen, S. E. (2021). Circulation and upwelling induced by coastal trapped waves over a submarine canyon in an idealized eastern boundary margin. Geophysical Research Letters, 48(11), e2021GL093548. DOI:10.1029/2021GL093548\nRamos-Musalem, K. & Allen, S. E. (2020). The impact of initial tracer profile on the exchange and on-shelf distribution of tracers induced by a submarine canyon. Journal of Geophysical Research: Oceans, 125(3), e2019JC015785. DOI:10.1029/2019JC015785\nRamos-Musalem, K. & Allen, S. E. (2019). The impact of locally enhanced vertical diffusivity on the cross-shelf transport of tracers induced by a submarine canyon. Journal of Physical Oceanography, 49(2), 561–584. DOI: 10.1175/JPO-D-18-0174.1\nArane, T., Musalem, A. K. R., & Fridman, M. (2009). Coupling between two singing wineglasses. American Journal of Physics, 77(11), 1066–1067. DOI: 10.1119/1.3119175\n* PhD student"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#promedio-espacial",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#promedio-espacial",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Promedio espacial",
+    "text": "Promedio espacial\nPara obtener una serie mensual promedio frente a Baja California:\nsst_bc = sst.mean(dim=(\"lat\", \"lon\"))\nsst_bc\nGraficamos:\nsst_bc.plot()\nplt.title(\"SST promedio frente a Baja California\")\nplt.ylabel(\"SST\")"
   },
   {
-    "objectID": "publications.html#academic-writing",
-    "href": "publications.html#academic-writing",
-    "title": "Publications",
-    "section": "Academic writing",
-    "text": "Academic writing\nPhD Thesis: Transport through submarine canyons (2020). University of British Columbia. link\nBSc Thesis: Estudio numérico de los forzamientos que generan la surgencia de Yucatán (2013). UNAM, Mexico, 77. (In Spanish) link"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-domina-la-serie",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-domina-la-serie",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "¿Qué domina la serie?",
+    "text": "¿Qué domina la serie?\nMiren la figura.\nPregunta:\n\n¿Qué variabilidad salta primero a la vista?\n\nNormalmente veremos un ciclo estacional fuerte.\nEso puede ocultar variabilidad interanual."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Research",
-    "section": "",
-    "text": "I am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean.\nMy research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#climatología-mensual",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#climatología-mensual",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Climatología mensual",
+    "text": "Climatología mensual\nCalculamos el promedio para cada mes del año:\nclim = sst_bc.groupby(\"time.month\").mean(\"time\")\nclim\nGraficamos:\nclim.plot(marker=\"o\")\nplt.title(\"Climatología mensual de SST\")\nplt.xlabel(\"Mes\")\nplt.ylabel(\"SST\")"
   },
   {
-    "objectID": "projects.html#funded-projects",
-    "href": "projects.html#funded-projects",
-    "title": "Research",
-    "section": "Funded projects",
-    "text": "Funded projects\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Role\n      \n      \n        Funder\n      \n      \n        Start\n      \n      \n        End\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nRole\n\n\n\nFunder\n\n\n\nStart\n\n\n\nEnd\n\n\n\n\n\n\n\n\nDinámica mareal y submareal del intercambio a tráves de cañones submarinos \n\n\nPI\n\n\nSECIHTI\n\n\n2025\n\n\n2027\n\n\n\n\n\n\nOndas de montaña en el Valle de México\n\n\nPI\n\n\nPAPIIT-UNAM\n\n\n2022\n\n\n2024\n\n\n\n\n\n\nNo matching items"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#anomalía-mensual",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#anomalía-mensual",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Anomalía mensual",
+    "text": "Anomalía mensual\nRestamos la climatología de cada mes:\nssta_bc = sst_bc.groupby(\"time.month\") - clim\nssta_bc\nGraficamos:\nssta_bc.plot()\nplt.axhline(0, color=\"k\", linewidth=0.8)\nplt.title(\"Anomalía de SST frente a Baja California\")\nplt.ylabel(\"SSTA\")"
   },
   {
-    "objectID": "posts/news-title/index.html",
-    "href": "posts/news-title/index.html",
-    "title": "News item",
-    "section": "",
-    "text": "About the news"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#pausa-conceptual",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#pausa-conceptual",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Pausa conceptual",
+    "text": "Pausa conceptual\nSST absoluta\n   = temperatura observada\n\nSSTA\n   = temperatura observada - ciclo estacional típico\nLa anomalía nos ayuda a comparar enero con enero, julio con julio, etc."
   },
   {
-    "objectID": "posts/news-title/index.html#summary",
-    "href": "posts/news-title/index.html#summary",
-    "title": "News item",
-    "section": "",
-    "text": "About the news"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-2-tu-primera-figura-guardada",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-2-tu-primera-figura-guardada",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Reto 2 · Tu primera figura guardada",
+    "text": "Reto 2 · Tu primera figura guardada\nHaz una figura de la anomalía de SST y guárdala en figures/.\nfig, ax = plt.subplots()\nssta_bc.plot(ax=ax)\nax.axhline(0, color=\"k\", linewidth=0.8)\nax.set_title(\"Anomalía de SST frente a Baja California\")\nax.set_ylabel(\"SSTA\")\nfig.savefig(\"../figures/ssta_baja_timeseries.png\", dpi=150, bbox_inches=\"tight\")\nVerifica desde la terminal:\nls figures"
   },
   {
-    "objectID": "posts/paper-title/index.html#abstract",
-    "href": "posts/paper-title/index.html#abstract",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-el-csv",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-el-csv",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Abrir el CSV",
+    "text": "Abrir el CSV\noni = pd.read_csv(\"../data/oni_mensual.csv\")\noni.head()\nPreguntas:\n\n¿Qué columnas tiene?\n¿Cómo está escrita la fecha?\n¿Cómo se llama la columna del índice?"
   },
   {
-    "objectID": "posts/paper-title/index.html#links",
-    "href": "posts/paper-title/index.html#links",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Links",
-    "text": "Links\nPublished paper"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#fechas",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#fechas",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Fechas",
+    "text": "Fechas\nIdealmente queremos una columna de tiempo entendida como fecha:\noni = pd.read_csv(\"../data/oni_mensual.csv\", parse_dates=[\"time\"])\noni = oni.set_index(\"time\")\noni.head()\nSi la columna se llama distinto, hay que adaptar el código."
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Most resources in Spanish."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#graficar-oni",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#graficar-oni",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Graficar ONI",
+    "text": "Graficar ONI\noni[\"oni\"].plot()\nplt.axhline(0, color=\"k\", linewidth=0.8)\nplt.title(\"Índice ONI\")\nplt.ylabel(\"ONI\")\nPregunta:\n\n¿Cuándo aparecen eventos positivos y negativos?"
   },
   {
-    "objectID": "teaching.html#oceanografía-dinámica-i",
-    "href": "teaching.html#oceanografía-dinámica-i",
-    "title": "Teaching",
-    "section": "Oceanografía Dinámica I",
-    "text": "Oceanografía Dinámica I\n\n\n\n\n\n2025-I,   2026-I\nGraduate program in Physical Oceanography, CICESE"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-3-identificar-años-cálidosfríos",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#reto-3-identificar-años-cálidosfríos",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Reto 3 · Identificar años cálidos/fríos",
+    "text": "Reto 3 · Identificar años cálidos/fríos\nUsando la gráfica de ONI:\n\nidentifica un periodo con ONI positivo;\nidentifica un periodo con ONI negativo;\npregunta si la SSTA regional responde igual.\n\nNo necesitamos responder todavía.\nSólo estamos formulando una pregunta."
   },
   {
-    "objectID": "teaching.html#introducción-a-la-programación-científica",
-    "href": "teaching.html#introducción-a-la-programación-científica",
-    "title": "Teaching",
-    "section": "Introducción a la programación científica",
-    "text": "Introducción a la programación científica\n\n\n\n\n\nSeptiembre 2025\n3-day bootcamp for PO graduate students at CICESE."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-precipitación",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#abrir-precipitación",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Abrir precipitación",
+    "text": "Abrir precipitación\nrain = pd.read_csv(\"../data/precipitacion_ensenada_mensual.csv\", parse_dates=[\"time\"])\nrain = rain.set_index(\"time\")\nrain.head()\nPreguntas:\n\n¿qué unidades tiene la precipitación?\n¿hay meses sin datos?\n¿la precipitación se comporta como la SST?"
   },
   {
-    "objectID": "teaching.html#other-courses",
-    "href": "teaching.html#other-courses",
-    "title": "Teaching",
-    "section": "Other courses",
-    "text": "Other courses\n\n\n\n\n\nAt UNAM, Faculty of Science (undergraduate)\n* Taller de Modelación Numérica (2021-II, 2022-II)\n* Dinámica de Fluidos Geofísicos (2022-I, 2024-I)\n* Introducción a la Oceanografía Física (2023-I)\n* Técnicas Experimentales (2021-I)\nAt UNAM, Earth Sciences Graduate Program\n* Oceanografía Dinámica I (2023-I)\n* Oceanografía Dinámica II (2023-II)"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#graficar-precipitación",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#graficar-precipitación",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Graficar precipitación",
+    "text": "Graficar precipitación\nrain[\"precip_mm\"].plot()\nplt.title(\"Precipitación mensual en Ensenada\")\nplt.ylabel(\"Precipitación [mm]\")\nPregunta:\n\n¿Conviene comparar precipitación mensual directamente con ONI mensual?"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "Reach out :-)\nCentro de Investigación Científica y de Educación Superior de Ensenada, Baja California\nDepartamento de Oceanografía Física\nAddress: Carretera Ensenada - Tijuana No. 3918, Zona Playitas, CP. 22860, Ensenada, B.C. México.\nPhone: +52 646-175-05-00, ext 24054\nE-mail: kramosmu@cicese.edu.mx\n\n\n\nThe view from CICESE."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#agregación-estacional",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#agregación-estacional",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Agregación estacional",
+    "text": "Agregación estacional\nPara precipitación quizá nos interesen acumulados invernales.\nEjemplo simple:\nrain_winter = rain[\"precip_mm\"].resample(\"YE\").sum()\nrain_winter.plot(marker=\"o\")\nplt.title(\"Precipitación anual acumulada\")\nplt.ylabel(\"Precipitación [mm]\")\n\nPara el curso corto, no entrar aún a definición rigurosa de invierno hidrológico. Mostrarlo como una decisión científica que se puede refinar."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Karina Ramos Musalem",
-    "section": "",
-    "text": "GitHub\n  \n  \n    \n     E-mail\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \nI am a physical oceanographer interested in how stratified ocean flows interact with complex topography, and how these interactions control transport, mixing, and exchange in the coastal ocean. My research combines numerical modeling, observations and theory, with a particular focus on Baja California and the Gulf of California. I am especially interested in connections across scales: from internal waves and tides to coastal-trapped waves and mesoscale circulation.\nI’m currently part of the Department of Physical Oceanography at the Center for Scientific Research and Higher Education of Ensenada, Baja California (CICESE).\nFrom 2021 to 2024, I was a researcher with the Ocean-Atmosphere Interaction group at the Instituto de Ciencias de la Atmósfera y Cambio Climático. I completed my Ph.D. in the Mesoscale Ocean and Atmospheric Dynamics Group under Professor Susan Allen at the University of British Columbia.\n\n\n\nStratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows.\n\n\n\n\n\nPh.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#tres-series-tres-comportamientos",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#tres-series-tres-comportamientos",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Tres series, tres comportamientos",
+    "text": "Tres series, tres comportamientos\nHasta ahora tenemos:\nSST regional\nSSTA regional\nONI\nprecipitación local\nCada una responde a una pregunta distinta.\nEl proyecto final consistirá en decidir:\n\n¿qué comparación vale la pena mostrar?"
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "Karina Ramos Musalem",
-    "section": "",
-    "text": "Stratified flow over topography and associated mixing processes\nCross-shelf exchange and transport mechanisms in submarine canyons\nAnalytical and numerical modeling of geophysical flows."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#una-comparación-guiada",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#una-comparación-guiada",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Una comparación guiada",
+    "text": "Una comparación guiada\nEjemplo: SSTA regional y ONI.\nfig, ax = plt.subplots()\nssta_bc.plot(ax=ax, label=\"SSTA Baja California\")\nax.set_title(\"SSTA regional\")\nax.set_ylabel(\"SSTA\")\nax.legend()\nPara comparar con ONI puede ser necesario alinear fechas y unidades."
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Karina Ramos Musalem",
-    "section": "",
-    "text": "Ph.D. in Oceanography, University of British Columbia (2020)\nB.Sc. in Physics, Universidad Nacional Autónoma de México (2013)"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#precaución-científica",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#precaución-científica",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Precaución científica",
+    "text": "Precaución científica\nDos series que se parecen no prueban causalidad.\nPreguntas importantes:\n\n¿hay desfase?\n¿la relación cambia entre eventos?\n¿la precipitación responde de manera más ruidosa?\n¿qué otros procesos regionales podrían intervenir?"
   },
   {
-    "objectID": "people.html",
-    "href": "people.html",
-    "title": "Karina Ramos Musalem",
-    "section": "",
-    "text": "Research group\n\n\n\n\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nMasters Student\n\n\n\n\n\n\n\nNumerical study of internal waves generated by a seiche in a bay\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAndrea Mitre Apaez\n\n\nPhD Student / Co-advised with Dr. Sheila Estrada Allis\n\n\n\n\n\n\n\nInternal tides in Punta Banda Canyon\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYuritzy Pérez Corona\n\n\nPhD Student / Co-advised with Dr. Hector Torres\n\n\n\n\n\n\n\nSynergy between SST and SSH in the Gulf of California mesoscale eddies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nPhD Student / Co-advised with Dr. Manuel López\n\n\n\n\n\n\n\nExchange Processes Across Sills in the Northern Gulf of California\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nProspective students\n\nInterested in joining us?\nI welcome students interested in physical oceanography and geophysical fluid dynamics, particularly coastal circulation, waves, flow–topography interactions, and ocean transport. Projects may involve numerical modeling, oceanographic observations, satellite data, or combinations of these approaches.\nStudents can join through CICESE’s MSc or PhD program in Physical Oceanography. Our program includes students from Mexico and around the world, although classes are taught in Spanish. Students admitted to the program may be eligible to apply for SECIHTI graduate funding.\nThinking about graduate school? Get in touch. I am always happy to discuss possible research questions, available projects, and what studying physical oceanography at CICESE is like.\n\n\n¿Te interesa trabajar con nosotros?\nEscríbeme si te interesa la oceanografía física y dinámica de fluidos geofísicos, particularmente la circulación costera, ondas, interacción flujo–topografía y transporte oceánico. Posibles proyectos pueden involucrar modelación numérica, observaciones oceanográficas, datos satelitales o una combinación de estas herramientas.\nEs posible incorporarse a través de la Maestría o el Doctorado en Oceanografía Física del CICESE. En el programa participan estudiantes de México y de otros países; las clases se imparten en español. Les estudiantes admitides pueden ser candidates a solicitar una beca de posgrado de SECIHTI.\n¿Estás pensando en hacer un posgrado? Escríbeme y podemos platicar sobre posibles preguntas de investigación, proyectos disponibles y cómo es estudiar Oceanografía Física en CICESE.\n\n\n\nAlumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Name\n      \n      \n        Role\n      \n      \n        Graduated\n      \n      \n        Project\n      \n      \n        Institution\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nName\n\n\n\nRole\n\n\n\nProject\n\n\n\nInstitution\n\n\n\nGraduated\n\n\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n\nEva Rojas Razo\n\n\nUndergraduate Alumni\n\n\nDynamical similarity between mountain waves in the Valley of Mexico and a physical lab model\n\n\nIPN, Mexico\n\n\n2025\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nMasters Alumni\n\n\nHigh-frequency coastal trapped waves generated at Sebastián Vizcaino Bay\n\n\nU. of Gothenburg, Sweden\n\n\n2023\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nUndergraduate Alumni\n\n\nDynamical interaction between two adjacent submarine canyons (thesis in Spanish)\n\n\nUNAM, Mexico\n\n\n2023\n\n\n\n\n\n\nFélix López García\n\n\nUndergraduate Alumni (Co-supervised with Dr. Efrain Moreles)\n\n\nEnergy content in a vertical density profile\n\n\nIPN, Mexico\n\n\n2023\n\n\n\n\n\n\nJimena Ortiz Villalva\n\n\nUndergraduate Alumni\n\n\nMountain waves over the Valley of Mexico and Guanajuato\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nJesica Villalobos García\n\n\nUndergraduate Alumni\n\n\nMountain waves and ozone events in the Valley of Mexico\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nNo matching items"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#por-qué-hacer-un-script",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#por-qué-hacer-un-script",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "¿Por qué hacer un script?",
+    "text": "¿Por qué hacer un script?\nEl notebook sirve muy bien para explorar.\nUn script sirve para repetir una tarea.\nPor ejemplo:\nscripts/plot_sst_timeseries.py"
   },
   {
-    "objectID": "people.html#alumni",
-    "href": "people.html#alumni",
-    "title": "Research Group",
-    "section": "Alumni",
-    "text": "Alumni\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Name\n      \n      \n        Role\n      \n      \n        Graduated\n      \n      \n        Project\n      \n      \n        Institution\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nName\n\n\n\nRole\n\n\n\nProject\n\n\n\nInstitution\n\n\n\nGraduated\n\n\n\n\n\n\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\n\nEva Rojas Razo\n\n\nUndergraduate Alumni\n\n\nDynamical similarity between mountain waves in the Valley of Mexico and a physical lab model\n\n\nIPN, Mexico\n\n\n2025\n\n\n\n\n\n\nAmelia Thelandersson\n\n\nMasters Alumni\n\n\nHigh-frequency coastal trapped waves generated at Sebastián Vizcaino Bay\n\n\nU. of Gothenburg, Sweden\n\n\n2023\n\n\n\n\n\n\nEsteban Cruz Isidro\n\n\nUndergraduate Alumni\n\n\nDynamical interaction between two adjacent submarine canyons (thesis in Spanish)\n\n\nUNAM, Mexico\n\n\n2023\n\n\n\n\n\n\nFélix López García\n\n\nUndergraduate Alumni (Co-supervised with Dr. Efrain Moreles)\n\n\nEnergy content in a vertical density profile\n\n\nIPN, Mexico\n\n\n2023\n\n\n\n\n\n\nJimena Ortiz Villalva\n\n\nUndergraduate Alumni\n\n\nMountain waves over the Valley of Mexico and Guanajuato\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nJesica Villalobos García\n\n\nUndergraduate Alumni\n\n\nMountain waves and ozone events in the Valley of Mexico\n\n\nUAM-I, Mexico\n\n\n2023\n\n\n\n\n\n\nNo matching items"
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#script-mínimo",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#script-mínimo",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Script mínimo",
+    "text": "Script mínimo\nimport matplotlib.pyplot as plt\nimport xarray as xr\n\n# Leer datos\nds = xr.open_dataset(\"data/sst_baja_mensual_1994_2024.nc\")\nsst = ds[\"sst\"]\n\n# Calcular anomalía regional\nsst_bc = sst.mean(dim=(\"lat\", \"lon\"))\nclim = sst_bc.groupby(\"time.month\").mean(\"time\")\nssta_bc = sst_bc.groupby(\"time.month\") - clim\n\n# Figura\nfig, ax = plt.subplots()\nssta_bc.plot(ax=ax)\nax.axhline(0, color=\"k\", linewidth=0.8)\nax.set_title(\"Anomalía de SST frente a Baja California\")\nax.set_ylabel(\"SSTA\")\nfig.savefig(\"figures/ssta_baja_timeseries.png\", dpi=150, bbox_inches=\"tight\")"
   },
   {
-    "objectID": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
-    "href": "teaching/SWC2025_DOF/slides_python.html#repaso.-ls-comprensión-de-lectura",
-    "title": "Python para principantes",
-    "section": "Repaso. ls comprensión de lectura",
-    "text": "Repaso. ls comprensión de lectura\nSuponiendo una estructura de directorio como en la figura anterior, si pwd muestra /Users/backup, y -r le dice a ls que muestre el resultado en orden inverso, ¿qué comando mostrará: SALIDA\n\npnas_sub/ pnas_final/ original/\nls pwd\nls -r -F\nls -r -F /Users/backup\n#2 y #3, pero no #1."
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#ejecutar-desde-terminal",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#ejecutar-desde-terminal",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Ejecutar desde terminal",
+    "text": "Ejecutar desde terminal\nDesde el directorio principal del proyecto:\npython scripts/plot_sst_timeseries.py\nVerificar:\nls figures"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-cambió-hoy-en-el-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#qué-cambió-hoy-en-el-proyecto",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "¿Qué cambió hoy en el proyecto?",
+    "text": "¿Qué cambió hoy en el proyecto?\nnotebooks/01_explora_datos.ipynb\nscripts/plot_sst_timeseries.py\nfigures/ssta_baja_timeseries.png\nTambién empezamos a entender:\n\nqué contiene cada archivo;\nqué variables podemos comparar;\nqué decisiones científicas quedan abiertas."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#gancho-para-la-sesión-3",
+    "href": "teaching/SWC2026_DOF/sesion2_python_datos_enso_baja.html#gancho-para-la-sesión-3",
+    "title": "Sesión 2 · De datos a una primera figura",
+    "section": "Gancho para la sesión 3",
+    "text": "Gancho para la sesión 3\nMarina ya tiene código, figuras y decisiones.\nPero mañana puede cambiar algo y arrepentirse.\nPregunta final:\n\n¿Cómo guardamos la historia del proyecto sin llenar la carpeta de versiones finales?\n\nMañana: Git y GitHub."
   },
   {
     "objectID": "teaching/ocedin1_2026.html",
@@ -656,237 +1538,6 @@
     "title": "Oceanografía Dinámica I",
     "section": "",
     "text": "Diapositivas\n\nIntroducción (7 de enero 2026)\nCinemática y conservación de masa y momento(12 de enero de 2026)\n\n\n\nNotebooks\n\nConceptos de cinemática de ondas - Puedes descargar el notebook de la página de Classroom del curso.\n\n\n\nNotas\n\nApuntes de apoyo: se irán actualizando conforme avance el cuatrimestre."
-  },
-  {
-    "objectID": "teaching/intro_scicomp_2025.html",
-    "href": "teaching/intro_scicomp_2025.html",
-    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
-    "section": "",
-    "text": "Este curso estilo bootcamp de 3 sesiones (2 horas cada una) está pensado para estudiantes de nuevo ingreso al posgrado en Oceanografía Física, aunque está abierto a cualquier persona interesada en adquirir habilidades computacionales básicas para el trabajo científico. El objetivo principal es ayudarles a organizar su ambiente de trabajo y a familiarizarse con herramientas esenciales de programación, automatización y control de versiones. Estas habilidades son fundamentales para lograr una ciencia más reproducible, eficiente y colaborativa desde el inicio del posgrado. Este curso es introductorio, orientado a personas sin experiencia previa en programación. Se recomienda ampliamente tomar el curso “Computación en Ciencia” para profundizar en estas herramientas y conceptos. Todo el material está basado en las lecciones abiertas de Software Carpentry Workshops"
-  },
-  {
-    "objectID": "teaching/intro_scicomp_2025.html#día-1.-línea-de-comandos",
-    "href": "teaching/intro_scicomp_2025.html#día-1.-línea-de-comandos",
-    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
-    "section": "Día 1. Línea de comandos",
-    "text": "Día 1. Línea de comandos\n\n15 de septiembre de 2025\n\nEsta clase está basada en la lección “La terminal de Unix” de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.\nDescarga el directorio data-shell de esta liga y expande el .zip en tu directorio Escritorio/ o Desktop/.\nPuedes consultar las diapositivas de clase en este enlace."
-  },
-  {
-    "objectID": "teaching/intro_scicomp_2025.html#día-2.-introducción-a-python",
-    "href": "teaching/intro_scicomp_2025.html#día-2.-introducción-a-python",
-    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
-    "section": "Día 2. Introducción a python",
-    "text": "Día 2. Introducción a python\n\n22 de septiembre de 2025\n\nDescarga el siguiente repositorio en formato .zip y expándelo en tu directorio Escritorio/ o Desktop/."
-  },
-  {
-    "objectID": "teaching/intro_scicomp_2025.html#día-3.-introducción-a-git",
-    "href": "teaching/intro_scicomp_2025.html#día-3.-introducción-a-git",
-    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
-    "section": "Día 3. Introducción a git",
-    "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025\nEn esta clase seguiremos la lección Version Control with Git de Software Carpentry Workshops.\n\nAsegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.\nPuedes consultar las diapositivas de la clase aquí."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#instructorxs",
-    "href": "teaching/ODI-2026/02_cinematica.html#instructorxs",
-    "title": "01 Introducción",
-    "section": "Instructorxs",
-    "text": "Instructorxs\nProfesora: Karina Ramos Musalem (kramosmu@cicese.mx)\nProfesor: Manuel López (malope@cicese.mx)\nAyudante: Alejandro Dominguez Guadarrama (adomingu@cicese.edu.mx)"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#horario",
-    "href": "teaching/ODI-2026/02_cinematica.html#horario",
-    "title": "01 Introducción",
-    "section": "Horario",
-    "text": "Horario\nClases\n\nLunes 8:30-10:30\nMiércoles 8:30-10:30\nViernes 9:00-10:20 (“laboratorio”)\n\nLaboratorio incluye algunas demostraciones experimentales y prácticas numéricas con jupyter notebooks.\nDudas por correo, en el cubículo o en Classroom para que todes participemos :-)"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#temario-del-curso",
-    "href": "teaching/ODI-2026/02_cinematica.html#temario-del-curso",
-    "title": "01 Introducción",
-    "section": "Temario del curso",
-    "text": "Temario del curso\nPueden consultar el temario en classroom.\n\nFolder “Bibliografía” en Classroom\nLes iremos indicando las referencias principales de cada tema a lo largo del curso."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#evaluación",
-    "href": "teaching/ODI-2026/02_cinematica.html#evaluación",
-    "title": "01 Introducción",
-    "section": "Evaluación",
-    "text": "Evaluación\nTareas 45%\nParciales 45%\nExposición de artículo 10%\n Tareas: Habrá aproximadamente 7 en el semestre (~ 1 cada 2 semanas). Se entregan individualmente. Las prácticas de python cuentan como parte de la tarea correspondiente a esa semana.  Parciales: Habrá al menos dos exámenes parciales. El twist es que 80% de su calificación será del examen individual y 20% del examen en equipo (En mi examen).  Exposición de un artículo: - Más detalles pronto"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#código-de-conducta",
-    "href": "teaching/ODI-2026/02_cinematica.html#código-de-conducta",
-    "title": "01 Introducción",
-    "section": "Código de conducta",
-    "text": "Código de conducta\nDecidamos entre todes las reglas de convivencia del curso (pizarrón)."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#introducción",
-    "href": "teaching/ODI-2026/02_cinematica.html#introducción",
-    "title": "01 Introducción",
-    "section": "Introducción",
-    "text": "Introducción\nEsta clase es de dinámica del océano, pero en general veremos conceptos que aplican a flujos geofísicos en general.\n¿De qué hablamos cuando hablamos de flujos geofísicos?\n\n\n\nHuracanes Nora (izq.) e Ida (der.) Fuente: NOAA Satellites"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#características-de-los-fluidos-geofísicos-fg",
-    "href": "teaching/ODI-2026/02_cinematica.html#características-de-los-fluidos-geofísicos-fg",
-    "title": "01 Introducción",
-    "section": "Características de los fluidos geofísicos (FG)",
-    "text": "Características de los fluidos geofísicos (FG)\n\nSe encuentran en un sistema de referencia en rotación;\npor lo regular están estratificados y son turbulentos;\nEn la naturaleza ocurren a “gran escala” (en un momento definiremos “gran”).\n\nEste curso tratará de las peculiaridades que aparecen en la dinámica del flujo debidas a la influencia de una, otra o ambas características."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#otros-ejemplos",
-    "href": "teaching/ODI-2026/02_cinematica.html#otros-ejemplos",
-    "title": "01 Introducción",
-    "section": "Otros ejemplos",
-    "text": "Otros ejemplos\n\n\nEstructuras de mesoescala (ciclones, tiempo oceánico) y submesoescala (remolinos, frentes, surgencias, etc).\n\nFuente: NOAA Atlantic Oceanographic and Meteorological Laboratory"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#productividad-biológica",
-    "href": "teaching/ODI-2026/02_cinematica.html#productividad-biológica",
-    "title": "01 Introducción",
-    "section": "Productividad biológica",
-    "text": "Productividad biológica\n\n\n\nFuente: NASA Identifier: ge_05147. Clorofila en el Golfo de Tehuantepec en enero 4 del 2005, tomada por el Moderate Resolution Imaging Spectroradiometer (MODIS) en el satélite Aqua de NASA."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-estratificación",
-    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-estratificación",
-    "title": "01 Introducción",
-    "section": "Efecto de la estratificación",
-    "text": "Efecto de la estratificación\nLa estratificación es la variación vertical de la densidad."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#frecuencia-de-brunt-väisälä",
-    "href": "teaching/ODI-2026/02_cinematica.html#frecuencia-de-brunt-väisälä",
-    "title": "01 Introducción",
-    "section": "Frecuencia de Brunt-Väisälä",
-    "text": "Frecuencia de Brunt-Väisälä\n\n\n\n\nMuevo elemento de fluido en equilibrio de \\(Z\\) hasta \\(Z+h\\) \\(\\rightarrow\\) fuerza boyante\nLa frecuencia de oscilación1 del elemento de fluido está dada por: \\[N^2=\\frac{g}{\\rho_0}\\frac{\\partial{\\rho}}{\\partial z}\\]\n\\(\\uparrow N^2\\) inhibe movimientos verticales y da estructura vertical al flujo.\n\nConocida como frecuencia de Brunt-Väisälä"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación",
-    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación",
-    "title": "01 Introducción",
-    "section": "Efecto de la rotación",
-    "text": "Efecto de la rotación\n\n\n \\(\\Omega=7.2921\\times10^{-5}\\) rad s\\(^{-1}\\)\n\nAgrega el término \\(2\\vec{\\Omega} \\times \\vec{u}\\) a las ecuaciones de momento.\nFlujos tienden a desviarse a la derecha en el hemisferio norte y a la izquierda en el hemisferio sur.\nParámetro de Coriolis  \\[f=2\\Omega\\sin{\\varphi},\\] donde \\(\\varphi\\) es la latitud.\nPor ejemplo:\nEn Huatulco (\\(\\varphi=17.09^{\\circ}\\) N), \\(f=4.28\\times10^{-5}\\) s\\(^{-1}\\)\nEn Ensenada (\\(\\varphi=30.90^{\\circ}\\) N), \\(f=7.47\\times10^{-5}\\) s\\(^{-1}\\)"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación-1",
-    "href": "teaching/ODI-2026/02_cinematica.html#efecto-de-la-rotación-1",
-    "title": "01 Introducción",
-    "section": "Efecto de la rotación",
-    "text": "Efecto de la rotación\nPara que el flujo sienta el efecto de la rotación, las escalas temporales deben ser del orden de un periodo de rotación.\n\\[\n\\epsilon = \\frac{\\textrm{tiempo de una revolución}}{\\textrm{tiempo en avanzar } L \\textrm{ a velocidad } U}\n\\] \\[= \\frac{\\frac{2\\pi}{\\Omega}}{\\frac{L}{U}} = \\frac{2\\pi U}{\\Omega L}.\\]\nSi \\(\\epsilon \\le 1\\), la rotación es importante. Esto limita el tamaño y velocidad del flujo y nos da una definición de “gran escala”.\nNombre especial de \\(\\epsilon\\): Número de Rossby en forma \\(Ro=U/fL\\)."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica",
-    "href": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica",
-    "title": "01 Introducción",
-    "section": "Similaridad dinámica",
-    "text": "Similaridad dinámica\n¿Por qué podemos estudiar la atmósfera, el océano y un tanque con las mismas ecuaciones?\n\\[\\frac{\\partial\\vec{u}}{\\partial t}+ \\vec{u}\\cdot\\nabla\\vec{u} + \\vec{f}\\times\\vec{u} = \\frac{1}{\\rho} \\nabla P - \\vec{g} + \\mu \\nabla^2\\vec{u}\\]\nEj. Para que la rotación importe, \\(Ro=U/fL&lt;1\\):\nTierra \\(f\\) ~ \\(10^{-4}\\) s\\(^{-1}\\)\nOcéano: \\(L\\sim10^3\\) km, \\(U\\sim10\\) cm s\\(^{-1}\\), \\(Ro\\sim10^{-2}\\)\nAtmósfera: \\(L\\sim10^4\\) km, \\(U\\sim10\\) ms\\(^{-1}\\), \\(Ro\\sim10^{-3}\\)\nPlataforma giratoria \\(f\\) ~ \\(10^{-1}\\) s\\(^{-1}\\)\nLaboratorio: \\(L\\sim1\\) m, \\(U\\sim10^{-2}\\) cm s\\(^{-1}\\), \\(Ro\\sim10^{-1}\\)"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica-1",
-    "href": "teaching/ODI-2026/02_cinematica.html#similaridad-dinámica-1",
-    "title": "01 Introducción",
-    "section": "Similaridad dinámica",
-    "text": "Similaridad dinámica\nPara que dos flujos sean físicamente equivalentes o análogos deben tener similaridad dinámica (cinemática y geométrica).\nLa importancia relativa entre distintos tipos de fuerza (e.g., inerciales, viscosas, etc.) debe ser la misma para ambos flujos.\n \n\n\nInteracción de remolinos cerca de Japón y remolinos en el laboratorio - LEGI Plataforma Coriolis (J.B. Flor, 2005). Imágenes tomadas de http://www.legi.grenoble-inp.fr/web/spip.php?article757."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#habrá-similaridad-dinámica-si",
-    "href": "teaching/ODI-2026/02_cinematica.html#habrá-similaridad-dinámica-si",
-    "title": "01 Introducción",
-    "section": "Habrá similaridad dinámica si…",
-    "text": "Habrá similaridad dinámica si…\n…los grupos adimensionales de ambos flujos son iguales.\nAlgunos ejemplos de números adimensionales relevantes:\n\n\nRossby\nrotación vs. advección\n\\(Ro=\\frac{U}{fL}\\)\n\nBurger\nrotación vs. estratificación\n\\(Bu=\\frac{NH}{fL}\\)\n\nReynolds\ninerciales vs. fricción\n\\(Re=\\frac{UL}{\\nu\\_E}\\)\n\n \n\n\nVórtices de von Kárman sobre la isla de Selkirk y experimento análogo de A. Stegner (2005). Imágenes tomadas de [http://www.legi.grenoble-inp.fr]."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#dfg-en-el-laboratorio",
-    "href": "teaching/ODI-2026/02_cinematica.html#dfg-en-el-laboratorio",
-    "title": "01 Introducción",
-    "section": "DFG en el laboratorio",
-    "text": "DFG en el laboratorio\n\n\nRotación: Plataforma o mesa giratoria\nEstratificación: Distintas concentraciones de sal o gradientes de temperatura\nMedio: Usamos agua en vez de aire para modelar tanto océano como atmósfera (nunca he visto un túnel de viento giratorio, pero ¿tal vez sí hay?).\n\n\n\n\n\nMesa giratoria del Laboratorio de Fluidos Geofísicos, UBC"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#dfg-con-simulaciones-numéricas",
-    "href": "teaching/ODI-2026/02_cinematica.html#dfg-con-simulaciones-numéricas",
-    "title": "01 Introducción",
-    "section": "DFG con simulaciones numéricas",
-    "text": "DFG con simulaciones numéricas\nEn general discretizamos el dominio de interés y las ecuaciones de movimiento y termodinámica usando diferencias finitas o volumen finito (entre otras).\n\n\n\nSimulación de una corriente de gravedad a escala de laboratorio usando el modelo MITgcm."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#section",
-    "href": "teaching/ODI-2026/02_cinematica.html#section",
-    "title": "01 Introducción",
-    "section": "",
-    "text": "La DFG se trata de representar matemáticamente e interpretar físicamente el movimiento de flujos geofísicos.\nLas matemáticas de la DFG son muy “computacionales” (Ej. modelación numérica de la circulación oceánica y las nubes son los problemas computacionales más grandes en la historia de la ciencia)\nEsto se debe a que los experimentos de laboratorio solo pueden responder algunas de las preguntas interesantes.\nEn geofísica muchos de los avances teóricos están basados en DFG y no en experimentos porque obtener mediciones en campo es complicado, caro y muchas veces imposible."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#por-qué-estudiar-dinámica-del-oceáno",
-    "href": "teaching/ODI-2026/02_cinematica.html#por-qué-estudiar-dinámica-del-oceáno",
-    "title": "01 Introducción",
-    "section": "¿Por qué estudiar dinámica del oceáno?",
-    "text": "¿Por qué estudiar dinámica del oceáno?\nLos océanos son el motor del clima y los sistemas meteorológicos de la Tierra. \nEntender la dinámica oceánica ayuda a:\n\nPredecir corrientes y ondas en el océano.\nGestionar pesquerías y ecosistemas.\nMitigar los impactos del cambio climático."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#geostrofía-el-balance-de-fuerzas",
-    "href": "teaching/ODI-2026/02_cinematica.html#geostrofía-el-balance-de-fuerzas",
-    "title": "01 Introducción",
-    "section": "Geostrofía: El Balance de Fuerzas",
-    "text": "Geostrofía: El Balance de Fuerzas\nConcepto\n\nBalance entre la fuerza de Coriolis y el gradiente de presión.\nGenera corrientes a gran escala.\nGiros ciclónicos o anticiclónicos, diámetro típicamente entre 50–200 km, importantes en el transporte de calor y nutrientes.\n\nEjemplo de la Vida Real\nRemolinos de la Corriente del Lazo"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#oscilaciones-inerciales",
-    "href": "teaching/ODI-2026/02_cinematica.html#oscilaciones-inerciales",
-    "title": "01 Introducción",
-    "section": "Oscilaciones Inerciales",
-    "text": "Oscilaciones Inerciales\n\n\nConcepto - Movimientos circulares de partículas de agua debido a la fuerza de Coriolis, sin fuerzas restauradoras.\nEjemplo de la Vida Real\n\nRespuesta a Ciclones en el Golfo de México: -Tras eventos como huracanes la capa superficial oscila en sentido de las manecillas del reloj.\nEsta energía puede progagarse al interior en el borde de remolinos o en la corriente del Lazo."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#ondas-de-kelvin-mensajeras-costeras",
-    "href": "teaching/ODI-2026/02_cinematica.html#ondas-de-kelvin-mensajeras-costeras",
-    "title": "01 Introducción",
-    "section": "Ondas de Kelvin: Mensajeras Costeras",
-    "text": "Ondas de Kelvin: Mensajeras Costeras\nConcepto\n\nOndas no dispersivas atrapadas a la costa o al ecuador debido a la rotación de la Tierra.\n\nEjemplo de la Vida Real - El Niño y el Pacífico Mexicano: - Las ondas de Kelvin suprimen la termoclina propiciando la aparición de aguas anómalamente cálidas en las costas del Pacífico durante eventos de El Niño, afectando la pesca y provocando lluvias intensas en México."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#section-3",
-    "href": "teaching/ODI-2026/02_cinematica.html#section-3",
-    "title": "01 Introducción",
-    "section": "",
-    "text": "Animaciones de NOAA climate y NASA JPL"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#ondas-internas",
-    "href": "teaching/ODI-2026/02_cinematica.html#ondas-internas",
-    "title": "01 Introducción",
-    "section": "Ondas Internas",
-    "text": "Ondas Internas\nConcepto\n\nOndas que se propagan dentro del océano debidas a los cambios de densidad en el océano.\n\n** Ejemplo de la Vida Real**\n\nOndas Internas en el Golfo de California:\n\nGeneradas por la interacción de las mareas con la topografía submarina, contribuyen al transporte de nutrientes hacia la superficie y sostienen pesquerías como la sardina y el camarón."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#section-4",
-    "href": "teaching/ODI-2026/02_cinematica.html#section-4",
-    "title": "01 Introducción",
-    "section": "",
-    "text": "Animación de MIT ondas internas en el estrecho de Luzón (mar del Sur de China)"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#section-5",
-    "href": "teaching/ODI-2026/02_cinematica.html#section-5",
-    "title": "01 Introducción",
-    "section": "",
-    "text": "Experimento en la Universidad de Washington:"
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#consecuencias-sociales",
-    "href": "teaching/ODI-2026/02_cinematica.html#consecuencias-sociales",
-    "title": "01 Introducción",
-    "section": "Consecuencias sociales",
-    "text": "Consecuencias sociales\nLa dinámica del oceáno es central para resolver los desafíos globales actuales.\nCorrientes Geostróficas: Redistribuyen el calor entre el ecuador y los polos.\n\nEstabilizan las temperaturas globales.\nInfluyen en climas regionales, por ejemplo, los inviernos suaves en Europa debido a la Corriente del Golfo.\n\nOscilaciones Inerciales: Ofrecen información sobre la redistribución de energía tras huracanes.\n\nPredicción de erosión costera y daños en infraestructura.\nApoyo en la recuperación post-desastre.\n\nOndas Internas: Potencial de llevar nutrientes desde las capas profundas a la superficie.\n\nSostienen pesquerías y ecosistemas marinos.\n\nRemolinos de Mesoscala: Pueden influir en la mezcla vertical\n\nSecuestro de carbono.\nRedistribución de calor y nutrientes.\n\nDinámica Oceánica en Modelos Climáticos:\n\nSimular con precisión intercambios de calor, el aumento del nivel del mar y los retroalimentación climática.\nOrientar políticas climáticas internacionales (e.g., Acuerdo de París)."
-  },
-  {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#sus-perspectivas",
-    "href": "teaching/ODI-2026/02_cinematica.html#sus-perspectivas",
-    "title": "01 Introducción",
-    "section": "Sus Perspectivas",
-    "text": "Sus Perspectivas\n\n¿Cómo puede el entendimiento de la dinámica oceánica ayudar a nuestra comunidad localmente?\n¿Qué tema te emociona más? ¿Por qué?"
   },
   {
     "objectID": "teaching/ODI-2026/02_cinematica.html#elemento-de-fluido",
@@ -966,6 +1617,20 @@
     "text": "Ejemplo:\nPropiedad cuya distribución está dada por \\(P=P_0\\cos{\\omega t}\\sin{kx}\\), donde \\(\\omega=2\\pi/T\\) es la frecuencia de la onda y \\(k=2\\pi/\\lambda_x\\) es el número de onda en dirección \\(x\\). Supongamos que el flujo es únicamente en dirección \\(x\\) con magnitud \\(U\\).\n(pizarrón)"
   },
   {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
+    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ecuación de conservación de masa",
+    "text": "Ecuación de conservación de masa\n\\[\\frac{D\\rho}{Dt}+\\rho\\nabla\\cdot\\vec{u}=0\\]\nEl cambio local en la masa dentro de un volumen de control se compensa con la divergencia local del flujo de masa en el volumen.\nEn un fluido incompresible \\(\\rho\\) es constante, por lo que \\(D\\rho/ Dt=0\\) y la ecuación de continuidad queda como: \\[\\nabla\\cdot\\vec{u}=0.\\]"
+  },
+  {
+    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
+    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
+    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
+    "section": "Ecuación de conservación de momento",
+    "text": "Ecuación de conservación de momento\nExpresión de la segunda ley de newton para un fluido \\[F=d\\vec{p}/dt\\approx m\\vec{a}.\\]\nFuerzas en un fluido:\n\nde cuerpo: Actúan directamente sobre la masa del elemento y se distribuyen sobre todo el volúmen. Ej. gravitacional, electromagnética (si el fluido es conductor). \\[\\vec{F}_{cuerpo} = m\\vec{g} = \\int_V dV\\rho\\vec g\\]\n\nFuerzas en un fluido:\n\nde superficie: Actúan sobre la superfice, son direccionales. Ej. presión, esfuerzos cortantes.\n\n\nTensor de esfuerzos: elementos en la diagonal, presión; fuera de la diagonal, esfuerzos cortantes\n\\[\\vec{F}_{superficie}=\\int_S[\\sigma]\\cdot\\hat{n}dS\\].\nVamos a las notas (derivación consevación de momento)"
+  },
+  {
     "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento-1",
     "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento-1",
     "title": "02 Conceptos de cinemática y conservación de masa y volumen",
@@ -980,17 +1645,31 @@
     "text": "Relaciones constitutivas\nLos esfuerzos \\([\\sigma_{ij}]\\) son una combinación de presión \\(p\\) y fricción viscosa:\n\\[\\sigma_{ii} = -p + \\lambda \\nabla \\cdot \\vec{v} + 2\\mu\\frac{\\partial{u_i}}{\\partial{x_i}}\\]\n\\[\\sigma_{ij} = \\mu\\Big(\\frac{\\partial u_i}{\\partial{x_j}}+\\frac{\\partial u_j}{\\partial{x_i}}\\Big)\\]\n\\(\\lambda\\) y \\(\\mu\\) son los coeficientes de viscosidad dinámica y estática, respectivamente.\nASUMIENDO que la relación entre esfuerzo y gradientes de velocidad es lineal (fluido Newtoniano) e isotrópica (las propiedades intrínsecas del fluido no tienen dirección preferencial)."
   },
   {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
-    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-masa",
-    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
-    "section": "Ecuación de conservación de masa",
-    "text": "Ecuación de conservación de masa\n\\[\\frac{D\\rho}{Dt}+\\rho\\nabla\\cdot\\vec{u}=0\\]\nEl cambio local en la masa dentro de un volumen de control se compensa con la divergencia local del flujo de masa en el volumen.\nEn un fluido incompresible \\(\\rho\\) es constante, por lo que \\(D\\rho/ Dt=0\\) y la ecuación de continuidad queda como: \\[\\nabla\\cdot\\vec{u}=0.\\]"
+    "objectID": "teaching/intro_scicomp_2025.html",
+    "href": "teaching/intro_scicomp_2025.html",
+    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
+    "section": "",
+    "text": "Este curso estilo bootcamp de 3 sesiones (2 horas cada una) está pensado para estudiantes de nuevo ingreso al posgrado en Oceanografía Física, aunque está abierto a cualquier persona interesada en adquirir habilidades computacionales básicas para el trabajo científico. El objetivo principal es ayudarles a organizar su ambiente de trabajo y a familiarizarse con herramientas esenciales de programación, automatización y control de versiones. Estas habilidades son fundamentales para lograr una ciencia más reproducible, eficiente y colaborativa desde el inicio del posgrado. Este curso es introductorio, orientado a personas sin experiencia previa en programación. Se recomienda ampliamente tomar el curso “Computación en Ciencia” para profundizar en estas herramientas y conceptos. Todo el material está basado en las lecciones abiertas de Software Carpentry Workshops"
   },
   {
-    "objectID": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
-    "href": "teaching/ODI-2026/02_cinematica.html#ecuación-de-conservación-de-momento",
-    "title": "02 Conceptos de cinemática y conservación de masa y volumen",
-    "section": "Ecuación de conservación de momento",
-    "text": "Ecuación de conservación de momento\nExpresión de la segunda ley de newton para un fluido \\[F=d\\vec{p}/dt\\approx m\\vec{a}.\\]\nFuerzas en un fluido:\n\nde cuerpo: Actúan directamente sobre la masa del elemento y se distribuyen sobre todo el volúmen. Ej. gravitacional, electromagnética (si el fluido es conductor). \\[\\vec{F}_{cuerpo} = m\\vec{g} = \\int_V dV\\rho\\vec g\\]\n\nFuerzas en un fluido:\n\nde superficie: Actúan sobre la superfice, son direccionales. Ej. presión, esfuerzos cortantes.\n\n\nTensor de esfuerzos: elementos en la diagonal, presión; fuera de la diagonal, esfuerzos cortantes\n\\[\\vec{F}_{superficie}=\\int_S[\\sigma]\\cdot\\hat{n}dS\\].\nVamos a las notas (derivación consevación de momento)"
+    "objectID": "teaching/intro_scicomp_2025.html#día-1.-línea-de-comandos",
+    "href": "teaching/intro_scicomp_2025.html#día-1.-línea-de-comandos",
+    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
+    "section": "Día 1. Línea de comandos",
+    "text": "Día 1. Línea de comandos\n\n15 de septiembre de 2025\n\nEsta clase está basada en la lección “La terminal de Unix” de los Software Carpentry workshops. Te recomendo revisar el material original para repasar.\nDescarga el directorio data-shell de esta liga y expande el .zip en tu directorio Escritorio/ o Desktop/.\nPuedes consultar las diapositivas de clase en este enlace."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2025.html#día-2.-introducción-a-python",
+    "href": "teaching/intro_scicomp_2025.html#día-2.-introducción-a-python",
+    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
+    "section": "Día 2. Introducción a python",
+    "text": "Día 2. Introducción a python\n\n22 de septiembre de 2025\n\nDescarga el siguiente repositorio en formato .zip y expándelo en tu directorio Escritorio/ o Desktop/."
+  },
+  {
+    "objectID": "teaching/intro_scicomp_2025.html#día-3.-introducción-a-git",
+    "href": "teaching/intro_scicomp_2025.html#día-3.-introducción-a-git",
+    "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
+    "section": "Día 3. Introducción a git",
+    "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025\nEn esta clase seguiremos la lección Version Control with Git de Software Carpentry Workshops.\n\nAsegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.\nPuedes consultar las diapositivas de la clase aquí."
   }
 ]
