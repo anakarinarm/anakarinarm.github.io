@@ -208,7 +208,7 @@ Esta sesión está basada parcialmente en la lección [La terminal de Unix](http
 ### Material
 
 - [Diapositivas de la sesión 1](SWC2026_DOF/sesion1_terminal_enso_baja.html)
-- Descarga y descomprime el siguiente archivo antes de comenzar: [📦 Descargar `materiales_sesion1.zip`](/teaching/SWC2026_DOF/files/materiales_sesion1.zip){.btn .btn-primary}
+- Descarga y descomprime el siguiente archivo antes de comenzar: [📦 Descargar materiales\_sesion1.zip](/teaching/SWC2026_DOF/files/materiales_sesion1.zip){.btn .btn-primary}
 
 ---
 
@@ -221,7 +221,9 @@ Usaremos Python, JupyterLab, xarray y pandas para explorar SST, ONI y precipitac
 
 ### Material
 
-- [Diapositivas de la sesión 2]()
+- [Jupyter Notebook 1](SWC2026_DOF/01_python_series_tiempo_notas.html)
+- [Jupyter Notebook 2](SWC2026_DOF/02_xarray_sst_proyecto_notas.html)
+- Descarga y descomprime el siguiente archivo en tu directorio **datos/** antes de comenzar: [📦 Descargar datos\_sesion2.zip](/teaching/SWC2026_DOF/files/datos_sesion2.zip){.btn .btn-primary}
 
 ---
 
