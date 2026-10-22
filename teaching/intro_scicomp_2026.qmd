@@ -237,12 +237,12 @@ Usaremos Git sobre el proyecto que ya hemos desarrollado durante las sesiones an
 Al final de la sesión se planteará formalmente el proyecto final (tal vez).
 
 ### Material
-* [Diapositivas de clase](SWC2026_DOF/sesion3_git_github_enso_baja.qmd)
-* [Plantilla de GitHub para proyecto](https://github.com/anakarinarm/enso-baja-project-template)
+- [Diapositivas de clase](SWC2026_DOF/sesion3_git_github_enso_baja.qmd)
+- [Plantilla de GitHub para proyecto](https://github.com/anakarinarm/enso-baja-project-template)
 
 ---
 
 # Día 5. Proyectos, problemas y discusión
-#### 19 de octubre de 2026 — opcional
+#### 25 de octubre de 2026 — opcional
 
 Si hay interés, utilizaremos esta sesión para revisar los retos encontrados, comparar estrategias de análisis y presentar brevemente los proyectos desarrollados.
