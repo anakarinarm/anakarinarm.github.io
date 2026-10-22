@@ -38,7 +38,7 @@ Graduate program in Physical Oceanography, CICESE
 [**2026**](teaching/intro_scicomp_2026.qmd), &nbsp; 
 [2025](teaching/intro_scicomp_2025.qmd)
 
-3-day bootcamp for PO graduate students at CICESE.
+4-day bootcamp for PO graduate students at CICESE.
 
 :::
 

@@ -174,15 +174,15 @@ La intención es cerrar el curso mostrando cómo un flujo de trabajo computacion
 
 ## Calendario
 
-Tres sesiones de aproximadamente 2 horas, los lunes de **10:00 a 12:00**.
+Cuatro sesiones de aproximadamente 2 horas, los lunes de **10:00 a 12:00**.
 
 | Fecha | Sesión |
 |---|---|
 | **14 septiembre 2026** | De archivos a un proyecto: línea de comandos |
 | **21 septiembre 2026** | De datos a una pregunta: Python, xarray y series de tiempo |
-| **28 septiembre 2026** | De análisis a proyecto reproducible: Git y GitHub |
-| **5 octubre 2026** | Sesión opcional: proyectos, problemas y discusión |
-
+| **28 septiembre 2026** | Continuación de la clase anterior |
+| **12 octubre 2026** | De análisis a proyecto reproducible: Git y GitHub |
+|** 19 octubre 2026**| (Si hay interés) Proyectos |
 ---
 
 ## Inscripción
@@ -212,8 +212,8 @@ Esta sesión está basada parcialmente en la lección [La terminal de Unix](http
 
 ---
 
-# Día 2. De datos a una pregunta
-#### 21 de septiembre de 2026
+# Días 2 y 3. De datos a una pregunta
+#### 21 y 28 de septiembre de 2026
 
 Trabajaremos sobre el mismo proyecto creado en la sesión 1.
 
@@ -227,20 +227,22 @@ Usaremos Python, JupyterLab, xarray y pandas para explorar SST, ONI y precipitac
 
 ---
 
-# Día 3. De análisis a proyecto reproducible
-#### 28 de septiembre de 2026
+# Día 4. De análisis a proyecto reproducible
+#### 22 de octubre de 2026
 
 Usaremos Git sobre el proyecto que ya hemos desarrollado durante las sesiones anteriores. Aprenderemos a registrar cambios, ignorar archivos que no deben versionarse y respaldar el proyecto en GitHub.
 
-Al final de la sesión se planteará formalmente el proyecto final.
+**No olvides hacer una cuenta en GitHub antes de esta sesión.**
+
+Al final de la sesión se planteará formalmente el proyecto final (tal vez).
 
 ### Material
-
-- 
+-[Diapositivas de clase](SWC2026_DOF/sesion3_git_github_enso_baja.qmd)
+-[Plantilla de GitHub para proyecto](https://github.com/anakarinarm/enso-baja-project-template)
 
 ---
 
-# Día 4. Proyectos, problemas y discusión
-#### 5 de octubre de 2026 — opcional
+# Día 5. Proyectos, problemas y discusión
+#### 19 de octubre de 2026 — opcional
 
 Si hay interés, utilizaremos esta sesión para revisar los retos encontrados, comparar estrategias de análisis y presentar brevemente los proyectos desarrollados.

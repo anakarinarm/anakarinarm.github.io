@@ -249,7 +249,7 @@
     "href": "teaching/intro_scicomp_2026.html#calendario",
     "title": "Minicurso: Introducción a herramientas computacionales para Oceanografía Física",
     "section": "Calendario",
-    "text": "Calendario\nTres sesiones de aproximadamente 2 horas, los lunes de 10:00 a 12:00.\n\n\n\n\n\n\n\nFecha\nSesión\n\n\n\n\n14 septiembre 2026\nDe archivos a un proyecto: línea de comandos\n\n\n21 septiembre 2026\nDe datos a una pregunta: Python, xarray y series de tiempo\n\n\n28 septiembre 2026\nDe análisis a proyecto reproducible: Git y GitHub\n\n\n5 octubre 2026\nSesión opcional: proyectos, problemas y discusión"
+    "text": "Calendario\nCuatro sesiones de aproximadamente 2 horas, los lunes de 10:00 a 12:00.\n\n\n\n\n\n\n\nFecha\nSesión\n\n\n\n\n14 septiembre 2026\nDe archivos a un proyecto: línea de comandos\n\n\n21 septiembre 2026\nDe datos a una pregunta: Python, xarray y series de tiempo\n\n\n28 septiembre 2026\nContinuación de la clase anterior\n\n\n12 octubre 2026\nDe análisis a proyecto reproducible: Git y GitHub\n\n\n** 19 octubre 2026**\n(Si hay interés) Proyectos"
   },
   {
     "objectID": "teaching/intro_scicomp_2026.html#inscripción",
@@ -921,7 +921,7 @@
     "href": "teaching.html#introducción-a-la-programación-científica",
     "title": "Teaching",
     "section": "Introducción a la programación científica",
-    "text": "Introducción a la programación científica\n\n\n\n\n\n2026,   2025\n3-day bootcamp for PO graduate students at CICESE."
+    "text": "Introducción a la programación científica\n\n\n\n\n\n2026,   2025\n4-day bootcamp for PO graduate students at CICESE."
   },
   {
     "objectID": "teaching.html#other-courses",
@@ -1678,5 +1678,474 @@
     "title": "Curso introductorio de programación, línea de comandos y Git para ciencia reproducible",
     "section": "Día 3. Introducción a git",
     "text": "Día 3. Introducción a git\n\n29 de septiembre de 2025\nEn esta clase seguiremos la lección Version Control with Git de Software Carpentry Workshops.\n\nAsegúrate de haber instalado git (ver instrucciones de preparación) y de tener acceso a tu cuenta de GitHub.\nPuedes consultar las diapositivas de la clase aquí."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#dónde-estamos-en-el-curso",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#dónde-estamos-en-el-curso",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Dónde estamos en el curso?",
+    "text": "¿Dónde estamos en el curso?\n\n\nEn las sesiones anteriores:\n\nOrganizamos un proyecto desde la terminal.\nExploramos SST/SSTA, ONI y precipitación con Python.\nConvertimos parte del análisis en funciones y scripts.\n\nAhora María Luisa tiene algo valioso:\nnotebooks/\nscripts/\nfigures/\nREADME.md\nenvironment.yml\n\nNueva pregunta:\n\n¿Cómo conservamos la historia del proyecto, compartimos el trabajo y evitamos perder versiones que funcionaban?\n\n\n\nHoy usamos Git y GitHub para convertir una carpeta de trabajo en un proyecto científico reproducible."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#la-pesadilla-de-las-versiones",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#la-pesadilla-de-las-versiones",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "La pesadilla de las versiones",
+    "text": "La pesadilla de las versiones\n\n\nGit evita que nuestro análisis termine como:\nanalisis.ipynb\nanalisis_final.ipynb\nanalisis_final2.ipynb\nanalisis_final_AHORA_SI.ipynb\nanalisis_final_AHORA_SI_corregido.ipynb"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#objetivos-de-la-sesión",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#objetivos-de-la-sesión",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Objetivos de la sesión",
+    "text": "Objetivos de la sesión\nAl terminar podrán:\n\ndistinguir Git de GitHub;\ncrear un repositorio a partir de un template;\nclonar un repositorio remoto;\nrevisar el estado del proyecto con git status;\ninspeccionar cambios con git diff;\npreparar cambios con git add;\nguardar versiones con git commit;\nignorar archivos que no deben versionarse con .gitignore;\nenviar cambios a GitHub con git push;\ntraer cambios remotos con git pull;\nresolver un conflicto sencillo en pareja."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#lo-que-haremos-hoy",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#lo-que-haremos-hoy",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Lo que haremos hoy",
+    "text": "Lo que haremos hoy\ntemplate en GitHub\n        ↓\ncrear tu propio repositorio\n        ↓\ngit clone\n        ↓\ncopiar notebooks/scripts del análisis\n        ↓\ngit status → git diff → git add → git commit\n        ↓\n.gitignore\n        ↓\nREADME\n        ↓\ngit push\n        ↓\nconflicto en parejas\n\nNo veremos hoy: branches, pull requests, rebase, GitHub Actions o colaboración avanzada."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-problema-resuelve-el-control-de-versiones",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-problema-resuelve-el-control-de-versiones",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Qué problema resuelve el control de versiones?",
+    "text": "¿Qué problema resuelve el control de versiones?\nEl control de versiones responde preguntas como:\n\n¿Qué cambié desde la última versión que funcionaba?\n¿Quién hizo un cambio?\n¿Cuándo se hizo?\n¿Por qué se hizo?\n¿Cómo recupero una versión anterior?\n¿Cómo trabajo con otra persona sin pisar su trabajo?\n\n\nEn investigación esto aplica a:\n\nscripts;\nnotebooks;\narchivos .tex o .qmd;\nambientes computacionales;\ndocumentación;\nfiguras seleccionadas;\nworkflows reproducibles."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#un-poco-de-historia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#un-poco-de-historia",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Un poco de historia",
+    "text": "Un poco de historia\nLos sistemas de control de versiones existen desde mucho antes de Git.\n1970s   SCCS\n1980s   RCS\n1990s   CVS\n2000    Subversion (SVN)\n2005    Git\n2008    GitHub\nGit fue creado por Linus Torvalds en 2005 para manejar el desarrollo del kernel de Linux después de que la comunidad Linux dejó de usar BitKeeper. Ver: Git Book, Git history, GitHub Blog.\n\nIdea clave: Git nació para proyectos grandes, distribuidos y colaborativos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-no-es-github",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-no-es-github",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Git no es GitHub",
+    "text": "Git no es GitHub\n\n\n\n\n\n\n\n\n\nHerramienta\n¿Qué es?\n\n\n\n\nGit\nPrograma que registra la historia de cambios en tu computadora\n\n\nGitHub\nPlataforma web para alojar repositorios Git y colaborar\n\n\n\n\n\nPuedes usar Git sin GitHub.\nGitHub usa Git, pero no lo reemplaza."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-en-ciencia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-en-ciencia",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Git en ciencia",
+    "text": "Git en ciencia\nEjemplos actuales de repositorios científicos:\n\nECCO Summer School sample project repository\nSalishSeaCast tools\nxarray\nMITgcm\nTu repositorio de la clase\n\n\nEn proyectos científicos, Git sirve para conservar la historia del código, documentación y configuración.\nNo sustituye necesariamente a un repositorio de datos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#un-repositorio",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#un-repositorio",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Un repositorio",
+    "text": "Un repositorio\nUn repositorio es una carpeta que Git está rastreando.\nContiene:\nproyecto/\n├── .git/          # base de datos interna de Git\n├── README.md\n├── scripts/\n├── notebooks/\n└── environment.yml\n\nLa carpeta .git/ guarda la historia.\nNormalmente no la editamos a mano."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cambios-como-diferencias",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cambios-como-diferencias",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Cambios como diferencias",
+    "text": "Cambios como diferencias\n\nImagen: Software Carpentry\n\nGit piensa en términos de cambios.\nNo sólo pregunta:\n\n¿qué archivo tengo?\n\nsino:\n\n¿qué cambió con respecto a la última versión guardada?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#tres-espacios-importantes",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#tres-espacios-importantes",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Tres espacios importantes",
+    "text": "Tres espacios importantes\n\nImagen: Software Carpentry\n\nWorking directory\n      ↓ git add\nStaging area\n      ↓ git commit\nRepository local\n      ↓ git push\nRepository remoto en GitHub"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-existe-git-add",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-existe-git-add",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Por qué existe git add?",
+    "text": "¿Por qué existe git add?\n\n\ngit add nos permite decidir qué cambios entran al próximo commit.\nEso es útil cuando modificamos varias cosas pero queremos guardar la historia en pasos lógicos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-es-un-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-es-un-commit",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Qué es un commit?",
+    "text": "¿Qué es un commit?\n\n\n\nImagen: Software Carpentry\n\nUn commit es una fotografía lógica del proyecto en un momento dado.\nCada commit tiene:\n\nun identificador único;\nautor/a;\nfecha;\nmensaje;\ncambios respecto al commit anterior."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#buenas-unidades-de-trabajo",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#buenas-unidades-de-trabajo",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Buenas unidades de trabajo",
+    "text": "Buenas unidades de trabajo\nMalos mensajes:\nupdate\nchanges\nfinal\nstuff\nMejores mensajes:\nAdd SST anomaly analysis\nDocument precipitation data source\nFix regional mean function\nCreate summary figure\n\nUn buen commit responde:\n\n¿Qué cambio hice y por qué debería importarle a mi yo del futuro?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#antes-de-empezar",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#antes-de-empezar",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Antes de empezar",
+    "text": "Antes de empezar\nCada quien necesita:\n\ncuenta de GitHub;\nGit instalado;\nacceso al template del curso;\nproyecto de Python de la sesión anterior.\n\n\nVerificar Git:\ngit --version\nConfigurar identidad:\ngit config --global user.name \"Tu Nombre\"\ngit config --global user.email \"tu_correo@ejemplo.com\"\ngit config --global init.defaultBranch main\nVer configuración:\ngit config --list --global"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#https-o-ssh",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#https-o-ssh",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "HTTPS o SSH",
+    "text": "HTTPS o SSH\nGitHub permite conectarse por HTTPS o SSH.\nSi usas SSH, revisa:\nssh -T git@github.com\nUna URL SSH se ve así:\ngit@github.com:usuario/repositorio.git\nUna URL HTTPS se ve así:\nhttps://github.com/usuario/repositorio.git\n\nEn clase pueden usar cualquiera de las dos. Lo importante es que puedan hacer push."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-usamos-un-template",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-usamos-un-template",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Por qué usamos un template?",
+    "text": "¿Por qué usamos un template?\nLa estructura del proyecto también es parte de la reproducibilidad.\nNuestro template está adaptado de la estructura usada en la ECCO Summer School 2025:\nenso-baja-project-template/\n├── data/\n├── notebooks/\n├── scripts/\n├── figures/\n├── .gitignore\n├── environment.yml\n└── README.md\nReferencia: ECCO Summer School sample project repository."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#paso-1.-crear-tu-repo-desde-el-template",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#paso-1.-crear-tu-repo-desde-el-template",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Paso 1. Crear tu repo desde el template",
+    "text": "Paso 1. Crear tu repo desde el template\nEn GitHub:\n\nAbrir el template del curso.\nClic en Use this template.\nElegir Create a new repository.\nNombrarlo, por ejemplo:\n\nenso-baja-project\n\nCrear el repositorio en tu propia cuenta.\n\n\nResultado esperado:\ngithub.com/tu_usuario/enso-baja-project"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#paso-2.-clonar-el-repo",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#paso-2.-clonar-el-repo",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Paso 2. Clonar el repo",
+    "text": "Paso 2. Clonar el repo\nEn la terminal:\ncd ~/Desktop\ngit clone URL_DE_TU_REPOSITORIO\ncd enso-baja-project\nVerifica dónde estás:\npwd\nls\nls -a\n\nSi ves .git/, estás dentro de un repositorio Git."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-clone-vs-git-init",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#git-clone-vs-git-init",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "git clone vs git init",
+    "text": "git clone vs git init\nDos formas comunes de comenzar:\n\n\n\nSituación\nComando\n\n\n\n\nEl proyecto ya existe en GitHub\ngit clone URL\n\n\nEl proyecto sólo existe localmente\ngit init\n\n\n\n\nHoy usamos git clone porque el template ya vive en GitHub.\nPero conceptualmente:\ngit init\ncrea un repositorio Git en una carpeta local."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-el-remoto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-el-remoto",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Ver el remoto",
+    "text": "Ver el remoto\nComo clonamos desde GitHub, Git ya sabe cuál es el repositorio remoto.\ngit remote -v\nDebe aparecer algo como:\norigin  git@github.com:usuario/enso-baja-project.git (fetch)\norigin  git@github.com:usuario/enso-baja-project.git (push)\no una URL HTTPS.\n\norigin es el nombre convencional del remoto principal."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nuestro-primer-git-status",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nuestro-primer-git-status",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Nuestro primer git status",
+    "text": "Nuestro primer git status\ngit status\nEste comando será tu mejor amigue.\nNos dice:\n\nen qué rama estamos;\nsi hay archivos modificados;\nsi hay archivos nuevos;\nqué está listo para commit;\nqué no está rastreado.\n\n\nRegla práctica: antes de hacer algo importante, ejecuta git status."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#incorporar-el-trabajo-de-python",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#incorporar-el-trabajo-de-python",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Incorporar el trabajo de Python",
+    "text": "Incorporar el trabajo de Python\nAhora copiaremos al repositorio parte del trabajo de la sesión anterior.\nEjemplo, si tu carpeta anterior se llama enso_baja y está al lado del repo:\ncp ../enso_baja/notebooks/*.ipynb notebooks/\ncp ../enso_baja/scripts/*.py scripts/\nTambién puedes copiar manualmente desde Finder/Explorer.\n\nLuego:\ngit status\n¿Qué archivos nuevos aparecen?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#archivos-rastreados-y-no-rastreados",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#archivos-rastreados-y-no-rastreados",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Archivos rastreados y no rastreados",
+    "text": "Archivos rastreados y no rastreados\nGit distingue entre:\n\n\n\nEstado\nSignificado\n\n\n\n\nuntracked\nGit ve el archivo, pero todavía no lo está rastreando\n\n\nmodified\nGit ya lo conoce y detecta cambios\n\n\nstaged\nEl cambio está preparado para el próximo commit\n\n\ncommitted\nEl cambio ya quedó guardado en la historia local\n\n\n\n\nUn archivo nuevo no entra a la historia hasta que hacemos git add."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#editar-el-readme",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#editar-el-readme",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Editar el README",
+    "text": "Editar el README\nAbre README.md y completa al menos:\n## Pregunta\n\n¿Cómo se relaciona la variabilidad de SST frente a Baja California con ENSO?\n\n## Datos\n\n- NOAA OISST V2.1\n- Oceanic Niño Index\n- Precipitación mensual en Ensenada\nGuarda el archivo.\nLuego:\ngit status"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-diferencias-con-git-diff",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-diferencias-con-git-diff",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Ver diferencias con git diff",
+    "text": "Ver diferencias con git diff\ngit diff README.md\ngit diff muestra cambios línea por línea.\nSímbolos comunes:\n- línea eliminada\n+ línea agregada\n\ndiff es muy útil para revisar antes de guardar una versión."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#preparar-cambios-con-git-add",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#preparar-cambios-con-git-add",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Preparar cambios con git add",
+    "text": "Preparar cambios con git add\ngit add README.md\ngit status\nAhora README.md está en el staging area.\n\ngit add no crea una versión permanente.\nSólo prepara cambios para el siguiente commit."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#guardar-una-versión-con-git-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#guardar-una-versión-con-git-commit",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Guardar una versión con git commit",
+    "text": "Guardar una versión con git commit\ngit commit -m \"Descripción pregunta de investigación\"\n\nAhora sí existe una versión nueva en la historia local.\nVerifica:\ngit status\ny:\ngit log --oneline"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-1.-primer-commit-científico",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-1.-primer-commit-científico",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Reto 1. Primer commit científico",
+    "text": "Reto 1. Primer commit científico\n\nCopia tus notebooks a notebooks/.\nCopia tus scripts a scripts/.\nRevisa:\n\ngit status\n\nAgrega los archivos:\n\ngit add notebooks scripts\n\nHaz commit:\n\ngit commit -m \"Agregué análisis SST y ENSO\"\n\nRevisa la historia:\n\ngit log --oneline\n\nPregunta: ¿por qué es mejor este commit que uno llamado actualización?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-la-historia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ver-la-historia",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Ver la historia",
+    "text": "Ver la historia\ngit log --oneline\nEjemplo:\na3c21f0 Agregué análisis SST y ENSO\n5b81d3a Descripción pregunta de investigación\n2f4a9c1 Initial template\n\nCada línea representa un commit.\nEl identificador corto (a3c21f0) permite referirnos a una versión específica."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#modificar-y-arrepentirse",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#modificar-y-arrepentirse",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Modificar y arrepentirse",
+    "text": "Modificar y arrepentirse\nEdita temporalmente README.md y escribe una línea claramente equivocada.\nLuego:\ngit diff README.md\n\nSi quieres descartar ese cambio:\ngit restore README.md\n(Si quisieras recuperar una versión de README.md guardada en alún commit específico puedes hacer:\ngit restore --source &lt;commit_id&gt; -- README.md\n)\nRevisa:\ngit status"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-2.-recuperar-una-versión",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-2.-recuperar-una-versión",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Reto 2. Recuperar una versión",
+    "text": "Reto 2. Recuperar una versión\n\nModifica README.md.\nRevisa el cambio:\n\ngit diff\n\nDecide que no quieres conservarlo.\nRestaura el archivo:\n\ngit restore README.md\n\nConfirma:\n\ngit status\n\nIdea clave: Git puede ayudarte a experimentar sin miedo, siempre que guardes versiones con commits."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#no-todo-pertenece-al-repositorio",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#no-todo-pertenece-al-repositorio",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "No todo pertenece al repositorio",
+    "text": "No todo pertenece al repositorio\n\n\nEn ciencia de datos, un repositorio no siempre debe contener todo."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-versionamos",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#qué-versionamos",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Qué versionamos?",
+    "text": "¿Qué versionamos?\n\n\n\nArchivo/directorio\n¿Git?\nComentario\n\n\n\n\nREADME.md\nsí\ndocumentación del proyecto\n\n\nenvironment.yml\nsí\nambiente reproducible\n\n\nscripts/*.py\nsí\ncódigo reutilizable\n\n\nnotebooks/*.ipynb\nsí\nanálisis y notas\n\n\nfiguras finales\ndepende\nútil si aparecen en README\n\n\ndatos grandes\nno\nmejor distribuir por otra vía\n\n\nsalidas de modelos\nno\npueden ser enormes\n\n\ncontraseñas/tokens\njamás\nriesgo de seguridad"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nuestro-.gitignore",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nuestro-.gitignore",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Nuestro .gitignore",
+    "text": "Nuestro .gitignore\nEl template incluye:\n# Datos\ndata/*\n!data/README.md\n\n# Jupyter\n.ipynb_checkpoints/\n\n# Python\n__pycache__/\n*.py[cod]\n\n# Sistema operativo / editores\n.DS_Store\nThumbs.db\n.vscode/\n\nLa carpeta data/ existe y tiene un README, pero los archivos de datos no se suben."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#verificar-qué-ignora-git",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#verificar-qué-ignora-git",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Verificar qué ignora Git",
+    "text": "Verificar qué ignora Git\nCopia un archivo de datos a data/, por ejemplo:\ndata/sst_baja_1981_2026.nc\nLuego:\ngit status\n\nEse archivo no debería aparecer como untracked.\nSi aparece, revisa .gitignore."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-3.-explicar-.gitignore",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-3.-explicar-.gitignore",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Reto 3. Explicar .gitignore",
+    "text": "Reto 3. Explicar .gitignore\nAbre .gitignore y responde:\n\n¿Por qué data/* ignora los datos?\n¿Por qué !data/README.md no ignora el README?\n¿Qué pasaría si mañana tuvieras 200 GB de salidas de un modelo?\n¿Versionarías figures/? ¿Todas las figuras o sólo algunas?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#readme-no-es-decoración",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#readme-no-es-decoración",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "README no es decoración",
+    "text": "README no es decoración\nEl README.md debe permitir que otra persona entienda:\n\nqué pregunta intentaste contestar;\nqué datos usaste;\nqué hiciste;\ncuál fue tu resultado principal;\ncómo reproducir el análisis.\n\n\nSi alguien abre tu repo en seis meses, el README debe orientarla/o antes de leer el código."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#una-estructura-mínima",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#una-estructura-mínima",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Una estructura mínima",
+    "text": "Una estructura mínima\n# Título del proyecto\n\n## Pregunta\n\n## Datos\n\n## Métodos\n\n## Resultados\n\n## Cómo reproducir el análisis\n\nEsto es lo mínimo para que el proyecto sea legible."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#incluir-una-figura-en-readme",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#incluir-una-figura-en-readme",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Incluir una figura en README",
+    "text": "Incluir una figura en README\nSi decides versionar una figura final:\nfigures/ssta_oni_summary.png\npuedes mostrarla en el README con:\n![SSTA regional y ONI](figures/ssta_oni_summary.png)\n\nLas figuras en el README ayudan a comunicar el resultado, pero deben poder regenerarse desde el código."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-4.-documentar-el-proyecto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-4.-documentar-el-proyecto",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Reto 4. Documentar el proyecto",
+    "text": "Reto 4. Documentar el proyecto\nEdita README.md y completa:\n\n## Pregunta\n## Datos\n## Métodos\n\nDespués:\ngit diff README.md\ngit add README.md\ngit commit -m \"Document data and methods\""
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#local-vs-remoto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#local-vs-remoto",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Local vs remoto",
+    "text": "Local vs remoto\nRepositorio local\n      ↓ git push\nRepositorio remoto en GitHub\n\ngit commit guarda cambios localmente.\ngit push envía commits a GitHub."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#primer-push",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#primer-push",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Primer push",
+    "text": "Primer push\ngit push\nSi Git pide autenticación, sigue las instrucciones de GitHub.\nSi el upstream no está configurado:\ngit push -u origin main\n\nAbre GitHub y actualiza la página del repositorio.\n¿Ves tus commits?\n¿Ves tu README actualizado?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-5.-commit-vs-push",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#reto-5.-commit-vs-push",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Reto 5. Commit vs push",
+    "text": "Reto 5. Commit vs push\n¿Qué hace cada comando?\ngit add README.md\ngit commit -m \"Update README\"\ngit push\n\nRespuesta:\n\nadd: prepara cambios.\ncommit: guarda una versión local.\npush: envía commits al remoto."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-hay-conflictos",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#por-qué-hay-conflictos",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "¿Por qué hay conflictos?",
+    "text": "¿Por qué hay conflictos?\nUn conflicto ocurre cuando Git no puede decidir automáticamente cómo combinar dos cambios.\nEjemplo:\n\nPersona A cambia una línea de README.md.\nPersona B cambia la misma línea de README.md.\nAmbas versiones tienen sentido.\nGit no puede escoger por nosotras/os.\n\n\nUn conflicto no es un error catastrófico.\nEs Git diciendo:\n\nNecesito que una persona decida qué versión final debe quedar."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ejercicio-en-parejas-logística",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#ejercicio-en-parejas-logística",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Ejercicio en parejas: logística",
+    "text": "Ejercicio en parejas: logística\nTrabajaremos en parejas.\nPersona A\nUsa su repositorio del proyecto y agrega a Persona B como colaboradora en GitHub.\nEn GitHub:\nSettings → Collaborators → Add people\nPersonas A y B\nAmbas clonan el repo de A:\ngit clone URL_DEL_REPO_DE_A\ncd enso-baja-project"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#preparar-la-línea-conflictiva",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#preparar-la-línea-conflictiva",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Preparar la línea conflictiva",
+    "text": "Preparar la línea conflictiva\nEn README.md, ambas personas buscan esta sección:\n## Resultados\n\n_Resume aquí tus resultados principales._\nLa línea que inicia con _Resume... será modificada por ambas personas.\n\nAsegúrense de empezar desde la misma versión:\ngit pull\ngit status"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-a-cambio-sst",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-a-cambio-sst",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Persona A: cambio SST",
+    "text": "Persona A: cambio SST\nPersona A cambia la línea por:\nLa SSTA frente a Baja California aumenta durante algunos eventos El Niño.\nLuego:\ngit add README.md\ngit commit -m \"Describe SST result\"\ngit push"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-b-cambio-precipitación",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-b-cambio-precipitación",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Persona B: cambio precipitación",
+    "text": "Persona B: cambio precipitación\nPersona B no hace pull todavía.\nCambia la misma línea por:\nLa precipitación en Ensenada es mayor durante algunos eventos El Niño.\nLuego:\ngit add README.md\ngit commit -m \"Describe precipitation result\"\ngit push\n\n¿Qué ocurre?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#push-rechazado",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#push-rechazado",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Push rechazado",
+    "text": "Push rechazado\nGit probablemente dirá algo como:\n! [rejected] main -&gt; main (fetch first)\nerror: failed to push some refs\nEsto significa:\n\nEl remoto tiene cambios que tu copia local todavía no tiene.\n\n\nNo queremos sobrescribir el trabajo de A.\nPrimero debemos traer los cambios remotos."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#traer-cambios-remotos",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#traer-cambios-remotos",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Traer cambios remotos",
+    "text": "Traer cambios remotos\nPersona B ejecuta:\ngit pull --no-rebase\ngit pull trae cambios del remoto e intenta mezclarlos con los locales.\n--no-rebase indica que queremos resolverlo como un merge.\n\nComo ambas personas cambiaron la misma línea, Git no puede decidir automáticamente."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#marcadores-de-conflicto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#marcadores-de-conflicto",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Marcadores de conflicto",
+    "text": "Marcadores de conflicto\nEn README.md, Persona B verá algo parecido a:\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nLa precipitación en Ensenada es mayor durante algunos eventos El Niño.\n=======\nLa SSTA frente a Baja California aumenta durante algunos eventos El Niño.\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main\nSignificado:\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\ntu versión local\n\n=======\nseparador\n\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main\nversión que llegó del remoto"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#resolver-no-es-elegir-ciegamente",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#resolver-no-es-elegir-ciegamente",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Resolver no es elegir ciegamente",
+    "text": "Resolver no es elegir ciegamente\nPodemos escribir una versión mejor que combine ambas ideas:\nLa respuesta regional a ENSO no es única: exploramos tanto las anomalías de SST frente a Baja California como la precipitación en Ensenada.\n\nBorra todos los marcadores:\n&lt;&lt;&lt;&lt;&lt;&lt;&lt;\n=======\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;\nGuarda el archivo."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#confirmar-la-resolución",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#confirmar-la-resolución",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Confirmar la resolución",
+    "text": "Confirmar la resolución\nDespués de editar:\ngit status\nLuego:\ngit add README.md\ngit commit -m \"Resolve README conflict\"\ngit push\n\nEl commit de resolución queda registrado en la historia."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-a-actualiza-su-copia",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#persona-a-actualiza-su-copia",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Persona A actualiza su copia",
+    "text": "Persona A actualiza su copia\nPersona A ahora hace:\ngit pull\ny recibe la versión resuelta.\n\nAhora ambas copias locales y GitHub tienen la misma historia."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#lo-que-aprendimos-del-conflicto",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#lo-que-aprendimos-del-conflicto",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Lo que aprendimos del conflicto",
+    "text": "Lo que aprendimos del conflicto\nA trabaja       B trabaja\n   ↓               ↓\nA commit          B commit\n   ↓               ↓\nA push            B push rechazado\n                   ↓\n                 B pull\n                   ↓\n              conflicto\n                   ↓\n              resolver\n                   ↓\n             add + commit\n                   ↓\n                 push\n\nGit no perdió el trabajo de nadie.\nGit obligó a revisar explícitamente un cambio ambiguo."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#fatal-not-a-git-repository",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#fatal-not-a-git-repository",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "“fatal: not a git repository”",
+    "text": "“fatal: not a git repository”\nMensaje:\nfatal: not a git repository\nPosibles causas:\n\nno estás dentro de la carpeta del repo;\nestás un directorio arriba o abajo;\nnunca clonaste/inicializaste el repositorio.\n\nSolución:\npwd\nls -a\nBusca .git/."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nothing-to-commit",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#nothing-to-commit",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "“nothing to commit”",
+    "text": "“nothing to commit”\nMensaje:\nnothing to commit, working tree clean\nSignifica que Git no detecta cambios pendientes.\nPuede ser bueno.\n\nPero si esperabas cambios, revisa:\n\n¿guardaste el archivo?\n¿estás en el repo correcto?\n¿el archivo está ignorado por .gitignore?"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#remote-origin-already-exists",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#remote-origin-already-exists",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "“remote origin already exists”",
+    "text": "“remote origin already exists”\nMensaje:\nerror: remote origin already exists\nSignifica que ya hay un remoto llamado origin.\nVer:\ngit remote -v\nCambiarlo:\ngit remote set-url origin NUEVA_URL"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cambiar-https-a-ssh",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cambiar-https-a-ssh",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Cambiar HTTPS a SSH",
+    "text": "Cambiar HTTPS a SSH\nVer remoto actual:\ngit remote -v\nCambiar a SSH:\ngit remote set-url origin git@github.com:usuario/repositorio.git\nVerificar:\ngit remote -v\nssh -T git@github.com"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#push-rechazado-1",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#push-rechazado-1",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Push rechazado",
+    "text": "Push rechazado\nMensaje típico:\nUpdates were rejected because the remote contains work that you do not have locally.\nSolución usual:\ngit pull --no-rebase\nResolver conflictos si aparecen.\nDespués:\ngit push"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#entregable",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#entregable",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Entregable",
+    "text": "Entregable\nCada estudiante o pareja debe entregar un repositorio con:\nREADME.md\nenvironment.yml\n.gitignore\nnotebooks/\nscripts/\nfigures/\nLos datos pueden estar en data/ localmente, pero no deben subirse a GitHub."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#contenido-mínimo-del-readme",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#contenido-mínimo-del-readme",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Contenido mínimo del README",
+    "text": "Contenido mínimo del README\nDebe incluir:\n\nPregunta.\nDatos utilizados.\nMétodos generales.\nUna o dos figuras.\nInterpretación breve.\nCómo reproducir el análisis.\n\n\nNo tiene que ser largo.\nSí debe ser claro."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#commits-esperados",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#commits-esperados",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Commits esperados",
+    "text": "Commits esperados\nIdealmente el historial debe contar una historia:\nDescribe project question\nAdd exploratory SST notebook\nAdd regional mean function\nCreate summary figure\nDocument results\n\nEviten un único commit final llamado:\nfinal"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cierre",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#cierre",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Cierre",
+    "text": "Cierre\nHoy aprendimos que Git no es sólo una herramienta para programadoras/es profesionales.\nEn ciencia, Git ayuda a:\n\npensar en cambios pequeños y documentados;\nrecuperar versiones;\ntrabajar con otras personas;\nseparar código de datos grandes;\ncompartir proyectos reproducibles;\ndejarle pistas claras a nuestro yo del futuro.\n\n\nMensaje final:\n\nUn proyecto científico no es sólo una figura final.\nEs la historia reproducible de cómo llegamos a ella."
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#recursos-para-repasar",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#recursos-para-repasar",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Recursos para repasar",
+    "text": "Recursos para repasar\n\nSoftware Carpentry: Version Control with Git\nPro Git Book\nGitHub Docs: Hello World\nGitHub Docs: resolving merge conflicts\nECCO Summer School sample project repository"
+  },
+  {
+    "objectID": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#créditos",
+    "href": "teaching/SWC2026_DOF/sesion3_git_github_enso_baja.html#créditos",
+    "title": "Control de versiones con Git y GitHub",
+    "section": "Créditos",
+    "text": "Créditos\nEstas diapositivas están basadas parcialmente en:\n\nla lección Version Control with Git de Software Carpentry;\nel material previo del minicurso DOF 2025;\nel template de proyecto de la ECCO Summer School 2025.\n\nAdaptación para el minicurso Introducción a herramientas computacionales para Oceanografía Física, CICESE, 2026."
   }
 ]

@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link href="../../files/images/monster_icon.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.33">
+
+  <meta name="author" content="Karina Ramos Musalem">
+  <title>Karina Ramos Musalem – Control de versiones con Git y GitHub</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="styles.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
+
+  <script type="text/javascript">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '', { 'anonymize_ip': true});
+  </script>
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+<meta property="og:title" content="Control de versiones con Git y GitHub – Karina Ramos Musalem">
+<meta property="og:description" content="De análisis exploratorio a proyecto científico reproducible">
+<meta property="og:site_name" content="Karina Ramos Musalem">
+<meta name="twitter:title" content="Control de versiones con Git y GitHub – Karina Ramos Musalem">
+<meta name="twitter:description" content="De análisis exploratorio a proyecto científico reproducible">
+<meta name="twitter:card" content="summary">
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Control de versiones con Git y GitHub</h1>
+  <p class="subtitle">De análisis exploratorio a proyecto científico reproducible</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section>
+<section id="introducción" class="title-slide slide level1 center">
+<h1>Introducción</h1>
+
+<img src="img/bn-vc-all-things.png" width="900" class="r-stretch"></section>
+<section id="dónde-estamos-en-el-curso" class="slide level2 smaller">
+<h2>¿Dónde estamos en el curso?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p>En las sesiones anteriores:</p>
+<ol type="1">
+<li>Organizamos un proyecto desde la terminal.</li>
+<li>Exploramos SST/SSTA, ONI y precipitación con Python.</li>
+<li>Convertimos parte del análisis en funciones y scripts.</li>
+</ol>
+<p>Ahora María Luisa tiene algo valioso:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a></a>notebooks/</span>
+<span id="cb1-2"><a></a>scripts/</span>
+<span id="cb1-3"><a></a>figures/</span>
+<span id="cb1-4"><a></a>README.md</span>
+<span id="cb1-5"><a></a>environment.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:45%;">
+<p><strong>Nueva pregunta:</strong></p>
+<blockquote>
+<p>¿Cómo conservamos la historia del proyecto, compartimos el trabajo y evitamos perder versiones que funcionaban?</p>
+</blockquote>
+</div></div>
+<div class="fragment">
+<p>Hoy usamos <strong>Git</strong> y <strong>GitHub</strong> para convertir una carpeta de trabajo en un proyecto científico reproducible.</p>
+</div>
+</section>
+<section id="la-pesadilla-de-las-versiones" class="slide level2 smaller">
+<h2>La pesadilla de las versiones</h2>
+
+<img src="img/bn-vc-all-things.png" width="850" class="r-stretch"><div class="fragment">
+<p><strong>Git evita que nuestro análisis termine como:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>analisis.ipynb</span>
+<span id="cb2-2"><a></a>analisis_final.ipynb</span>
+<span id="cb2-3"><a></a>analisis_final2.ipynb</span>
+<span id="cb2-4"><a></a>analisis_final_AHORA_SI.ipynb</span>
+<span id="cb2-5"><a></a>analisis_final_AHORA_SI_corregido.ipynb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="objetivos-de-la-sesión" class="slide level2 smaller">
+<h2>Objetivos de la sesión</h2>
+<p>Al terminar podrán:</p>
+<ul>
+<li>distinguir <strong>Git</strong> de <strong>GitHub</strong>;</li>
+<li>crear un repositorio a partir de un template;</li>
+<li>clonar un repositorio remoto;</li>
+<li>revisar el estado del proyecto con <code>git status</code>;</li>
+<li>inspeccionar cambios con <code>git diff</code>;</li>
+<li>preparar cambios con <code>git add</code>;</li>
+<li>guardar versiones con <code>git commit</code>;</li>
+<li>ignorar archivos que no deben versionarse con <code>.gitignore</code>;</li>
+<li>enviar cambios a GitHub con <code>git push</code>;</li>
+<li>traer cambios remotos con <code>git pull</code>;</li>
+<li>resolver un conflicto sencillo en pareja.</li>
+</ul>
+</section>
+<section id="lo-que-haremos-hoy" class="slide level2 smaller">
+<h2>Lo que haremos hoy</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>template en GitHub</span>
+<span id="cb3-2"><a></a>        ↓</span>
+<span id="cb3-3"><a></a>crear tu propio repositorio</span>
+<span id="cb3-4"><a></a>        ↓</span>
+<span id="cb3-5"><a></a>git clone</span>
+<span id="cb3-6"><a></a>        ↓</span>
+<span id="cb3-7"><a></a>copiar notebooks/scripts del análisis</span>
+<span id="cb3-8"><a></a>        ↓</span>
+<span id="cb3-9"><a></a>git status → git diff → git add → git commit</span>
+<span id="cb3-10"><a></a>        ↓</span>
+<span id="cb3-11"><a></a>.gitignore</span>
+<span id="cb3-12"><a></a>        ↓</span>
+<span id="cb3-13"><a></a>README</span>
+<span id="cb3-14"><a></a>        ↓</span>
+<span id="cb3-15"><a></a>git push</span>
+<span id="cb3-16"><a></a>        ↓</span>
+<span id="cb3-17"><a></a>conflicto en parejas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><strong>No veremos hoy:</strong> branches, pull requests, rebase, GitHub Actions o colaboración avanzada.</p>
+</div>
+</section></section>
+<section>
+<section id="un-poquito-de-contexto" class="title-slide slide level1 center">
+<h1>Un poquito de contexto</h1>
+
+</section>
+<section id="qué-problema-resuelve-el-control-de-versiones" class="slide level2 smaller">
+<h2>¿Qué problema resuelve el control de versiones?</h2>
+<p>El control de versiones responde preguntas como:</p>
+<ul>
+<li>¿Qué cambié desde la última versión que funcionaba?</li>
+<li>¿Quién hizo un cambio?</li>
+<li>¿Cuándo se hizo?</li>
+<li>¿Por qué se hizo?</li>
+<li>¿Cómo recupero una versión anterior?</li>
+<li>¿Cómo trabajo con otra persona sin pisar su trabajo?</li>
+</ul>
+<div class="fragment">
+<p>En investigación esto aplica a:</p>
+<ul>
+<li>scripts;</li>
+<li>notebooks;</li>
+<li>archivos <code>.tex</code> o <code>.qmd</code>;</li>
+<li>ambientes computacionales;</li>
+<li>documentación;</li>
+<li>figuras seleccionadas;</li>
+<li>workflows reproducibles.</li>
+</ul>
+</div>
+</section>
+<section id="un-poco-de-historia" class="slide level2 smaller">
+<h2>Un poco de historia</h2>
+<p>Los sistemas de control de versiones existen desde mucho antes de Git.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a></a>1970s   SCCS</span>
+<span id="cb4-2"><a></a>1980s   RCS</span>
+<span id="cb4-3"><a></a>1990s   CVS</span>
+<span id="cb4-4"><a></a>2000    Subversion (SVN)</span>
+<span id="cb4-5"><a></a>2005    Git</span>
+<span id="cb4-6"><a></a>2008    GitHub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Git fue creado por <strong>Linus Torvalds</strong> en 2005 para manejar el desarrollo del kernel de Linux después de que la comunidad Linux dejó de usar BitKeeper. Ver: <a href="https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git">Git Book</a>, <a href="https://git-scm.com/about">Git history</a>, <a href="https://github.blog/open-source/git/git-turns-20-a-qa-with-linus-torvalds/">GitHub Blog</a>.</p>
+<div class="fragment">
+<p><strong>Idea clave:</strong> Git nació para proyectos grandes, distribuidos y colaborativos.</p>
+</div>
+</section>
+<section id="git-no-es-github" class="slide level2 smaller">
+<h2>Git no es GitHub</h2>
+
+<img src="img/gitvsgithub.jpg" width="900" class="r-stretch"><div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Herramienta</th>
+<th>¿Qué es?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Git</strong></td>
+<td>Programa que registra la historia de cambios en tu computadora</td>
+</tr>
+<tr class="even">
+<td><strong>GitHub</strong></td>
+<td>Plataforma web para alojar repositorios Git y colaborar</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fragment">
+<p>Puedes usar Git sin GitHub.<br>
+GitHub usa Git, pero no lo reemplaza.</p>
+</div>
+</section>
+<section id="git-en-ciencia" class="slide level2 smaller">
+<h2>Git en ciencia</h2>
+<p>Ejemplos actuales de repositorios científicos:</p>
+<ul>
+<li><a href="https://github.com/ECCO-Summer-School/ESS25_sample_project_repository">ECCO Summer School sample project repository</a></li>
+<li><a href="https://github.com/SalishSeaCast/tools">SalishSeaCast tools</a></li>
+<li><a href="https://github.com/pydata/xarray">xarray</a></li>
+<li><a href="https://github.com/MITgcm/MITgcm">MITgcm</a></li>
+<li><a href="https://github.com/anakarinarm/enso-baja-project-template">Tu repositorio de la clase</a></li>
+</ul>
+<div class="fragment">
+<p>En proyectos científicos, Git sirve para conservar la historia del <strong>código, documentación y configuración</strong>.</p>
+<p>No sustituye necesariamente a un repositorio de datos.</p>
+</div>
+</section></section>
+<section>
+<section id="conceptos-básicos" class="title-slide slide level1 center">
+<h1>Conceptos básicos</h1>
+
+</section>
+<section id="un-repositorio" class="slide level2 smaller">
+<h2>Un repositorio</h2>
+<p>Un <strong>repositorio</strong> es una carpeta que Git está rastreando.</p>
+<p>Contiene:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a></a>proyecto/</span>
+<span id="cb5-2"><a></a>├── .git/          # base de datos interna de Git</span>
+<span id="cb5-3"><a></a>├── README.md</span>
+<span id="cb5-4"><a></a>├── scripts/</span>
+<span id="cb5-5"><a></a>├── notebooks/</span>
+<span id="cb5-6"><a></a>└── environment.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>La carpeta <code>.git/</code> guarda la historia.<br>
+Normalmente no la editamos a mano.</p>
+</div>
+</section>
+<section id="cambios-como-diferencias" class="slide level2 smaller">
+<h2>Cambios como diferencias</h2>
+
+<img src="img/change_as_diff.png" width="850" class="r-stretch"><p>Imagen: Software Carpentry</p>
+<div class="fragment">
+<p>Git piensa en términos de <strong>cambios</strong>.</p>
+<p>No sólo pregunta:</p>
+<blockquote>
+<p>¿qué archivo tengo?</p>
+</blockquote>
+<p>sino:</p>
+<blockquote>
+<p>¿qué cambió con respecto a la última versión guardada?</p>
+</blockquote>
+</div>
+</section>
+<section id="tres-espacios-importantes" class="slide level2 smaller">
+<h2>Tres espacios importantes</h2>
+
+<img src="img/staging_area.png" width="650" class="r-stretch"><p>Imagen: Software Carpentry</p>
+<div class="fragment">
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a>Working directory</span>
+<span id="cb6-2"><a></a>      ↓ git add</span>
+<span id="cb6-3"><a></a>Staging area</span>
+<span id="cb6-4"><a></a>      ↓ git commit</span>
+<span id="cb6-5"><a></a>Repository local</span>
+<span id="cb6-6"><a></a>      ↓ git push</span>
+<span id="cb6-7"><a></a>Repository remoto en GitHub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="por-qué-existe-git-add" class="slide level2 smaller">
+<h2>¿Por qué existe <code>git add</code>?</h2>
+
+<img src="img/sinadd.png" width="650" class="r-stretch"><div class="fragment">
+<p><code>git add</code> nos permite decidir <strong>qué cambios</strong> entran al próximo commit.</p>
+<p>Eso es útil cuando modificamos varias cosas pero queremos guardar la historia en pasos lógicos.</p>
+</div>
+</section>
+<section id="qué-es-un-commit" class="slide level2 smaller">
+<h2>¿Qué es un commit?</h2>
+<div class="columns">
+<div class="column" style="width:55%;">
+<p><img src="img/commit.png" width="1800"></p>
+<p>Imagen: Software Carpentry</p>
+</div><div class="column" style="width:45%;">
+<p>Un <strong>commit</strong> es una fotografía lógica del proyecto en un momento dado.</p>
+<p>Cada commit tiene:</p>
+<ul>
+<li>un identificador único;</li>
+<li>autor/a;</li>
+<li>fecha;</li>
+<li>mensaje;</li>
+<li>cambios respecto al commit anterior.</li>
+</ul>
+</div></div>
+</section>
+<section id="buenas-unidades-de-trabajo" class="slide level2 smaller">
+<h2>Buenas unidades de trabajo</h2>
+<p>Malos mensajes:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb7-1"><a></a>update</span>
+<span id="cb7-2"><a></a>changes</span>
+<span id="cb7-3"><a></a>final</span>
+<span id="cb7-4"><a></a>stuff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mejores mensajes:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb8-1"><a></a>Add SST anomaly analysis</span>
+<span id="cb8-2"><a></a>Document precipitation data source</span>
+<span id="cb8-3"><a></a>Fix regional mean function</span>
+<span id="cb8-4"><a></a>Create summary figure</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Un buen commit responde:</p>
+<blockquote>
+<p>¿Qué cambio hice y por qué debería importarle a mi yo del futuro?</p>
+</blockquote>
+</div>
+</section></section>
+<section>
+<section id="preparación-inicial" class="title-slide slide level1 center">
+<h1>Preparación inicial</h1>
+
+</section>
+<section id="antes-de-empezar" class="slide level2 smaller">
+<h2>Antes de empezar</h2>
+<p>Cada quien necesita:</p>
+<ul>
+<li>cuenta de GitHub;</li>
+<li>Git instalado;</li>
+<li>acceso al template del curso;</li>
+<li>proyecto de Python de la sesión anterior.</li>
+</ul>
+<div class="fragment">
+<p>Verificar Git:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Configurar identidad:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Tu Nombre"</span></span>
+<span id="cb10-2"><a></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"tu_correo@ejemplo.com"</span></span>
+<span id="cb10-3"><a></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ver configuración:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="fu">git</span> config <span class="at">--list</span> <span class="at">--global</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="https-o-ssh" class="slide level2 smaller">
+<h2>HTTPS o SSH</h2>
+<p>GitHub permite conectarse por HTTPS o SSH.</p>
+<p>Si usas SSH, revisa:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Una URL SSH se ve así:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb13-1"><a></a>git@github.com:usuario/repositorio.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Una URL HTTPS se ve así:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb14-1"><a></a>https://github.com/usuario/repositorio.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>En clase pueden usar cualquiera de las dos. Lo importante es que puedan hacer <code>push</code>.</p>
+</div>
+</section></section>
+<section>
+<section id="el-template-del-curso" class="title-slide slide level1 center">
+<h1>El template del curso</h1>
+
+</section>
+<section id="por-qué-usamos-un-template" class="slide level2 smaller">
+<h2>¿Por qué usamos un template?</h2>
+<p>La estructura del proyecto <strong>también es parte de la reproducibilidad</strong>.</p>
+<p>Nuestro template está adaptado de la estructura usada en la ECCO Summer School 2025:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb15-1"><a></a>enso-baja-project-template/</span>
+<span id="cb15-2"><a></a>├── data/</span>
+<span id="cb15-3"><a></a>├── notebooks/</span>
+<span id="cb15-4"><a></a>├── scripts/</span>
+<span id="cb15-5"><a></a>├── figures/</span>
+<span id="cb15-6"><a></a>├── .gitignore</span>
+<span id="cb15-7"><a></a>├── environment.yml</span>
+<span id="cb15-8"><a></a>└── README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Referencia: <a href="https://github.com/ECCO-Summer-School/ESS25_sample_project_repository">ECCO Summer School sample project repository</a>.</p>
+</section>
+<section id="paso-1.-crear-tu-repo-desde-el-template" class="slide level2 smaller">
+<h2>Paso 1. Crear tu repo desde el template</h2>
+<p>En GitHub:</p>
+<ol type="1">
+<li>Abrir el template del curso.</li>
+<li>Clic en <strong>Use this template</strong>.</li>
+<li>Elegir <strong>Create a new repository</strong>.</li>
+<li>Nombrarlo, por ejemplo:</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb16-1"><a></a>enso-baja-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Crear el repositorio en tu propia cuenta.</li>
+</ol>
+<div class="fragment">
+<p>Resultado esperado:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb17-1"><a></a>github.com/tu_usuario/enso-baja-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="paso-2.-clonar-el-repo" class="slide level2 smaller">
+<h2>Paso 2. Clonar el repo</h2>
+<p>En la terminal:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="bu">cd</span> ~/Desktop</span>
+<span id="cb18-2"><a></a><span class="fu">git</span> clone URL_DE_TU_REPOSITORIO</span>
+<span id="cb18-3"><a></a><span class="bu">cd</span> enso-baja-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Verifica dónde estás:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="bu">pwd</span></span>
+<span id="cb19-2"><a></a><span class="fu">ls</span></span>
+<span id="cb19-3"><a></a><span class="fu">ls</span> <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Si ves <code>.git/</code>, estás dentro de un repositorio Git.</p>
+</div>
+</section>
+<section id="git-clone-vs-git-init" class="slide level2 smaller">
+<h2><code>git clone</code> vs <code>git init</code></h2>
+<p>Dos formas comunes de comenzar:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Situación</th>
+<th>Comando</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>El proyecto ya existe en GitHub</td>
+<td><code>git clone URL</code></td>
+</tr>
+<tr class="even">
+<td>El proyecto sólo existe localmente</td>
+<td><code>git init</code></td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Hoy usamos <code>git clone</code> porque el template ya vive en GitHub.</p>
+<p>Pero conceptualmente:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>crea un repositorio Git en una carpeta local.</p>
+</div>
+</section>
+<section id="ver-el-remoto" class="slide level2 smaller">
+<h2>Ver el remoto</h2>
+<p>Como clonamos desde GitHub, Git ya sabe cuál es el repositorio remoto.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Debe aparecer algo como:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb22-1"><a></a>origin  git@github.com:usuario/enso-baja-project.git (fetch)</span>
+<span id="cb22-2"><a></a>origin  git@github.com:usuario/enso-baja-project.git (push)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>o una URL HTTPS.</p>
+<div class="fragment">
+<p><code>origin</code> es el nombre convencional del remoto principal.</p>
+</div>
+</section></section>
+<section>
+<section id="primer-ciclo-status-diff-add-commit" class="title-slide slide level1 center">
+<h1>Primer ciclo: status, diff, add, commit</h1>
+
+</section>
+<section id="nuestro-primer-git-status" class="slide level2 smaller">
+<h2>Nuestro primer <code>git status</code></h2>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Este comando será tu mejor amigue.</p>
+<p>Nos dice:</p>
+<ul>
+<li>en qué rama estamos;</li>
+<li>si hay archivos modificados;</li>
+<li>si hay archivos nuevos;</li>
+<li>qué está listo para commit;</li>
+<li>qué no está rastreado.</li>
+</ul>
+<div class="fragment">
+<p><strong>Regla práctica:</strong> antes de hacer algo importante, ejecuta <code>git status</code>.</p>
+</div>
+</section>
+<section id="incorporar-el-trabajo-de-python" class="slide level2 smaller">
+<h2>Incorporar el trabajo de Python</h2>
+<p>Ahora copiaremos al repositorio parte del trabajo de la sesión anterior.</p>
+<p>Ejemplo, si tu carpeta anterior se llama <code>enso_baja</code> y está al lado del repo:</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="fu">cp</span> ../enso_baja/notebooks/<span class="pp">*</span>.ipynb notebooks/</span>
+<span id="cb24-2"><a></a><span class="fu">cp</span> ../enso_baja/scripts/<span class="pp">*</span>.py scripts/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>También puedes copiar manualmente desde Finder/Explorer.</p>
+<div class="fragment">
+<p>Luego:</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>¿Qué archivos nuevos aparecen?</p>
+</div>
+</section>
+<section id="archivos-rastreados-y-no-rastreados" class="slide level2 smaller">
+<h2>Archivos rastreados y no rastreados</h2>
+<p>Git distingue entre:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Estado</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>untracked</td>
+<td>Git ve el archivo, pero todavía no lo está rastreando</td>
+</tr>
+<tr class="even">
+<td>modified</td>
+<td>Git ya lo conoce y detecta cambios</td>
+</tr>
+<tr class="odd">
+<td>staged</td>
+<td>El cambio está preparado para el próximo commit</td>
+</tr>
+<tr class="even">
+<td>committed</td>
+<td>El cambio ya quedó guardado en la historia local</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<p>Un archivo nuevo no entra a la historia hasta que hacemos <code>git add</code>.</p>
+</div>
+</section>
+<section id="editar-el-readme" class="slide level2 smaller">
+<h2>Editar el README</h2>
+<p>Abre <code>README.md</code> y completa al menos:</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a><span class="fu">## Pregunta</span></span>
+<span id="cb26-2"><a></a></span>
+<span id="cb26-3"><a></a>¿Cómo se relaciona la variabilidad de SST frente a Baja California con ENSO?</span>
+<span id="cb26-4"><a></a></span>
+<span id="cb26-5"><a></a><span class="fu">## Datos</span></span>
+<span id="cb26-6"><a></a></span>
+<span id="cb26-7"><a></a><span class="ss">- </span>NOAA OISST V2.1</span>
+<span id="cb26-8"><a></a><span class="ss">- </span>Oceanic Niño Index</span>
+<span id="cb26-9"><a></a><span class="ss">- </span>Precipitación mensual en Ensenada</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Guarda el archivo.</p>
+<p>Luego:</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb27-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="ver-diferencias-con-git-diff" class="slide level2 smaller">
+<h2>Ver diferencias con <code>git diff</code></h2>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="fu">git</span> diff README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>git diff</code> muestra cambios línea por línea.</p>
+<p>Símbolos comunes:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb29-1"><a></a>- línea eliminada</span>
+<span id="cb29-2"><a></a>+ línea agregada</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><code>diff</code> es muy útil para revisar antes de guardar una versión.</p>
+</div>
+</section>
+<section id="preparar-cambios-con-git-add" class="slide level2 smaller">
+<h2>Preparar cambios con <code>git add</code></h2>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="fu">git</span> add README.md</span>
+<span id="cb30-2"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ahora <code>README.md</code> está en el <strong>staging area</strong>.</p>
+<div class="fragment">
+<p><code>git add</code> no crea una versión permanente.<br>
+Sólo prepara cambios para el siguiente commit.</p>
+</div>
+</section>
+<section id="guardar-una-versión-con-git-commit" class="slide level2 smaller">
+<h2>Guardar una versión con <code>git commit</code></h2>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb31-1"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Descripción pregunta de investigación"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Ahora sí existe una versión nueva en la historia local.</p>
+<p>Verifica:</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>y:</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb33-1"><a></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="reto-1.-primer-commit-científico" class="slide level2 smaller">
+<h2>Reto 1. Primer commit científico</h2>
+<ol type="1">
+<li>Copia tus notebooks a <code>notebooks/</code>.</li>
+<li>Copia tus scripts a <code>scripts/</code>.</li>
+<li>Revisa:</li>
+</ol>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Agrega los archivos:</li>
+</ol>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb35-1"><a></a><span class="fu">git</span> add notebooks scripts</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Haz commit:</li>
+</ol>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Agregué análisis SST y ENSO"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="6" type="1">
+<li>Revisa la historia:</li>
+</ol>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><strong>Pregunta:</strong> ¿por qué es mejor este commit que uno llamado <code>actualización</code>?</p>
+</div>
+</section></section>
+<section>
+<section id="historial-y-recuperación-básica" class="title-slide slide level1 center">
+<h1>Historial y recuperación básica</h1>
+
+</section>
+<section id="ver-la-historia" class="slide level2 smaller">
+<h2>Ver la historia</h2>
+<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb38-1"><a></a><span class="fu">git</span> log <span class="at">--oneline</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb39-1"><a></a>a3c21f0 Agregué análisis SST y ENSO</span>
+<span id="cb39-2"><a></a>5b81d3a Descripción pregunta de investigación</span>
+<span id="cb39-3"><a></a>2f4a9c1 Initial template</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Cada línea representa un commit.</p>
+<p>El identificador corto (<code>a3c21f0</code>) permite referirnos a una versión específica.</p>
+</div>
+</section>
+<section id="modificar-y-arrepentirse" class="slide level2 smaller">
+<h2>Modificar y arrepentirse</h2>
+<p>Edita temporalmente <code>README.md</code> y escribe una línea claramente equivocada.</p>
+<p>Luego:</p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a></a><span class="fu">git</span> diff README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Si quieres descartar ese cambio:</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a></a><span class="fu">git</span> restore README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>(Si quisieras recuperar una versión de README.md guardada en alún commit específico puedes hacer:</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb42-1"><a></a><span class="fu">git</span> restore <span class="at">--source</span> <span class="op">&lt;</span>commit_id<span class="op">&gt;</span> -- README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>)</p>
+<p>Revisa:</p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="reto-2.-recuperar-una-versión" class="slide level2 smaller">
+<h2>Reto 2. Recuperar una versión</h2>
+<ol type="1">
+<li>Modifica <code>README.md</code>.</li>
+<li>Revisa el cambio:</li>
+</ol>
+<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb44-1"><a></a><span class="fu">git</span> diff</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Decide que no quieres conservarlo.</li>
+<li>Restaura el archivo:</li>
+</ol>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb45-1"><a></a><span class="fu">git</span> restore README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Confirma:</li>
+</ol>
+<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb46-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><strong>Idea clave:</strong> Git puede ayudarte a experimentar sin miedo, siempre que guardes versiones con commits.</p>
+</div>
+</section></section>
+<section>
+<section id="qué-debe-y-no-debe-entrar-a-git" class="title-slide slide level1 center">
+<h1>Qué debe y no debe entrar a Git</h1>
+
+</section>
+<section id="no-todo-pertenece-al-repositorio" class="slide level2 smaller">
+<h2>No todo pertenece al repositorio</h2>
+
+<img src="img/gitignore_reddit.png" width="600" class="r-stretch"><div class="fragment">
+<p>En ciencia de datos, un repositorio no siempre debe contener todo.</p>
+</div>
+</section>
+<section id="qué-versionamos" class="slide level2 smaller">
+<h2>¿Qué versionamos?</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Archivo/directorio</th>
+<th style="text-align: right;">¿Git?</th>
+<th>Comentario</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>README.md</code></td>
+<td style="text-align: right;">sí</td>
+<td>documentación del proyecto</td>
+</tr>
+<tr class="even">
+<td><code>environment.yml</code></td>
+<td style="text-align: right;">sí</td>
+<td>ambiente reproducible</td>
+</tr>
+<tr class="odd">
+<td><code>scripts/*.py</code></td>
+<td style="text-align: right;">sí</td>
+<td>código reutilizable</td>
+</tr>
+<tr class="even">
+<td><code>notebooks/*.ipynb</code></td>
+<td style="text-align: right;">sí</td>
+<td>análisis y notas</td>
+</tr>
+<tr class="odd">
+<td>figuras finales</td>
+<td style="text-align: right;">depende</td>
+<td>útil si aparecen en README</td>
+</tr>
+<tr class="even">
+<td>datos grandes</td>
+<td style="text-align: right;">no</td>
+<td>mejor distribuir por otra vía</td>
+</tr>
+<tr class="odd">
+<td>salidas de modelos</td>
+<td style="text-align: right;">no</td>
+<td>pueden ser enormes</td>
+</tr>
+<tr class="even">
+<td>contraseñas/tokens</td>
+<td style="text-align: right;">jamás</td>
+<td>riesgo de seguridad</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="nuestro-.gitignore" class="slide level2 smaller">
+<h2>Nuestro <code>.gitignore</code></h2>
+<p>El template incluye:</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb47-1"><a></a># Datos</span>
+<span id="cb47-2"><a></a>data/*</span>
+<span id="cb47-3"><a></a>!data/README.md</span>
+<span id="cb47-4"><a></a></span>
+<span id="cb47-5"><a></a># Jupyter</span>
+<span id="cb47-6"><a></a>.ipynb_checkpoints/</span>
+<span id="cb47-7"><a></a></span>
+<span id="cb47-8"><a></a># Python</span>
+<span id="cb47-9"><a></a>__pycache__/</span>
+<span id="cb47-10"><a></a>*.py[cod]</span>
+<span id="cb47-11"><a></a></span>
+<span id="cb47-12"><a></a># Sistema operativo / editores</span>
+<span id="cb47-13"><a></a>.DS_Store</span>
+<span id="cb47-14"><a></a>Thumbs.db</span>
+<span id="cb47-15"><a></a>.vscode/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>La carpeta <code>data/</code> existe y tiene un README, pero los archivos de datos no se suben.</p>
+</div>
+</section>
+<section id="verificar-qué-ignora-git" class="slide level2 smaller">
+<h2>Verificar qué ignora Git</h2>
+<p>Copia un archivo de datos a <code>data/</code>, por ejemplo:</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb48-1"><a></a>data/sst_baja_1981_2026.nc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Luego:</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb49-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Ese archivo <strong>no debería aparecer</strong> como untracked.</p>
+<p>Si aparece, revisa <code>.gitignore</code>.</p>
+</div>
+</section>
+<section id="reto-3.-explicar-.gitignore" class="slide level2 smaller">
+<h2>Reto 3. Explicar <code>.gitignore</code></h2>
+<p>Abre <code>.gitignore</code> y responde:</p>
+<ol type="1">
+<li>¿Por qué <code>data/*</code> ignora los datos?</li>
+<li>¿Por qué <code>!data/README.md</code> no ignora el README?</li>
+<li>¿Qué pasaría si mañana tuvieras 200 GB de salidas de un modelo?</li>
+<li>¿Versionarías <code>figures/</code>? ¿Todas las figuras o sólo algunas?</li>
+</ol>
+</section></section>
+<section>
+<section id="readme-como-parte-de-la-ciencia" class="title-slide slide level1 center">
+<h1>README como parte de la ciencia</h1>
+
+</section>
+<section id="readme-no-es-decoración" class="slide level2 smaller">
+<h2>README no es decoración</h2>
+<p>El <code>README.md</code> debe permitir que otra persona entienda:</p>
+<ul>
+<li>qué pregunta intentaste contestar;</li>
+<li>qué datos usaste;</li>
+<li>qué hiciste;</li>
+<li>cuál fue tu resultado principal;</li>
+<li>cómo reproducir el análisis.</li>
+</ul>
+<div class="fragment">
+<p>Si alguien abre tu repo en seis meses, el README debe orientarla/o antes de leer el código.</p>
+</div>
+</section>
+<section id="una-estructura-mínima" class="slide level2 smaller">
+<h2>Una estructura mínima</h2>
+<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb50-1"><a></a><span class="fu"># Título del proyecto</span></span>
+<span id="cb50-2"><a></a></span>
+<span id="cb50-3"><a></a><span class="fu">## Pregunta</span></span>
+<span id="cb50-4"><a></a></span>
+<span id="cb50-5"><a></a><span class="fu">## Datos</span></span>
+<span id="cb50-6"><a></a></span>
+<span id="cb50-7"><a></a><span class="fu">## Métodos</span></span>
+<span id="cb50-8"><a></a></span>
+<span id="cb50-9"><a></a><span class="fu">## Resultados</span></span>
+<span id="cb50-10"><a></a></span>
+<span id="cb50-11"><a></a><span class="fu">## Cómo reproducir el análisis</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Esto es lo mínimo para que el proyecto sea legible.</p>
+</div>
+</section>
+<section id="incluir-una-figura-en-readme" class="slide level2 smaller">
+<h2>Incluir una figura en README</h2>
+<p>Si decides versionar una figura final:</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb51-1"><a></a>figures/ssta_oni_summary.png</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>puedes mostrarla en el README con:</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a></a><span class="al">![SSTA regional y ONI](figures/ssta_oni_summary.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Las figuras en el README ayudan a comunicar el resultado, pero deben poder regenerarse desde el código.</p>
+</div>
+</section>
+<section id="reto-4.-documentar-el-proyecto" class="slide level2 smaller">
+<h2>Reto 4. Documentar el proyecto</h2>
+<p>Edita <code>README.md</code> y completa:</p>
+<ol type="1">
+<li><code>## Pregunta</code></li>
+<li><code>## Datos</code></li>
+<li><code>## Métodos</code></li>
+</ol>
+<p>Después:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb53-1"><a></a><span class="fu">git</span> diff README.md</span>
+<span id="cb53-2"><a></a><span class="fu">git</span> add README.md</span>
+<span id="cb53-3"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Document data and methods"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="enviar-cambios-a-github" class="title-slide slide level1 center">
+<h1>Enviar cambios a GitHub</h1>
+
+</section>
+<section id="local-vs-remoto" class="slide level2 smaller">
+<h2>Local vs remoto</h2>
+<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb54-1"><a></a>Repositorio local</span>
+<span id="cb54-2"><a></a>      ↓ git push</span>
+<span id="cb54-3"><a></a>Repositorio remoto en GitHub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><code>git commit</code> guarda cambios <strong>localmente</strong>.</p>
+<p><code>git push</code> envía commits a GitHub.</p>
+</div>
+</section>
+<section id="primer-push" class="slide level2 smaller">
+<h2>Primer <code>push</code></h2>
+<div class="sourceCode" id="cb55"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb55-1"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Si Git pide autenticación, sigue las instrucciones de GitHub.</p>
+<p>Si el upstream no está configurado:</p>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb56-1"><a></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Abre GitHub y actualiza la página del repositorio.</p>
+<p>¿Ves tus commits?<br>
+¿Ves tu README actualizado?</p>
+</div>
+</section>
+<section id="reto-5.-commit-vs-push" class="slide level2 smaller">
+<h2>Reto 5. Commit vs push</h2>
+<p>¿Qué hace cada comando?</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb57-1"><a></a><span class="fu">git</span> add README.md</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb58-1"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Update README"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb59-1"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p><strong>Respuesta:</strong></p>
+<ul>
+<li><code>add</code>: prepara cambios.</li>
+<li><code>commit</code>: guarda una versión local.</li>
+<li><code>push</code>: envía commits al remoto.</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="colaboración-y-conflictos" class="title-slide slide level1 center">
+<h1>Colaboración y conflictos</h1>
+
+</section>
+<section id="por-qué-hay-conflictos" class="slide level2 smaller">
+<h2>¿Por qué hay conflictos?</h2>
+<p>Un conflicto ocurre cuando Git no puede decidir automáticamente cómo combinar dos cambios.</p>
+<p>Ejemplo:</p>
+<ul>
+<li>Persona A cambia una línea de <code>README.md</code>.</li>
+<li>Persona B cambia la misma línea de <code>README.md</code>.</li>
+<li>Ambas versiones tienen sentido.</li>
+<li>Git no puede escoger por nosotras/os.</li>
+</ul>
+<div class="fragment">
+<p>Un conflicto <strong>no es un error catastrófico</strong>.</p>
+<p>Es Git diciendo:</p>
+<blockquote>
+<p>Necesito que una persona decida qué versión final debe quedar.</p>
+</blockquote>
+</div>
+</section>
+<section id="ejercicio-en-parejas-logística" class="slide level2 smaller">
+<h2>Ejercicio en parejas: logística</h2>
+<p>Trabajaremos en parejas.</p>
+<h3 id="persona-a">Persona A</h3>
+<p>Usa su repositorio del proyecto y agrega a Persona B como colaboradora en GitHub.</p>
+<p>En GitHub:</p>
+<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb60-1"><a></a>Settings → Collaborators → Add people</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="personas-a-y-b">Personas A y B</h3>
+<p>Ambas clonan el repo de A:</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb61-1"><a></a><span class="fu">git</span> clone URL_DEL_REPO_DE_A</span>
+<span id="cb61-2"><a></a><span class="bu">cd</span> enso-baja-project</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="preparar-la-línea-conflictiva" class="slide level2 smaller">
+<h2>Preparar la línea conflictiva</h2>
+<p>En <code>README.md</code>, ambas personas buscan esta sección:</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb62-1"><a></a><span class="fu">## Resultados</span></span>
+<span id="cb62-2"><a></a></span>
+<span id="cb62-3"><a></a>_Resume aquí tus resultados principales._</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>La línea que inicia con <code>_Resume...</code> será modificada por ambas personas.</p>
+<div class="fragment">
+<p>Asegúrense de empezar desde la misma versión:</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb63-1"><a></a><span class="fu">git</span> pull</span>
+<span id="cb63-2"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="persona-a-cambio-sst" class="slide level2 smaller">
+<h2>Persona A: cambio SST</h2>
+<p>Persona A cambia la línea por:</p>
+<div class="sourceCode" id="cb64"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb64-1"><a></a>La SSTA frente a Baja California aumenta durante algunos eventos El Niño.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Luego:</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb65-1"><a></a><span class="fu">git</span> add README.md</span>
+<span id="cb65-2"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Describe SST result"</span></span>
+<span id="cb65-3"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="persona-b-cambio-precipitación" class="slide level2 smaller">
+<h2>Persona B: cambio precipitación</h2>
+<p>Persona B <strong>no hace pull todavía</strong>.</p>
+<p>Cambia la misma línea por:</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb66-1"><a></a>La precipitación en Ensenada es mayor durante algunos eventos El Niño.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Luego:</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb67-1"><a></a><span class="fu">git</span> add README.md</span>
+<span id="cb67-2"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Describe precipitation result"</span></span>
+<span id="cb67-3"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>¿Qué ocurre?</p>
+</div>
+</section>
+<section id="push-rechazado" class="slide level2 smaller">
+<h2>Push rechazado</h2>
+<p>Git probablemente dirá algo como:</p>
+<div class="sourceCode" id="cb68"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb68-1"><a></a>! [rejected] main -&gt; main (fetch first)</span>
+<span id="cb68-2"><a></a>error: failed to push some refs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Esto significa:</p>
+<blockquote>
+<p>El remoto tiene cambios que tu copia local todavía no tiene.</p>
+</blockquote>
+<div class="fragment">
+<p>No queremos sobrescribir el trabajo de A.<br>
+Primero debemos traer los cambios remotos.</p>
+</div>
+</section>
+<section id="traer-cambios-remotos" class="slide level2 smaller">
+<h2>Traer cambios remotos</h2>
+<p>Persona B ejecuta:</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb69-1"><a></a><span class="fu">git</span> pull <span class="at">--no-rebase</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>git pull</code> trae cambios del remoto e intenta mezclarlos con los locales.</p>
+<p><code>--no-rebase</code> indica que queremos resolverlo como un merge.</p>
+<div class="fragment">
+<p>Como ambas personas cambiaron la misma línea, Git no puede decidir automáticamente.</p>
+</div>
+</section>
+<section id="marcadores-de-conflicto" class="slide level2 smaller">
+<h2>Marcadores de conflicto</h2>
+<p>En <code>README.md</code>, Persona B verá algo parecido a:</p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb70-1"><a></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+<span id="cb70-2"><a></a>La precipitación en Ensenada es mayor durante algunos eventos El Niño.</span>
+<span id="cb70-3"><a></a>=======</span>
+<span id="cb70-4"><a></a>La SSTA frente a Baja California aumenta durante algunos eventos El Niño.</span>
+<span id="cb70-5"><a></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Significado:</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb71-1"><a></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+<span id="cb71-2"><a></a>tu versión local</span>
+<span id="cb71-3"><a></a></span>
+<span id="cb71-4"><a></a>=======</span>
+<span id="cb71-5"><a></a>separador</span>
+<span id="cb71-6"><a></a></span>
+<span id="cb71-7"><a></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/main</span>
+<span id="cb71-8"><a></a>versión que llegó del remoto</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="resolver-no-es-elegir-ciegamente" class="slide level2 smaller">
+<h2>Resolver no es elegir ciegamente</h2>
+<p>Podemos escribir una versión mejor que combine ambas ideas:</p>
+<div class="sourceCode" id="cb72"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb72-1"><a></a><span class="an">La respuesta regional a ENSO no es única:</span><span class="co"> exploramos tanto las anomalías de SST frente a Baja California como la precipitación en Ensenada.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Borra todos los marcadores:</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb73-1"><a></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span>
+<span id="cb73-2"><a></a>=======</span>
+<span id="cb73-3"><a></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Guarda el archivo.</p>
+</div>
+</section>
+<section id="confirmar-la-resolución" class="slide level2 smaller">
+<h2>Confirmar la resolución</h2>
+<p>Después de editar:</p>
+<div class="sourceCode" id="cb74"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb74-1"><a></a><span class="fu">git</span> status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Luego:</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb75-1"><a></a><span class="fu">git</span> add README.md</span>
+<span id="cb75-2"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Resolve README conflict"</span></span>
+<span id="cb75-3"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>El commit de resolución queda registrado en la historia.</p>
+</div>
+</section>
+<section id="persona-a-actualiza-su-copia" class="slide level2 smaller">
+<h2>Persona A actualiza su copia</h2>
+<p>Persona A ahora hace:</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb76-1"><a></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>y recibe la versión resuelta.</p>
+<div class="fragment">
+<p>Ahora ambas copias locales y GitHub tienen la misma historia.</p>
+</div>
+</section>
+<section id="lo-que-aprendimos-del-conflicto" class="slide level2 smaller">
+<h2>Lo que aprendimos del conflicto</h2>
+<div class="sourceCode" id="cb77"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb77-1"><a></a>A trabaja       B trabaja</span>
+<span id="cb77-2"><a></a>   ↓               ↓</span>
+<span id="cb77-3"><a></a>A commit          B commit</span>
+<span id="cb77-4"><a></a>   ↓               ↓</span>
+<span id="cb77-5"><a></a>A push            B push rechazado</span>
+<span id="cb77-6"><a></a>                   ↓</span>
+<span id="cb77-7"><a></a>                 B pull</span>
+<span id="cb77-8"><a></a>                   ↓</span>
+<span id="cb77-9"><a></a>              conflicto</span>
+<span id="cb77-10"><a></a>                   ↓</span>
+<span id="cb77-11"><a></a>              resolver</span>
+<span id="cb77-12"><a></a>                   ↓</span>
+<span id="cb77-13"><a></a>             add + commit</span>
+<span id="cb77-14"><a></a>                   ↓</span>
+<span id="cb77-15"><a></a>                 push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Git no perdió el trabajo de nadie.</p>
+<p>Git obligó a revisar explícitamente un cambio ambiguo.</p>
+</div>
+</section></section>
+<section>
+<section id="problemas-comunes" class="title-slide slide level1 center">
+<h1>Problemas comunes</h1>
+
+</section>
+<section id="fatal-not-a-git-repository" class="slide level2 smaller">
+<h2>“fatal: not a git repository”</h2>
+<p>Mensaje:</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb78-1"><a></a>fatal: not a git repository</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Posibles causas:</p>
+<ul>
+<li>no estás dentro de la carpeta del repo;</li>
+<li>estás un directorio arriba o abajo;</li>
+<li>nunca clonaste/inicializaste el repositorio.</li>
+</ul>
+<p>Solución:</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb79-1"><a></a><span class="bu">pwd</span></span>
+<span id="cb79-2"><a></a><span class="fu">ls</span> <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Busca <code>.git/</code>.</p>
+</section>
+<section id="nothing-to-commit" class="slide level2 smaller">
+<h2>“nothing to commit”</h2>
+<p>Mensaje:</p>
+<div class="sourceCode" id="cb80"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb80-1"><a></a>nothing to commit, working tree clean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Significa que Git no detecta cambios pendientes.</p>
+<p>Puede ser bueno.</p>
+<div class="fragment">
+<p>Pero si esperabas cambios, revisa:</p>
+<ul>
+<li>¿guardaste el archivo?</li>
+<li>¿estás en el repo correcto?</li>
+<li>¿el archivo está ignorado por <code>.gitignore</code>?</li>
+</ul>
+</div>
+</section>
+<section id="remote-origin-already-exists" class="slide level2 smaller">
+<h2>“remote origin already exists”</h2>
+<p>Mensaje:</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb81-1"><a></a>error: remote origin already exists</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Significa que ya hay un remoto llamado <code>origin</code>.</p>
+<p>Ver:</p>
+<div class="sourceCode" id="cb82"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb82-1"><a></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Cambiarlo:</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb83-1"><a></a><span class="fu">git</span> remote set-url origin NUEVA_URL</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="cambiar-https-a-ssh" class="slide level2 smaller">
+<h2>Cambiar HTTPS a SSH</h2>
+<p>Ver remoto actual:</p>
+<div class="sourceCode" id="cb84"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb84-1"><a></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Cambiar a SSH:</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb85-1"><a></a><span class="fu">git</span> remote set-url origin git@github.com:usuario/repositorio.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Verificar:</p>
+<div class="sourceCode" id="cb86"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb86-1"><a></a><span class="fu">git</span> remote <span class="at">-v</span></span>
+<span id="cb86-2"><a></a><span class="fu">ssh</span> <span class="at">-T</span> git@github.com</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="push-rechazado-1" class="slide level2 smaller">
+<h2>Push rechazado</h2>
+<p>Mensaje típico:</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb87-1"><a></a>Updates were rejected because the remote contains work that you do not have locally.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Solución usual:</p>
+<div class="sourceCode" id="cb88"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb88-1"><a></a><span class="fu">git</span> pull <span class="at">--no-rebase</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Resolver conflictos si aparecen.</p>
+<p>Después:</p>
+<div class="sourceCode" id="cb89"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb89-1"><a></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="proyecto-final" class="title-slide slide level1 center">
+<h1>Proyecto final</h1>
+
+</section>
+<section id="entregable" class="slide level2 smaller">
+<h2>Entregable</h2>
+<p>Cada estudiante o pareja debe entregar un repositorio con:</p>
+<div class="sourceCode" id="cb90"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb90-1"><a></a>README.md</span>
+<span id="cb90-2"><a></a>environment.yml</span>
+<span id="cb90-3"><a></a>.gitignore</span>
+<span id="cb90-4"><a></a>notebooks/</span>
+<span id="cb90-5"><a></a>scripts/</span>
+<span id="cb90-6"><a></a>figures/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Los datos pueden estar en <code>data/</code> localmente, pero no deben subirse a GitHub.</p>
+</section>
+<section id="contenido-mínimo-del-readme" class="slide level2 smaller">
+<h2>Contenido mínimo del README</h2>
+<p>Debe incluir:</p>
+<ol type="1">
+<li>Pregunta.</li>
+<li>Datos utilizados.</li>
+<li>Métodos generales.</li>
+<li>Una o dos figuras.</li>
+<li>Interpretación breve.</li>
+<li>Cómo reproducir el análisis.</li>
+</ol>
+<div class="fragment">
+<p>No tiene que ser largo.<br>
+Sí debe ser claro.</p>
+</div>
+</section>
+<section id="commits-esperados" class="slide level2 smaller">
+<h2>Commits esperados</h2>
+<p>Idealmente el historial debe contar una historia:</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb91-1"><a></a>Describe project question</span>
+<span id="cb91-2"><a></a>Add exploratory SST notebook</span>
+<span id="cb91-3"><a></a>Add regional mean function</span>
+<span id="cb91-4"><a></a>Create summary figure</span>
+<span id="cb91-5"><a></a>Document results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<p>Eviten un único commit final llamado:</p>
+<div class="sourceCode" id="cb92"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb92-1"><a></a>final</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="cierre" class="slide level2 smaller">
+<h2>Cierre</h2>
+<p>Hoy aprendimos que Git no es sólo una herramienta para programadoras/es profesionales.</p>
+<p>En ciencia, Git ayuda a:</p>
+<ul>
+<li>pensar en cambios pequeños y documentados;</li>
+<li>recuperar versiones;</li>
+<li>trabajar con otras personas;</li>
+<li>separar código de datos grandes;</li>
+<li>compartir proyectos reproducibles;</li>
+<li>dejarle pistas claras a nuestro yo del futuro.</li>
+</ul>
+<div class="fragment">
+<p><strong>Mensaje final:</strong></p>
+<blockquote>
+<p>Un proyecto científico no es sólo una figura final.<br>
+Es la historia reproducible de cómo llegamos a ella.</p>
+</blockquote>
+</div>
+</section></section>
+<section>
+<section id="referencias-y-recursos" class="title-slide slide level1 center">
+<h1>Referencias y recursos</h1>
+
+</section>
+<section id="recursos-para-repasar" class="slide level2 smaller">
+<h2>Recursos para repasar</h2>
+<ul>
+<li><a href="https://swcarpentry.github.io/git-novice-es/">Software Carpentry: Version Control with Git</a></li>
+<li><a href="https://git-scm.com/book/en/v2">Pro Git Book</a></li>
+<li><a href="https://docs.github.com/en/get-started/start-your-journey/hello-world">GitHub Docs: Hello World</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/resolving-a-merge-conflict-using-the-command-line">GitHub Docs: resolving merge conflicts</a></li>
+<li><a href="https://github.com/ECCO-Summer-School/ESS25_sample_project_repository">ECCO Summer School sample project repository</a></li>
+</ul>
+</section>
+<section id="créditos" class="slide level2 smaller">
+<h2>Créditos</h2>
+<p>Estas diapositivas están basadas parcialmente en:</p>
+<ul>
+<li>la lección <a href="https://swcarpentry.github.io/git-novice-es/">Version Control with Git</a> de Software Carpentry;</li>
+<li>el material previo del minicurso DOF 2025;</li>
+<li>el template de proyecto de la <a href="https://github.com/ECCO-Summer-School/ESS25_sample_project_repository">ECCO Summer School 2025</a>.</li>
+</ul>
+<p>Adaptación para el minicurso <strong>Introducción a herramientas computacionales para Oceanografía Física</strong>, CICESE, 2026.</p>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="img/dof_logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Introducción a herramientas computacionales para Oceanografía Física - Octubre 2026</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":false},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/anakarinarm\.github\.io");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
